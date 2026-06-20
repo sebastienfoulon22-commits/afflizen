@@ -105,6 +105,22 @@ export default function CurvePayPage() {
 
       <section className="border-b border-slate-200 bg-gradient-to-b from-emerald-50 via-white to-white">
         <div className="mx-auto max-w-6xl px-6 py-16">
+          <div className="mb-6 flex flex-wrap gap-3">
+            <a
+              href="/"
+              className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+            >
+              ← Retour à l’accueil
+            </a>
+
+            <a
+              href="/cartes-et-paiements"
+              className="inline-flex items-center rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-50"
+            >
+              Cartes & paiements
+            </a>
+          </div>
+
           <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700 shadow-sm">
             Cartes & paiements · Wallet · Cashback
           </div>
@@ -299,21 +315,6 @@ export default function CurvePayPage() {
                 certains services. Les limites exactes dépendent du plan choisi
                 et peuvent changer.
               </p>
-
-              <div className="mt-6 rounded-2xl bg-slate-50 p-5">
-                <p className="font-semibold text-slate-950">
-                  À vérifier avant d’utiliser Curve Pay
-                </p>
-
-                <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-700">
-                  <li>• Le plan choisi : gratuit ou payant.</li>
-                  <li>• Les limites de paiement en devises étrangères.</li>
-                  <li>• Les frais éventuels sur certains types de cartes.</li>
-                  <li>• Les limites de retrait et de conversion.</li>
-                  <li>• Les conditions exactes du cashback.</li>
-                  <li>• Les règles du parrainage Curve au moment de l’inscription.</li>
-                </ul>
-              </div>
             </div>
 
             <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
@@ -335,92 +336,6 @@ export default function CurvePayPage() {
                 passée. Il faut toutefois vérifier les délais et limites exacts
                 selon le plan Curve utilisé.
               </p>
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Cashback et dépenses à l’étranger
-              </h2>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                Curve met en avant des avantages liés au cashback et aux dépenses
-                à l’étranger, mais ces avantages ne doivent pas être généralisés
-                à tous les utilisateurs. Ils peuvent dépendre du plan, de la
-                devise, de la région, des commerçants sélectionnés et des
-                conditions applicables.
-              </p>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                Pour un utilisateur qui voyage ou qui achète souvent en devise
-                étrangère, Curve peut être intéressant à comparer avec Revolut,
-                Wise, N26 ou une carte bancaire classique. Mais il faut toujours
-                calculer le coût réel : abonnement éventuel, limites gratuites,
-                frais après dépassement et avantages réellement utilisés.
-              </p>
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Sécurité et fiabilité
-              </h2>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                Curve ajoute une couche de paiement entre vos cartes et vos
-                achats. Cela peut simplifier l’usage quotidien, mais cela ajoute
-                aussi un intermédiaire. Comme pour tout service financier, il est
-                important de sécuriser son compte, surveiller ses transactions et
-                garder ses cartes bancaires sous contrôle.
-              </p>
-
-              <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                <p className="font-semibold text-slate-950">
-                  Bonnes pratiques
-                </p>
-
-                <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-700">
-                  <li>• Utiliser un mot de passe solide.</li>
-                  <li>• Activer les sécurités disponibles sur l’application.</li>
-                  <li>• Surveiller régulièrement les transactions.</li>
-                  <li>• Supprimer une carte si vous ne l’utilisez plus.</li>
-                  <li>• Comparer les frais avec ceux de votre banque actuelle.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Pour qui Curve Pay est-il adapté ?
-              </h2>
-
-              <div className="mt-6 grid gap-5 md:grid-cols-2">
-                <div className="rounded-2xl bg-emerald-50 p-5">
-                  <h3 className="font-semibold text-emerald-950">
-                    Curve Pay peut convenir si :
-                  </h3>
-
-                  <ul className="mt-3 space-y-2 text-sm leading-6 text-emerald-950">
-                    <li>• Vous utilisez plusieurs cartes bancaires.</li>
-                    <li>• Vous voulez centraliser vos paiements.</li>
-                    <li>• Vous voyagez ou payez parfois en devise étrangère.</li>
-                    <li>• Vous voulez tester Go Back in Time.</li>
-                    <li>• Vous aimez optimiser vos cartes, cashback et avantages.</li>
-                  </ul>
-                </div>
-
-                <div className="rounded-2xl bg-slate-50 p-5">
-                  <h3 className="font-semibold text-slate-950">
-                    Curve Pay est moins adapté si :
-                  </h3>
-
-                  <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-700">
-                    <li>• Vous n’utilisez qu’une seule carte bancaire.</li>
-                    <li>• Vous cherchez une vraie banque principale.</li>
-                    <li>• Vous ne voulez pas suivre les frais et limites.</li>
-                    <li>• Vous n’utilisez jamais les avantages de paiement.</li>
-                    <li>• Vous préférez réduire le nombre d’intermédiaires financiers.</li>
-                  </ul>
-                </div>
-              </div>
             </div>
 
             <div
@@ -526,18 +441,6 @@ export default function CurvePayPage() {
                   Ce bouton contient un lien de parrainage. Afflizen peut
                   recevoir une commission ou un avantage si vous ouvrez un compte
                   via ce lien. Notre avis reste informatif.
-                </p>
-              </div>
-
-              <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-4">
-                <p className="text-sm font-semibold text-amber-900">
-                  Conditions variables
-                </p>
-
-                <p className="mt-2 text-xs leading-5 text-amber-900">
-                  Les frais, limites, plans, cashback et avantages peuvent
-                  évoluer. Vérifiez toujours les conditions Curve avant de vous
-                  inscrire ou de choisir un abonnement.
                 </p>
               </div>
             </div>
