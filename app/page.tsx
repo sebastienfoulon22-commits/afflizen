@@ -12,8 +12,8 @@ const categories = [
       "Applications d’investissement, actions, ETF et plateformes simples pour construire son patrimoine.",
   },
   {
-    name: "Banques",
-    url: "/banques",
+    name: "Banques en ligne",
+    url: "/banques-en-ligne",
     description:
       "Banques en ligne, cartes, comptes mobiles, primes et conditions à vérifier avant inscription.",
   },
@@ -24,10 +24,16 @@ const categories = [
       "Cashback, remboursements, codes promo et bons plans pour économiser sur ses achats en ligne.",
   },
   {
-    name: "Hébergement",
-    url: "/hebergement",
+    name: "Hébergement web",
+    url: "/hebergement-web",
     description:
       "Hébergement web, domaines, WordPress et solutions pour lancer un site ou un projet en ligne.",
+  },
+  {
+    name: "Cartes & paiements",
+    url: "/cartes-et-paiements",
+    description:
+      "Cartes intelligentes, solutions de paiement, avantages, frais et services utiles au quotidien.",
   },
 ];
 
@@ -44,8 +50,8 @@ const featuredPlatforms = [
   },
   {
     name: "Revolut",
-    category: "Banques",
-    url: "/banques/revolut",
+    category: "Banques en ligne",
+    url: "/banques-en-ligne/revolut",
   },
   {
     name: "iGraal",
@@ -54,8 +60,13 @@ const featuredPlatforms = [
   },
   {
     name: "Hostinger",
-    category: "Hébergement",
-    url: "/hebergement/hostinger",
+    category: "Hébergement web",
+    url: "/hebergement-web/hostinger",
+  },
+  {
+    name: "Curve Pay",
+    category: "Cartes & paiements",
+    url: "/cartes-et-paiements/curve-pay",
   },
 ];
 
@@ -80,10 +91,10 @@ export default function HomePage() {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
-              href="/bonus"
+              href="/bons-plans"
               className="rounded-full bg-emerald-600 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-700"
             >
-              Voir les bonus
+              Voir les bons plans
             </a>
 
             <a
@@ -96,14 +107,14 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-2xl font-bold">10</p>
+              <p className="text-2xl font-bold">16</p>
               <p className="mt-1 text-sm text-slate-600">
                 plateformes déjà structurées
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-2xl font-bold">5</p>
+              <p className="text-2xl font-bold">6</p>
               <p className="mt-1 text-sm text-slate-600">
                 grandes catégories comparées
               </p>
@@ -131,10 +142,10 @@ export default function HomePage() {
           </div>
 
           <a
-            href="/bonus"
+            href="/bons-plans"
             className="text-sm font-semibold text-emerald-700 hover:text-emerald-800"
           >
-            Voir toutes les offres →
+            Voir tous les bons plans →
           </a>
         </div>
 
@@ -167,7 +178,7 @@ export default function HomePage() {
             Les fiches importantes à consulter en priorité
           </h2>
 
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {featuredPlatforms.map((platform) => (
               <a
                 key={platform.name}
@@ -191,7 +202,7 @@ export default function HomePage() {
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
             <p className="text-sm font-semibold text-emerald-600">
-              Bonus / Promotions
+              Bons plans / Promotions
             </p>
             <h2 className="mt-3 text-3xl font-bold">
               Retrouvez les offres à vérifier avant inscription
@@ -202,10 +213,10 @@ export default function HomePage() {
               des fiches prévues pour détailler les conditions importantes.
             </p>
             <a
-              href="/bonus"
+              href="/bons-plans"
               className="mt-6 inline-flex rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
             >
-              Voir la page Bonus
+              Voir les bons plans
             </a>
           </div>
 
