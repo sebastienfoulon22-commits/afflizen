@@ -1,17 +1,44 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cashback : comparatif iGraal, Widilo, eBuyClub et bons plans",
+  description:
+    "Comparez les plateformes de cashback suivies par Afflizen : iGraal, Widilo, eBuyClub, remboursements, codes promo, avantages et points à vérifier.",
+  alternates: {
+    canonical: "https://afflizen.com/cashback",
+  },
+  openGraph: {
+    title: "Cashback : comparatif iGraal, Widilo, eBuyClub et bons plans",
+    description:
+      "Découvrez les plateformes de cashback suivies par Afflizen pour économiser sur vos achats en ligne.",
+    url: "https://afflizen.com/cashback",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "website",
+  },
+};
+
 const platforms = [
   {
     name: "iGraal",
     slug: "/cashback/igraal",
     description:
       "Plateforme de cashback permettant de récupérer une partie de ses achats en ligne.",
-    bonus: "À vérifier",
+    bonus: "Cashback",
   },
   {
     name: "Widilo",
     slug: "/cashback/widilo",
     description:
       "Plateforme combinant cashback, codes promo et offres partenaires pour les achats en ligne.",
-    bonus: "À vérifier",
+    bonus: "Cashback + codes promo",
+  },
+  {
+    name: "eBuyClub",
+    slug: "/cashback/ebuyclub",
+    description:
+      "Plateforme de cashback permettant d’économiser sur des achats en ligne, certains achats en magasin et des bons d’achat selon les offres disponibles.",
+    bonus: "Cashback + parrainage",
   },
 ];
 
@@ -35,7 +62,7 @@ export default function CashbackPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {platforms.map((platform) => (
             <a
               key={platform.name}
