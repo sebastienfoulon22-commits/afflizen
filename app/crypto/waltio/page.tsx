@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AffiliateButton from "../../../components/AffiliateButton";
 
 const WALTIO_AFFILIATE_LINK = "https://m.waltio.com/HiTQKirPqd";
 
@@ -105,14 +106,15 @@ export default function WaltioPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
+            <AffiliateButton
               href={WALTIO_AFFILIATE_LINK}
-              target="_blank"
-              rel="sponsored nofollow noopener noreferrer"
+              platform="waltio"
+              category="crypto"
+              location="hero"
               className="rounded-full bg-emerald-600 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-700"
             >
               Découvrir Waltio
-            </a>
+            </AffiliateButton>
 
             <a
               href="/crypto"
@@ -269,14 +271,15 @@ export default function WaltioPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
+            <AffiliateButton
               href={WALTIO_AFFILIATE_LINK}
-              target="_blank"
-              rel="sponsored nofollow noopener noreferrer"
+              platform="waltio"
+              category="crypto"
+              location="avis"
               className="rounded-full bg-emerald-600 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-700"
             >
               Essayer Waltio
-            </a>
+            </AffiliateButton>
 
             <a
               href="/crypto"
