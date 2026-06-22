@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import BackHomeButton from "../components/BackHomeButton";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-FYS51DRQTG";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://afflizen.com"),
@@ -93,6 +96,20 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+
         <header className="border-b border-slate-200 bg-white">
           <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-5 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex flex-col gap-2">
