@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AffiliateButton from "../../../components/AffiliateButton";
 
 const BINANCE_AFFILIATE_LINK =
   "https://account.binance.com/register?registerChannel=user_center&ref=W1CW1QNP";
@@ -31,14 +32,15 @@ export default function BinancePage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
+            <AffiliateButton
               href={BINANCE_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              platform="binance"
+              category="crypto"
+              location="hero"
               className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
             >
               S’inscrire sur Binance
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/crypto"
@@ -242,14 +244,15 @@ export default function BinancePage() {
           </p>
 
           <div className="mt-8">
-            <a
+            <AffiliateButton
               href={BINANCE_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              platform="binance"
+              category="crypto"
+              location="avis"
               className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
             >
               Accéder à Binance
-            </a>
+            </AffiliateButton>
           </div>
         </div>
       </section>
