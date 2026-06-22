@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AffiliateButton from "../../../components/AffiliateButton";
 
 const REVOLUT_AFFILIATE_LINK =
   "https://revolut.com/referral/?referral-code=sebast23u!JUN1-26-AR-H1&geo-redirect";
@@ -31,14 +32,15 @@ export default function RevolutPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
+            <AffiliateButton
               href={REVOLUT_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              platform="revolut"
+              category="banques-en-ligne"
+              location="hero"
               className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
             >
               S’inscrire sur Revolut
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/banques-en-ligne"
@@ -327,14 +329,15 @@ export default function RevolutPage() {
           </p>
 
           <div className="mt-8">
-            <a
+            <AffiliateButton
               href={REVOLUT_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              platform="revolut"
+              category="banques-en-ligne"
+              location="avis"
               className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
             >
               Accéder à Revolut
-            </a>
+            </AffiliateButton>
           </div>
         </div>
       </section>
