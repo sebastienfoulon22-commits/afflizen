@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AffiliateButton from "../../../components/AffiliateButton";
 
 const TRADE_REPUBLIC_AFFILIATE_LINK = "https://refnocode.trade.re/dj55hz7z";
 
@@ -31,14 +32,15 @@ export default function TradeRepublicPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
+            <AffiliateButton
               href={TRADE_REPUBLIC_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              platform="trade-republic"
+              category="investissement"
+              location="hero"
               className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
             >
               S’inscrire sur Trade Republic
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/investissement"
@@ -300,9 +302,7 @@ export default function TradeRepublicPage() {
             </div>
 
             <div className="rounded-2xl bg-amber-50 p-6">
-              <h3 className="font-bold text-slate-950">
-                Profils prudents
-              </h3>
+              <h3 className="font-bold text-slate-950">Profils prudents</h3>
               <p className="mt-3 text-slate-700">
                 À condition de comprendre la fiscalité, les risques de marché et
                 les limites de la plateforme.
@@ -332,14 +332,15 @@ export default function TradeRepublicPage() {
           </p>
 
           <div className="mt-8">
-            <a
+            <AffiliateButton
               href={TRADE_REPUBLIC_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              platform="trade-republic"
+              category="investissement"
+              location="avis"
               className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
             >
               Accéder à Trade Republic
-            </a>
+            </AffiliateButton>
           </div>
         </div>
       </section>
@@ -367,7 +368,8 @@ export default function TradeRepublicPage() {
                 "Oui, Trade Republic permet d’investir dans des ETF et de mettre en place des plans programmés. C’est l’un des usages les plus intéressants pour un investisseur long terme.",
             },
             {
-              question: "Trade Republic rémunère-t-elle les espèces non investies ?",
+              question:
+                "Trade Republic rémunère-t-elle les espèces non investies ?",
               answer:
                 "Trade Republic peut proposer une rémunération des espèces non investies selon les conditions en vigueur. Le taux, le plafond et les règles fiscales doivent être vérifiés avant de considérer cette rémunération comme un argument principal.",
             },
@@ -377,7 +379,8 @@ export default function TradeRepublicPage() {
                 "La carte peut être utile pour certains utilisateurs, notamment avec la carte virtuelle gratuite et les fonctionnalités associées. Les conditions, limites et avantages doivent cependant être vérifiés directement sur Trade Republic.",
             },
             {
-              question: "Trade Republic est-elle suffisante pour un investisseur avancé ?",
+              question:
+                "Trade Republic est-elle suffisante pour un investisseur avancé ?",
               answer:
                 "Pas toujours. Trade Republic est très pratique pour investir simplement, mais un investisseur avancé peut préférer un courtier plus complet comme Interactive Brokers ou DEGIRO selon ses besoins.",
             },
