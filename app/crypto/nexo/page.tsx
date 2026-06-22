@@ -5,6 +5,12 @@ import AffiliateButton from "../../../components/AffiliateButton";
 const NEXO_REFERRAL_URL =
   "https://nexo.com/ref/hel1o3ivp2?src=ios-link";
 
+const primaryButtonClassName =
+  "inline-flex items-center justify-center rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300";
+
+const fullButtonClassName =
+  "inline-flex w-full items-center justify-center rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300";
+
 export const metadata: Metadata = {
   title: "Nexo : avis, rendement crypto, carte et crédit crypto | Afflizen",
   description:
@@ -105,6 +111,7 @@ export default function NexoPage() {
                   platform="nexo"
                   category="crypto"
                   location="hero"
+                  className={primaryButtonClassName}
                 >
                   Découvrir Nexo
                 </AffiliateButton>
@@ -158,6 +165,7 @@ export default function NexoPage() {
                   platform="nexo"
                   category="crypto"
                   location="sidebar"
+                  className={fullButtonClassName}
                 >
                   Accéder à Nexo
                 </AffiliateButton>
@@ -370,6 +378,7 @@ export default function NexoPage() {
                 platform="nexo"
                 category="crypto"
                 location="avis"
+                className={primaryButtonClassName}
               >
                 S’inscrire sur Nexo
               </AffiliateButton>
@@ -383,9 +392,7 @@ export default function NexoPage() {
           </section>
 
           <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
-            <h2 className="text-2xl font-bold text-white">
-              FAQ sur Nexo
-            </h2>
+            <h2 className="text-2xl font-bold text-white">FAQ sur Nexo</h2>
 
             <div className="mt-6 space-y-4">
               {faqs.map((faq) => (
@@ -430,12 +437,13 @@ export default function NexoPage() {
           </p>
 
           <h2 className="mt-4 text-2xl font-bold text-white">
-            Plateforme crypto avec rendement, carte et crédit
+            Rendement, carte et crédit crypto
           </h2>
 
           <p className="mt-4 text-sm leading-7 text-slate-300">
-            À utiliser avec prudence : rendement non garanti, risque de
-            contrepartie et risque de liquidation avec le crédit crypto.
+            Une plateforme crypto centralisée à utiliser avec prudence :
+            rendement non garanti, risque de contrepartie et risque de
+            liquidation avec le crédit crypto.
           </p>
 
           <div className="mt-6">
@@ -444,6 +452,7 @@ export default function NexoPage() {
               platform="nexo"
               category="crypto"
               location="sidebar"
+              className={fullButtonClassName}
             >
               Découvrir Nexo
             </AffiliateButton>
