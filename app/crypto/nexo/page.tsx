@@ -1,488 +1,459 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AffiliateButton from "../../../components/AffiliateButton";
 
-const NEXO_REFERRAL_URL = "https://nexo.com/ref/hel1o3ivp2?src=ios-link";
+const NEXO_REFERRAL_URL =
+  "https://nexo.com/ref/hel1o3ivp2?src=ios-link";
 
 export const metadata: Metadata = {
-  title: "Nexo avis : intérêts crypto, carte, prêt et risques | Afflizen",
+  title: "Nexo : avis, rendement crypto, carte et crédit crypto | Afflizen",
   description:
-    "Notre avis sur Nexo : avantages, inconvénients, intérêts crypto, carte Nexo, crédit adossé aux cryptos, frais, sécurité et risques à connaître.",
+    "Avis Afflizen sur Nexo : rendement crypto, carte Nexo, crédit crypto, avantages, limites, risques et conditions à vérifier avant inscription.",
   alternates: {
     canonical: "https://afflizen.com/crypto/nexo",
+  },
+  openGraph: {
+    title: "Nexo : avis, rendement crypto, carte et crédit crypto",
+    description:
+      "Analyse prudente de Nexo : rendement non garanti, plateforme crypto centralisée, risques, frais, carte et crédit crypto.",
+    url: "https://afflizen.com/crypto/nexo",
+    siteName: "Afflizen",
+    type: "article",
   },
 };
 
 const avantages = [
-  "Plateforme crypto complète : achat, échange, rendement, carte et crédit crypto",
-  "Interface moderne pensée pour gérer plusieurs services depuis une seule application",
-  "Possibilité d’obtenir des rendements sur certains actifs numériques selon conditions",
-  "Carte Nexo avec modes débit et crédit selon disponibilité et éligibilité",
-  "Crédit adossé aux cryptos pour obtenir de la liquidité sans vendre directement ses actifs",
-  "Programme de fidélité pouvant améliorer certains avantages selon le niveau du compte",
+  "Plateforme crypto centralisée connue, avec une interface simple à utiliser.",
+  "Possibilité de générer des rendements sur certains crypto-actifs, selon les conditions en vigueur.",
+  "Carte Nexo disponible dans certaines zones, avec des fonctionnalités liées aux actifs crypto.",
+  "Service de crédit crypto permettant d’emprunter en utilisant ses actifs comme garantie.",
+  "Application mobile claire pour suivre son portefeuille, ses intérêts et ses opérations.",
 ];
 
 const inconvenients = [
-  "Produits plus complexes qu’un simple achat de Bitcoin ou d’Ethereum",
-  "Rendements variables, soumis à conditions et susceptibles d’évoluer",
-  "Risque de contrepartie : les actifs sont confiés à une plateforme centralisée",
-  "Le crédit crypto peut entraîner un risque de liquidation en cas de baisse du marché",
-  "Certains services peuvent ne pas être disponibles dans tous les pays",
-  "La détention du token NEXO peut influencer certains avantages, ce qui ajoute un risque supplémentaire",
+  "Les rendements ne sont jamais garantis et peuvent changer à tout moment.",
+  "Nexo reste une plateforme centralisée : l’utilisateur dépend de la solidité de l’entreprise.",
+  "Le crédit crypto comporte un risque de liquidation si la valeur des garanties baisse fortement.",
+  "Les conditions, frais, taux et fonctionnalités peuvent varier selon le pays de résidence.",
+  "Ce n’est pas une solution adaptée à quelqu’un qui veut conserver lui-même ses clés privées.",
 ];
 
-const pointsCles = [
-  {
-    label: "Type",
-    value: "Plateforme crypto centralisée",
-  },
-  {
-    label: "Services",
-    value: "Achat, échange, rendement, carte, crédit",
-  },
-  {
-    label: "Profil",
-    value: "Utilisateur crypto intermédiaire",
-  },
-  {
-    label: "Affiliation",
-    value: "Lien de parrainage Afflizen",
-  },
+const pointsSecurite = [
+  "Utiliser un mot de passe unique et solide.",
+  "Activer l’authentification à deux facteurs.",
+  "Ne pas conserver plus de fonds que nécessaire sur une plateforme centralisée.",
+  "Lire les conditions exactes des produits de rendement et de crédit.",
+  "Comprendre le risque de contrepartie avant de déposer des crypto-actifs.",
 ];
 
-const faq = [
+const faqs = [
   {
-    question: "Nexo est-il adapté aux débutants ?",
-    answer:
-      "Nexo peut convenir à un utilisateur qui comprend déjà les bases de la crypto. Pour un débutant complet, la plateforme peut être plus difficile à appréhender qu’un simple exchange, car elle combine rendement, crédit, carte, token de fidélité et plusieurs mécanismes de risque.",
+    question: "Nexo est-il sans risque ?",
+    reponse:
+      "Non. Nexo est une plateforme crypto centralisée. Cela implique un risque de marché, un risque de contrepartie et un risque lié aux conditions de la plateforme. Les rendements ne sont pas garantis.",
   },
   {
-    question: "Peut-on gagner des intérêts avec Nexo ?",
-    answer:
-      "Nexo propose des solutions permettant de générer des intérêts sur certains actifs numériques, selon les conditions en vigueur, le pays, le niveau de fidélité, les actifs déposés et les règles applicables. Ces rendements ne sont pas garantis et peuvent évoluer.",
+    question: "Les rendements Nexo sont-ils garantis ?",
+    reponse:
+      "Non. Les taux peuvent évoluer, être suspendus ou varier selon les actifs, les conditions de marché, le pays de résidence et le niveau de l’utilisateur.",
   },
   {
-    question: "La carte Nexo est-elle intéressante ?",
-    answer:
-      "La carte Nexo peut être intéressante pour les utilisateurs qui veulent dépenser ou emprunter contre leurs actifs crypto. Il faut toutefois bien comprendre la différence entre le mode débit, le mode crédit, les frais éventuels, les limites et les risques liés à l’utilisation de crypto comme collatéral.",
+    question: "Le crédit crypto Nexo est-il risqué ?",
+    reponse:
+      "Oui. Si la valeur des crypto-actifs déposés en garantie baisse fortement, il peut exister un risque de liquidation. Il faut comprendre ce mécanisme avant d’utiliser ce type de service.",
   },
   {
-    question: "Quels sont les risques avec Nexo ?",
-    answer:
-      "Les principaux risques sont la volatilité des cryptos, le risque de contrepartie lié à une plateforme centralisée, les changements de conditions, les risques réglementaires et le risque de liquidation si vous empruntez contre vos actifs crypto.",
-  },
-  {
-    question: "Afflizen touche-t-il une commission avec Nexo ?",
-    answer:
-      "Oui. Cette page contient un lien de parrainage Nexo. Si vous ouvrez un compte via ce lien, Afflizen peut recevoir une commission ou un avantage, sans coût supplémentaire direct pour vous.",
+    question: "Nexo convient-il aux débutants ?",
+    reponse:
+      "Nexo peut être simple à utiliser, mais les produits proposés nécessitent de bien comprendre les risques liés aux cryptomonnaies, aux plateformes centralisées, au rendement et au crédit crypto.",
   },
 ];
 
 export default function NexoPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faq.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  };
-
   return (
-    <main className="min-h-screen bg-white text-slate-950">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="border-b border-white/10 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950">
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <Link
+            href="/"
+            className="mb-8 inline-flex rounded-full border border-white/15 px-4 py-2 text-sm text-slate-200 transition hover:border-emerald-400 hover:text-emerald-300"
+          >
+            ← Retour à l’accueil
+          </Link>
 
-      <section className="border-b border-slate-200 bg-gradient-to-b from-emerald-50 via-white to-white">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700 shadow-sm">
-            Crypto · Rendement · Carte · Crédit crypto
+          <div className="grid gap-10 lg:grid-cols-[1.5fr_0.8fr] lg:items-center">
+            <div>
+              <p className="mb-4 inline-flex rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-300">
+                Plateforme crypto centralisée
+              </p>
+
+              <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white md:text-6xl">
+                Nexo : avis, rendement crypto, carte et crédit crypto
+              </h1>
+
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+                Nexo est une plateforme crypto centralisée qui permet notamment
+                d’acheter, conserver et utiliser certains actifs numériques, avec
+                des fonctionnalités de rendement, de carte et de crédit crypto.
+                Elle peut être intéressante pour certains profils, mais elle ne
+                doit pas être considérée comme une solution sans risque.
+              </p>
+
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <AffiliateButton
+                  href={NEXO_REFERRAL_URL}
+                  platform="nexo"
+                  category="crypto"
+                  location="hero"
+                >
+                  Découvrir Nexo
+                </AffiliateButton>
+
+                <Link
+                  href="/crypto"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-white/30 hover:bg-white/5"
+                >
+                  Voir les plateformes crypto
+                </Link>
+              </div>
+
+              <p className="mt-4 text-sm text-slate-400">
+                Les crypto-actifs sont volatils. Les rendements ne sont pas
+                garantis. Ce contenu est informatif et ne constitue pas un
+                conseil financier.
+              </p>
+            </div>
+
+            <aside className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-2xl shadow-emerald-950/30">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">
+                Résumé Afflizen
+              </p>
+
+              <div className="mt-6 space-y-4 text-sm text-slate-300">
+                <div className="rounded-2xl bg-slate-900/80 p-4">
+                  <p className="font-semibold text-white">Type</p>
+                  <p className="mt-1">Plateforme crypto centralisée</p>
+                </div>
+
+                <div className="rounded-2xl bg-slate-900/80 p-4">
+                  <p className="font-semibold text-white">Intérêt principal</p>
+                  <p className="mt-1">
+                    Rendement crypto, carte, crédit crypto et gestion simple
+                    depuis une application.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl bg-slate-900/80 p-4">
+                  <p className="font-semibold text-white">Point de vigilance</p>
+                  <p className="mt-1">
+                    Risque de contrepartie, rendement non garanti et risque de
+                    liquidation avec le crédit crypto.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6">
+                <AffiliateButton
+                  href={NEXO_REFERRAL_URL}
+                  platform="nexo"
+                  category="crypto"
+                  location="sidebar"
+                >
+                  Accéder à Nexo
+                </AffiliateButton>
+              </div>
+            </aside>
           </div>
-
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 md:text-6xl">
-            Nexo : avis, avantages, risques et fonctionnement
-          </h1>
-
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            Nexo est une plateforme crypto centralisée qui permet d’acheter,
-            échanger, faire travailler, utiliser ou emprunter contre des actifs
-            numériques. Elle peut être intéressante pour les utilisateurs crypto
-            déjà à l’aise, mais elle demande de bien comprendre les risques liés
-            au rendement, au crédit crypto et à la conservation des fonds sur
-            une plateforme tierce.
-          </p>
-
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={NEXO_REFERRAL_URL}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-emerald-700"
-            >
-              Découvrir Nexo
-            </a>
-
-            <a
-              href="#avis"
-              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:bg-slate-50"
-            >
-              Lire l’avis Afflizen
-            </a>
-          </div>
-
-          <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-500">
-            Cette page contient un lien de parrainage. Afflizen peut recevoir
-            une commission ou un avantage si vous ouvrez un compte via ce lien,
-            sans coût supplémentaire direct pour vous.
-          </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-12">
-        <div className="grid gap-4 md:grid-cols-4">
-          {pointsCles.map((point) => (
-            <div
-              key={point.label}
-              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
-            >
-              <p className="text-sm text-slate-500">{point.label}</p>
-              <p className="mt-2 font-semibold text-slate-950">
-                {point.value}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="mx-auto grid max-w-6xl gap-8 px-6 py-14 lg:grid-cols-[1fr_320px]">
+        <div className="space-y-10">
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Résumé rapide de Nexo
+            </h2>
 
-      <section className="mx-auto max-w-6xl px-6 py-8">
-        <div className="grid gap-8 lg:grid-cols-3">
-          <article className="lg:col-span-2">
-            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Notre résumé sur Nexo
-              </h2>
+            <p className="mt-4 leading-8 text-slate-300">
+              Nexo s’adresse aux utilisateurs qui veulent accéder à plusieurs
+              services crypto depuis une seule plateforme : achat, conservation,
+              rendement potentiel, carte et crédit adossé aux crypto-actifs. Son
+              intérêt vient surtout de sa simplicité, mais cette simplicité ne
+              supprime pas les risques.
+            </p>
 
-              <p className="mt-5 leading-8 text-slate-700">
-                Nexo se positionne comme une plateforme crypto tout-en-un. Elle
-                ne sert pas uniquement à acheter des cryptomonnaies : elle ajoute
-                des services de rendement, une carte crypto, un système de
-                crédit adossé aux actifs numériques et un programme de fidélité.
-              </p>
+            <p className="mt-4 leading-8 text-slate-300">
+              Contrairement à un portefeuille non custodial, les fonds placés
+              sur Nexo dépendent de l’infrastructure et de la solidité de la
+              plateforme. Avant d’utiliser ce type de service, il faut vérifier
+              les conditions officielles, les frais, les taux, la disponibilité
+              dans son pays et le niveau de risque accepté.
+            </p>
+          </section>
 
-              <p className="mt-5 leading-8 text-slate-700">
-                C’est précisément ce qui rend Nexo intéressant, mais aussi plus
-                complexe. Un utilisateur qui cherche uniquement à acheter et
-                conserver du Bitcoin ou de l’Ethereum peut préférer une approche
-                plus simple. En revanche, une personne déjà familiarisée avec la
-                crypto peut y trouver une plateforme plus complète.
-              </p>
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Avantages de Nexo
+            </h2>
 
-              <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-5">
-                <p className="font-semibold text-amber-900">
-                  Rappel important
-                </p>
-                <p className="mt-2 text-sm leading-6 text-amber-900">
-                  Les cryptomonnaies sont volatiles. Les rendements ne sont pas
-                  garantis. Les services, taux, frais, avantages, limites et
-                  conditions peuvent changer selon le pays, le niveau du compte,
-                  les actifs utilisés et la réglementation applicable.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 grid gap-8 md:grid-cols-2">
-              <div className="rounded-3xl border border-emerald-200 bg-emerald-50 p-8">
-                <h2 className="text-2xl font-bold text-emerald-950">
-                  Avantages
-                </h2>
-
-                <ul className="mt-5 space-y-3">
-                  {avantages.map((avantage) => (
-                    <li
-                      key={avantage}
-                      className="flex gap-3 text-sm leading-6 text-emerald-950"
-                    >
-                      <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-emerald-600" />
-                      <span>{avantage}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
-                <h2 className="text-2xl font-bold text-slate-950">
-                  Inconvénients
-                </h2>
-
-                <ul className="mt-5 space-y-3">
-                  {inconvenients.map((inconvenient) => (
-                    <li
-                      key={inconvenient}
-                      className="flex gap-3 text-sm leading-6 text-slate-700"
-                    >
-                      <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-slate-400" />
-                      <span>{inconvenient}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Frais, taux et conditions
-              </h2>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                Les frais et conditions Nexo peuvent dépendre de plusieurs
-                éléments : actif utilisé, devise, pays de résidence, méthode de
-                paiement, niveau de fidélité, utilisation de la carte, choix du
-                mode débit ou crédit, et éventuelle utilisation du token NEXO.
-              </p>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                Il faut donc éviter de raisonner uniquement avec les taux ou
-                avantages affichés en marketing. Les mentions comme “jusqu’à”
-                peuvent dépendre de conditions précises. Avant de déposer de
-                l’argent ou des cryptos, il est préférable de vérifier les frais
-                et les taux directement dans l’application ou sur le site
-                officiel.
-              </p>
-
-              <div className="mt-6 rounded-2xl bg-slate-50 p-5">
-                <p className="font-semibold text-slate-950">
-                  Points à vérifier avant d’utiliser Nexo
-                </p>
-
-                <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-700">
-                  <li>• Les frais d’achat, de vente et de conversion crypto.</li>
-                  <li>• Les conditions exactes des rendements crypto.</li>
-                  <li>• Les limites liées à la carte Nexo.</li>
-                  <li>• Les frais ou intérêts en cas d’utilisation du crédit.</li>
-                  <li>• Le risque de liquidation si vous empruntez contre vos cryptos.</li>
-                  <li>• La disponibilité des services dans votre pays.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Rendement crypto : intéressant, mais à comprendre
-              </h2>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                Nexo propose des solutions permettant de générer des intérêts
-                sur certains actifs numériques. Ce type de service peut séduire
-                les personnes qui ne veulent pas laisser leurs cryptos
-                totalement inactives, mais il ne doit pas être confondu avec un
-                livret bancaire garanti.
-              </p>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                En pratique, vous exposez vos actifs à une plateforme
-                centralisée. Le rendement affiché peut varier, dépendre de
-                conditions précises et ne garantit pas la valeur future de vos
-                cryptomonnaies. Un rendement élevé ne compense pas toujours un
-                risque mal compris.
-              </p>
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Carte Nexo et crédit crypto
-              </h2>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                La carte Nexo peut fonctionner avec différentes logiques selon
-                le mode utilisé. Le mode débit revient à dépenser des fonds
-                disponibles, tandis que le mode crédit permet d’accéder à de la
-                liquidité en utilisant des actifs crypto comme garantie.
-              </p>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                Le crédit crypto peut être pratique pour éviter de vendre ses
-                actifs immédiatement, mais il ajoute un risque important : si le
-                marché baisse fortement, votre collatéral peut devenir
-                insuffisant et entraîner des ventes automatiques ou des appels
-                de marge selon les conditions applicables.
-              </p>
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Sécurité et fiabilité
-              </h2>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                Nexo met en avant une approche axée sur la sécurité, la
-                conformité, la garde des actifs et les licences ou
-                enregistrements dans plusieurs juridictions. Cela donne un cadre
-                plus structuré qu’un projet crypto anonyme ou non régulé.
-              </p>
-
-              <p className="mt-5 leading-8 text-slate-700">
-                Cela ne supprime pas tous les risques. Nexo reste une plateforme
-                centralisée : vous ne détenez pas vos actifs de la même manière
-                qu’avec un portefeuille personnel dont vous contrôlez les clés
-                privées. Pour des montants importants, il peut être prudent de
-                ne pas concentrer toute son exposition crypto sur une seule
-                plateforme.
-              </p>
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Pour qui Nexo est-il adapté ?
-              </h2>
-
-              <div className="mt-6 grid gap-5 md:grid-cols-2">
-                <div className="rounded-2xl bg-emerald-50 p-5">
-                  <h3 className="font-semibold text-emerald-950">
-                    Nexo peut convenir si :
-                  </h3>
-
-                  <ul className="mt-3 space-y-2 text-sm leading-6 text-emerald-950">
-                    <li>• Vous connaissez déjà les bases de la crypto.</li>
-                    <li>• Vous voulez centraliser plusieurs services crypto.</li>
-                    <li>• Vous comprenez les risques du rendement crypto.</li>
-                    <li>• Vous savez ce qu’est un crédit adossé à un collatéral.</li>
-                    <li>• Vous acceptez le risque d’une plateforme centralisée.</li>
-                  </ul>
+            <div className="mt-6 grid gap-4">
+              {avantages.map((avantage) => (
+                <div
+                  key={avantage}
+                  className="rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-4 text-slate-300"
+                >
+                  <span className="font-semibold text-emerald-300">✓ </span>
+                  {avantage}
                 </div>
+              ))}
+            </div>
+          </section>
 
-                <div className="rounded-2xl bg-slate-50 p-5">
-                  <h3 className="font-semibold text-slate-950">
-                    Nexo est moins adapté si :
-                  </h3>
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Inconvénients et limites
+            </h2>
 
-                  <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-700">
-                    <li>• Vous débutez totalement dans la crypto.</li>
-                    <li>• Vous cherchez uniquement à acheter et conserver simplement.</li>
-                    <li>• Vous ne comprenez pas le risque de liquidation.</li>
-                    <li>• Vous recherchez un rendement garanti.</li>
-                    <li>• Vous refusez de confier vos actifs à une plateforme tierce.</li>
-                  </ul>
+            <div className="mt-6 grid gap-4">
+              {inconvenients.map((inconvenient) => (
+                <div
+                  key={inconvenient}
+                  className="rounded-2xl border border-amber-400/20 bg-amber-400/5 p-4 text-slate-300"
+                >
+                  <span className="font-semibold text-amber-300">! </span>
+                  {inconvenient}
                 </div>
-              </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Frais, taux et conditions
+            </h2>
+
+            <p className="mt-4 leading-8 text-slate-300">
+              Les frais, taux de rendement, limites, conditions de carte et
+              conditions de crédit peuvent évoluer. Ils peuvent aussi dépendre du
+              pays, du type d’actif, du niveau de fidélité, du montant déposé et
+              des règles internes de la plateforme.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-300">
+              Avant de déposer des fonds ou d’activer un produit, il est
+              préférable de vérifier directement les informations officielles
+              dans l’application ou sur le site de Nexo. Un taux affiché à un
+              instant donné ne doit pas être interprété comme un rendement fixe
+              ou garanti dans le temps.
+            </p>
+          </section>
+
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Rendement crypto : prudence obligatoire
+            </h2>
+
+            <p className="mt-4 leading-8 text-slate-300">
+              Nexo peut proposer des rendements sur certains crypto-actifs, mais
+              ces rendements dépendent des conditions de la plateforme. Ils
+              peuvent changer, être réduits ou ne pas être disponibles pour tous
+              les utilisateurs.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-300">
+              Le rendement crypto implique plusieurs risques : volatilité des
+              actifs, risque de contrepartie, risque réglementaire et risque de
+              modification des conditions. Il ne faut donc pas comparer ce type
+              de rendement à un livret bancaire classique ou à un placement
+              garanti.
+            </p>
+          </section>
+
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Carte Nexo et crédit crypto
+            </h2>
+
+            <p className="mt-4 leading-8 text-slate-300">
+              La carte Nexo peut permettre d’utiliser certains services liés aux
+              crypto-actifs au quotidien, selon les fonctionnalités disponibles
+              dans le pays de l’utilisateur. Les avantages exacts doivent être
+              vérifiés directement auprès de Nexo.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-300">
+              Le crédit crypto permet d’emprunter en utilisant des actifs
+              numériques comme garantie. Ce fonctionnement peut être pratique,
+              mais il comporte un risque important : si la valeur des garanties
+              baisse, la plateforme peut demander un ajout de garantie ou
+              liquider une partie des actifs.
+            </p>
+          </section>
+
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Sécurité : les points à vérifier
+            </h2>
+
+            <div className="mt-6 grid gap-4">
+              {pointsSecurite.map((point) => (
+                <div
+                  key={point}
+                  className="rounded-2xl border border-white/10 bg-slate-900/80 p-4 text-slate-300"
+                >
+                  {point}
+                </div>
+              ))}
             </div>
 
-            <div
-              id="avis"
-              className="mt-8 rounded-3xl border border-slate-200 bg-slate-950 p-8 text-white shadow-sm"
-            >
-              <h2 className="text-3xl font-bold tracking-tight">
-                Avis Afflizen sur Nexo
-              </h2>
+            <p className="mt-6 leading-8 text-slate-300">
+              Même avec de bonnes pratiques de sécurité, une plateforme
+              centralisée reste différente d’un portefeuille personnel avec clés
+              privées. L’utilisateur doit accepter que ses actifs dépendent en
+              partie d’un tiers.
+            </p>
+          </section>
 
-              <p className="mt-5 leading-8 text-slate-200">
-                Nexo est une plateforme crypto intéressante pour les utilisateurs
-                qui veulent aller plus loin qu’un simple achat de cryptomonnaies.
-                Sa force est de regrouper plusieurs usages : achat, échange,
-                rendement, carte et crédit crypto.
-              </p>
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Pour qui Nexo peut être intéressant ?
+            </h2>
 
-              <p className="mt-5 leading-8 text-slate-200">
-                Notre avis est positif pour un profil intermédiaire ou avancé,
-                capable de comprendre les frais, les conditions, les risques de
-                contrepartie et les mécanismes de collatéral. Pour un débutant,
-                Nexo peut être trop riche en fonctionnalités et donc plus facile
-                à mal utiliser.
-              </p>
-
-              <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-5">
-                <p className="font-semibold text-white">
-                  Verdict Afflizen
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-5">
+                <h3 className="font-semibold text-emerald-300">
+                  Profil adapté
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-300">
+                  Utilisateur crypto qui comprend déjà les risques, veut une
+                  interface simple et souhaite explorer des services comme le
+                  rendement, la carte ou le crédit crypto avec prudence.
                 </p>
+              </div>
 
-                <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Une plateforme crypto complète et puissante, à utiliser avec
-                  prudence. Intéressante pour les utilisateurs autonomes, moins
-                  adaptée aux débutants qui cherchent une solution très simple
-                  pour acheter et conserver leurs cryptos.
+              <div className="rounded-2xl border border-red-400/20 bg-red-400/5 p-5">
+                <h3 className="font-semibold text-red-300">
+                  Profil moins adapté
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-300">
+                  Débutant complet, personne qui cherche un placement garanti,
+                  utilisateur qui refuse le risque de contrepartie ou qui préfère
+                  contrôler lui-même ses clés privées.
                 </p>
               </div>
             </div>
+          </section>
 
-            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight">
-                FAQ Nexo
-              </h2>
+          <section className="rounded-3xl border border-emerald-400/20 bg-emerald-400/5 p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Avis Afflizen sur Nexo
+            </h2>
 
-              <div className="mt-6 space-y-5">
-                {faq.map((item) => (
-                  <div
-                    key={item.question}
-                    className="rounded-2xl border border-slate-200 bg-slate-50 p-5"
-                  >
-                    <h3 className="font-semibold text-slate-950">
-                      {item.question}
-                    </h3>
+            <p className="mt-4 leading-8 text-slate-300">
+              Nexo peut être une plateforme intéressante pour un utilisateur
+              crypto déjà conscient des risques, surtout pour centraliser
+              plusieurs fonctionnalités dans une seule interface. Son principal
+              avantage est la simplicité d’utilisation.
+            </p>
 
-                    <p className="mt-2 text-sm leading-6 text-slate-700">
-                      {item.answer}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </article>
+            <p className="mt-4 leading-8 text-slate-300">
+              Notre avis reste prudent : Nexo ne doit pas être présenté comme
+              une solution sans risque. Les rendements ne sont pas garantis, le
+              crédit crypto peut entraîner une liquidation et les fonds déposés
+              sur une plateforme centralisée impliquent un risque de
+              contrepartie.
+            </p>
 
-          <aside className="lg:col-span-1">
-            <div className="sticky top-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-                Plateforme crypto
-              </p>
-
-              <h2 className="mt-3 text-2xl font-bold text-slate-950">
-                Découvrir Nexo
-              </h2>
-
-              <p className="mt-4 text-sm leading-6 text-slate-700">
-                Nexo peut être utile pour acheter, échanger, faire travailler ou
-                utiliser des actifs numériques. Avant de vous inscrire, vérifiez
-                les conditions applicables dans votre pays et n’investissez que
-                ce que vous pouvez vous permettre de perdre.
-              </p>
-
-              <a
+            <div className="mt-8">
+              <AffiliateButton
                 href={NEXO_REFERRAL_URL}
-                target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
-                className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
+                platform="nexo"
+                category="crypto"
+                location="avis"
               >
                 S’inscrire sur Nexo
-              </a>
-
-              <div className="mt-6 rounded-2xl bg-slate-50 p-4">
-                <p className="text-sm font-semibold text-slate-950">
-                  Transparence Afflizen
-                </p>
-
-                <p className="mt-2 text-xs leading-5 text-slate-600">
-                  Ce bouton contient un lien de parrainage. Afflizen peut
-                  recevoir une commission ou un avantage si vous ouvrez un compte
-                  via ce lien. Notre avis reste indépendant et informatif.
-                </p>
-              </div>
-
-              <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-4">
-                <p className="text-sm font-semibold text-amber-900">
-                  Risque crypto
-                </p>
-
-                <p className="mt-2 text-xs leading-5 text-amber-900">
-                  Les cryptomonnaies sont volatiles. Les rendements ne sont pas
-                  garantis. Le crédit crypto peut entraîner un risque de
-                  liquidation.
-                </p>
-              </div>
+              </AffiliateButton>
             </div>
-          </aside>
+
+            <p className="mt-4 text-sm text-slate-400">
+              Cette page contient un lien de parrainage ou d’affiliation. Cela
+              peut permettre à Afflizen de recevoir une rémunération, sans coût
+              supplémentaire pour vous.
+            </p>
+          </section>
+
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              FAQ sur Nexo
+            </h2>
+
+            <div className="mt-6 space-y-4">
+              {faqs.map((faq) => (
+                <details
+                  key={faq.question}
+                  className="rounded-2xl border border-white/10 bg-slate-900/80 p-5"
+                >
+                  <summary className="cursor-pointer font-semibold text-white">
+                    {faq.question}
+                  </summary>
+                  <p className="mt-4 leading-7 text-slate-300">
+                    {faq.reponse}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-white">
+              Mention importante
+            </h2>
+
+            <p className="mt-4 leading-8 text-slate-300">
+              Afflizen propose du contenu informatif sur des plateformes,
+              services financiers, crypto, cashback et outils en ligne. Ce
+              contenu ne constitue pas un conseil en investissement, un conseil
+              fiscal, un conseil juridique ou une recommandation personnalisée.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-300">
+              Avant d’utiliser Nexo ou toute autre plateforme crypto, vérifiez
+              les conditions officielles, la disponibilité dans votre pays, les
+              frais applicables et les risques liés aux crypto-actifs.
+            </p>
+          </section>
         </div>
+
+        <aside className="h-fit rounded-3xl border border-white/10 bg-slate-900/80 p-6 lg:sticky lg:top-6">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">
+            Nexo
+          </p>
+
+          <h2 className="mt-4 text-2xl font-bold text-white">
+            Plateforme crypto avec rendement, carte et crédit
+          </h2>
+
+          <p className="mt-4 text-sm leading-7 text-slate-300">
+            À utiliser avec prudence : rendement non garanti, risque de
+            contrepartie et risque de liquidation avec le crédit crypto.
+          </p>
+
+          <div className="mt-6">
+            <AffiliateButton
+              href={NEXO_REFERRAL_URL}
+              platform="nexo"
+              category="crypto"
+              location="sidebar"
+            >
+              Découvrir Nexo
+            </AffiliateButton>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-amber-400/20 bg-amber-400/5 p-4 text-sm leading-7 text-amber-100">
+            Les crypto-actifs sont volatils. Ne déposez pas de fonds sans
+            comprendre les risques de la plateforme et des produits utilisés.
+          </div>
+        </aside>
       </section>
     </main>
   );
