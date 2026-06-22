@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AffiliateButton from "../../../components/AffiliateButton";
 
 const EBUYCLUB_AFFILIATE_LINK =
   "https://www.ebuyclub.com/inscription?parrain=docfox22";
@@ -87,14 +88,15 @@ export default function EbuyclubPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
+            <AffiliateButton
               href={EBUYCLUB_AFFILIATE_LINK}
-              target="_blank"
-              rel="sponsored nofollow noopener noreferrer"
+              platform="ebuyclub"
+              category="cashback"
+              location="hero"
               className="rounded-full bg-emerald-600 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-700"
             >
               S’inscrire sur eBuyClub
-            </a>
+            </AffiliateButton>
 
             <a
               href="/cashback"
@@ -223,14 +225,15 @@ export default function EbuyclubPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
+            <AffiliateButton
               href={EBUYCLUB_AFFILIATE_LINK}
-              target="_blank"
-              rel="sponsored nofollow noopener noreferrer"
+              platform="ebuyclub"
+              category="cashback"
+              location="avis"
               className="rounded-full bg-emerald-600 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-700"
             >
               Découvrir eBuyClub
-            </a>
+            </AffiliateButton>
 
             <a
               href="/cashback/igraal"
