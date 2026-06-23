@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AffiliateButton from "../../../components/AffiliateButton";
 
 const KRAKEN_REFERRAL_URL = "https://invite.kraken.com/JDNW/eos2efdv";
+
+const primaryButtonClassName =
+  "inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-emerald-700";
+
+const secondaryButtonClassName =
+  "inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:bg-slate-50";
+
+const fullButtonClassName =
+  "inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700";
 
 export const metadata: Metadata = {
   title: "Kraken avis : frais, sécurité, avantages et inconvénients | Afflizen",
@@ -8,6 +19,14 @@ export const metadata: Metadata = {
     "Notre avis sur Kraken : frais, avantages, inconvénients, sécurité, Kraken Pro, crypto disponibles, fiabilité et risques à connaître.",
   alternates: {
     canonical: "https://afflizen.com/crypto/kraken",
+  },
+  openGraph: {
+    title: "Kraken avis : frais, sécurité, avantages et inconvénients",
+    description:
+      "Avis Afflizen sur Kraken : frais, sécurité, Kraken Pro, avantages, limites et risques à connaître avant inscription.",
+    url: "https://afflizen.com/crypto/kraken",
+    siteName: "Afflizen",
+    type: "article",
   },
 };
 
@@ -98,12 +117,19 @@ export default function KrakenPage() {
       />
 
       <section className="border-b border-slate-200 bg-gradient-to-b from-emerald-50 via-white to-white">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700 shadow-sm">
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <Link
+            href="/"
+            className="mb-8 inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-emerald-300 hover:text-emerald-700"
+          >
+            ← Retour à l’accueil
+          </Link>
+
+          <div className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700 shadow-sm">
             Crypto · Exchange · Kraken Pro
           </div>
 
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 md:text-6xl">
+          <h1 className="mt-6 max-w-4xl text-4xl font-bold tracking-tight text-slate-950 md:text-6xl">
             Kraken : avis, frais, sécurité et fonctionnement
           </h1>
 
@@ -115,22 +141,24 @@ export default function KrakenPage() {
             être vérifiés avant chaque utilisation.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <AffiliateButton
               href={KRAKEN_REFERRAL_URL}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-emerald-700"
+              platform="kraken"
+              category="crypto"
+              location="hero"
+              className={primaryButtonClassName}
             >
               Découvrir Kraken
-            </a>
+            </AffiliateButton>
 
-            <a
-              href="#avis"
-              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:bg-slate-50"
-            >
+            <a href="#avis" className={secondaryButtonClassName}>
               Lire l’avis Afflizen
             </a>
+
+            <Link href="/crypto" className={secondaryButtonClassName}>
+              Voir les autres plateformes crypto
+            </Link>
           </div>
 
           <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-500">
@@ -264,7 +292,10 @@ export default function KrakenPage() {
                   <li>• Les frais maker/taker sur Kraken Pro.</li>
                   <li>• Les frais de retrait crypto ou fiat.</li>
                   <li>• La disponibilité des actifs dans votre pays.</li>
-                  <li>• Les conditions de staking ou de récompenses, si disponibles.</li>
+                  <li>
+                    • Les conditions de staking ou de récompenses, si
+                    disponibles.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -321,7 +352,9 @@ export default function KrakenPage() {
                   <li>• Utiliser un mot de passe unique et solide.</li>
                   <li>• Vérifier l’adresse du site avant de se connecter.</li>
                   <li>• Se méfier des faux emails et faux supports clients.</li>
-                  <li>• Ne pas laisser de gros montants inutilisés sur un exchange.</li>
+                  <li>
+                    • Ne pas laisser de gros montants inutilisés sur un exchange.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -342,7 +375,10 @@ export default function KrakenPage() {
                     <li>• Vous cherchez une alternative à Binance ou Coinbase.</li>
                     <li>• Vous voulez acheter des cryptos de manière progressive.</li>
                     <li>• Vous voulez accéder à Kraken Pro plus tard.</li>
-                    <li>• Vous accordez de l’importance à la sécurité et à la transparence.</li>
+                    <li>
+                      • Vous accordez de l’importance à la sécurité et à la
+                      transparence.
+                    </li>
                   </ul>
                 </div>
 
@@ -356,7 +392,10 @@ export default function KrakenPage() {
                     <li>• Vous ne voulez jamais comparer les frais.</li>
                     <li>• Vous ne comprenez pas encore les risques crypto.</li>
                     <li>• Vous voulez un rendement garanti.</li>
-                    <li>• Vous refusez de confier temporairement vos actifs à une plateforme centralisée.</li>
+                    <li>
+                      • Vous refusez de confier temporairement vos actifs à une
+                      plateforme centralisée.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -364,13 +403,13 @@ export default function KrakenPage() {
 
             <div
               id="avis"
-              className="mt-8 rounded-3xl border border-slate-200 bg-slate-950 p-8 text-white shadow-sm"
+              className="mt-8 rounded-3xl border border-emerald-200 bg-emerald-50 p-8 shadow-sm"
             >
-              <h2 className="text-3xl font-bold tracking-tight">
+              <h2 className="text-3xl font-bold tracking-tight text-slate-950">
                 Avis Afflizen sur Kraken
               </h2>
 
-              <p className="mt-5 leading-8 text-slate-200">
+              <p className="mt-5 leading-8 text-slate-700">
                 Kraken est une plateforme crypto sérieuse, particulièrement
                 intéressante pour les utilisateurs qui veulent une alternative
                 reconnue aux grands exchanges les plus médiatisés. Son principal
@@ -379,7 +418,7 @@ export default function KrakenPage() {
                 Kraken Pro.
               </p>
 
-              <p className="mt-5 leading-8 text-slate-200">
+              <p className="mt-5 leading-8 text-slate-700">
                 Notre avis est positif pour un investisseur crypto prudent qui
                 veut acheter progressivement, sécuriser son compte et comprendre
                 les frais avant d’agir. Pour un débutant complet, il faut éviter
@@ -387,17 +426,33 @@ export default function KrakenPage() {
                 plus risqués.
               </p>
 
-              <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-5">
-                <p className="font-semibold text-white">
+              <div className="mt-6 rounded-2xl border border-emerald-200 bg-white p-5">
+                <p className="font-semibold text-slate-950">
                   Verdict Afflizen
                 </p>
 
-                <p className="mt-2 text-sm leading-6 text-slate-300">
+                <p className="mt-2 text-sm leading-6 text-slate-700">
                   Kraken est une bonne plateforme crypto à étudier pour acheter,
                   vendre et gérer des actifs numériques avec un cadre sérieux.
                   Elle reste toutefois à utiliser avec prudence, en vérifiant
                   les frais et en gardant en tête le risque de perte en capital.
                 </p>
+              </div>
+
+              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+                <AffiliateButton
+                  href={KRAKEN_REFERRAL_URL}
+                  platform="kraken"
+                  category="crypto"
+                  location="avis"
+                  className={primaryButtonClassName}
+                >
+                  S’inscrire sur Kraken
+                </AffiliateButton>
+
+                <Link href="/crypto" className={secondaryButtonClassName}>
+                  Voir les autres plateformes crypto
+                </Link>
               </div>
             </div>
 
@@ -441,14 +496,24 @@ export default function KrakenPage() {
                 version plus avancée via Kraken Pro.
               </p>
 
-              <a
-                href={KRAKEN_REFERRAL_URL}
-                target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
-                className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
+              <div className="mt-6">
+                <AffiliateButton
+                  href={KRAKEN_REFERRAL_URL}
+                  platform="kraken"
+                  category="crypto"
+                  location="sidebar"
+                  className={fullButtonClassName}
+                >
+                  S’inscrire sur Kraken
+                </AffiliateButton>
+              </div>
+
+              <Link
+                href="/crypto"
+                className="mt-4 inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
               >
-                S’inscrire sur Kraken
-              </a>
+                Voir les autres plateformes crypto
+              </Link>
 
               <div className="mt-6 rounded-2xl bg-slate-50 p-4">
                 <p className="text-sm font-semibold text-slate-950">
