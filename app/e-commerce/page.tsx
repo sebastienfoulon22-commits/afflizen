@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "E-commerce : codes parrainage, bons plans et achats malins",
   description:
-    "Découvrez les plateformes e-commerce sélectionnées par Afflizen : reconditionné, bons plans, codes promo, parrainages et conseils avant d’acheter.",
+    "Découvrez les plateformes e-commerce sélectionnées par Afflizen : reconditionné, codes promo, parrainages, bons plans et conseils avant d’acheter.",
   alternates: {
     canonical: "https://afflizen.com/e-commerce",
   },
@@ -16,28 +16,29 @@ const availablePlatforms = [
     category: "Reconditionné",
     description:
       "Acheter des smartphones, ordinateurs, tablettes et appareils tech reconditionnés avec un code parrainage à utiliser selon les conditions en vigueur.",
-    badge: "Disponible",
+    points: [
+      "Produits tech reconditionnés",
+      "Code parrainage disponible",
+      "Prix, état et garantie à vérifier",
+    ],
   },
 ];
 
-const upcomingPlatforms = [
+const categoryBlocks = [
   {
-    name: "Dealabs",
-    category: "Bons plans communautaires",
+    title: "Reconditionné",
     description:
-      "Repérer les promotions partagées par la communauté et comparer les offres avant d’acheter.",
+      "Des plateformes pour acheter des appareils remis en état : smartphones, ordinateurs, tablettes, consoles ou accessoires tech.",
   },
   {
-    name: "Vavabid",
-    category: "Enchères & loisirs",
+    title: "Codes et parrainages",
     description:
-      "Analyser les offres, les frais et les conditions avant de participer à des enchères ou bons plans loisirs.",
+      "Des pages qui regroupent les codes utiles, les conditions à vérifier et les avantages potentiels avant de commander.",
   },
   {
-    name: "Coosub",
-    category: "Abonnements partagés",
+    title: "Bons plans e-commerce",
     description:
-      "Comparer les solutions de partage d’abonnements avec prudence sur les conditions, les limites et la sécurité.",
+      "Des conseils pour repérer les offres intéressantes sans acheter trop vite ni se laisser piéger par une fausse promotion.",
   },
 ];
 
@@ -64,14 +65,15 @@ export default function EcommercePage() {
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             La catégorie e-commerce d’Afflizen regroupe les plateformes utiles
-            pour acheter moins cher, utiliser des codes de parrainage, repérer
-            des bons plans ou comparer des offres avant de commander.
+            pour acheter en ligne de manière plus intelligente : reconditionné,
+            codes parrainage, bons plans, avantages clients et conseils avant
+            commande.
           </p>
 
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-            L’objectif n’est pas de pousser à l’achat, mais d’aider à vérifier
-            les conditions, les frais, les garanties, les retours et le vrai prix
-            final avant de passer commande.
+            L’objectif est simple : t’aider à comparer les prix, vérifier les
+            conditions, éviter les mauvaises surprises et utiliser les codes
+            disponibles quand ils sont réellement intéressants.
           </p>
         </div>
       </section>
@@ -81,13 +83,12 @@ export default function EcommercePage() {
           <div className="space-y-8">
             <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
               <h2 className="text-3xl font-bold text-slate-950">
-                Plateformes disponibles
+                Plateformes e-commerce sélectionnées
               </h2>
 
               <p className="mt-4 text-base leading-7 text-slate-600">
-                Les pages ci-dessous sont déjà disponibles sur Afflizen avec un
-                avis détaillé, les avantages, les limites, les conditions à
-                vérifier et les éventuels codes de parrainage.
+                Chaque page présente les avantages, les limites, les conditions à
+                vérifier et les éventuels codes de parrainage ou liens utiles.
               </p>
 
               <div className="mt-6 grid gap-5 md:grid-cols-2">
@@ -97,14 +98,9 @@ export default function EcommercePage() {
                     href={platform.href}
                     className="group rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:border-emerald-300 hover:bg-white hover:shadow-md"
                   >
-                    <div className="flex items-center justify-between gap-4">
-                      <p className="text-sm font-semibold text-emerald-700">
-                        {platform.category}
-                      </p>
-                      <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800">
-                        {platform.badge}
-                      </span>
-                    </div>
+                    <p className="text-sm font-semibold text-emerald-700">
+                      {platform.category}
+                    </p>
 
                     <h3 className="mt-4 text-2xl font-bold text-slate-950 group-hover:text-emerald-700">
                       {platform.name}
@@ -113,6 +109,18 @@ export default function EcommercePage() {
                     <p className="mt-3 text-sm leading-6 text-slate-600">
                       {platform.description}
                     </p>
+
+                    <ul className="mt-5 space-y-2">
+                      {platform.points.map((point) => (
+                        <li
+                          key={point}
+                          className="flex gap-2 text-sm leading-6 text-slate-700"
+                        >
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
 
                     <span className="mt-5 inline-flex text-sm font-bold text-emerald-700">
                       Voir la page →
@@ -124,35 +132,27 @@ export default function EcommercePage() {
 
             <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
               <h2 className="text-3xl font-bold text-slate-950">
-                Plateformes à ajouter plus tard
+                Ce que vous trouverez dans cette catégorie
               </h2>
 
               <p className="mt-4 text-base leading-7 text-slate-600">
-                Ces plateformes pourront être ajoutées progressivement, après
-                vérification des liens, codes, programmes de parrainage ou
-                possibilités d’affiliation.
+                Cette catégorie sert à regrouper les pages liées aux achats en
+                ligne, aux codes disponibles et aux plateformes qui peuvent aider
+                à mieux acheter sans se précipiter.
               </p>
 
               <div className="mt-6 grid gap-5 md:grid-cols-3">
-                {upcomingPlatforms.map((platform) => (
+                {categoryBlocks.map((block) => (
                   <article
-                    key={platform.name}
+                    key={block.title}
                     className="rounded-3xl border border-slate-200 bg-slate-50 p-5"
                   >
-                    <p className="text-sm font-semibold text-emerald-700">
-                      {platform.category}
-                    </p>
-
-                    <h3 className="mt-3 text-xl font-bold text-slate-950">
-                      {platform.name}
+                    <h3 className="text-xl font-bold text-slate-950">
+                      {block.title}
                     </h3>
 
                     <p className="mt-3 text-sm leading-6 text-slate-600">
-                      {platform.description}
-                    </p>
-
-                    <p className="mt-4 text-xs font-bold uppercase tracking-wide text-slate-400">
-                      À venir
+                      {block.description}
                     </p>
                   </article>
                 ))}
@@ -163,6 +163,11 @@ export default function EcommercePage() {
               <h2 className="text-3xl font-bold text-slate-950">
                 Conseils avant d’acheter en ligne
               </h2>
+
+              <p className="mt-4 text-base leading-7 text-slate-600">
+                Un bon plan n’est intéressant que si le prix final, la garantie,
+                les conditions de retour et la fiabilité du vendeur sont corrects.
+              </p>
 
               <ul className="mt-6 space-y-3">
                 {advice.map((item) => (
@@ -189,19 +194,31 @@ export default function EcommercePage() {
 
             <p className="mt-4 text-sm leading-6 text-slate-600">
               Cette catégorie regroupe les plateformes d’achat en ligne, de
-              reconditionné, de bons plans et de codes parrainage.
+              reconditionné, de codes parrainage et de bons plans utiles.
             </p>
 
             <div className="mt-6 rounded-2xl bg-slate-50 p-5">
               <p className="text-sm font-semibold text-slate-500">
-                Première page disponible
+                Page disponible
               </p>
+
               <Link
                 href="/e-commerce/back-market"
                 className="mt-3 inline-flex font-bold text-emerald-700 hover:text-emerald-800"
               >
                 Back Market →
               </Link>
+            </div>
+
+            <div className="mt-5 rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
+              <p className="text-sm font-bold text-emerald-800">
+                À retenir
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-emerald-950">
+                Avant d’utiliser un code ou de commander, vérifie toujours le prix
+                final, les conditions, les retours et la garantie.
+              </p>
             </div>
           </aside>
         </div>
