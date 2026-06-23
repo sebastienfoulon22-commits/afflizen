@@ -27,7 +27,7 @@ const benefits = [
   {
     title: "Un code de parrainage simple à utiliser",
     description:
-      "Le code permet généralement de bénéficier d’un avantage sur une première commande éligible, sous réserve des conditions Back Market.",
+      "Le code permet généralement de bénéficier d’un avantage sur une commande éligible, sous réserve des conditions Back Market.",
   },
   {
     title: "Une alternative plus durable",
@@ -46,22 +46,21 @@ const warnings = [
 
 const steps = [
   {
-    title: "1. Ouvrir Back Market",
+    title: "1. Ouvre Back Market",
     description:
       "Clique sur le bouton Afflizen pour accéder au site officiel Back Market.",
   },
   {
-    title: "2. Choisir un produit éligible",
+    title: "2. Choisis un produit éligible",
     description:
       "Compare le modèle, l’état, le prix, la garantie, le vendeur et les délais de livraison.",
   },
   {
-    title: "3. Entrer le code",
-    description:
-      `Au moment de la commande, utilise le code ${BACK_MARKET_CODE} si l’espace code promo ou parrainage est disponible.`,
+    title: "3. Utilise le code",
+    description: `Au moment de la commande, utilise le code ${BACK_MARKET_CODE} si l’espace code promo ou parrainage est disponible.`,
   },
   {
-    title: "4. Vérifier la réduction",
+    title: "4. Vérifie l’avantage appliqué",
     description:
       "Avant de payer, vérifie que l’avantage est bien appliqué et que les conditions sont respectées.",
   },
@@ -75,12 +74,12 @@ const faq = [
   },
   {
     question: "Quel est le code parrainage Back Market Afflizen ?",
-    answer: `Le code à tester est ${BACK_MARKET_CODE}. Il peut donner accès à un avantage de parrainage selon les conditions en vigueur au moment de la commande.`,
+    answer: `Le code parrainage Back Market Afflizen est ${BACK_MARKET_CODE}. Il peut permettre de bénéficier d’un avantage de parrainage, sous réserve des conditions en vigueur.`,
   },
   {
     question: "Le code Back Market fonctionne-t-il toujours ?",
     answer:
-      "Pas forcément. Les codes de parrainage, montants minimums, limites d’utilisation et offres promotionnelles peuvent changer. Il faut toujours vérifier l’application de la réduction avant le paiement.",
+      "Les codes de parrainage, montants minimums, limites d’utilisation et offres promotionnelles peuvent évoluer. Il faut toujours vérifier que l’avantage est bien appliqué avant le paiement.",
   },
   {
     question: "Back Market est-il toujours moins cher que le neuf ?",
@@ -113,19 +112,12 @@ export default function BackMarketPage() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-10 lg:flex-row lg:items-center lg:justify-between lg:py-14">
           <div className="max-w-3xl">
-            <div className="mb-6 flex flex-wrap gap-3">
+            <div className="mb-6">
               <Link
-                href="/"
-                className="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-emerald-300 hover:text-emerald-700"
-              >
-                ← Retour à l’accueil
-              </Link>
-
-              <Link
-                href="/bons-plans"
+                href="/e-commerce"
                 className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-100"
               >
-                Voir les bons plans
+                Voir la catégorie e-commerce
               </Link>
             </div>
 
@@ -175,18 +167,21 @@ export default function BackMarketPage() {
 
           <aside className="rounded-3xl border border-slate-200 bg-slate-950 p-6 text-white shadow-xl lg:w-80">
             <p className="text-sm font-semibold text-emerald-300">
-              Code à tester
+              Utilise le code
             </p>
+
             <div className="mt-4 rounded-2xl border border-white/10 bg-white/10 p-5">
-              <p className="text-sm text-slate-300">Code Back Market</p>
+              <p className="text-sm text-slate-300">
+                Code parrainage Back Market
+              </p>
               <p className="mt-2 break-all text-2xl font-black tracking-wide text-white">
                 {BACK_MARKET_CODE}
               </p>
             </div>
 
             <p className="mt-4 text-sm leading-6 text-slate-300">
-              Le code peut donner accès à une réduction de parrainage selon les
-              conditions en vigueur. Vérifie son application avant le paiement.
+              Utilise le code pour bénéficier de l’offre de parrainage Back
+              Market, sous réserve des conditions en vigueur.
             </p>
 
             <AffiliateButton
@@ -213,29 +208,29 @@ export default function BackMarketPage() {
             </p>
 
             <h2 className="mt-3 text-3xl font-bold text-slate-950">
-              Code Afflizen à essayer : {BACK_MARKET_CODE}
+              Utilise le code {BACK_MARKET_CODE}
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
-              Le message de parrainage peut se résumer ainsi : tu peux essayer
-              le code <strong>{BACK_MARKET_CODE}</strong> sur Back Market pour
-              bénéficier d’un avantage de parrainage, généralement lié à une
-              première commande éligible. Les conditions exactes peuvent évoluer :
-              montant minimum, pays, type de produit, limite d’utilisation ou
-              durée de validité.
+              Utilise le code <strong>{BACK_MARKET_CODE}</strong> pour
+              bénéficier de l’offre de parrainage Back Market, sous réserve des
+              conditions en vigueur au moment de la commande. Les conditions
+              peuvent concerner le montant minimum, le pays, le type de produit,
+              la limite d’utilisation ou la durée de validité.
             </p>
 
             <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
               <p className="text-sm font-semibold text-emerald-800">
                 Code à copier
               </p>
+
               <p className="mt-2 break-all rounded-xl bg-white px-4 py-3 text-2xl font-black tracking-wide text-slate-950 shadow-sm">
                 {BACK_MARKET_CODE}
               </p>
+
               <p className="mt-3 text-sm leading-6 text-emerald-900">
-                Conseil : copie le code, ouvre Back Market, ajoute ton produit
-                au panier puis vérifie que l’avantage est bien appliqué avant de
-                payer.
+                Copie le code, ouvre Back Market, ajoute ton produit au panier
+                puis vérifie que l’avantage est bien appliqué avant de payer.
               </p>
             </div>
 
@@ -247,7 +242,7 @@ export default function BackMarketPage() {
                 location="code"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-bold text-white shadow-sm transition hover:bg-emerald-700"
               >
-                Aller sur Back Market avec le code
+                Utiliser le code sur Back Market
               </AffiliateButton>
             </div>
           </section>
@@ -347,7 +342,7 @@ export default function BackMarketPage() {
                 <ul className="mt-4 space-y-3 text-sm leading-6 text-emerald-950">
                   <li>• Large choix de produits reconditionnés.</li>
                   <li>• Prix parfois très compétitifs selon les modèles.</li>
-                  <li>• Code de parrainage simple à tester.</li>
+                  <li>• Code de parrainage simple à utiliser.</li>
                   <li>• Possibilité de comparer plusieurs états de produits.</li>
                   <li>• Alternative intéressante au neuf pour certains achats.</li>
                 </ul>
@@ -376,8 +371,8 @@ export default function BackMarketPage() {
             <p className="mt-4 text-base leading-7 text-slate-600">
               Back Market est une plateforme pertinente si tu veux acheter un
               appareil reconditionné tout en essayant de réduire ton budget. Le
-              code <strong>{BACK_MARKET_CODE}</strong> peut être intéressant à
-              tester, surtout si tu passes une première commande éligible.
+              code <strong>{BACK_MARKET_CODE}</strong> peut être intéressant si
+              tu passes une commande éligible.
             </p>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
@@ -395,7 +390,7 @@ export default function BackMarketPage() {
                 location="avis"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-bold text-white shadow-sm transition hover:bg-emerald-700"
               >
-                Tester le code sur Back Market
+                Utiliser le code sur Back Market
               </AffiliateButton>
             </div>
           </section>
