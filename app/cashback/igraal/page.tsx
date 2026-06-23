@@ -1,19 +1,45 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import AffiliateButton from "../../../components/AffiliateButton";
 
-const IGRAAL_AFFILIATE_LINK =
+const IGRAAL_REFERRAL_URL =
   "https://fr.igraal.com/parrainage?parrain=AG_5cec013713c0f&utm_medium=raf&utm_source=refer_friend";
 
-export const metadata = {
+const primaryButtonClassName =
+  "inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700";
+
+const darkButtonClassName =
+  "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
+
+export const metadata: Metadata = {
   title: "iGraal avis 2026 : cashback, codes promo, paiement et parrainage",
   description:
     "Notre avis sur iGraal en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, extension, FAQ et lien de parrainage.",
+  alternates: {
+    canonical: "https://afflizen.com/cashback/igraal",
+  },
+  openGraph: {
+    title: "iGraal avis 2026 : cashback, codes promo, paiement et parrainage",
+    description:
+      "Avis Afflizen sur iGraal : cashback, codes promo, seuil de paiement, extension navigateur, avantages, limites et parrainage.",
+    url: "https://afflizen.com/cashback/igraal",
+    siteName: "Afflizen",
+    type: "article",
+  },
 };
 
 export default function IGraalPage() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
       <section className="border-b border-slate-200 bg-gradient-to-br from-white via-emerald-50 to-white">
-        <div className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <Link
+            href="/"
+            className="mb-8 inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-emerald-300 hover:text-emerald-700"
+          >
+            ← Retour à l’accueil
+          </Link>
+
           <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700">
             Cashback
           </div>
@@ -31,14 +57,15 @@ export default function IGraalPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={IGRAAL_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
+            <AffiliateButton
+              href={IGRAAL_REFERRAL_URL}
+              platform="igraal"
+              category="cashback"
+              location="hero"
+              className={primaryButtonClassName}
             >
               S’inscrire sur iGraal
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/cashback"
@@ -128,10 +155,18 @@ export default function IGraalPage() {
               <li>• Plateforme simple à comprendre.</li>
               <li>• Cashback sur de nombreuses enseignes partenaires.</li>
               <li>• Codes promo disponibles directement depuis iGraal.</li>
-              <li>• Extension navigateur pratique pour ne pas oublier d’activer le cashback.</li>
+              <li>
+                • Extension navigateur pratique pour ne pas oublier d’activer le
+                cashback.
+              </li>
               <li>• Application mobile utile pour suivre sa cagnotte.</li>
-              <li>• Possibilité de retirer ses gains selon les conditions en vigueur.</li>
-              <li>• Parrainage intéressant si vous partagez iGraal autour de vous.</li>
+              <li>
+                • Possibilité de retirer ses gains selon les conditions en
+                vigueur.
+              </li>
+              <li>
+                • Parrainage intéressant si vous partagez iGraal autour de vous.
+              </li>
               <li>• Bon complément pour optimiser des achats déjà prévus.</li>
             </ul>
           </article>
@@ -145,9 +180,14 @@ export default function IGraalPage() {
               <li>• Tous les marchands ne sont pas disponibles.</li>
               <li>• Certains achats ou catégories peuvent être exclus.</li>
               <li>• Les taux changent régulièrement.</li>
-              <li>• Le cashback peut être refusé si les conditions ne sont pas respectées.</li>
+              <li>
+                • Le cashback peut être refusé si les conditions ne sont pas
+                respectées.
+              </li>
               <li>• Il ne faut pas acheter uniquement pour obtenir du cashback.</li>
-              <li>• Les bonus de parrainage peuvent évoluer selon les campagnes.</li>
+              <li>
+                • Les bonus de parrainage peuvent évoluer selon les campagnes.
+              </li>
             </ul>
           </article>
         </div>
@@ -217,9 +257,9 @@ export default function IGraalPage() {
 
           <p className="mt-5 leading-8 text-slate-700">
             Une fois votre cashback validé et votre cagnotte suffisante, iGraal
-            permet généralement de demander un paiement selon les moyens
-            proposés : virement bancaire, PayPal ou cartes cadeaux selon les
-            conditions disponibles dans votre espace.
+            permet généralement de demander un paiement selon les moyens proposés
+            : virement bancaire, PayPal ou cartes cadeaux selon les conditions
+            disponibles dans votre espace.
           </p>
 
           <p className="mt-5 leading-8 text-slate-700">
@@ -229,9 +269,7 @@ export default function IGraalPage() {
           </p>
 
           <div className="mt-6 rounded-2xl bg-emerald-50 p-6">
-            <h3 className="font-semibold text-slate-950">
-              Notre conseil
-            </h3>
+            <h3 className="font-semibold text-slate-950">Notre conseil</h3>
             <p className="mt-2 text-slate-700">
               Ne comptez pas sur le cashback comme argent immédiat. Les délais
               de validation peuvent être longs. Considérez plutôt iGraal comme
@@ -279,9 +317,7 @@ export default function IGraalPage() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl bg-emerald-50 p-6">
-              <h3 className="font-bold text-slate-950">
-                Acheteurs en ligne
-              </h3>
+              <h3 className="font-bold text-slate-950">Acheteurs en ligne</h3>
               <p className="mt-3 text-slate-700">
                 Pour ceux qui commandent régulièrement sur internet et veulent
                 récupérer une partie de leurs achats.
@@ -328,15 +364,23 @@ export default function IGraalPage() {
             cette logique, c’est un très bon outil d’optimisation.
           </p>
 
-          <div className="mt-8">
-            <a
-              href={IGRAAL_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <AffiliateButton
+              href={IGRAAL_REFERRAL_URL}
+              platform="igraal"
+              category="cashback"
+              location="avis"
+              className={darkButtonClassName}
             >
               Accéder à iGraal
-            </a>
+            </AffiliateButton>
+
+            <Link
+              href="/cashback"
+              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-4 font-semibold text-slate-900 transition hover:border-emerald-500 hover:text-emerald-700"
+            >
+              Voir les autres plateformes cashback
+            </Link>
           </div>
         </div>
       </section>
@@ -407,8 +451,8 @@ export default function IGraalPage() {
             recevoir une commission, un bonus ou un avantage si vous créez un
             compte ou utilisez un service via notre lien, sans coût
             supplémentaire pour vous. Cette rémunération aide à financer le site
-            et n’influence pas notre volonté de présenter les avantages comme
-            les limites de chaque plateforme.
+            et n’influence pas notre volonté de présenter les avantages comme les
+            limites de chaque plateforme.
           </p>
         </div>
       </section>
