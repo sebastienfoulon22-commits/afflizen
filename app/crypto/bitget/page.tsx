@@ -1,19 +1,45 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import AffiliateButton from "../../../components/AffiliateButton";
 
-const BITGET_AFFILIATE_LINK =
+const BITGET_REFERRAL_URL =
   "https://www.bitgetapp.com/fr/referral/register?clacCode=2YMT39ZH&from=%2Ffr%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter";
 
-export const metadata = {
+const primaryButtonClassName =
+  "inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700";
+
+const darkButtonClassName =
+  "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
+
+export const metadata: Metadata = {
   title: "Bitget avis 2026 : frais, sécurité, copy trading et inconvénients",
   description:
     "Notre avis sur Bitget en 2026 : avantages, inconvénients, frais, sécurité, copy trading, disponibilité, FAQ et lien d’inscription.",
+  alternates: {
+    canonical: "https://afflizen.com/crypto/bitget",
+  },
+  openGraph: {
+    title: "Bitget avis 2026 : frais, sécurité, copy trading et inconvénients",
+    description:
+      "Avis Afflizen sur Bitget : frais, sécurité, copy trading, avantages, limites, disponibilité et risques à connaître.",
+    url: "https://afflizen.com/crypto/bitget",
+    siteName: "Afflizen",
+    type: "article",
+  },
 };
 
 export default function BitgetPage() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
       <section className="border-b border-slate-200 bg-gradient-to-br from-white via-emerald-50 to-white">
-        <div className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <Link
+            href="/"
+            className="mb-8 inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-emerald-300 hover:text-emerald-700"
+          >
+            ← Retour à l’accueil
+          </Link>
+
           <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700">
             Plateforme crypto
           </div>
@@ -31,14 +57,15 @@ export default function BitgetPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={BITGET_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
+            <AffiliateButton
+              href={BITGET_REFERRAL_URL}
+              platform="bitget"
+              category="crypto"
+              location="hero"
+              className={primaryButtonClassName}
             >
               S’inscrire sur Bitget
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/crypto"
@@ -51,8 +78,8 @@ export default function BitgetPage() {
           <p className="mt-4 max-w-3xl text-sm text-slate-500">
             Les cryptoactifs sont volatils. Vous pouvez perdre tout ou partie de
             votre capital. Vérifiez toujours la disponibilité, les frais, la
-            réglementation et les conditions applicables dans votre pays avant
-            de vous inscrire.
+            réglementation et les conditions applicables dans votre pays avant de
+            vous inscrire.
           </p>
         </div>
       </section>
@@ -104,8 +131,8 @@ export default function BitgetPage() {
             La disponibilité de Bitget peut varier selon le pays et la situation
             réglementaire. En particulier, Bitget a communiqué une suspension de
             ses services pour les utilisateurs résidant en France. Avant toute
-            inscription, vérifiez que la plateforme accepte bien les résidents
-            de votre pays et que les services souhaités sont accessibles.
+            inscription, vérifiez que la plateforme accepte bien les résidents de
+            votre pays et que les services souhaités sont accessibles.
           </p>
         </div>
       </section>
@@ -123,7 +150,10 @@ export default function BitgetPage() {
               <li>• Application mobile moderne et assez complète.</li>
               <li>• Large choix de cryptomonnaies et de paires de trading.</li>
               <li>• Outils avancés pour les utilisateurs plus expérimentés.</li>
-              <li>• Preuve de réserves et fonds de protection mis en avant par la plateforme.</li>
+              <li>
+                • Preuve de réserves et fonds de protection mis en avant par la
+                plateforme.
+              </li>
             </ul>
           </article>
 
@@ -132,12 +162,24 @@ export default function BitgetPage() {
               Inconvénients de Bitget
             </h2>
             <ul className="mt-6 space-y-4 text-slate-700">
-              <li>• Moins adaptée à un débutant qui veut simplement acheter quelques cryptos.</li>
-              <li>• Le copy trading peut donner une fausse impression de simplicité.</li>
-              <li>• Certains produits sont risqués, notamment le trading avec effet de levier.</li>
+              <li>
+                • Moins adaptée à un débutant qui veut simplement acheter
+                quelques cryptos.
+              </li>
+              <li>
+                • Le copy trading peut donner une fausse impression de
+                simplicité.
+              </li>
+              <li>
+                • Certains produits sont risqués, notamment le trading avec
+                effet de levier.
+              </li>
               <li>• La disponibilité peut varier selon le pays.</li>
               <li>• Contexte réglementaire européen à surveiller.</li>
-              <li>• Il faut bien comprendre les frais avant d’utiliser les fonctions avancées.</li>
+              <li>
+                • Il faut bien comprendre les frais avant d’utiliser les
+                fonctions avancées.
+              </li>
             </ul>
           </article>
         </div>
@@ -148,10 +190,10 @@ export default function BitgetPage() {
           <h2 className="text-3xl font-bold text-slate-950">Frais Bitget</h2>
 
           <p className="mt-5 leading-8 text-slate-700">
-            Bitget affiche des frais de base compétitifs sur le trading spot.
-            À titre indicatif, les frais spot standards sont généralement de
-            0,10 % maker et 0,10 % taker, hors promotions, réductions, niveau
-            VIP ou conditions spécifiques.
+            Bitget affiche des frais de base compétitifs sur le trading spot. À
+            titre indicatif, les frais spot standards sont généralement de 0,10 %
+            maker et 0,10 % taker, hors promotions, réductions, niveau VIP ou
+            conditions spécifiques.
           </p>
 
           <p className="mt-5 leading-8 text-slate-700">
@@ -166,8 +208,8 @@ export default function BitgetPage() {
             <p className="mt-2 text-slate-700">
               Bitget peut être intéressant pour les frais, mais le coût réel
               dépend toujours de votre usage. Un achat simple par carte, un
-              retrait crypto ou une opération avec effet de levier ne coûtent
-              pas forcément la même chose qu’un simple ordre spot.
+              retrait crypto ou une opération avec effet de levier ne coûtent pas
+              forcément la même chose qu’un simple ordre spot.
             </p>
           </div>
         </div>
@@ -219,9 +261,7 @@ export default function BitgetPage() {
           </p>
 
           <div className="mt-6 rounded-2xl bg-amber-50 p-6">
-            <h3 className="font-semibold text-slate-950">
-              Notre prudence
-            </h3>
+            <h3 className="font-semibold text-slate-950">Notre prudence</h3>
             <p className="mt-2 text-slate-700">
               Afflizen ne recommande pas de copier aveuglément un trader. Avant
               d’utiliser cette fonction, regardez l’historique, le niveau de
@@ -248,7 +288,9 @@ export default function BitgetPage() {
             </div>
 
             <div className="rounded-2xl bg-slate-50 p-6">
-              <h3 className="font-bold text-slate-950">Curieux du copy trading</h3>
+              <h3 className="font-bold text-slate-950">
+                Curieux du copy trading
+              </h3>
               <p className="mt-3 text-slate-700">
                 Pour les utilisateurs qui veulent tester le copy trading, à
                 condition de bien comprendre les risques.
@@ -280,22 +322,30 @@ export default function BitgetPage() {
 
           <p className="mt-5 leading-8 text-slate-700">
             Pour un utilisateur belge, luxembourgeois ou suisse francophone,
-            Bitget peut être une option à comparer avec Binance, Kraken,
-            Coinbase ou Crypto.com, à condition que les services soient bien
-            disponibles dans son pays. Pour un résident français, la situation
-            doit être vérifiée avec une grande prudence en raison de la
-            suspension annoncée par Bitget.
+            Bitget peut être une option à comparer avec Binance, Kraken, Coinbase
+            ou Crypto.com, à condition que les services soient bien disponibles
+            dans son pays. Pour un résident français, la situation doit être
+            vérifiée avec une grande prudence en raison de la suspension annoncée
+            par Bitget.
           </p>
 
-          <div className="mt-8">
-            <a
-              href={BITGET_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <AffiliateButton
+              href={BITGET_REFERRAL_URL}
+              platform="bitget"
+              category="crypto"
+              location="avis"
+              className={darkButtonClassName}
             >
               Accéder à Bitget
-            </a>
+            </AffiliateButton>
+
+            <Link
+              href="/crypto"
+              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-4 font-semibold text-slate-900 transition hover:border-emerald-500 hover:text-emerald-700"
+            >
+              Voir les autres plateformes crypto
+            </Link>
           </div>
         </div>
       </section>
@@ -357,11 +407,11 @@ export default function BitgetPage() {
 
           <p className="mt-4 leading-8 text-slate-700">
             Certains liens présents sur Afflizen peuvent être des liens
-            d’affiliation. Cela signifie que nous pouvons recevoir une
-            commission si vous ouvrez un compte via notre lien, sans coût
-            supplémentaire pour vous. Cette rémunération aide à financer le site
-            et n’influence pas notre volonté de présenter les avantages comme
-            les limites de chaque plateforme.
+            d’affiliation. Cela signifie que nous pouvons recevoir une commission
+            si vous ouvrez un compte via notre lien, sans coût supplémentaire
+            pour vous. Cette rémunération aide à financer le site et n’influence
+            pas notre volonté de présenter les avantages comme les limites de
+            chaque plateforme.
           </p>
         </div>
       </section>
