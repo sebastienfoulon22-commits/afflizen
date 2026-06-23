@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Afflizen",
   },
   description:
-    "Afflizen aide les particuliers francophones à comparer les plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, hébergement web et bons plans financiers.",
+    "Afflizen aide les particuliers francophones à comparer les plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, e-commerce, hébergement web et bons plans financiers.",
   keywords: [
     "Afflizen",
     "crypto",
@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "cashback",
     "cartes de paiement",
     "paiement",
+    "e-commerce",
+    "codes parrainage",
+    "bons plans",
     "comparatif crypto",
     "plateforme crypto",
     "hébergement web",
@@ -39,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Afflizen - Comparatifs crypto, banques en ligne et investissement",
     description:
-      "Comparez les meilleures plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, hébergement web et bons plans financiers.",
+      "Comparez les meilleures plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, e-commerce, hébergement web et bons plans financiers.",
     url: "https://afflizen.com",
     siteName: "Afflizen",
     locale: "fr_BE",
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Afflizen - Comparatifs finance, crypto et cashback",
     description:
-      "Le média francophone pour comparer les plateformes financières, crypto, banques en ligne, cartes de paiement et bons plans.",
+      "Le média francophone pour comparer les plateformes financières, crypto, banques en ligne, cartes de paiement, e-commerce et bons plans.",
   },
   robots: {
     index: true,
@@ -81,6 +84,10 @@ const navigation = [
   {
     name: "Cartes & paiements",
     href: "/cartes-et-paiements",
+  },
+  {
+    name: "E-commerce",
+    href: "/e-commerce",
   },
   {
     name: "Bons plans",
