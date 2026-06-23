@@ -1,18 +1,44 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import AffiliateButton from "../../../components/AffiliateButton";
 
-const WIDILO_AFFILIATE_LINK = "https://www.widilo.fr/i/571J27";
+const WIDILO_REFERRAL_URL = "https://www.widilo.fr/i/571J27";
 
-export const metadata = {
+const primaryButtonClassName =
+  "inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700";
+
+const darkButtonClassName =
+  "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
+
+export const metadata: Metadata = {
   title: "Widilo avis 2026 : cashback, codes promo, paiement et parrainage",
   description:
     "Notre avis sur Widilo en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, application, FAQ et lien de parrainage.",
+  alternates: {
+    canonical: "https://afflizen.com/cashback/widilo",
+  },
+  openGraph: {
+    title: "Widilo avis 2026 : cashback, codes promo, paiement et parrainage",
+    description:
+      "Avis Afflizen sur Widilo : cashback, codes promo, retrait des gains, application, extension, avantages, limites et parrainage.",
+    url: "https://afflizen.com/cashback/widilo",
+    siteName: "Afflizen",
+    type: "article",
+  },
 };
 
 export default function WidiloPage() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
       <section className="border-b border-slate-200 bg-gradient-to-br from-white via-emerald-50 to-white">
-        <div className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <Link
+            href="/"
+            className="mb-8 inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-emerald-300 hover:text-emerald-700"
+          >
+            ← Retour à l’accueil
+          </Link>
+
           <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700">
             Cashback
           </div>
@@ -30,14 +56,15 @@ export default function WidiloPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={WIDILO_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
+            <AffiliateButton
+              href={WIDILO_REFERRAL_URL}
+              platform="widilo"
+              category="cashback"
+              location="hero"
+              className={primaryButtonClassName}
             >
               S’inscrire sur Widilo
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/cashback"
@@ -125,8 +152,14 @@ export default function WidiloPage() {
               <li>• Cashback disponible chez de nombreux marchands partenaires.</li>
               <li>• Codes promo proposés directement sur la plateforme.</li>
               <li>• Application mobile pratique pour suivre sa cagnotte.</li>
-              <li>• Extension navigateur utile pour ne pas oublier d’activer le cashback.</li>
-              <li>• Retrait possible par virement bancaire ou PayPal selon conditions.</li>
+              <li>
+                • Extension navigateur utile pour ne pas oublier d’activer le
+                cashback.
+              </li>
+              <li>
+                • Retrait possible par virement bancaire ou PayPal selon
+                conditions.
+              </li>
               <li>• Programme de parrainage disponible.</li>
               <li>• Bon outil pour optimiser des achats déjà prévus.</li>
             </ul>
@@ -142,7 +175,10 @@ export default function WidiloPage() {
               <li>• Les taux de cashback changent régulièrement.</li>
               <li>• Certaines catégories d’achat peuvent être exclues.</li>
               <li>• Certains codes promo peuvent annuler le cashback.</li>
-              <li>• Le suivi peut échouer si le navigateur ou les cookies bloquent la transaction.</li>
+              <li>
+                • Le suivi peut échouer si le navigateur ou les cookies bloquent
+                la transaction.
+              </li>
               <li>• Il ne faut pas acheter uniquement pour obtenir du cashback.</li>
             </ul>
           </article>
@@ -286,9 +322,7 @@ export default function WidiloPage() {
           </p>
 
           <div className="mt-6 rounded-2xl bg-slate-50 p-6">
-            <h3 className="font-semibold text-slate-950">
-              Méthode Afflizen
-            </h3>
+            <h3 className="font-semibold text-slate-950">Méthode Afflizen</h3>
             <p className="mt-2 text-slate-700">
               Pour chaque achat important : comparez le prix final, regardez le
               cashback Widilo, regardez le cashback iGraal, vérifiez les codes
@@ -306,9 +340,7 @@ export default function WidiloPage() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl bg-emerald-50 p-6">
-              <h3 className="font-bold text-slate-950">
-                Acheteurs en ligne
-              </h3>
+              <h3 className="font-bold text-slate-950">Acheteurs en ligne</h3>
               <p className="mt-3 text-slate-700">
                 Pour ceux qui commandent régulièrement sur internet et veulent
                 récupérer une partie de leurs achats.
@@ -326,9 +358,7 @@ export default function WidiloPage() {
             </div>
 
             <div className="rounded-2xl bg-amber-50 p-6">
-              <h3 className="font-bold text-slate-950">
-                Profils disciplinés
-              </h3>
+              <h3 className="font-bold text-slate-950">Profils disciplinés</h3>
               <p className="mt-3 text-slate-700">
                 À condition d’éviter les achats inutiles et de considérer le
                 cashback comme une économie bonus.
@@ -356,15 +386,23 @@ export default function WidiloPage() {
             puis finaliser uniquement si l’achat était déjà prévu.
           </p>
 
-          <div className="mt-8">
-            <a
-              href={WIDILO_AFFILIATE_LINK}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <AffiliateButton
+              href={WIDILO_REFERRAL_URL}
+              platform="widilo"
+              category="cashback"
+              location="avis"
+              className={darkButtonClassName}
             >
               Accéder à Widilo
-            </a>
+            </AffiliateButton>
+
+            <Link
+              href="/cashback"
+              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-4 font-semibold text-slate-900 transition hover:border-emerald-500 hover:text-emerald-700"
+            >
+              Voir les autres plateformes cashback
+            </Link>
           </div>
         </div>
       </section>
@@ -440,8 +478,8 @@ export default function WidiloPage() {
             recevoir une commission, un bonus ou un avantage si vous créez un
             compte ou utilisez un service via notre lien, sans coût
             supplémentaire pour vous. Cette rémunération aide à financer le site
-            et n’influence pas notre volonté de présenter les avantages comme
-            les limites de chaque plateforme.
+            et n’influence pas notre volonté de présenter les avantages comme les
+            limites de chaque plateforme.
           </p>
         </div>
       </section>
