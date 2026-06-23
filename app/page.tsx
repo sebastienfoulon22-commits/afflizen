@@ -24,6 +24,12 @@ const categories = [
       "Cashback, remboursements, codes promo et bons plans pour économiser sur ses achats en ligne.",
   },
   {
+    name: "E-commerce",
+    url: "/e-commerce",
+    description:
+      "Reconditionné, codes parrainage, achats en ligne, bons plans e-commerce et conseils avant commande.",
+  },
+  {
     name: "Hébergement web",
     url: "/hebergement-web",
     description:
@@ -59,6 +65,11 @@ const featuredPlatforms = [
     url: "/cashback/igraal",
   },
   {
+    name: "Back Market",
+    category: "E-commerce",
+    url: "/e-commerce/back-market",
+  },
+  {
     name: "Hostinger",
     category: "Hébergement web",
     url: "/hebergement-web/hostinger",
@@ -80,13 +91,15 @@ export default function HomePage() {
           </p>
 
           <h1 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
-            Comparez les plateformes finance, crypto, banques, cashback et web
+            Comparez les plateformes finance, crypto, banques, cashback,
+            e-commerce et web
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             Afflizen aide les utilisateurs francophones à comparer les
             plateformes utiles pour gérer leur argent, investir, profiter de
-            bonus, économiser en ligne et lancer leurs projets web.
+            bonus, économiser en ligne, acheter plus intelligemment et lancer
+            leurs projets web.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -107,14 +120,14 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-2xl font-bold">16</p>
+              <p className="text-2xl font-bold">17</p>
               <p className="mt-1 text-sm text-slate-600">
                 plateformes déjà structurées
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-2xl font-bold">6</p>
+              <p className="text-2xl font-bold">7</p>
               <p className="mt-1 text-sm text-slate-600">
                 grandes catégories comparées
               </p>
@@ -205,12 +218,12 @@ export default function HomePage() {
               Bons plans / Promotions
             </p>
             <h2 className="mt-3 text-3xl font-bold">
-              Retrouvez les offres à vérifier avant inscription
+              Retrouvez les offres à vérifier avant inscription ou achat
             </h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Les bonus, primes, codes promo et offres de bienvenue changent
-              régulièrement. Afflizen regroupe les plateformes à suivre, avec
-              des fiches prévues pour détailler les conditions importantes.
+              Les bonus, primes, codes promo, offres de parrainage et réductions
+              changent régulièrement. Afflizen regroupe les plateformes à suivre,
+              avec des fiches prévues pour détailler les conditions importantes.
             </p>
             <a
               href="/bons-plans"
@@ -225,14 +238,14 @@ export default function HomePage() {
               Avertissement
             </p>
             <h2 className="mt-3 text-3xl font-bold text-slate-950">
-              Comparer avant de s’inscrire
+              Comparer avant de s’inscrire ou d’acheter
             </h2>
             <p className="mt-4 text-sm leading-7 text-slate-700">
               Afflizen a pour objectif d’aider à comparer des plateformes et des
               offres. Les informations doivent toujours être vérifiées sur les
-              sites officiels avant toute inscription, notamment les frais, les
-              risques, les conditions de bonus et les règles applicables dans
-              votre pays.
+              sites officiels avant toute inscription ou commande, notamment les
+              frais, les risques, les conditions de bonus, les garanties, les
+              retours et les règles applicables dans votre pays.
             </p>
           </div>
         </div>
