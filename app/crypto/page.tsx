@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Crypto : comparatif Binance, Bitget, Crypto.com, Nexo, Kraken, SwissBorg et Waltio",
+  title:
+    "Crypto : comparatif Binance, Bitget, Crypto.com, Coinbase, Nexo, Kraken, SwissBorg et Waltio",
   description:
-    "Comparez les plateformes crypto suivies par Afflizen : Binance, Bitget, Crypto.com, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
+    "Comparez les plateformes crypto suivies par Afflizen : Binance, Bitget, Crypto.com, Coinbase, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/crypto",
   },
@@ -39,6 +40,13 @@ const platforms = [
     description:
       "Application crypto populaire avec carte, achat de cryptos et services associés.",
     bonus: "Application crypto",
+  },
+  {
+    name: "Coinbase",
+    slug: "/crypto/coinbase",
+    description:
+      "Plateforme crypto connue pour son interface simple, adaptée aux débutants qui veulent acheter et gérer leurs premières cryptomonnaies.",
+    bonus: "Débutants crypto",
   },
   {
     name: "Nexo",
@@ -78,7 +86,8 @@ export default function CryptoPage() {
           <p className="text-sm font-semibold text-emerald-600">Crypto</p>
 
           <h1 className="mt-3 text-4xl font-bold tracking-tight md:text-5xl">
-            Plateformes crypto, applications et outils pour mieux gérer ses actifs numériques
+            Plateformes crypto, applications et outils pour mieux gérer ses
+            actifs numériques
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
