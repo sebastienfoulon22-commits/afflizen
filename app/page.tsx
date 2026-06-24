@@ -3,7 +3,7 @@ const categories = [
     name: "Crypto",
     url: "/crypto",
     description:
-      "Plateformes crypto, bonus d’inscription, frais, sécurité et avis pour débuter prudemment.",
+      "Plateformes crypto, bonus d’inscription, frais, sécurité, wallets et avis pour débuter prudemment.",
   },
   {
     name: "Investissement",
@@ -53,6 +53,11 @@ const featuredPlatforms = [
     name: "Coinbase",
     category: "Crypto",
     url: "/crypto/coinbase",
+  },
+  {
+    name: "Ledger",
+    category: "Crypto",
+    url: "/crypto/ledger",
   },
   {
     name: "Trade Republic",
@@ -108,8 +113,8 @@ export default function HomePage() {
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             Afflizen aide les utilisateurs francophones à comparer les
             plateformes utiles pour gérer leur argent, investir, profiter de
-            bonus, économiser en ligne, acheter plus intelligemment et lancer
-            leurs projets web.
+            bonus, sécuriser leurs cryptos, économiser en ligne, acheter plus
+            intelligemment et lancer leurs projets web.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -130,7 +135,7 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-2xl font-bold">19</p>
+              <p className="text-2xl font-bold">20</p>
               <p className="mt-1 text-sm text-slate-600">
                 plateformes déjà structurées
               </p>
@@ -253,9 +258,10 @@ export default function HomePage() {
             <p className="mt-4 text-sm leading-7 text-slate-700">
               Afflizen a pour objectif d’aider à comparer des plateformes et des
               offres. Les informations doivent toujours être vérifiées sur les
-              sites officiels avant toute inscription ou commande, notamment les
-              frais, les risques, les conditions de bonus, les garanties, les
-              retours et les règles applicables dans votre pays.
+              sites officiels avant toute inscription, achat ou commande,
+              notamment les frais, les risques, les conditions de bonus, les
+              garanties, les retours, la sécurité et les règles applicables dans
+              votre pays.
             </p>
           </div>
         </div>

@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Crypto : comparatif Binance, Bitget, Crypto.com, Coinbase, Nexo, Kraken, SwissBorg et Waltio",
+    "Crypto : comparatif Binance, Bitget, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio",
   description:
-    "Comparez les plateformes crypto suivies par Afflizen : Binance, Bitget, Crypto.com, Coinbase, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
+    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, Bitget, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/crypto",
   },
   openGraph: {
     title: "Crypto : comparatif des plateformes suivies par Afflizen",
     description:
-      "Découvrez les fiches crypto Afflizen : plateformes d’échange, applications crypto, fiscalité crypto, avantages, limites et points à vérifier.",
+      "Découvrez les fiches crypto Afflizen : plateformes d’échange, applications crypto, wallet physique, fiscalité crypto, avantages, limites et points à vérifier.",
     url: "https://afflizen.com/crypto",
     siteName: "Afflizen",
     locale: "fr_BE",
@@ -47,6 +47,13 @@ const platforms = [
     description:
       "Plateforme crypto connue pour son interface simple, adaptée aux débutants qui veulent acheter et gérer leurs premières cryptomonnaies.",
     bonus: "Débutants crypto",
+  },
+  {
+    name: "Ledger",
+    slug: "/crypto/ledger",
+    description:
+      "Wallet physique pour sécuriser ses clés privées, conserver ses cryptomonnaies hors plateforme et mieux comprendre la self-custody.",
+    bonus: "Wallet crypto",
   },
   {
     name: "Nexo",
@@ -86,14 +93,15 @@ export default function CryptoPage() {
           <p className="text-sm font-semibold text-emerald-600">Crypto</p>
 
           <h1 className="mt-3 text-4xl font-bold tracking-tight md:text-5xl">
-            Plateformes crypto, applications et outils pour mieux gérer ses
-            actifs numériques
+            Plateformes crypto, applications, wallets et outils pour mieux gérer
+            ses actifs numériques
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-            Comparez les plateformes crypto suivies par Afflizen : avantages,
-            limites, bonus éventuels, conditions d’inscription, sécurité,
-            fiscalité crypto et avis pratique pour choisir plus facilement.
+            Comparez les plateformes et outils crypto suivis par Afflizen :
+            avantages, limites, bonus éventuels, conditions d’inscription,
+            sécurité, wallets, fiscalité crypto et avis pratique pour choisir
+            plus facilement.
           </p>
         </div>
       </section>
@@ -127,10 +135,11 @@ export default function CryptoPage() {
       <section className="border-t border-slate-200 bg-slate-50 py-10">
         <div className="mx-auto max-w-6xl px-6">
           <p className="text-xs leading-6 text-slate-500">
-            Les plateformes crypto comportent des risques : volatilité, perte en
-            capital, erreurs de transfert, fiscalité, sécurité des comptes et
-            évolution des réglementations. Vérifiez toujours les informations
-            officielles avant toute inscription ou utilisation.
+            Les plateformes et outils crypto comportent des risques : volatilité,
+            perte en capital, erreurs de transfert, fiscalité, sécurité des
+            comptes, conservation des clés privées et évolution des
+            réglementations. Vérifiez toujours les informations officielles avant
+            toute inscription, utilisation ou transaction.
           </p>
         </div>
       </section>
