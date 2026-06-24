@@ -22,6 +22,18 @@ const availablePlatforms = [
       "Prix, état et garantie à vérifier",
     ],
   },
+  {
+    name: "Dealabs",
+    href: "/e-commerce/dealabs",
+    category: "Bons plans communautaires",
+    description:
+      "Repérer des bons plans, codes promo et promotions partagés par la communauté avant d’acheter en ligne ou en magasin.",
+    points: [
+      "Bons plans en ligne et en magasin",
+      "Commentaires et votes de la communauté",
+      "À croiser avec le cashback avant achat",
+    ],
+  },
 ];
 
 const categoryBlocks = [
@@ -38,7 +50,7 @@ const categoryBlocks = [
   {
     title: "Bons plans e-commerce",
     description:
-      "Des conseils pour repérer les offres intéressantes sans acheter trop vite ni se laisser piéger par une fausse promotion.",
+      "Des outils pour repérer les offres intéressantes sans acheter trop vite ni se laisser piéger par une fausse promotion.",
   },
 ];
 
@@ -48,6 +60,7 @@ const advice = [
   "Lire les conditions des codes promo, parrainages ou offres spéciales.",
   "Éviter d’acheter uniquement parce qu’une réduction semble importante.",
   "Vérifier la fiabilité du vendeur, les avis et l’état exact du produit.",
+  "Penser à vérifier le cashback disponible avant de finaliser l’achat.",
 ];
 
 export default function EcommercePage() {
@@ -72,8 +85,8 @@ export default function EcommercePage() {
 
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
             L’objectif est simple : t’aider à comparer les prix, vérifier les
-            conditions, éviter les mauvaises surprises et utiliser les codes
-            disponibles quand ils sont réellement intéressants.
+            conditions, éviter les mauvaises surprises et utiliser les codes ou
+            bons plans disponibles quand ils sont réellement intéressants.
           </p>
         </div>
       </section>
@@ -88,7 +101,7 @@ export default function EcommercePage() {
 
               <p className="mt-4 text-base leading-7 text-slate-600">
                 Chaque page présente les avantages, les limites, les conditions à
-                vérifier et les éventuels codes de parrainage ou liens utiles.
+                vérifier et les éventuels codes, bons plans ou liens utiles.
               </p>
 
               <div className="mt-6 grid gap-5 md:grid-cols-2">
@@ -137,8 +150,9 @@ export default function EcommercePage() {
 
               <p className="mt-4 text-base leading-7 text-slate-600">
                 Cette catégorie sert à regrouper les pages liées aux achats en
-                ligne, aux codes disponibles et aux plateformes qui peuvent aider
-                à mieux acheter sans se précipiter.
+                ligne, aux codes disponibles, aux bons plans communautaires et
+                aux plateformes qui peuvent aider à mieux acheter sans se
+                précipiter.
               </p>
 
               <div className="mt-6 grid gap-5 md:grid-cols-3">
@@ -199,25 +213,33 @@ export default function EcommercePage() {
 
             <div className="mt-6 rounded-2xl bg-slate-50 p-5">
               <p className="text-sm font-semibold text-slate-500">
-                Page disponible
+                Pages disponibles
               </p>
 
-              <Link
-                href="/e-commerce/back-market"
-                className="mt-3 inline-flex font-bold text-emerald-700 hover:text-emerald-800"
-              >
-                Back Market →
-              </Link>
+              <div className="mt-3 flex flex-col gap-2">
+                <Link
+                  href="/e-commerce/back-market"
+                  className="font-bold text-emerald-700 hover:text-emerald-800"
+                >
+                  Back Market →
+                </Link>
+
+                <Link
+                  href="/e-commerce/dealabs"
+                  className="font-bold text-emerald-700 hover:text-emerald-800"
+                >
+                  Dealabs →
+                </Link>
+              </div>
             </div>
 
             <div className="mt-5 rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
-              <p className="text-sm font-bold text-emerald-800">
-                À retenir
-              </p>
+              <p className="text-sm font-bold text-emerald-800">À retenir</p>
 
               <p className="mt-2 text-sm leading-6 text-emerald-950">
-                Avant d’utiliser un code ou de commander, vérifie toujours le prix
-                final, les conditions, les retours et la garantie.
+                Avant d’utiliser un code, un bon plan ou de commander, vérifie
+                toujours le prix final, les conditions, les retours, la garantie
+                et le cashback éventuel.
               </p>
             </div>
           </aside>

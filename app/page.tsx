@@ -70,6 +70,11 @@ const featuredPlatforms = [
     url: "/e-commerce/back-market",
   },
   {
+    name: "Dealabs",
+    category: "E-commerce",
+    url: "/e-commerce/dealabs",
+  },
+  {
     name: "Hostinger",
     category: "Hébergement web",
     url: "/hebergement-web/hostinger",
@@ -120,7 +125,7 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-2xl font-bold">17</p>
+              <p className="text-2xl font-bold">18</p>
               <p className="mt-1 text-sm text-slate-600">
                 plateformes déjà structurées
               </p>
