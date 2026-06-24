@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/crypto/binance",
     "/crypto/bitget",
     "/crypto/crypto-com",
+    "/crypto/coinbase",
     "/crypto/nexo",
     "/crypto/kraken",
     "/crypto/swissborg",
@@ -48,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: route === "" ? 1 : route.includes("/") && route.split("/").length > 2 ? 0.7 : 0.8,
+    priority:
+      route === "" ? 1 : route.includes("/") && route.split("/").length > 2 ? 0.7 : 0.8,
   }));
 }
