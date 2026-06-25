@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Crypto : comparatif Binance, Bitget, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio",
+    "Crypto : comparatif Binance, Bitget, Bybit, HTX, AscendEX, Coinbase, Ledger et plus",
   description:
-    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, Bitget, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
+    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, Bitget, Bybit, HTX, AscendEX, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/crypto",
   },
   openGraph: {
     title: "Crypto : comparatif des plateformes suivies par Afflizen",
     description:
-      "Découvrez les fiches crypto Afflizen : plateformes d’échange, applications crypto, wallet physique, fiscalité crypto, avantages, limites et points à vérifier.",
+      "Découvrez les fiches crypto Afflizen : plateformes d’échange, applications crypto, wallets physiques, fiscalité crypto, avantages, limites, risques et points à vérifier.",
     url: "https://afflizen.com/crypto",
     siteName: "Afflizen",
     locale: "fr_BE",
@@ -24,15 +24,36 @@ const platforms = [
     name: "Binance",
     slug: "/crypto/binance",
     description:
-      "Plateforme crypto complète pour acheter, vendre et gérer des cryptomonnaies.",
+      "Plateforme crypto complète pour acheter, vendre, échanger et gérer des cryptomonnaies.",
     bonus: "Exchange crypto",
   },
   {
     name: "Bitget",
     slug: "/crypto/bitget",
     description:
-      "Exchange crypto connu pour le trading, les copies de stratégies et les offres promotionnelles.",
+      "Exchange crypto connu pour le trading, le copy trading et les offres promotionnelles selon conditions.",
     bonus: "Trading crypto",
+  },
+  {
+    name: "Bybit",
+    slug: "/crypto/bybit",
+    description:
+      "Plateforme crypto avancée orientée trading, frais, outils de marché et parrainage à vérifier selon les conditions en vigueur.",
+    bonus: "Crypto avancée",
+  },
+  {
+    name: "HTX",
+    slug: "/crypto/htx",
+    description:
+      "Exchange crypto avancé, anciennement lié à l’écosystème Huobi, à comparer avec prudence selon les frais, restrictions et services disponibles.",
+    bonus: "Exchange avancé",
+  },
+  {
+    name: "AscendEX",
+    slug: "/crypto/ascendex",
+    description:
+      "Plateforme crypto anciennement connue sous le nom BitMax.io, avec trading, services avancés et invitation à vérifier selon conditions.",
+    bonus: "Ancien BitMax",
   },
   {
     name: "Crypto.com",
@@ -100,8 +121,8 @@ export default function CryptoPage() {
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             Comparez les plateformes et outils crypto suivis par Afflizen :
             avantages, limites, bonus éventuels, conditions d’inscription,
-            sécurité, wallets, fiscalité crypto et avis pratique pour choisir
-            plus facilement.
+            sécurité, wallets, fiscalité crypto, frais, risques et avis pratique
+            pour choisir plus facilement.
           </p>
         </div>
       </section>
@@ -135,11 +156,13 @@ export default function CryptoPage() {
       <section className="border-t border-slate-200 bg-slate-50 py-10">
         <div className="mx-auto max-w-6xl px-6">
           <p className="text-xs leading-6 text-slate-500">
-            Les plateformes et outils crypto comportent des risques : volatilité,
-            perte en capital, erreurs de transfert, fiscalité, sécurité des
-            comptes, conservation des clés privées et évolution des
-            réglementations. Vérifiez toujours les informations officielles avant
-            toute inscription, utilisation ou transaction.
+            Les plateformes et outils crypto comportent des risques :
+            volatilité, perte en capital, erreurs de transfert, fiscalité,
+            sécurité des comptes, conservation des clés privées, frais, produits
+            avancés, restrictions par pays et évolution des réglementations.
+            Vérifiez toujours les informations officielles avant toute
+            inscription, utilisation, transaction ou conservation d’actifs
+            numériques.
           </p>
         </div>
       </section>
