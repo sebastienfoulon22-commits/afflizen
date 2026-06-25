@@ -137,7 +137,7 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
-    path: "/banques-en-ligne/degiro",
+    path: "/investissement/degiro",
     priority: 0.8,
     changeFrequency: "monthly",
   },
