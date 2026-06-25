@@ -43,7 +43,7 @@ const platforms = [
   },
   {
     name: "DEGIRO",
-    slug: "/banques-en-ligne/degiro",
+    slug: "/investissement/degiro",
     description:
       "Courtier en ligne orienté actions, ETF et marchés financiers, à comparer pour ses frais, ses produits disponibles et son profil investisseur.",
     bonus: "Courtier en ligne",
