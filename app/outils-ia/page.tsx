@@ -1,0 +1,116 @@
+import Link from "next/link";
+
+export const metadata = {
+  title: "Outils IA : les meilleures solutions d’intelligence artificielle utiles",
+  description:
+    "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches et développer des solutions intelligentes pour particuliers, indépendants et entreprises.",
+};
+
+const tools = [
+  {
+    name: "ElevenLabs",
+    href: "/outils-ia/elevenlabs",
+    description:
+      "Une plateforme IA spécialisée dans les voix réalistes, le text-to-speech, le doublage, le clonage vocal et les agents vocaux.",
+    badge: "Voix IA",
+  },
+];
+
+export default function OutilsIAPage() {
+  return (
+    <main className="min-h-screen bg-white text-slate-950">
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <Link
+          href="/"
+          className="mb-8 inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
+        >
+          ← Retour à l’accueil
+        </Link>
+
+        <div className="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 px-6 py-12 text-white shadow-xl md:px-12">
+          <p className="mb-4 inline-flex rounded-full bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-300 ring-1 ring-emerald-400/20">
+            Nouvelle catégorie Afflizen
+          </p>
+
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+            Outils IA pour gagner du temps, automatiser et créer plus vite
+          </h1>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
+            Cette catégorie regroupe les outils d’intelligence artificielle qui
+            peuvent être réellement utiles au quotidien : création de contenu,
+            voix IA, répondeurs intelligents, automatisation, productivité,
+            support client et solutions pour indépendants ou petites
+            entreprises.
+          </p>
+        </div>
+
+        <section className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {tools.map((tool) => (
+            <Link
+              key={tool.name}
+              href={tool.href}
+              className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl"
+            >
+              <div className="mb-5 inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                {tool.badge}
+              </div>
+
+              <h2 className="text-2xl font-bold text-slate-950">
+                {tool.name}
+              </h2>
+
+              <p className="mt-4 text-sm leading-7 text-slate-600">
+                {tool.description}
+              </p>
+
+              <span className="mt-6 inline-flex text-sm font-semibold text-emerald-700 group-hover:text-emerald-800">
+                Voir la page →
+              </span>
+            </Link>
+          ))}
+        </section>
+
+        <section className="mt-14 rounded-3xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+          <h2 className="text-2xl font-bold text-slate-950">
+            Pourquoi ajouter une catégorie IA sur Afflizen ?
+          </h2>
+
+          <div className="mt-5 grid gap-5 text-sm leading-7 text-slate-700 md:grid-cols-3">
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="font-semibold text-slate-950">
+                Marché en forte demande
+              </h3>
+              <p className="mt-2">
+                Les outils IA intéressent les créateurs, les indépendants, les
+                petites entreprises et les particuliers qui veulent gagner du
+                temps.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="font-semibold text-slate-950">
+                Revenus d’affiliation possibles
+              </h3>
+              <p className="mt-2">
+                Certains outils IA proposent des programmes partenaires, ce qui
+                peut créer une nouvelle source de revenus pour Afflizen.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="font-semibold text-slate-950">
+                Cohérent avec les solutions web
+              </h3>
+              <p className="mt-2">
+                La catégorie peut aussi servir à montrer qu’Afflizen teste et
+                recommande des solutions concrètes, pas seulement des plateformes
+                financières.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  );
+}

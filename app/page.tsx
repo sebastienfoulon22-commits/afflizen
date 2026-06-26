@@ -41,6 +41,12 @@ const categories = [
     description:
       "Cartes intelligentes, solutions de paiement, avantages, frais et services utiles au quotidien.",
   },
+  {
+    name: "Outils IA",
+    url: "/outils-ia",
+    description:
+      "Solutions d’intelligence artificielle pour créer du contenu, automatiser des tâches, générer des voix IA et développer des services intelligents.",
+  },
 ];
 
 const featuredPlatforms = [
@@ -94,6 +100,11 @@ const featuredPlatforms = [
     category: "Cartes & paiements",
     url: "/cartes-et-paiements/curve-pay",
   },
+  {
+    name: "ElevenLabs",
+    category: "Outils IA",
+    url: "/outils-ia/elevenlabs",
+  },
 ];
 
 export default function HomePage() {
@@ -107,14 +118,15 @@ export default function HomePage() {
 
           <h1 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
             Comparez les plateformes finance, crypto, banques, cashback,
-            e-commerce et web
+            e-commerce, web et outils IA
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             Afflizen aide les utilisateurs francophones à comparer les
             plateformes utiles pour gérer leur argent, investir, profiter de
             bonus, sécuriser leurs cryptos, économiser en ligne, acheter plus
-            intelligemment et lancer leurs projets web.
+            intelligemment, lancer leurs projets web et découvrir des outils IA
+            vraiment utiles.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -126,23 +138,23 @@ export default function HomePage() {
             </a>
 
             <a
-              href="/crypto"
+              href="/outils-ia"
               className="rounded-full border border-slate-300 px-6 py-3 text-center text-sm font-semibold text-slate-950 transition hover:border-emerald-500 hover:text-emerald-700"
             >
-              Explorer les comparatifs
+              Découvrir les outils IA
             </a>
           </div>
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-2xl font-bold">20</p>
+              <p className="text-2xl font-bold">21</p>
               <p className="mt-1 text-sm text-slate-600">
                 plateformes déjà structurées
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-2xl font-bold">7</p>
+              <p className="text-2xl font-bold">8</p>
               <p className="mt-1 text-sm text-slate-600">
                 grandes catégories comparées
               </p>
@@ -256,12 +268,13 @@ export default function HomePage() {
               Comparer avant de s’inscrire ou d’acheter
             </h2>
             <p className="mt-4 text-sm leading-7 text-slate-700">
-              Afflizen a pour objectif d’aider à comparer des plateformes et des
-              offres. Les informations doivent toujours être vérifiées sur les
-              sites officiels avant toute inscription, achat ou commande,
-              notamment les frais, les risques, les conditions de bonus, les
-              garanties, les retours, la sécurité et les règles applicables dans
-              votre pays.
+              Afflizen a pour objectif d’aider à comparer des plateformes, des
+              outils et des offres. Les informations doivent toujours être
+              vérifiées sur les sites officiels avant toute inscription, achat ou
+              commande, notamment les frais, les risques, les conditions de
+              bonus, les garanties, les retours, la sécurité, les crédits
+              disponibles, les règles d’utilisation et les conditions applicables
+              dans votre pays.
             </p>
           </div>
         </div>
