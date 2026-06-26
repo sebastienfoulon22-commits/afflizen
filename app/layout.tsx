@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://afflizen.com"),
   title: {
     default:
-      "Afflizen - Comparatifs crypto, banques en ligne et plateformes d’investissement",
+      "Afflizen - Comparatifs crypto, banques en ligne, investissement et outils IA",
     template: "%s | Afflizen",
   },
   description:
-    "Afflizen aide les particuliers francophones à comparer les plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, e-commerce, hébergement web et bons plans financiers.",
+    "Afflizen aide les particuliers francophones à comparer les plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, e-commerce, hébergement web, outils IA et bons plans financiers.",
   keywords: [
     "Afflizen",
     "crypto",
@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     "comparatif crypto",
     "plateforme crypto",
     "hébergement web",
+    "outils IA",
+    "intelligence artificielle",
+    "voix IA",
+    "ElevenLabs",
     "Belgique",
     "France",
     "Luxembourg",
@@ -40,9 +44,10 @@ export const metadata: Metadata = {
     canonical: "https://afflizen.com",
   },
   openGraph: {
-    title: "Afflizen - Comparatifs crypto, banques en ligne et investissement",
+    title:
+      "Afflizen - Comparatifs crypto, banques en ligne, investissement et outils IA",
     description:
-      "Comparez les meilleures plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, e-commerce, hébergement web et bons plans financiers.",
+      "Comparez les meilleures plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, e-commerce, hébergement web, outils IA et bons plans financiers.",
     url: "https://afflizen.com",
     siteName: "Afflizen",
     locale: "fr_BE",
@@ -50,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Afflizen - Comparatifs finance, crypto et cashback",
+    title: "Afflizen - Comparatifs finance, crypto, cashback et outils IA",
     description:
-      "Le média francophone pour comparer les plateformes financières, crypto, banques en ligne, cartes de paiement, e-commerce et bons plans.",
+      "Le média francophone pour comparer les plateformes financières, crypto, banques en ligne, cartes de paiement, e-commerce, outils IA et bons plans.",
   },
   robots: {
     index: true,
@@ -90,6 +95,10 @@ const navigation = [
     href: "/e-commerce",
   },
   {
+    name: "Outils IA",
+    href: "/outils-ia",
+  },
+  {
     name: "Bons plans",
     href: "/bons-plans",
   },
@@ -118,8 +127,8 @@ export default function RootLayout({
         </Script>
 
         <header className="border-b border-slate-200 bg-white">
-          <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-5 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex flex-col gap-2">
+          <div className="mx-auto flex max-w-[1500px] flex-col gap-4 px-6 py-5 xl:flex-row xl:items-center xl:justify-between">
+            <div className="flex shrink-0 flex-col gap-2">
               <a
                 href="/"
                 className="text-2xl font-bold tracking-tight text-slate-950"
@@ -132,13 +141,13 @@ export default function RootLayout({
 
             <nav
               aria-label="Navigation principale"
-              className="flex flex-wrap gap-3 text-sm font-semibold text-slate-700"
+              className="flex flex-nowrap items-center gap-2 overflow-x-auto whitespace-nowrap text-[13px] font-semibold text-slate-700 xl:gap-3"
             >
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="rounded-full px-3 py-2 transition hover:bg-emerald-50 hover:text-emerald-700"
+                  className="shrink-0 rounded-full px-2.5 py-2 transition hover:bg-emerald-50 hover:text-emerald-700 xl:px-3"
                 >
                   {item.name}
                 </a>
