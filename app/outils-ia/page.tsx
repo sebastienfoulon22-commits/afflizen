@@ -28,6 +28,13 @@ const tools = [
       "Une plateforme d’automatisation avancée pour créer des workflows IA, connecter des API, gérer des webhooks et construire des scénarios plus techniques.",
     badge: "Workflows IA",
   },
+  {
+    name: "Gamma",
+    href: "/outils-ia/gamma",
+    description:
+      "Un outil IA pour créer rapidement des présentations, documents, pages visuelles et supports professionnels sans partir d’une page blanche.",
+    badge: "Présentations IA",
+  },
 ];
 
 export default function OutilsIAPage() {
@@ -59,7 +66,7 @@ export default function OutilsIAPage() {
           </p>
         </div>
 
-        <section className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <section className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {tools.map((tool) => (
             <Link
               key={tool.name}
@@ -139,7 +146,7 @@ export default function OutilsIAPage() {
             intelligents plus complets.
           </p>
 
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-4">
             <div className="rounded-2xl bg-white/10 p-5">
               <h3 className="font-bold text-white">Voix IA</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
@@ -163,32 +170,51 @@ export default function OutilsIAPage() {
                 données et validation humaine.
               </p>
             </div>
+
+            <div className="rounded-2xl bg-white/10 p-5">
+              <h3 className="font-bold text-white">Supports visuels</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                Créer des présentations, documents, pages et supports
+                professionnels plus rapidement.
+              </p>
+            </div>
           </div>
         </section>
 
         <section className="mt-14 rounded-3xl border border-emerald-200 bg-emerald-50 p-6 md:p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Make ou n8n : deux outils complémentaires
+            Des outils IA complémentaires
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Make est souvent plus simple pour démarrer rapidement avec des
-            automatisations visuelles. n8n est plus intéressant pour les profils
-            qui veulent aller plus loin avec des workflows avancés, des API, des
-            webhooks et des scénarios IA plus techniques. Les deux outils peuvent
-            donc avoir leur place selon le niveau de l’utilisateur et la
-            complexité du projet.
+            ElevenLabs, Make, n8n et Gamma couvrent des besoins différents mais
+            complémentaires. ElevenLabs sert à créer de la voix IA, Make permet
+            de démarrer facilement avec l’automatisation, n8n va plus loin dans
+            les workflows avancés, et Gamma aide à présenter clairement une idée,
+            un projet ou une offre.
           </p>
 
-          <div className="mt-6 grid gap-5 md:grid-cols-2">
+          <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <Link
+              href="/outils-ia/elevenlabs"
+              className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3 className="font-bold text-slate-950">ElevenLabs</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-600">
+                Pour créer des voix IA et imaginer des agents vocaux.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-emerald-700">
+                Voir ElevenLabs →
+              </p>
+            </Link>
+
             <Link
               href="/outils-ia/make"
               className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-950">Make</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
-                Pour automatiser facilement des tâches entre plusieurs
-                applications, sans coder.
+                Pour automatiser facilement des tâches entre applications.
               </p>
               <p className="mt-4 text-sm font-semibold text-emerald-700">
                 Voir Make →
@@ -201,11 +227,23 @@ export default function OutilsIAPage() {
             >
               <h3 className="font-bold text-slate-950">n8n</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
-                Pour créer des automatisations plus avancées, connectées aux API,
-                webhooks et agents IA.
+                Pour créer des workflows avancés avec IA, API et webhooks.
               </p>
               <p className="mt-4 text-sm font-semibold text-emerald-700">
                 Voir n8n →
+              </p>
+            </Link>
+
+            <Link
+              href="/outils-ia/gamma"
+              className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3 className="font-bold text-slate-950">Gamma</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-600">
+                Pour créer des présentations et supports visuels avec l’IA.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-emerald-700">
+                Voir Gamma →
               </p>
             </Link>
           </div>
