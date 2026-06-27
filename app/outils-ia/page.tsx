@@ -21,6 +21,13 @@ const tools = [
       "Une plateforme d’automatisation visuelle pour connecter ses applications, créer des workflows IA et gagner du temps sans coder.",
     badge: "Automatisation",
   },
+  {
+    name: "n8n",
+    href: "/outils-ia/n8n",
+    description:
+      "Une plateforme d’automatisation avancée pour créer des workflows IA, connecter des API, gérer des webhooks et construire des scénarios plus techniques.",
+    badge: "Workflows IA",
+  },
 ];
 
 export default function OutilsIAPage() {
@@ -144,18 +151,63 @@ export default function OutilsIAPage() {
             <div className="rounded-2xl bg-white/10 p-5">
               <h3 className="font-bold text-white">Automatisation</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
-                Connecter des outils, formulaires, emails, agendas, tableaux et
-                notifications.
+                Connecter des outils, formulaires, emails, agendas, tableaux,
+                CRM, webhooks et notifications.
               </p>
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">Productivité</h3>
+              <h3 className="font-bold text-white">Workflows avancés</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
-                Réduire les tâches répétitives et mieux organiser les demandes,
-                contenus ou suivis clients.
+                Construire des scénarios plus poussés avec IA, API, conditions,
+                données et validation humaine.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="mt-14 rounded-3xl border border-emerald-200 bg-emerald-50 p-6 md:p-8">
+          <h2 className="text-2xl font-bold text-slate-950">
+            Make ou n8n : deux outils complémentaires
+          </h2>
+
+          <p className="mt-4 leading-8 text-slate-700">
+            Make est souvent plus simple pour démarrer rapidement avec des
+            automatisations visuelles. n8n est plus intéressant pour les profils
+            qui veulent aller plus loin avec des workflows avancés, des API, des
+            webhooks et des scénarios IA plus techniques. Les deux outils peuvent
+            donc avoir leur place selon le niveau de l’utilisateur et la
+            complexité du projet.
+          </p>
+
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+            <Link
+              href="/outils-ia/make"
+              className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3 className="font-bold text-slate-950">Make</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-600">
+                Pour automatiser facilement des tâches entre plusieurs
+                applications, sans coder.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-emerald-700">
+                Voir Make →
+              </p>
+            </Link>
+
+            <Link
+              href="/outils-ia/n8n"
+              className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3 className="font-bold text-slate-950">n8n</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-600">
+                Pour créer des automatisations plus avancées, connectées aux API,
+                webhooks et agents IA.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-emerald-700">
+                Voir n8n →
+              </p>
+            </Link>
           </div>
         </section>
       </section>
