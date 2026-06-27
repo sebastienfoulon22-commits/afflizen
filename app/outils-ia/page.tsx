@@ -14,6 +14,13 @@ const tools = [
       "Une plateforme IA spécialisée dans les voix réalistes, le text-to-speech, le doublage, le clonage vocal et les agents vocaux.",
     badge: "Voix IA",
   },
+  {
+    name: "Make",
+    href: "/outils-ia/make",
+    description:
+      "Une plateforme d’automatisation visuelle pour connecter ses applications, créer des workflows IA et gagner du temps sans coder.",
+    badge: "Automatisation",
+  },
 ];
 
 export default function OutilsIAPage() {
@@ -29,7 +36,7 @@ export default function OutilsIAPage() {
 
         <div className="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 px-6 py-12 text-white shadow-xl md:px-12">
           <p className="mb-4 inline-flex rounded-full bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-300 ring-1 ring-emerald-400/20">
-            Nouvelle catégorie Afflizen
+            Catégorie Afflizen
           </p>
 
           <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
@@ -106,6 +113,47 @@ export default function OutilsIAPage() {
                 La catégorie peut aussi servir à montrer qu’Afflizen teste et
                 recommande des solutions concrètes, pas seulement des plateformes
                 financières.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-14 rounded-3xl bg-slate-950 p-6 text-white md:p-10">
+          <h2 className="max-w-4xl text-3xl font-bold">
+            Une catégorie utile pour les indépendants, créateurs et petites
+            entreprises
+          </h2>
+
+          <p className="mt-5 max-w-4xl leading-8 text-slate-200">
+            Les outils IA ne servent pas uniquement à générer du texte. Ils
+            peuvent aussi aider à automatiser une activité, créer des contenus,
+            traiter des demandes clients, préparer des réponses, produire de la
+            voix, relier plusieurs applications et construire des services
+            intelligents plus complets.
+          </p>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            <div className="rounded-2xl bg-white/10 p-5">
+              <h3 className="font-bold text-white">Voix IA</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                Créer des voix off, agents vocaux, répondeurs intelligents ou
+                contenus audio.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white/10 p-5">
+              <h3 className="font-bold text-white">Automatisation</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                Connecter des outils, formulaires, emails, agendas, tableaux et
+                notifications.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white/10 p-5">
+              <h3 className="font-bold text-white">Productivité</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                Réduire les tâches répétitives et mieux organiser les demandes,
+                contenus ou suivis clients.
               </p>
             </div>
           </div>
