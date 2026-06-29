@@ -1,14 +1,28 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const HOSTINGER_AFFILIATE_LINK =
   "https://www.hostinger.com/fr?REFERRALCODE=J7NILOVEBA7H";
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
     "Hostinger avis 2026 : prix, WordPress, performances et hébergement web",
   description:
     "Notre avis sur Hostinger en 2026 : avantages, inconvénients, prix, WordPress, nom de domaine, sécurité, performances, FAQ et lien d’inscription.",
+  alternates: {
+    canonical: "https://afflizen.com/hebergement-web/hostinger",
+  },
+  openGraph: {
+    title:
+      "Hostinger avis 2026 : prix, WordPress, performances et hébergement web",
+    description:
+      "Notre avis sur Hostinger en 2026 : avantages, inconvénients, prix, WordPress, nom de domaine, sécurité, performances, FAQ et lien d’inscription.",
+    url: "https://afflizen.com/hebergement-web/hostinger",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "article",
+  },
 };
 
 const pros = [

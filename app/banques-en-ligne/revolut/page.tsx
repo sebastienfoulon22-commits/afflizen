@@ -1,13 +1,26 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const REVOLUT_AFFILIATE_LINK =
   "https://revolut.com/referral/?referral-code=sebast23u!JUN1-26-AR-H1&geo-redirect";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Revolut avis 2026 : frais, carte, compte, change et sécurité",
   description:
     "Notre avis sur Revolut en 2026 : avantages, inconvénients, frais, carte bancaire, change, sécurité, compte étranger, FAQ et lien d’inscription.",
+  alternates: {
+    canonical: "https://afflizen.com/banques-en-ligne/revolut",
+  },
+  openGraph: {
+    title: "Revolut avis 2026 : frais, carte, compte, change et sécurité",
+    description:
+      "Notre avis sur Revolut en 2026 : avantages, inconvénients, frais, carte bancaire, change, sécurité, compte étranger, FAQ et lien d’inscription.",
+    url: "https://afflizen.com/banques-en-ligne/revolut",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "article",
+  },
 };
 
 export default function RevolutPage() {

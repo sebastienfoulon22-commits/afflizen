@@ -1,11 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 const N26_LINK = "https://n26.com/en-be";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "N26 avis 2026 : frais, carte, compte gratuit et sécurité",
   description:
     "Notre avis sur N26 en 2026 : avantages, inconvénients, frais, carte bancaire, compte gratuit, épargne, sécurité, FAQ et inscription.",
+  alternates: {
+    canonical: "https://afflizen.com/banques-en-ligne/n26",
+  },
+  openGraph: {
+    title: "N26 avis 2026 : frais, carte, compte gratuit et sécurité",
+    description:
+      "Notre avis sur N26 en 2026 : avantages, inconvénients, frais, carte bancaire, compte gratuit, épargne, sécurité, FAQ et inscription.",
+    url: "https://afflizen.com/banques-en-ligne/n26",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "article",
+  },
 };
 
 export default function N26Page() {
@@ -120,10 +133,17 @@ export default function N26Page() {
               <li>• Plan Standard gratuit disponible.</li>
               <li>• Ouverture de compte rapide depuis smartphone.</li>
               <li>• Carte virtuelle incluse avec le compte Standard.</li>
-              <li>• Paiements gratuits dans le monde selon les conditions du plan.</li>
+              <li>
+                • Paiements gratuits dans le monde selon les conditions du plan.
+              </li>
               <li>• Outils de suivi des dépenses et de gestion du budget.</li>
-              <li>• Sous-comptes, espaces et outils avancés selon la formule choisie.</li>
-              <li>• Dépôts éligibles protégés jusqu’à 100 000 € selon conditions.</li>
+              <li>
+                • Sous-comptes, espaces et outils avancés selon la formule
+                choisie.
+              </li>
+              <li>
+                • Dépôts éligibles protégés jusqu’à 100 000 € selon conditions.
+              </li>
             </ul>
           </article>
 
@@ -132,13 +152,23 @@ export default function N26Page() {
               Inconvénients de N26
             </h2>
             <ul className="mt-6 space-y-4 text-slate-700">
-              <li>• Certaines fonctions intéressantes sont réservées aux plans payants.</li>
+              <li>
+                • Certaines fonctions intéressantes sont réservées aux plans
+                payants.
+              </li>
               <li>• Les retraits gratuits sont limités selon le plan.</li>
-              <li>• La carte physique peut entraîner des frais selon la formule.</li>
-              <li>• Support client parfois moins humain qu’une banque traditionnelle.</li>
+              <li>
+                • La carte physique peut entraîner des frais selon la formule.
+              </li>
+              <li>
+                • Support client parfois moins humain qu’une banque
+                traditionnelle.
+              </li>
               <li>• Moins adapté aux besoins bancaires complexes.</li>
               <li>• Compte étranger potentiellement à déclarer selon le pays.</li>
-              <li>• Les taux d’épargne et avantages peuvent évoluer avec le temps.</li>
+              <li>
+                • Les taux d’épargne et avantages peuvent évoluer avec le temps.
+              </li>
             </ul>
           </article>
         </div>
@@ -164,10 +194,10 @@ export default function N26Page() {
           </p>
 
           <p className="mt-5 leading-8 text-slate-700">
-            Des frais peuvent apparaître selon l’usage : retraits supplémentaires,
-            carte physique, services premium, change, paiements spécifiques ou
-            opérations hors conditions standards. Il faut donc vérifier la grille
-            tarifaire officielle avant de choisir une formule.
+            Des frais peuvent apparaître selon l’usage : retraits
+            supplémentaires, carte physique, services premium, change, paiements
+            spécifiques ou opérations hors conditions standards. Il faut donc
+            vérifier la grille tarifaire officielle avant de choisir une formule.
           </p>
 
           <div className="mt-6 rounded-2xl bg-slate-50 p-6">
@@ -188,9 +218,9 @@ export default function N26Page() {
 
           <p className="mt-5 leading-8 text-slate-200">
             N26 est une banque allemande disposant d’une licence bancaire
-            complète. Les dépôts éligibles peuvent être protégés jusqu’à
-            100 000 € par déposant via le système allemand de garantie des
-            dépôts, selon les conditions applicables.
+            complète. Les dépôts éligibles peuvent être protégés jusqu’à 100 000
+            € par déposant via le système allemand de garantie des dépôts, selon
+            les conditions applicables.
           </p>
 
           <p className="mt-5 leading-8 text-slate-200">
@@ -257,8 +287,8 @@ export default function N26Page() {
           </p>
 
           <p className="mt-5 leading-8 text-slate-700">
-            Pour un résident belge, N26 indique que le compte d’épargne est fourni
-            sous droit allemand et que les taxes ne sont pas retenues
+            Pour un résident belge, N26 indique que le compte d’épargne est
+            fourni sous droit allemand et que les taxes ne sont pas retenues
             automatiquement. La déclaration et le paiement des taxes doivent donc
             être gérés par le client selon les règles belges.
           </p>
@@ -268,10 +298,10 @@ export default function N26Page() {
               Notre avis sur l’épargne N26
             </h3>
             <p className="mt-2 text-slate-700">
-              L’épargne N26 peut être pratique pour garder une réserve disponible,
-              mais elle ne doit pas être choisie uniquement pour un taux affiché.
-              Vérifiez le taux actuel, la fiscalité, la protection applicable et
-              les alternatives disponibles dans votre pays.
+              L’épargne N26 peut être pratique pour garder une réserve
+              disponible, mais elle ne doit pas être choisie uniquement pour un
+              taux affiché. Vérifiez le taux actuel, la fiscalité, la protection
+              applicable et les alternatives disponibles dans votre pays.
             </p>
           </div>
         </div>
@@ -285,7 +315,9 @@ export default function N26Page() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl bg-emerald-50 p-6">
-              <h3 className="font-bold text-slate-950">Utilisateurs mobiles</h3>
+              <h3 className="font-bold text-slate-950">
+                Utilisateurs mobiles
+              </h3>
               <p className="mt-3 text-slate-700">
                 Pour ceux qui veulent gérer leur argent depuis une application
                 claire, rapide et moderne.
@@ -293,7 +325,9 @@ export default function N26Page() {
             </div>
 
             <div className="rounded-2xl bg-slate-50 p-6">
-              <h3 className="font-bold text-slate-950">Voyageurs occasionnels</h3>
+              <h3 className="font-bold text-slate-950">
+                Voyageurs occasionnels
+              </h3>
               <p className="mt-3 text-slate-700">
                 Pour ceux qui veulent une carte pratique, des paiements simples
                 et des formules plus complètes selon leurs besoins.
@@ -327,8 +361,8 @@ export default function N26Page() {
             N26 est moins adaptée aux utilisateurs qui veulent une relation
             bancaire traditionnelle, une agence physique ou des services très
             complets. Pour un usage mobile, simple et quotidien, elle reste une
-            alternative intéressante à comparer avec Revolut, Wise, Nickel,
-            Bunq ou une banque en ligne classique.
+            alternative intéressante à comparer avec Revolut, Wise, Nickel, Bunq
+            ou une banque en ligne classique.
           </p>
 
           <div className="mt-8">

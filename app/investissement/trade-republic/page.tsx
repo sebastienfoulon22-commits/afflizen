@@ -1,13 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const TRADE_REPUBLIC_AFFILIATE_LINK = "https://refnocode.trade.re/dj55hz7z";
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
     "Trade Republic avis 2026 : frais, ETF, actions, carte et rendement",
   description:
     "Notre avis sur Trade Republic en 2026 : avantages, inconvénients, frais, ETF, actions, carte, intérêt sur espèces, sécurité, FAQ et lien d’inscription.",
+  alternates: {
+    canonical: "https://afflizen.com/investissement/trade-republic",
+  },
+  openGraph: {
+    title:
+      "Trade Republic avis 2026 : frais, ETF, actions, carte et rendement",
+    description:
+      "Notre avis sur Trade Republic en 2026 : avantages, inconvénients, frais, ETF, actions, carte, intérêt sur espèces, sécurité, FAQ et lien d’inscription.",
+    url: "https://afflizen.com/investissement/trade-republic",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "article",
+  },
 };
 
 export default function TradeRepublicPage() {

@@ -40,15 +40,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Afflizen" }],
   creator: "Afflizen",
   publisher: "Afflizen",
-  alternates: {
-    canonical: "https://afflizen.com",
-  },
   openGraph: {
     title:
       "Afflizen - Comparatifs crypto, banques en ligne, investissement et outils IA",
     description:
       "Comparez les meilleures plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, e-commerce, hébergement web, outils IA et bons plans financiers.",
-    url: "https://afflizen.com",
     siteName: "Afflizen",
     locale: "fr_BE",
     type: "website",

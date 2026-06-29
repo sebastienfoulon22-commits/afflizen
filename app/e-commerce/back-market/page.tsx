@@ -1,15 +1,26 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const BACK_MARKET_URL = "https://www.backmarket.fr/fr-fr";
 const BACK_MARKET_CODE = "ffcb15bb420025aa";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Back Market avis 2026 : code parrainage, reconditionné et bons plans",
   description:
     "Notre avis sur Back Market : code parrainage, avantages, limites, garantie, retours, prix et conseils avant d’acheter un produit reconditionné.",
   alternates: {
     canonical: "https://afflizen.com/e-commerce/back-market",
+  },
+  openGraph: {
+    title:
+      "Back Market avis 2026 : code parrainage, reconditionné et bons plans",
+    description:
+      "Notre avis sur Back Market : code parrainage, avantages, limites, garantie, retours, prix et conseils avant d’acheter un produit reconditionné.",
+    url: "https://afflizen.com/e-commerce/back-market",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "article",
   },
 };
 
@@ -344,7 +355,9 @@ export default function BackMarketPage() {
                   <li>• Prix parfois très compétitifs selon les modèles.</li>
                   <li>• Code de parrainage simple à utiliser.</li>
                   <li>• Possibilité de comparer plusieurs états de produits.</li>
-                  <li>• Alternative intéressante au neuf pour certains achats.</li>
+                  <li>
+                    • Alternative intéressante au neuf pour certains achats.
+                  </li>
                 </ul>
               </div>
 
@@ -354,7 +367,9 @@ export default function BackMarketPage() {
                 </h3>
                 <ul className="mt-4 space-y-3 text-sm leading-6 text-amber-950">
                   <li>• Les prix ne sont pas toujours meilleurs que le neuf.</li>
-                  <li>• L’état réel peut varier selon le vendeur et le produit.</li>
+                  <li>
+                    • L’état réel peut varier selon le vendeur et le produit.
+                  </li>
                   <li>• Les codes promo peuvent avoir des conditions.</li>
                   <li>• Tous les accessoires ne sont pas toujours inclus.</li>
                   <li>• Il faut lire les conditions de garantie et de retour.</li>

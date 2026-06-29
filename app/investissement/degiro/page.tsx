@@ -10,6 +10,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://afflizen.com/investissement/degiro",
   },
+  openGraph: {
+    title: "DEGIRO avis 2026 : courtier en ligne, actions, ETF, frais et limites",
+    description:
+      "Notre avis sur DEGIRO en 2026 : courtier en ligne pour actions, ETF et marchés financiers. Avantages, limites, frais à vérifier, fiscalité belge et points de vigilance.",
+    url: "https://afflizen.com/investissement/degiro",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "article",
+  },
 };
 
 const faqJsonLd = {
