@@ -36,12 +36,22 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
-    path: "/bons-plans",
+    path: "/cartes-et-paiements",
     priority: 0.8,
     changeFrequency: "weekly",
   },
   {
-    path: "/cartes-et-paiements",
+    path: "/e-commerce",
+    priority: 0.8,
+    changeFrequency: "weekly",
+  },
+  {
+    path: "/outils-ia",
+    priority: 0.8,
+    changeFrequency: "weekly",
+  },
+  {
+    path: "/bons-plans",
     priority: 0.8,
     changeFrequency: "weekly",
   },
@@ -124,8 +134,13 @@ const routes = [
     priority: 0.85,
     changeFrequency: "monthly",
   },
+  {
+    path: "/investissement/degiro",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
 
-  // Banques en ligne / courtiers
+  // Banques en ligne
   {
     path: "/banques-en-ligne/revolut",
     priority: 0.85,
@@ -133,11 +148,6 @@ const routes = [
   },
   {
     path: "/banques-en-ligne/n26",
-    priority: 0.8,
-    changeFrequency: "monthly",
-  },
-  {
-    path: "/investissement/degiro",
     priority: 0.8,
     changeFrequency: "monthly",
   },
@@ -171,22 +181,44 @@ const routes = [
     changeFrequency: "monthly",
   },
 
-  // Bons plans / e-commerce
-  {
-    path: "/e-commerce/back-market",
-    priority: 0.75,
-    changeFrequency: "monthly",
-  },
-  {
-    path: "/bons-plans/dealabs",
-    priority: 0.75,
-    changeFrequency: "monthly",
-  },
-
   // Cartes & paiements
   {
     path: "/cartes-et-paiements/curve-pay",
     priority: 0.75,
+    changeFrequency: "monthly",
+  },
+
+  // E-commerce
+  {
+    path: "/e-commerce/back-market",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/e-commerce/dealabs",
+    priority: 0.75,
+    changeFrequency: "monthly",
+  },
+
+  // Outils IA
+  {
+    path: "/outils-ia/elevenlabs",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/outils-ia/make",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/outils-ia/n8n",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/outils-ia/gamma",
+    priority: 0.8,
     changeFrequency: "monthly",
   },
 
