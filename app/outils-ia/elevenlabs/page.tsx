@@ -1,490 +1,439 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
-const ELEVENLABS_LINK = "https://elevenlabs.io/";
-
-export const metadata = {
-  title:
-    "ElevenLabs avis 2026 : voix IA, agents vocaux, doublage et répondeur intelligent",
+export const metadata: Metadata = {
+  title: "Outils IA : voix, automatisation, workflows et présentations",
   description:
-    "Notre avis sur ElevenLabs, une plateforme IA spécialisée dans les voix réalistes, le text-to-speech, le clonage vocal, le doublage et les agents vocaux pour créateurs, indépendants et entreprises.",
+    "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches, générer de la voix, créer des présentations et développer des solutions intelligentes.",
+  alternates: {
+    canonical: "https://afflizen.com/outils-ia",
+  },
+  openGraph: {
+    title: "Outils IA : voix, automatisation, workflows et présentations",
+    description:
+      "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches, générer de la voix, créer des présentations et développer des solutions intelligentes.",
+    url: "https://afflizen.com/outils-ia",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "website",
+  },
 };
 
-export default function ElevenLabsPage() {
+const tools = [
+  {
+    name: "ElevenLabs",
+    href: "/outils-ia/elevenlabs",
+    description:
+      "Une plateforme IA spécialisée dans les voix réalistes, le text-to-speech, le doublage, le clonage vocal et les agents vocaux.",
+    badge: "Voix IA",
+  },
+  {
+    name: "Make",
+    href: "/outils-ia/make",
+    description:
+      "Une plateforme d’automatisation visuelle pour connecter ses applications, créer des workflows IA et gagner du temps sans coder.",
+    badge: "Automatisation",
+  },
+  {
+    name: "n8n",
+    href: "/outils-ia/n8n",
+    description:
+      "Une plateforme d’automatisation avancée pour créer des workflows IA, connecter des API, gérer des webhooks et construire des scénarios plus techniques.",
+    badge: "Workflows IA",
+  },
+  {
+    name: "Gamma",
+    href: "/outils-ia/gamma",
+    description:
+      "Un outil IA pour créer rapidement des présentations, documents, pages visuelles et supports professionnels sans partir d’une page blanche.",
+    badge: "Présentations IA",
+  },
+];
+
+const useCases = [
+  {
+    title: "Créer une voix IA ou un répondeur intelligent",
+    description:
+      "ElevenLabs est l’outil à regarder en priorité pour la voix IA, les agents vocaux, les messages audio et les expériences vocales plus naturelles.",
+    href: "/outils-ia/elevenlabs",
+    cta: "Voir ElevenLabs",
+  },
+  {
+    title: "Automatiser des tâches simples sans coder",
+    description:
+      "Make convient bien pour connecter des formulaires, emails, calendriers, Google Sheets, CRM, notifications et outils IA dans des scénarios visuels.",
+    href: "/outils-ia/make",
+    cta: "Voir Make",
+  },
+  {
+    title: "Créer des workflows IA plus avancés",
+    description:
+      "n8n est plus technique, mais aussi plus flexible pour les API, webhooks, conditions, agents IA, données et automatisations complexes.",
+    href: "/outils-ia/n8n",
+    cta: "Voir n8n",
+  },
+  {
+    title: "Créer une présentation ou un support client",
+    description:
+      "Gamma aide à transformer une idée en présentation, document ou page visuelle, utile pour préparer un support professionnel rapidement.",
+    href: "/outils-ia/gamma",
+    cta: "Voir Gamma",
+  },
+];
+
+const comparisonCards = [
+  {
+    title: "ElevenLabs + Make",
+    description:
+      "Un bon duo pour imaginer un répondeur IA ou un système automatisé : ElevenLabs pour la voix, Make pour relier les outils et déclencher les actions.",
+    links: [
+      {
+        label: "ElevenLabs",
+        href: "/outils-ia/elevenlabs",
+      },
+      {
+        label: "Make",
+        href: "/outils-ia/make",
+      },
+    ],
+  },
+  {
+    title: "Make + n8n",
+    description:
+      "Make est plus simple pour démarrer. n8n devient intéressant quand les scénarios demandent plus de logique, d’API, de contrôle ou d’hébergement.",
+    links: [
+      {
+        label: "Make",
+        href: "/outils-ia/make",
+      },
+      {
+        label: "n8n",
+        href: "/outils-ia/n8n",
+      },
+    ],
+  },
+  {
+    title: "Gamma + outils d’automatisation",
+    description:
+      "Gamma peut servir à créer les supports. Make ou n8n peuvent ensuite aider à organiser la diffusion, le suivi client ou les tâches répétitives.",
+    links: [
+      {
+        label: "Gamma",
+        href: "/outils-ia/gamma",
+      },
+      {
+        label: "Make",
+        href: "/outils-ia/make",
+      },
+      {
+        label: "n8n",
+        href: "/outils-ia/n8n",
+      },
+    ],
+  },
+];
+
+export default function OutilsIAPage() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
       <section className="mx-auto max-w-6xl px-6 py-10">
-        <div className="mb-8 flex flex-wrap gap-3">
-          <Link
-            href="/"
-            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
-          >
-            ← Retour à l’accueil
-          </Link>
-
-          <Link
-            href="/outils-ia"
-            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
-          >
-            Voir les autres outils IA
-          </Link>
-        </div>
-
         <div className="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 px-6 py-12 text-white shadow-xl md:px-12">
           <p className="mb-4 inline-flex rounded-full bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-300 ring-1 ring-emerald-400/20">
-            Outil IA vocal
+            Catégorie Afflizen
           </p>
 
-          <h1 className="max-w-5xl text-4xl font-bold tracking-tight md:text-6xl">
-            ElevenLabs : créer des voix IA, des agents vocaux et des solutions
-            audio intelligentes
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+            Outils IA pour gagner du temps, automatiser et créer plus vite
           </h1>
 
-          <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-200">
-            ElevenLabs est une plateforme d’intelligence artificielle spécialisée
-            dans la génération vocale, le text-to-speech, le clonage vocal, le
-            doublage, la transcription et les agents conversationnels. Elle peut
-            servir aux créateurs de contenu, aux indépendants, aux entreprises et
-            aux projets de répondeur vocal intelligent.
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
+            Cette catégorie regroupe les outils d’intelligence artificielle qui
+            peuvent être réellement utiles au quotidien : création de contenu,
+            voix IA, répondeurs intelligents, automatisation, productivité,
+            support client et solutions pour indépendants ou petites
+            entreprises.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href={ELEVENLABS_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full bg-emerald-400 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-emerald-300"
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href="/outils-ia/elevenlabs"
+              className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-50"
             >
-              Découvrir ElevenLabs
-            </a>
+              Voix IA
+            </Link>
 
-            <a
-              href="#repondeur-ia"
-              className="rounded-full border border-white/20 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+            <Link
+              href="/outils-ia/make"
+              className="rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:border-emerald-300 hover:text-emerald-300"
             >
-              Voir l’usage répondeur IA
-            </a>
+              Automatisation
+            </Link>
+
+            <Link
+              href="/outils-ia/n8n"
+              className="rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:border-emerald-300 hover:text-emerald-300"
+            >
+              Workflows avancés
+            </Link>
+
+            <Link
+              href="/outils-ia/gamma"
+              className="rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:border-emerald-300 hover:text-emerald-300"
+            >
+              Présentations IA
+            </Link>
           </div>
-
-          <p className="mt-5 text-xs leading-6 text-slate-300">
-            Lien officiel provisoire. Le lien partenaire Afflizen sera ajouté
-            dès qu’il sera disponible.
-          </p>
         </div>
 
-        <section className="mt-12 grid gap-6 md:grid-cols-3">
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-slate-950">
-              Voix IA réalistes
-            </h2>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
-              ElevenLabs permet de transformer du texte en voix naturelle pour
-              des vidéos, podcasts, formations, publicités, livres audio ou
-              supports professionnels.
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-slate-950">
-              Agents vocaux
-            </h2>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
-              La plateforme peut être utilisée comme brique vocale dans des
-              agents capables de répondre, guider, qualifier une demande ou
-              orienter un utilisateur.
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-slate-950">
-              API et intégrations
-            </h2>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
-              ElevenLabs propose aussi des API et des outils techniques pour
-              intégrer la voix IA dans une application, un site web ou un service
-              automatisé.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-14 grid gap-8 lg:grid-cols-[2fr_1fr]">
-          <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-            <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
-              Avis Afflizen
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold text-slate-950">
-              Notre avis sur ElevenLabs
-            </h2>
-
-            <p className="mt-5 leading-8 text-slate-700">
-              ElevenLabs fait partie des outils IA les plus intéressants dès
-              qu’un projet nécessite une voix naturelle, une expérience audio ou
-              une interaction vocale. La plateforme peut être utilisée simplement
-              pour créer une voix off, mais elle peut aussi devenir une brique
-              technique dans un projet plus complet : agent vocal, support
-              client automatisé, répondeur intelligent ou application avec voix
-              intégrée.
-            </p>
-
-            <p className="mt-5 leading-8 text-slate-700">
-              Pour un créateur de contenu, l’intérêt est évident : produire plus
-              rapidement des voix off, tester différents styles de narration,
-              localiser des vidéos ou transformer des textes en audio. Pour une
-              entreprise, l’intérêt est plus opérationnel : automatiser une
-              partie des réponses, orienter des demandes simples, créer une
-              expérience vocale plus professionnelle ou tester un assistant vocal
-              avant d’investir dans une solution plus lourde.
-            </p>
-
-            <p className="mt-5 leading-8 text-slate-700">
-              Le point important est de ne pas vendre ElevenLabs comme une
-              solution magique. Pour obtenir un bon résultat, il faut préparer le
-              script, choisir la bonne voix, tester les réponses, vérifier la
-              conformité avec les règles de confidentialité et intégrer la
-              plateforme avec les bons outils autour : téléphonie, agenda, site
-              web, CRM ou formulaire de contact.
-            </p>
-          </article>
-
-          <aside className="rounded-3xl border border-emerald-200 bg-emerald-50 p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-slate-950">
-              Pour qui ?
-            </h2>
-
-            <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
-              <li>• Créateurs YouTube, TikTok, podcasts et formations</li>
-              <li>• Indépendants qui veulent gagner du temps</li>
-              <li>• Salons, commerces et petites entreprises</li>
-              <li>• Agences web ou IA qui créent des solutions vocales</li>
-              <li>• Entreprises qui veulent tester des agents vocaux</li>
-              <li>• Développeurs qui veulent intégrer une voix IA via API</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section
-          id="repondeur-ia"
-          className="mt-14 rounded-3xl bg-slate-950 p-6 text-white md:p-10"
-        >
-          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-400">
-            Cas concret
-          </p>
-
-          <h2 className="mt-3 max-w-4xl text-3xl font-bold md:text-4xl">
-            Créer un répondeur téléphonique IA avec ElevenLabs
-          </h2>
-
-          <p className="mt-5 max-w-4xl leading-8 text-slate-200">
-            Un des usages les plus intéressants d’ElevenLabs est la création
-            d’un répondeur vocal intelligent pour une petite entreprise. L’idée
-            n’est pas seulement de lire un message enregistré, mais de proposer
-            une voix IA capable de répondre à des questions simples, donner des
-            informations utiles et rediriger l’appel quand une intervention
-            humaine est nécessaire.
-          </p>
-
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">1. Accueil vocal</h3>
-              <p className="mt-2 text-sm leading-7 text-slate-300">
-                L’agent accueille le client avec une voix naturelle et explique
-                ce qu’il peut faire.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">2. Infos pratiques</h3>
-              <p className="mt-2 text-sm leading-7 text-slate-300">
-                Horaires, adresse, services, tarifs indicatifs, congés,
-                conditions et réponses fréquentes.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">3. Rendez-vous</h3>
-              <p className="mt-2 text-sm leading-7 text-slate-300">
-                L’agent peut orienter vers une prise de rendez-vous ou préparer
-                une demande avant confirmation.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">4. Redirection</h3>
-              <p className="mt-2 text-sm leading-7 text-slate-300">
-                Si la demande est urgente ou complexe, l’appel peut être
-                transféré vers la personne responsable.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 className="text-2xl font-bold text-white">
-              Exemple pour un salon de coiffure
-            </h3>
-
-            <p className="mt-4 leading-8 text-slate-200">
-              Un salon peut utiliser un répondeur IA pour informer les clients
-              sur les horaires, les prestations, les fourchettes de prix, les
-              disponibilités générales, les fermetures exceptionnelles ou les
-              modalités de rendez-vous. L’agent peut aussi expliquer qu’un membre
-              de l’équipe rappellera le client si la demande nécessite une
-              confirmation humaine.
-            </p>
-
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
-              <div className="rounded-2xl bg-slate-900 p-5">
-                <p className="text-sm font-semibold text-emerald-400">
-                  Gain de temps
-                </p>
-                <p className="mt-2 text-sm leading-7 text-slate-300">
-                  Moins d’appels répétitifs pour les mêmes questions.
-                </p>
+        <section className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {tools.map((tool) => (
+            <Link
+              key={tool.name}
+              href={tool.href}
+              className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl"
+            >
+              <div className="mb-5 inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                {tool.badge}
               </div>
 
-              <div className="rounded-2xl bg-slate-900 p-5">
-                <p className="text-sm font-semibold text-emerald-400">
-                  Meilleure disponibilité
-                </p>
-                <p className="mt-2 text-sm leading-7 text-slate-300">
-                  Une réponse possible même en dehors des heures d’ouverture.
-                </p>
-              </div>
+              <h2 className="text-2xl font-bold text-slate-950">
+                {tool.name}
+              </h2>
 
-              <div className="rounded-2xl bg-slate-900 p-5">
-                <p className="text-sm font-semibold text-emerald-400">
-                  Image professionnelle
-                </p>
-                <p className="mt-2 text-sm leading-7 text-slate-300">
-                  Une voix claire, cohérente et adaptée à l’identité du salon.
-                </p>
-              </div>
-            </div>
-          </div>
+              <p className="mt-4 text-sm leading-7 text-slate-600">
+                {tool.description}
+              </p>
+
+              <span className="mt-6 inline-flex text-sm font-semibold text-emerald-700 group-hover:text-emerald-800">
+                Voir la page →
+              </span>
+            </Link>
+          ))}
         </section>
 
         <section className="mt-14 rounded-3xl border border-slate-200 bg-slate-50 p-6 md:p-8">
-          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
-            Architecture possible
-          </p>
-
-          <h2 className="mt-3 text-3xl font-bold text-slate-950">
-            De quoi a-t-on besoin pour construire une vraie solution vocale IA ?
+          <h2 className="text-2xl font-bold text-slate-950">
+            Quel outil IA choisir selon votre besoin ?
           </h2>
 
-          <p className="mt-5 max-w-4xl leading-8 text-slate-700">
-            ElevenLabs peut gérer une partie essentielle du projet : la voix IA.
-            Mais pour créer un service complet, il faut généralement combiner
-            plusieurs briques. C’est justement ce qui rend le sujet intéressant
-            pour une agence web ou un créateur de solutions IA.
+          <p className="mt-4 max-w-4xl leading-8 text-slate-700">
+            Tous les outils IA ne servent pas au même usage. Certains sont faits
+            pour créer de la voix, d’autres pour automatiser une activité,
+            connecter des applications, créer des workflows avancés ou préparer
+            rapidement des supports visuels.
           </p>
 
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                Base de connaissances
-              </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Les horaires, prix, services, FAQ, conditions, zones desservies
-                et réponses autorisées doivent être préparés clairement.
-              </p>
-            </div>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {useCases.map((item) => (
+              <Link
+                key={item.title}
+                href={item.href}
+                className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <h3 className="text-lg font-bold text-slate-950">
+                  {item.title}
+                </h3>
 
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                Logique de conversation
-              </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                L’agent doit savoir quand répondre, quand demander une précision
-                et quand transférer vers un humain.
-              </p>
-            </div>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {item.description}
+                </p>
 
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                Téléphonie
-              </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Il faut connecter l’agent à un numéro, un standard, une solution
-                VoIP ou un service compatible avec les appels.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                Agenda ou formulaire
-              </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Pour les rendez-vous, l’agent peut orienter vers un agenda en
-                ligne ou collecter une demande à valider.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                Redirection humaine
-              </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Une vraie solution doit prévoir le transfert ou le rappel humain
-                si la demande dépasse le cadre prévu.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                Tests et conformité
-              </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Il faut tester les réponses, informer l’utilisateur et respecter
-                les règles liées aux données personnelles.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mt-14 grid gap-8 md:grid-cols-2">
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-2xl font-bold text-slate-950">
-              Avantages d’ElevenLabs
-            </h2>
-
-            <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
-              <li>• Très bon rendu vocal pour créer des contenus audio réalistes.</li>
-              <li>• Usages variés : voix off, doublage, agents vocaux, API et automatisation.</li>
-              <li>• Intéressant pour les créateurs, indépendants, commerces et petites entreprises.</li>
-              <li>• Possibilité de construire des expériences vocales plus professionnelles.</li>
-              <li>• Programme partenaire intéressant à étudier dès que le lien Afflizen est disponible.</li>
-            </ul>
-          </div>
-
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-2xl font-bold text-slate-950">
-              Points à vérifier
-            </h2>
-
-            <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
-              <li>• Les prix, crédits et fonctionnalités peuvent évoluer selon les plans.</li>
-              <li>• Le clonage vocal doit être utilisé avec consentement et prudence.</li>
-              <li>• Une solution vocale professionnelle doit être testée avant usage réel.</li>
-              <li>• Les règles de confidentialité et de données personnelles doivent être respectées.</li>
-              <li>• Le lien partenaire Afflizen sera ajouté seulement après validation du programme.</li>
-            </ul>
+                <p className="mt-4 text-sm font-semibold text-emerald-700">
+                  {item.cta} →
+                </p>
+              </Link>
+            ))}
           </div>
         </section>
 
         <section className="mt-14 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
-            Créateurs et entreprises
-          </p>
-
-          <h2 className="mt-3 text-3xl font-bold text-slate-950">
-            Ce qu’on peut faire avec ElevenLabs
+          <h2 className="text-2xl font-bold text-slate-950">
+            Pourquoi ajouter une catégorie IA sur Afflizen ?
           </h2>
 
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Créer des voix off
+          <div className="mt-5 grid gap-5 text-sm leading-7 text-slate-700 md:grid-cols-3">
+            <div className="rounded-2xl bg-slate-50 p-5 shadow-sm">
+              <h3 className="font-semibold text-slate-950">
+                Marché en forte demande
               </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Transformer un texte en audio pour une vidéo, une publicité, une
-                présentation, une formation, un podcast ou un contenu social.
+              <p className="mt-2">
+                Les outils IA intéressent les créateurs, les indépendants, les
+                petites entreprises et les particuliers qui veulent gagner du
+                temps.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Doubler et localiser du contenu
+            <div className="rounded-2xl bg-slate-50 p-5 shadow-sm">
+              <h3 className="font-semibold text-slate-950">
+                Revenus d’affiliation possibles
               </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Adapter un contenu audio ou vidéo dans une autre langue afin de
-                toucher un public plus large et donner une dimension
-                internationale à ses contenus.
+              <p className="mt-2">
+                Certains outils IA proposent des programmes partenaires, ce qui
+                peut créer une nouvelle source de revenus pour Afflizen.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Créer un assistant vocal
+            <div className="rounded-2xl bg-slate-50 p-5 shadow-sm">
+              <h3 className="font-semibold text-slate-950">
+                Cohérent avec les solutions web
               </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Concevoir un agent capable de répondre à des questions simples,
-                guider un utilisateur ou orienter une demande vers le bon canal.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Intégrer une voix IA dans une application
-              </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Utiliser les API pour ajouter une voix réaliste dans un outil,
-                une app, un site web, un service client ou une expérience
-                interactive.
+              <p className="mt-2">
+                La catégorie peut aussi servir à montrer qu’Afflizen teste et
+                recommande des solutions concrètes, pas seulement des plateformes
+                financières.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="mt-14 rounded-3xl border border-amber-200 bg-amber-50 p-6 md:p-8">
-          <h2 className="text-2xl font-bold text-slate-950">
-            Précautions importantes
-          </h2>
-
-          <p className="mt-4 leading-8 text-slate-700">
-            Les outils de voix IA doivent être utilisés de manière transparente.
-            Pour un usage professionnel, il est recommandé d’informer clairement
-            l’utilisateur lorsqu’il interagit avec une assistance automatisée, de
-            ne pas collecter de données sensibles inutilement, de prévoir une
-            alternative humaine et de vérifier les règles applicables dans le pays
-            concerné.
-          </p>
-
-          <p className="mt-4 leading-8 text-slate-700">
-            Le clonage vocal doit être traité avec encore plus de prudence : il
-            faut disposer du consentement nécessaire et éviter tout usage pouvant
-            tromper, imiter ou usurper l’identité d’une personne.
-          </p>
-        </section>
-
-        <section className="mt-14 rounded-3xl bg-gradient-to-br from-emerald-600 to-slate-950 p-6 text-white md:p-10">
+        <section className="mt-14 rounded-3xl bg-slate-950 p-6 text-white md:p-10">
           <h2 className="max-w-4xl text-3xl font-bold">
-            Verdict Afflizen : ElevenLabs est un outil IA stratégique à suivre
+            Une catégorie utile pour les indépendants, créateurs et petites
+            entreprises
           </h2>
 
-          <p className="mt-5 max-w-4xl leading-8 text-emerald-50">
-            ElevenLabs est plus qu’un simple générateur de voix. C’est une
-            plateforme qui peut servir à créer des contenus audio, tester des
-            agents vocaux, développer des assistants intelligents et construire
-            des solutions concrètes pour les indépendants ou les petites
-            entreprises. Pour Afflizen, cette page est aussi une base crédible
-            pour présenter un futur partenariat ElevenLabs lorsque le lien
-            d’affiliation sera disponible.
+          <p className="mt-5 max-w-4xl leading-8 text-slate-200">
+            Les outils IA ne servent pas uniquement à générer du texte. Ils
+            peuvent aussi aider à automatiser une activité, créer des contenus,
+            traiter des demandes clients, préparer des réponses, produire de la
+            voix, relier plusieurs applications et construire des services
+            intelligents plus complets.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href={ELEVENLABS_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-emerald-50"
+          <div className="mt-8 grid gap-5 md:grid-cols-4">
+            <Link
+              href="/outils-ia/elevenlabs"
+              className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/15"
             >
-              Découvrir ElevenLabs
-            </a>
+              <h3 className="font-bold text-white">Voix IA</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                Créer des voix off, agents vocaux, répondeurs intelligents ou
+                contenus audio.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-emerald-300">
+                ElevenLabs →
+              </p>
+            </Link>
 
             <Link
-              href="/outils-ia"
-              className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+              href="/outils-ia/make"
+              className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/15"
             >
-              Voir les autres outils IA
+              <h3 className="font-bold text-white">Automatisation</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                Connecter des outils, formulaires, emails, agendas, tableaux,
+                CRM, webhooks et notifications.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-emerald-300">
+                Make →
+              </p>
+            </Link>
+
+            <Link
+              href="/outils-ia/n8n"
+              className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/15"
+            >
+              <h3 className="font-bold text-white">Workflows avancés</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                Construire des scénarios plus poussés avec IA, API, conditions,
+                données et validation humaine.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-emerald-300">
+                n8n →
+              </p>
+            </Link>
+
+            <Link
+              href="/outils-ia/gamma"
+              className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/15"
+            >
+              <h3 className="font-bold text-white">Supports visuels</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                Créer des présentations, documents, pages et supports
+                professionnels plus rapidement.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-emerald-300">
+                Gamma →
+              </p>
             </Link>
           </div>
+        </section>
 
-          <p className="mt-5 text-xs leading-6 text-emerald-50/80">
-            Lien officiel provisoire. Le lien partenaire Afflizen sera ajouté
-            après validation du programme. Les prix, crédits, fonctionnalités et
-            conditions doivent toujours être vérifiés sur le site officiel avant
-            inscription.
+        <section className="mt-14 rounded-3xl border border-emerald-200 bg-emerald-50 p-6 md:p-8">
+          <h2 className="text-2xl font-bold text-slate-950">
+            Des outils IA complémentaires
+          </h2>
+
+          <p className="mt-4 leading-8 text-slate-700">
+            ElevenLabs, Make, n8n et Gamma couvrent des besoins différents mais
+            complémentaires. ElevenLabs sert à créer de la voix IA, Make permet
+            de démarrer facilement avec l’automatisation, n8n va plus loin dans
+            les workflows avancés, et Gamma aide à présenter clairement une idée,
+            un projet ou une offre.
           </p>
+
+          <div className="mt-6 grid gap-5 md:grid-cols-3">
+            {comparisonCards.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-2xl bg-white p-5 shadow-sm"
+              >
+                <h3 className="font-bold text-slate-950">{item.title}</h3>
+
+                <p className="mt-2 text-sm leading-7 text-slate-600">
+                  {item.description}
+                </p>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {item.links.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 transition hover:bg-emerald-100"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14 rounded-3xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+          <h2 className="text-2xl font-bold text-slate-950">
+            Toutes les pages Outils IA
+          </h2>
+
+          <p className="mt-4 max-w-4xl leading-8 text-slate-700">
+            Chaque page Afflizen détaille un outil, ses cas d’usage, ses limites
+            et sa place dans une stratégie simple pour gagner du temps ou créer
+            des solutions plus efficaces.
+          </p>
+
+          <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {tools.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                  {tool.badge}
+                </p>
+
+                <h3 className="mt-2 font-bold text-slate-950">{tool.name}</h3>
+
+                <p className="mt-2 text-sm leading-7 text-slate-600">
+                  {tool.description}
+                </p>
+
+                <p className="mt-4 text-sm font-semibold text-emerald-700">
+                  Lire la page →
+                </p>
+              </Link>
+            ))}
+          </div>
         </section>
       </section>
     </main>
