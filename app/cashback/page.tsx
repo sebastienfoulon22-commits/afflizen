@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cashback : comparatif iGraal, Widilo, eBuyClub et bons plans",
+  title: "Cashback : comparatif iGraal, Poulpeo, Widilo, eBuyClub et bons plans",
   description:
-    "Comparez les plateformes de cashback suivies par Afflizen : iGraal, Widilo, eBuyClub, remboursements, codes promo, avantages et points à vérifier.",
+    "Comparez les plateformes de cashback suivies par Afflizen : iGraal, Poulpeo, Widilo, eBuyClub, remboursements, codes promo, avantages et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/cashback",
   },
@@ -25,6 +25,13 @@ const platforms = [
     description:
       "Plateforme de cashback permettant de récupérer une partie de ses achats en ligne.",
     bonus: "Cashback",
+  },
+  {
+    name: "Poulpeo",
+    slug: "/cashback/poulpeo",
+    description:
+      "Plateforme française de cashback, codes promo et réductions pour récupérer une partie de certains achats en ligne selon conditions.",
+    bonus: "Cashback + codes promo",
   },
   {
     name: "Widilo",

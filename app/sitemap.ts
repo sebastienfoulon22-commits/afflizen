@@ -189,6 +189,11 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
+    path: "/cashback/poulpeo",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/cashback/widilo",
     priority: 0.8,
     changeFrequency: "monthly",
