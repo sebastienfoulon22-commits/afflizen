@@ -12,6 +12,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://afflizen.com/investissement/finary",
   },
+  openGraph: {
+    title: "Finary avis 2026 : suivre son patrimoine, budget, investissements et crypto",
+    description:
+      "Notre avis sur Finary en 2026 : suivi de patrimoine, budget, investissements, crypto, frais, avantages, limites et parrainage Finary Premium.",
+    url: "https://afflizen.com/investissement/finary",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "article",
+  },
 };
 
 const faqJsonLd = {

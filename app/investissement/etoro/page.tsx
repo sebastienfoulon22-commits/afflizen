@@ -14,6 +14,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://afflizen.com/investissement/etoro",
   },
+  openGraph: {
+    title: "eToro avis 2026 : copy trading, actions, ETF, crypto et cashback iGraal",
+    description:
+      "Notre avis sur eToro en 2026 : fonctionnement, copy trading, actions, ETF, crypto, offre iGraal testée, cashback potentiel, avantages, limites et points de vigilance.",
+    url: "https://afflizen.com/investissement/etoro",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "article",
+  },
 };
 
 const faqJsonLd = {

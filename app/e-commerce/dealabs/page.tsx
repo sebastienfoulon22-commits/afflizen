@@ -9,6 +9,15 @@ export const metadata = {
   alternates: {
     canonical: "https://afflizen.com/e-commerce/dealabs",
   },
+  openGraph: {
+    title: "Dealabs avis 2026 : bons plans, codes promo et achats malins",
+    description:
+      "Notre avis sur Dealabs : fonctionnement, avantages, limites, bons plans, codes promo, achats en ligne et conseils pour éviter les fausses promotions.",
+    url: "https://afflizen.com/e-commerce/dealabs",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "article",
+  },
 };
 
 const benefits = [
