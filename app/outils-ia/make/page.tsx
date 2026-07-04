@@ -1,13 +1,51 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 const MAKE_LINK = "https://www.make.com/";
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
     "Make avis 2026 : automatisation IA, workflows no-code et agents intelligents",
   description:
     "Notre avis sur Make, une plateforme d’automatisation visuelle pour connecter ses applications, automatiser des tâches, créer des workflows IA et gagner du temps sans coder.",
+  alternates: {
+    canonical: "https://afflizen.com/outils-ia/make",
+  },
+  openGraph: {
+    title:
+      "Make avis 2026 : automatisation IA, workflows no-code et agents intelligents",
+    description:
+      "Notre avis sur Make, une plateforme d’automatisation visuelle pour connecter ses applications, automatiser des tâches, créer des workflows IA et gagner du temps sans coder.",
+    url: "https://afflizen.com/outils-ia/make",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "article",
+  },
 };
+
+const relatedTools = [
+  {
+    name: "ElevenLabs",
+    href: "/outils-ia/elevenlabs",
+    badge: "Voix IA",
+    description:
+      "ElevenLabs peut compléter Make pour créer des agents vocaux, répondeurs IA, messages audio ou expériences vocales automatisées.",
+  },
+  {
+    name: "n8n",
+    href: "/outils-ia/n8n",
+    badge: "Alternative avancée",
+    description:
+      "n8n est une alternative plus technique à Make, intéressante pour les API, webhooks, workflows avancés et scénarios plus personnalisés.",
+  },
+  {
+    name: "Gamma",
+    href: "/outils-ia/gamma",
+    badge: "Présentations IA",
+    description:
+      "Gamma peut servir à présenter une automatisation, créer un support client, préparer un pitch ou documenter une solution IA.",
+  },
+];
 
 export default function MakePage() {
   return (
@@ -15,17 +53,31 @@ export default function MakePage() {
       <section className="mx-auto max-w-6xl px-6 py-10">
         <div className="mb-8 flex flex-wrap gap-3">
           <Link
-            href="/"
-            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
-          >
-            ← Retour à l’accueil
-          </Link>
-
-          <Link
             href="/outils-ia"
             className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
           >
             Voir les autres outils IA
+          </Link>
+
+          <Link
+            href="/outils-ia/elevenlabs"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700 transition hover:bg-emerald-100"
+          >
+            Compléter avec ElevenLabs
+          </Link>
+
+          <Link
+            href="/outils-ia/n8n"
+            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
+          >
+            Comparer avec n8n
+          </Link>
+
+          <Link
+            href="/outils-ia/gamma"
+            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
+          >
+            Voir Gamma
           </Link>
         </div>
 
@@ -94,9 +146,7 @@ export default function MakePage() {
           </div>
 
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-slate-950">
-              Gain de temps
-            </h2>
+            <h2 className="text-xl font-bold text-slate-950">Gain de temps</h2>
             <p className="mt-3 text-sm leading-7 text-slate-600">
               Make est utile pour supprimer les tâches répétitives : copier des
               données, envoyer des emails, créer des fiches clients, notifier une
@@ -143,9 +193,7 @@ export default function MakePage() {
           </article>
 
           <aside className="rounded-3xl border border-emerald-200 bg-emerald-50 p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-slate-950">
-              Pour qui ?
-            </h2>
+            <h2 className="text-2xl font-bold text-slate-950">Pour qui ?</h2>
 
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
               <li>• Indépendants qui veulent gagner du temps</li>
@@ -180,9 +228,7 @@ export default function MakePage() {
 
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Formulaire vers email
-              </h3>
+              <h3 className="font-bold text-white">Formulaire vers email</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Dès qu’un client remplit un formulaire, Make peut envoyer un
                 email automatique, créer une ligne dans Google Sheets et prévenir
@@ -191,9 +237,7 @@ export default function MakePage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Rendez-vous et agenda
-              </h3>
+              <h3 className="font-bold text-white">Rendez-vous et agenda</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Make peut aider à transmettre une demande de rendez-vous vers un
                 calendrier, un email ou un tableau de suivi.
@@ -201,9 +245,7 @@ export default function MakePage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Répondeur IA
-              </h3>
+              <h3 className="font-bold text-white">Répondeur IA</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Dans un projet vocal, Make peut relier un agent IA, une base
                 d’informations, un formulaire, un agenda et des notifications.
@@ -221,9 +263,7 @@ export default function MakePage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Suivi client
-              </h3>
+              <h3 className="font-bold text-white">Suivi client</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Une demande entrante peut créer une fiche, une tâche, un email
                 de suivi ou une notification interne.
@@ -231,9 +271,7 @@ export default function MakePage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                E-commerce
-              </h3>
+              <h3 className="font-bold text-white">E-commerce</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Make peut connecter boutique en ligne, facturation, email,
                 tableur, support client et notifications.
@@ -260,9 +298,7 @@ export default function MakePage() {
 
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                1. Demande client
-              </h3>
+              <h3 className="font-bold text-slate-950">1. Demande client</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Un client appelle, écrit ou remplit un formulaire pour demander
                 une information ou un rendez-vous.
@@ -270,9 +306,7 @@ export default function MakePage() {
             </div>
 
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                2. Traitement IA
-              </h3>
+              <h3 className="font-bold text-slate-950">2. Traitement IA</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 L’IA peut analyser la demande, classer le besoin ou préparer une
                 réponse structurée.
@@ -290,9 +324,7 @@ export default function MakePage() {
             </div>
 
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                4. Suivi humain
-              </h3>
+              <h3 className="font-bold text-slate-950">4. Suivi humain</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Si la demande est complexe, l’entreprise peut reprendre la main
                 et confirmer elle-même.
@@ -315,6 +347,49 @@ export default function MakePage() {
           </div>
         </section>
 
+        <section className="mt-14 rounded-3xl border border-emerald-200 bg-emerald-50 p-6 md:p-8">
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
+            Outils complémentaires
+          </p>
+
+          <h2 className="mt-3 text-3xl font-bold text-slate-950">
+            Compléter Make avec ElevenLabs, n8n ou Gamma
+          </h2>
+
+          <p className="mt-5 max-w-4xl leading-8 text-slate-700">
+            Make est souvent la brique qui relie les outils entre eux. Pour une
+            solution IA plus complète, il peut être associé à ElevenLabs pour la
+            voix, à n8n pour les workflows plus techniques, ou à Gamma pour
+            créer des supports de présentation et documenter les scénarios.
+          </p>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {relatedTools.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                  {tool.badge}
+                </p>
+
+                <h3 className="mt-2 text-xl font-bold text-slate-950">
+                  {tool.name}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {tool.description}
+                </p>
+
+                <p className="mt-4 text-sm font-semibold text-emerald-700">
+                  Voir {tool.name} →
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <section className="mt-14 grid gap-8 md:grid-cols-2">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
             <h2 className="text-2xl font-bold text-slate-950">
@@ -322,12 +397,21 @@ export default function MakePage() {
             </h2>
 
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
-              <li>• Interface visuelle plus accessible qu’un développement classique.</li>
+              <li>
+                • Interface visuelle plus accessible qu’un développement
+                classique.
+              </li>
               <li>• Très utile pour connecter plusieurs outils entre eux.</li>
-              <li>• Convient aux automatisations simples comme aux workflows plus avancés.</li>
+              <li>
+                • Convient aux automatisations simples comme aux workflows plus
+                avancés.
+              </li>
               <li>• Intéressant pour créer des solutions IA concrètes.</li>
               <li>• Permet de gagner du temps sur les tâches répétitives.</li>
-              <li>• Bon potentiel pour les indépendants, agences et petites entreprises.</li>
+              <li>
+                • Bon potentiel pour les indépendants, agences et petites
+                entreprises.
+              </li>
             </ul>
           </div>
 
@@ -338,10 +422,18 @@ export default function MakePage() {
 
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
               <li>• Il faut bien comprendre la logique des scénarios.</li>
-              <li>• Une mauvaise automatisation peut créer des erreurs en chaîne.</li>
-              <li>• Les limites, opérations et tarifs doivent être vérifiés selon le plan choisi.</li>
+              <li>
+                • Une mauvaise automatisation peut créer des erreurs en chaîne.
+              </li>
+              <li>
+                • Les limites, opérations et tarifs doivent être vérifiés selon
+                le plan choisi.
+              </li>
               <li>• Les données clients doivent être traitées avec prudence.</li>
-              <li>• Il faut tester chaque scénario avant de l’utiliser en production.</li>
+              <li>
+                • Il faut tester chaque scénario avant de l’utiliser en
+                production.
+              </li>
               <li>• Le lien affilié Afflizen sera ajouté plus tard.</li>
             </ul>
           </div>
@@ -365,9 +457,7 @@ export default function MakePage() {
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Déclencheur
-              </h3>
+              <h3 className="font-bold text-slate-950">Déclencheur</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Exemple : un formulaire est rempli, un email arrive ou une ligne
                 est ajoutée dans un tableau.
@@ -375,9 +465,7 @@ export default function MakePage() {
             </div>
 
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Traitement
-              </h3>
+              <h3 className="font-bold text-slate-950">Traitement</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Make peut filtrer, reformater, enrichir ou envoyer les données
                 vers une IA.
@@ -385,9 +473,7 @@ export default function MakePage() {
             </div>
 
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Action finale
-              </h3>
+              <h3 className="font-bold text-slate-950">Action finale</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Exemple : envoyer un email, créer une tâche, prévenir quelqu’un
                 ou enregistrer une demande.
@@ -447,6 +533,20 @@ export default function MakePage() {
               className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
             >
               Voir les autres outils IA
+            </Link>
+
+            <Link
+              href="/outils-ia/n8n"
+              className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+            >
+              Comparer avec n8n
+            </Link>
+
+            <Link
+              href="/outils-ia/elevenlabs"
+              className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+            >
+              Voix IA avec ElevenLabs
             </Link>
           </div>
 
