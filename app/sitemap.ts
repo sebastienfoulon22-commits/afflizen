@@ -122,6 +122,11 @@ const routes = [
     priority: 0.75,
     changeFrequency: "monthly",
   },
+  {
+    path: "/crypto/meria",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
 
   // Investissement
   {

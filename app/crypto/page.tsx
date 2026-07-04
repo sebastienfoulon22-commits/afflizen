@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Crypto : comparatif Binance, Bitget, Bybit, HTX, AscendEX, Coinbase, Ledger et plus",
+    "Crypto : comparatif Binance, Bitget, Bybit, Meria, Coinbase, Ledger et plus",
   description:
-    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, Bitget, Bybit, HTX, AscendEX, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
+    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, Bitget, Bybit, Meria, HTX, AscendEX, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/crypto",
   },
@@ -54,6 +54,13 @@ const platforms = [
     description:
       "Plateforme crypto anciennement connue sous le nom BitMax.io, avec trading, services avancés et invitation à vérifier selon conditions.",
     bonus: "Ancien BitMax",
+  },
+  {
+    name: "Meria",
+    slug: "/crypto/meria",
+    description:
+      "Plateforme crypto française, anciennement Just Mining, orientée achat, vente, conservation, staking et investissement crypto long terme.",
+    bonus: "Plateforme française",
   },
   {
     name: "Crypto.com",
