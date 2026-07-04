@@ -1,3 +1,23 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bonus et parrainages : offres à comparer avec prudence | Afflizen",
+  description:
+    "Retrouvez les bonus, offres de parrainage et avantages disponibles sur certaines plateformes référencées par Afflizen, avec une approche claire et prudente.",
+  alternates: {
+    canonical: "https://afflizen.com/bonus",
+  },
+  openGraph: {
+    title: "Bonus et parrainages : offres à comparer avec prudence | Afflizen",
+    description:
+      "Retrouvez les bonus, offres de parrainage et avantages disponibles sur certaines plateformes référencées par Afflizen, avec une approche claire et prudente.",
+    url: "https://afflizen.com/bonus",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "website",
+  },
+};
+
 const bonusSections = [
   {
     category: "Crypto",

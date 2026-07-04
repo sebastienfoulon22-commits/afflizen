@@ -1,3 +1,24 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Comparatifs Afflizen : plateformes crypto, banques, cashback et outils",
+  description:
+    "Consultez les comparatifs Afflizen pour comparer des plateformes crypto, banques en ligne, cashback, investissement, e-commerce, hébergement web et outils IA.",
+  alternates: {
+    canonical: "https://afflizen.com/comparatifs",
+  },
+  openGraph: {
+    title:
+      "Comparatifs Afflizen : plateformes crypto, banques, cashback et outils",
+    description:
+      "Consultez les comparatifs Afflizen pour comparer des plateformes crypto, banques en ligne, cashback, investissement, e-commerce, hébergement web et outils IA.",
+    url: "https://afflizen.com/comparatifs",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "website",
+  },
+};
+
 export default function ComparatifsPage() {
   return (
     <main className="min-h-screen bg-white text-slate-950">

@@ -1,3 +1,23 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Afflizen : comparatifs, parrainages et bons plans financiers",
+  description:
+    "Afflizen compare des plateformes crypto, banques en ligne, cashback, investissement, e-commerce, hébergement web et outils IA pour aider les utilisateurs francophones à choisir plus simplement.",
+  alternates: {
+    canonical: "https://afflizen.com/",
+  },
+  openGraph: {
+    title: "Afflizen : comparatifs, parrainages et bons plans financiers",
+    description:
+      "Afflizen compare des plateformes crypto, banques en ligne, cashback, investissement, e-commerce, hébergement web et outils IA pour aider les utilisateurs francophones à choisir plus simplement.",
+    url: "https://afflizen.com/",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "website",
+  },
+};
+
 const categories = [
   {
     name: "Crypto",

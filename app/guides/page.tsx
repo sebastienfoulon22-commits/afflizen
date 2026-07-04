@@ -1,3 +1,24 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Guides Afflizen : comprendre les plateformes, bonus et outils en ligne",
+  description:
+    "Des guides simples pour mieux comprendre les plateformes crypto, banques en ligne, cashback, investissement, hébergement web, e-commerce et outils IA.",
+  alternates: {
+    canonical: "https://afflizen.com/guides",
+  },
+  openGraph: {
+    title:
+      "Guides Afflizen : comprendre les plateformes, bonus et outils en ligne",
+    description:
+      "Des guides simples pour mieux comprendre les plateformes crypto, banques en ligne, cashback, investissement, hébergement web, e-commerce et outils IA.",
+    url: "https://afflizen.com/guides",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "website",
+  },
+};
+
 export default function GuidesPage() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
