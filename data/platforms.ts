@@ -151,7 +151,7 @@ export const platforms = {
    revolut: {
     name: "Revolut",
     category: "Banques",
-    categoryUrl: "/banques",
+    categoryUrl: "/banques-en-ligne",
     headline: "Revolut : avis, carte, compte, avantages et conditions",
     intro:
       "Revolut est une application financière permettant de gérer un compte, une carte, des paiements, des devises et différents services financiers depuis une interface mobile. Cette page présente ses points forts, ses limites et les éléments à vérifier avant inscription.",
@@ -188,7 +188,7 @@ export const platforms = {
   n26: {
     name: "N26",
     category: "Banques",
-    categoryUrl: "/banques",
+    categoryUrl: "/banques-en-ligne",
     headline: "N26 : avis, carte bancaire, compte mobile et conditions",
     intro:
       "N26 est une banque mobile permettant d’ouvrir un compte et de gérer ses paiements depuis une application. Cette page présente ses avantages, ses limites et les éléments à vérifier avant inscription.",

@@ -40,12 +40,12 @@ const bonusSections = [
     offers: [
       {
         name: "Revolut",
-        url: "/banques/revolut",
+        url: "/banques-en-ligne/revolut",
         bonus: "À vérifier",
       },
       {
         name: "N26",
-        url: "/banques/n26",
+        url: "/banques-en-ligne/n26",
         bonus: "À vérifier",
       },
     ],

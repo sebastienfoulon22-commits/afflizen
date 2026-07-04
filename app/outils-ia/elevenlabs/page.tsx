@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description:
     "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches, générer de la voix, créer des présentations et développer des solutions intelligentes.",
   alternates: {
-    canonical: "https://afflizen.com/outils-ia",
+    canonical: "https://afflizen.com/outils-ia/elevenlabs",
   },
   openGraph: {
     title: "Outils IA : voix, automatisation, workflows et présentations",
     description:
       "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches, générer de la voix, créer des présentations et développer des solutions intelligentes.",
-    url: "https://afflizen.com/outils-ia",
+    url: "https://afflizen.com/outils-ia/elevenlabs",
     siteName: "Afflizen",
     locale: "fr_BE",
     type: "website",
