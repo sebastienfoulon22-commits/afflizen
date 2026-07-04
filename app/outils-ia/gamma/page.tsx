@@ -1,13 +1,51 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 const GAMMA_LINK = "https://gamma.app/";
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
     "Gamma avis 2026 : créer des présentations, documents et pages avec l’IA",
   description:
     "Notre avis sur Gamma, un outil IA pour créer rapidement des présentations, documents, pages web et contenus visuels sans partir d’une page blanche.",
+  alternates: {
+    canonical: "https://afflizen.com/outils-ia/gamma",
+  },
+  openGraph: {
+    title:
+      "Gamma avis 2026 : créer des présentations, documents et pages avec l’IA",
+    description:
+      "Notre avis sur Gamma, un outil IA pour créer rapidement des présentations, documents, pages web et contenus visuels sans partir d’une page blanche.",
+    url: "https://afflizen.com/outils-ia/gamma",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "article",
+  },
 };
+
+const relatedTools = [
+  {
+    name: "ElevenLabs",
+    href: "/outils-ia/elevenlabs",
+    badge: "Voix IA",
+    description:
+      "ElevenLabs peut compléter Gamma pour créer des voix off, agents vocaux, démonstrations audio ou présentations de solutions vocales IA.",
+  },
+  {
+    name: "Make",
+    href: "/outils-ia/make",
+    badge: "Automatisation",
+    description:
+      "Make peut compléter Gamma pour automatiser la collecte d’informations, le suivi client, les notifications ou la diffusion d’un support.",
+  },
+  {
+    name: "n8n",
+    href: "/outils-ia/n8n",
+    badge: "Workflows avancés",
+    description:
+      "n8n peut compléter Gamma pour documenter ou présenter des workflows IA plus techniques, avec API, webhooks et logique avancée.",
+  },
+];
 
 export default function GammaPage() {
   return (
@@ -15,17 +53,31 @@ export default function GammaPage() {
       <section className="mx-auto max-w-6xl px-6 py-10">
         <div className="mb-8 flex flex-wrap gap-3">
           <Link
-            href="/"
-            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
-          >
-            ← Retour à l’accueil
-          </Link>
-
-          <Link
             href="/outils-ia"
             className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
           >
             Voir les autres outils IA
+          </Link>
+
+          <Link
+            href="/outils-ia/elevenlabs"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700 transition hover:bg-emerald-100"
+          >
+            Compléter avec ElevenLabs
+          </Link>
+
+          <Link
+            href="/outils-ia/make"
+            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
+          >
+            Voir Make
+          </Link>
+
+          <Link
+            href="/outils-ia/n8n"
+            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
+          >
+            Voir n8n
           </Link>
         </div>
 
@@ -140,9 +192,7 @@ export default function GammaPage() {
           </article>
 
           <aside className="rounded-3xl border border-emerald-200 bg-emerald-50 p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-slate-950">
-              Pour qui ?
-            </h2>
+            <h2 className="text-2xl font-bold text-slate-950">Pour qui ?</h2>
 
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
               <li>• Indépendants qui veulent créer des supports clients</li>
@@ -177,9 +227,7 @@ export default function GammaPage() {
 
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Présentation client
-              </h3>
+              <h3 className="font-bold text-white">Présentation client</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Préparer rapidement une présentation pour expliquer une offre, un
                 service, une solution IA ou une proposition commerciale.
@@ -187,9 +235,7 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Pitch deck
-              </h3>
+              <h3 className="font-bold text-white">Pitch deck</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Structurer une idée de projet, une startup, un service ou une
                 solution avant de la présenter à un partenaire ou un client.
@@ -197,9 +243,7 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Support de formation
-              </h3>
+              <h3 className="font-bold text-white">Support de formation</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Transformer un plan de cours, un guide ou un tutoriel en support
                 plus clair pour une formation ou un atelier.
@@ -207,9 +251,7 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Document explicatif
-              </h3>
+              <h3 className="font-bold text-white">Document explicatif</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Résumer un sujet complexe dans un format plus visuel, plus court
                 et plus facile à comprendre.
@@ -217,9 +259,7 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Page de présentation
-              </h3>
+              <h3 className="font-bold text-white">Page de présentation</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Créer une page simple pour présenter une idée, une offre, un
                 produit, un service ou un projet.
@@ -227,9 +267,7 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Contenu marketing
-              </h3>
+              <h3 className="font-bold text-white">Contenu marketing</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Préparer une base de contenu pour une offre, une campagne, une
                 présentation commerciale ou une communication interne.
@@ -257,9 +295,7 @@ export default function GammaPage() {
 
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                1. Problème
-              </h3>
+              <h3 className="font-bold text-slate-950">1. Problème</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Le client perd du temps avec des appels, messages ou demandes
                 répétitives.
@@ -267,9 +303,7 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                2. Solution
-              </h3>
+              <h3 className="font-bold text-slate-950">2. Solution</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Une solution IA peut filtrer, informer, automatiser ou préparer
                 certaines réponses.
@@ -277,9 +311,7 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                3. Outils
-              </h3>
+              <h3 className="font-bold text-slate-950">3. Outils</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 ElevenLabs, Make, n8n ou d’autres briques IA peuvent être
                 présentées clairement.
@@ -287,9 +319,7 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                4. Résultat
-              </h3>
+              <h3 className="font-bold text-slate-950">4. Résultat</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Le client comprend mieux le projet avant de décider s’il veut
                 avancer.
@@ -332,9 +362,7 @@ export default function GammaPage() {
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Gamma
-              </h3>
+              <h3 className="font-bold text-slate-950">Gamma</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Idéal pour générer rapidement une structure, un support ou une
                 page à partir d’une idée ou d’un contenu brut.
@@ -342,9 +370,7 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Canva
-              </h3>
+              <h3 className="font-bold text-slate-950">Canva</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Très pratique pour créer des visuels, posts, documents marketing
                 et présentations avec beaucoup de contrôle graphique.
@@ -352,14 +378,55 @@ export default function GammaPage() {
             </div>
 
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                PowerPoint
-              </h3>
+              <h3 className="font-bold text-slate-950">PowerPoint</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Très connu en entreprise, utile pour les présentations classiques
                 et les fichiers à modifier manuellement.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="mt-14 rounded-3xl border border-emerald-200 bg-emerald-50 p-6 md:p-8">
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
+            Outils complémentaires
+          </p>
+
+          <h2 className="mt-3 text-3xl font-bold text-slate-950">
+            Compléter Gamma avec ElevenLabs, Make ou n8n
+          </h2>
+
+          <p className="mt-5 max-w-4xl leading-8 text-slate-700">
+            Gamma sert à créer et présenter un support clair. Pour une solution
+            IA plus complète, il peut être associé à ElevenLabs pour la voix, à
+            Make pour automatiser des actions simples, ou à n8n pour documenter
+            des workflows plus avancés.
+          </p>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {relatedTools.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                  {tool.badge}
+                </p>
+
+                <h3 className="mt-2 text-xl font-bold text-slate-950">
+                  {tool.name}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {tool.description}
+                </p>
+
+                <p className="mt-4 text-sm font-semibold text-emerald-700">
+                  Voir {tool.name} →
+                </p>
+              </Link>
+            ))}
           </div>
         </section>
 
@@ -370,12 +437,26 @@ export default function GammaPage() {
             </h2>
 
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
-              <li>• Permet de créer rapidement une première version de support.</li>
-              <li>• Utile pour présentations, documents, pages et contenus visuels.</li>
+              <li>
+                • Permet de créer rapidement une première version de support.
+              </li>
+              <li>
+                • Utile pour présentations, documents, pages et contenus
+                visuels.
+              </li>
               <li>• Plus simple que de partir d’une page blanche.</li>
-              <li>• Intéressant pour indépendants, créateurs, formateurs et petites entreprises.</li>
-              <li>• Peut aider à présenter plus clairement une offre ou un projet IA.</li>
-              <li>• Programme partenaire à étudier si un lien affilié est disponible.</li>
+              <li>
+                • Intéressant pour indépendants, créateurs, formateurs et
+                petites entreprises.
+              </li>
+              <li>
+                • Peut aider à présenter plus clairement une offre ou un projet
+                IA.
+              </li>
+              <li>
+                • Programme partenaire à étudier si un lien affilié est
+                disponible.
+              </li>
             </ul>
           </div>
 
@@ -385,11 +466,22 @@ export default function GammaPage() {
             </h2>
 
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
-              <li>• Le résultat doit être relu et personnalisé avant publication.</li>
+              <li>
+                • Le résultat doit être relu et personnalisé avant publication.
+              </li>
               <li>• Les textes générés peuvent nécessiter des corrections.</li>
-              <li>• Les designs doivent parfois être adaptés à l’identité de marque.</li>
-              <li>• Les limites, exports et fonctionnalités dépendent du plan choisi.</li>
-              <li>• Les tarifs et conditions doivent être vérifiés sur le site officiel.</li>
+              <li>
+                • Les designs doivent parfois être adaptés à l’identité de
+                marque.
+              </li>
+              <li>
+                • Les limites, exports et fonctionnalités dépendent du plan
+                choisi.
+              </li>
+              <li>
+                • Les tarifs et conditions doivent être vérifiés sur le site
+                officiel.
+              </li>
               <li>• Le lien affilié Afflizen sera ajouté plus tard si disponible.</li>
             </ul>
           </div>
@@ -445,6 +537,20 @@ export default function GammaPage() {
               className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
             >
               Voir les autres outils IA
+            </Link>
+
+            <Link
+              href="/outils-ia/make"
+              className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+            >
+              Automatiser avec Make
+            </Link>
+
+            <Link
+              href="/outils-ia/elevenlabs"
+              className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+            >
+              Ajouter une voix IA
             </Link>
           </div>
 
