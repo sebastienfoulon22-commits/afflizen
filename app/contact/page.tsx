@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact - Afflizen",
+  title: "Contact | Afflizen",
   description:
-    "Contactez Afflizen pour une question, une suggestion, un partenariat ou une demande liée au site.",
+    "Contactez Afflizen pour une question, une suggestion de plateforme, un partenariat ou une demande liée aux contenus du site.",
+  alternates: {
+    canonical: "https://afflizen.com/contact",
+  },
+  openGraph: {
+    title: "Contact | Afflizen",
+    description:
+      "Contactez Afflizen pour une question, une suggestion de plateforme, un partenariat ou une demande liée aux contenus du site.",
+    url: "https://afflizen.com/contact",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function ContactPage() {

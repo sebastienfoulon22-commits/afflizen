@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cartes & paiements : applications, wallets et bons plans | Afflizen",
+  title: "Cartes et paiements : comptes, cartes et solutions à comparer | Afflizen",
   description:
-    "Découvrez les applications de paiement, cartes multi-devises, wallets, solutions de cashback et outils pour mieux gérer vos paiements au quotidien.",
+    "Comparez des solutions de cartes, paiements et comptes en ligne pour mieux choisir selon vos besoins, vos frais et votre usage quotidien.",
   alternates: {
     canonical: "https://afflizen.com/cartes-et-paiements",
+  },
+  openGraph: {
+    title:
+      "Cartes et paiements : comptes, cartes et solutions à comparer | Afflizen",
+    description:
+      "Comparez des solutions de cartes, paiements et comptes en ligne pour mieux choisir selon vos besoins, vos frais et votre usage quotidien.",
+    url: "https://afflizen.com/cartes-et-paiements",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "website",
   },
 };
 

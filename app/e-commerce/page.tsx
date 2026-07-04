@@ -1,11 +1,22 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata = {
-  title: "E-commerce : codes parrainage, bons plans et achats malins",
+export const metadata: Metadata = {
+  title: "E-commerce : bons plans, achats en ligne et plateformes utiles | Afflizen",
   description:
-    "Découvrez les plateformes e-commerce sélectionnées par Afflizen : reconditionné, codes promo, parrainages, bons plans et conseils avant d’acheter.",
+    "Découvrez les plateformes e-commerce référencées par Afflizen pour acheter en ligne, comparer les bons plans et profiter d’avantages disponibles.",
   alternates: {
     canonical: "https://afflizen.com/e-commerce",
+  },
+  openGraph: {
+    title:
+      "E-commerce : bons plans, achats en ligne et plateformes utiles | Afflizen",
+    description:
+      "Découvrez les plateformes e-commerce référencées par Afflizen pour acheter en ligne, comparer les bons plans et profiter d’avantages disponibles.",
+    url: "https://afflizen.com/e-commerce",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "website",
   },
 };
 
