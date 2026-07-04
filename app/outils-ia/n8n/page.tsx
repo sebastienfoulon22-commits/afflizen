@@ -1,13 +1,51 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 const N8N_LINK = "https://n8n.io/";
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
     "n8n avis 2026 : automatisation IA, workflows avancés et alternative à Make",
   description:
     "Notre avis sur n8n, une plateforme d’automatisation de workflows avec IA, intégrations, agents intelligents, webhooks et scénarios avancés pour indépendants, entreprises et profils techniques.",
+  alternates: {
+    canonical: "https://afflizen.com/outils-ia/n8n",
+  },
+  openGraph: {
+    title:
+      "n8n avis 2026 : automatisation IA, workflows avancés et alternative à Make",
+    description:
+      "Notre avis sur n8n, une plateforme d’automatisation de workflows avec IA, intégrations, agents intelligents, webhooks et scénarios avancés pour indépendants, entreprises et profils techniques.",
+    url: "https://afflizen.com/outils-ia/n8n",
+    siteName: "Afflizen",
+    locale: "fr_BE",
+    type: "article",
+  },
 };
+
+const relatedTools = [
+  {
+    name: "Make",
+    href: "/outils-ia/make",
+    badge: "Alternative plus simple",
+    description:
+      "Make est plus accessible pour démarrer rapidement avec l’automatisation visuelle, les scénarios no-code et les connexions entre applications.",
+  },
+  {
+    name: "ElevenLabs",
+    href: "/outils-ia/elevenlabs",
+    badge: "Voix IA",
+    description:
+      "ElevenLabs peut compléter n8n pour créer des agents vocaux, répondeurs intelligents, messages audio ou expériences vocales automatisées.",
+  },
+  {
+    name: "Gamma",
+    href: "/outils-ia/gamma",
+    badge: "Présentations IA",
+    description:
+      "Gamma peut servir à présenter un workflow n8n, créer un support client, préparer un pitch ou documenter une automatisation IA.",
+  },
+];
 
 export default function N8nPage() {
   return (
@@ -15,17 +53,31 @@ export default function N8nPage() {
       <section className="mx-auto max-w-6xl px-6 py-10">
         <div className="mb-8 flex flex-wrap gap-3">
           <Link
-            href="/"
-            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
-          >
-            ← Retour à l’accueil
-          </Link>
-
-          <Link
             href="/outils-ia"
             className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
           >
             Voir les autres outils IA
+          </Link>
+
+          <Link
+            href="/outils-ia/make"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700 transition hover:bg-emerald-100"
+          >
+            Comparer avec Make
+          </Link>
+
+          <Link
+            href="/outils-ia/elevenlabs"
+            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
+          >
+            Compléter avec ElevenLabs
+          </Link>
+
+          <Link
+            href="/outils-ia/gamma"
+            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700"
+          >
+            Voir Gamma
           </Link>
         </div>
 
@@ -145,9 +197,7 @@ export default function N8nPage() {
           </article>
 
           <aside className="rounded-3xl border border-emerald-200 bg-emerald-50 p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-slate-950">
-              Pour qui ?
-            </h2>
+            <h2 className="text-2xl font-bold text-slate-950">Pour qui ?</h2>
 
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
               <li>• Profils techniques ou semi-techniques</li>
@@ -191,9 +241,7 @@ export default function N8nPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Emails automatisés
-              </h3>
+              <h3 className="font-bold text-white">Emails automatisés</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 n8n peut détecter certains emails, extraire les informations
                 importantes et lancer des réponses ou des actions internes.
@@ -201,9 +249,7 @@ export default function N8nPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Agents IA
-              </h3>
+              <h3 className="font-bold text-white">Agents IA</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 La plateforme peut servir à connecter un agent IA à des outils
                 réels : base de données, CRM, tableur, email ou calendrier.
@@ -211,9 +257,7 @@ export default function N8nPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Webhooks et API
-              </h3>
+              <h3 className="font-bold text-white">Webhooks et API</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 n8n est utile pour recevoir des données depuis un outil externe
                 et déclencher automatiquement une suite d’actions.
@@ -221,9 +265,7 @@ export default function N8nPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Suivi client
-              </h3>
+              <h3 className="font-bold text-white">Suivi client</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 Une demande client peut créer une fiche, générer une tâche,
                 envoyer une notification et préparer une réponse.
@@ -231,9 +273,7 @@ export default function N8nPage() {
             </div>
 
             <div className="rounded-2xl bg-white/10 p-5">
-              <h3 className="font-bold text-white">
-                Automatisation interne
-              </h3>
+              <h3 className="font-bold text-white">Automatisation interne</h3>
               <p className="mt-2 text-sm leading-7 text-slate-300">
                 n8n peut automatiser des tâches répétitives dans une petite
                 entreprise : classement, reporting, alertes, fichiers ou emails.
@@ -270,9 +310,7 @@ export default function N8nPage() {
             </div>
 
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                2. Analyse IA
-              </h3>
+              <h3 className="font-bold text-slate-950">2. Analyse IA</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 L’IA identifie le besoin : rendez-vous, information, urgence ou
                 demande complexe.
@@ -280,9 +318,7 @@ export default function N8nPage() {
             </div>
 
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                3. Workflow n8n
-              </h3>
+              <h3 className="font-bold text-slate-950">3. Workflow n8n</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 n8n enregistre la demande, envoie une notification, crée une
                 tâche ou prépare une réponse.
@@ -290,9 +326,7 @@ export default function N8nPage() {
             </div>
 
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-bold text-slate-950">
-                4. Validation humaine
-              </h3>
+              <h3 className="font-bold text-slate-950">4. Validation humaine</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 L’entreprise garde la main pour confirmer un rendez-vous ou
                 traiter les cas sensibles.
@@ -306,11 +340,12 @@ export default function N8nPage() {
             </h3>
 
             <p className="mt-4 leading-8 text-slate-700">
-              Un salon peut utiliser n8n pour recevoir les demandes de rendez-vous,
-              identifier le type de prestation, notifier la responsable, garder
-              une trace dans un tableau, envoyer un message de confirmation ou
-              déclencher un rappel. Combiné à un agent vocal et à une voix IA,
-              cela peut devenir une base de solution d’accueil automatisé.
+              Un salon peut utiliser n8n pour recevoir les demandes de
+              rendez-vous, identifier le type de prestation, notifier la
+              responsable, garder une trace dans un tableau, envoyer un message
+              de confirmation ou déclencher un rappel. Combiné à un agent vocal
+              et à une voix IA, cela peut devenir une base de solution d’accueil
+              automatisé.
             </p>
           </div>
         </section>
@@ -332,25 +367,71 @@ export default function N8nPage() {
           </p>
 
           <div className="mt-8 grid gap-5 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                Make
-              </h3>
+            <Link
+              href="/outils-ia/make"
+              className="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3 className="font-bold text-slate-950">Make</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Plus accessible pour démarrer, très visuel, pratique pour
                 automatiser rapidement des tâches courantes entre applications.
               </p>
-            </div>
+              <p className="mt-4 text-sm font-semibold text-emerald-700">
+                Voir Make →
+              </p>
+            </Link>
 
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-950">
-                n8n
-              </h3>
+              <h3 className="font-bold text-slate-950">n8n</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Plus technique, plus flexible, intéressant pour les workflows
                 avancés, les API, les webhooks et les projets IA plus poussés.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="mt-14 rounded-3xl border border-emerald-200 bg-emerald-50 p-6 md:p-8">
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
+            Outils complémentaires
+          </p>
+
+          <h2 className="mt-3 text-3xl font-bold text-slate-950">
+            Compléter n8n avec Make, ElevenLabs ou Gamma
+          </h2>
+
+          <p className="mt-5 max-w-4xl leading-8 text-slate-700">
+            n8n est puissant pour orchestrer des workflows, mais il peut être
+            encore plus utile lorsqu’il est associé à d’autres outils IA. Make
+            peut servir d’alternative plus simple pour certains scénarios,
+            ElevenLabs peut ajouter une couche vocale, et Gamma peut aider à
+            présenter ou documenter les automatisations.
+          </p>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {relatedTools.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                  {tool.badge}
+                </p>
+
+                <h3 className="mt-2 text-xl font-bold text-slate-950">
+                  {tool.name}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {tool.description}
+                </p>
+
+                <p className="mt-4 text-sm font-semibold text-emerald-700">
+                  Voir {tool.name} →
+                </p>
+              </Link>
+            ))}
           </div>
         </section>
 
@@ -362,9 +443,16 @@ export default function N8nPage() {
 
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
               <li>• Très flexible pour créer des workflows avancés.</li>
-              <li>• Intéressant pour connecter des API, webhooks et bases de données.</li>
-              <li>• Utile pour construire des automatisations IA plus poussées.</li>
-              <li>• Peut convenir aux agences, développeurs et profils techniques.</li>
+              <li>
+                • Intéressant pour connecter des API, webhooks et bases de
+                données.
+              </li>
+              <li>
+                • Utile pour construire des automatisations IA plus poussées.
+              </li>
+              <li>
+                • Peut convenir aux agences, développeurs et profils techniques.
+              </li>
               <li>• Bon complément à Make dans une stratégie d’automatisation.</li>
               <li>• Programme affilié intéressant à intégrer plus tard.</li>
             </ul>
@@ -378,7 +466,9 @@ export default function N8nPage() {
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
               <li>• La prise en main peut être plus technique que Make.</li>
               <li>• Les workflows doivent être testés avant un usage réel.</li>
-              <li>• Les tarifs, limites et fonctionnalités varient selon les plans.</li>
+              <li>
+                • Les tarifs, limites et fonctionnalités varient selon les plans.
+              </li>
               <li>• Les données clients doivent être traitées avec prudence.</li>
               <li>• Le self-hosted demande plus de compétences techniques.</li>
               <li>• Le lien affilié Afflizen sera ajouté après validation.</li>
@@ -394,9 +484,9 @@ export default function N8nPage() {
           <p className="mt-4 leading-8 text-slate-700">
             n8n est puissant, mais une automatisation mal construite peut créer
             des erreurs en chaîne. Avant de l’utiliser avec de vrais clients, il
-            faut tester chaque étape, prévoir les cas d’échec, limiter les actions
-            sensibles et garder une validation humaine pour les décisions
-            importantes.
+            faut tester chaque étape, prévoir les cas d’échec, limiter les
+            actions sensibles et garder une validation humaine pour les
+            décisions importantes.
           </p>
 
           <p className="mt-4 leading-8 text-slate-700">
@@ -437,6 +527,20 @@ export default function N8nPage() {
               className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
             >
               Voir les autres outils IA
+            </Link>
+
+            <Link
+              href="/outils-ia/make"
+              className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+            >
+              Comparer avec Make
+            </Link>
+
+            <Link
+              href="/outils-ia/elevenlabs"
+              className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+            >
+              Ajouter une voix IA
             </Link>
           </div>
 
