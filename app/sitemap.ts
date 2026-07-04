@@ -149,6 +149,11 @@ const routes = [
     priority: 0.8,
     changeFrequency: "monthly",
   },
+  {
+    path: "/investissement/interactive-brokers",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
 
   // Banques en ligne
   {
