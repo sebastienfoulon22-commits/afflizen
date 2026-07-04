@@ -11,6 +11,15 @@ export const metadata = {
   alternates: {
     canonical: "https://afflizen.com/crypto/coinbase",
   },
+  openGraph: {
+    title: "Coinbase avis 2026 : frais, sécurité, avantages et inconvénients",
+    description:
+      "Notre avis sur Coinbase : frais, sécurité, crypto disponibles, avantages, limites, lien de parrainage et conseils avant de créer un compte.",
+    url: "https://afflizen.com/crypto/coinbase",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "article",
+  },
 };
 
 const benefits = [

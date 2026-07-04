@@ -11,6 +11,15 @@ export const metadata = {
   alternates: {
     canonical: "https://afflizen.com/crypto/ledger",
   },
+  openGraph: {
+    title: "Ledger avis 2026 : wallet crypto, sécurité, avantages et limites",
+    description:
+      "Notre avis sur Ledger : wallet physique, sécurité crypto, phrase de récupération, avantages, limites, risques et conseils avant d’acheter un portefeuille Ledger.",
+    url: "https://afflizen.com/crypto/ledger",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "article",
+  },
 };
 
 const benefits = [

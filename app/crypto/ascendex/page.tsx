@@ -15,6 +15,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://afflizen.com/crypto/ascendex",
   },
+  openGraph: {
+    title:
+      "AscendEX avis 2026 : ancien BitMax, crypto, trading, frais et parrainage",
+    description:
+      "Notre avis sur AscendEX en 2026 : ancien BitMax.io, plateforme crypto avancée, spot, margin, futures, Earn, frais, risques, sécurité et lien de parrainage.",
+    url: "https://afflizen.com/crypto/ascendex",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "article",
+  },
 };
 
 const faqJsonLd = {

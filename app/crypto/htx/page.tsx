@@ -14,6 +14,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://afflizen.com/crypto/htx",
   },
+  openGraph: {
+    title: "HTX avis 2026 : crypto, trading, frais, risques et parrainage",
+    description:
+      "Notre avis sur HTX en 2026 : plateforme crypto avancée, trading spot, futures, bots, frais, sécurité, risques, restrictions et lien de parrainage.",
+    url: "https://afflizen.com/crypto/htx",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "article",
+  },
 };
 
 const faqJsonLd = {

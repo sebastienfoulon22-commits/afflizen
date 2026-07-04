@@ -14,6 +14,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://afflizen.com/crypto/bybit",
   },
+  openGraph: {
+    title: "Bybit avis 2026 : crypto, trading, frais, sécurité et parrainage",
+    description:
+      "Notre avis sur Bybit en 2026 : plateforme crypto, trading spot, produits avancés, frais, sécurité, avantages, limites, risques et lien de parrainage.",
+    url: "https://afflizen.com/crypto/bybit",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "article",
+  },
 };
 
 const faqJsonLd = {
