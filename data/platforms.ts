@@ -299,7 +299,7 @@ export const platforms = {
   hostinger: {
     name: "Hostinger",
     category: "Hébergement Web",
-    categoryUrl: "/hebergement",
+    categoryUrl: "/hebergement-web",
     headline: "Hostinger : avis, hébergement web, prix et conditions",
     intro:
       "Hostinger est un hébergeur web proposant des solutions pour créer et héberger un site internet, un blog ou un projet en ligne. Cette page présente ses avantages, ses limites et les éléments à vérifier avant inscription.",
@@ -336,7 +336,7 @@ export const platforms = {
   ovh: {
     name: "OVHcloud",
     category: "Hébergement Web",
-    categoryUrl: "/hebergement",
+    categoryUrl: "/hebergement-web",
     headline: "OVHcloud : avis, hébergement web, domaines et conditions",
     intro:
       "OVHcloud est un acteur européen de l’hébergement web, des noms de domaine, des serveurs et des services cloud. Cette page présente ses avantages, ses limites et les éléments à vérifier avant de choisir une offre.",

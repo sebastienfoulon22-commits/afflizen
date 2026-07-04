@@ -94,12 +94,12 @@ const bonusSections = [
     offers: [
       {
         name: "Hostinger",
-        url: "/hebergement/hostinger",
+        url: "/hebergement-web/hostinger",
         bonus: "À vérifier",
       },
       {
         name: "OVHcloud",
-        url: "/hebergement/ovh",
+        url: "/hebergement-web/ovh",
         bonus: "À vérifier",
       },
     ],
