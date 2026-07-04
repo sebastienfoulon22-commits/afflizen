@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Crypto : comparatif Binance, KuCoin, Bitget, Bybit, Meria, Coinbase et plus",
+    "Crypto : comparatif Binance, KuCoin, Bitpanda, Bitget, Meria, Coinbase et plus",
   description:
-    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, KuCoin, Bitget, Bybit, Meria, HTX, AscendEX, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
+    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, KuCoin, Bitpanda, Bitget, Bybit, Meria, HTX, AscendEX, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/crypto",
   },
@@ -33,6 +33,13 @@ const platforms = [
     description:
       "Exchange crypto international orienté trading, altcoins, futures, staking, Earn et produits avancés selon disponibilité.",
     bonus: "Exchange international",
+  },
+  {
+    name: "Bitpanda",
+    slug: "/crypto/bitpanda",
+    description:
+      "Broker crypto européen multi-actifs pour investir dans les cryptos, actions, ETF, indices et métaux précieux selon disponibilité.",
+    bonus: "Broker européen",
   },
   {
     name: "Bitget",

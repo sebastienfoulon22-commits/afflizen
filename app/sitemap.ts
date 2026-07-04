@@ -73,6 +73,11 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
+    path: "/crypto/bitpanda",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/crypto/bitget",
     priority: 0.85,
     changeFrequency: "monthly",
