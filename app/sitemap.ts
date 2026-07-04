@@ -55,6 +55,11 @@ const routes = [
     priority: 0.8,
     changeFrequency: "weekly",
   },
+  {
+    path: "/bonus",
+    priority: 0.7,
+    changeFrequency: "weekly",
+  },
 
   // Crypto
   {

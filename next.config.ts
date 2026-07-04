@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/e-commerce/back-market",
         permanent: true,
       },
+      {
+        source: "/confidentialite",
+        destination: "/politique-de-confidentialite",
+        permanent: true,
+      },
     ];
   },
 };
