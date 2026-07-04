@@ -1,3 +1,23 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mentions légales | Afflizen",
+  description:
+    "Consultez les mentions légales d’Afflizen : éditeur du site, hébergement, responsabilité, affiliation et informations légales.",
+  alternates: {
+    canonical: "https://afflizen.com/mentions-legales",
+  },
+  openGraph: {
+    title: "Mentions légales | Afflizen",
+    description:
+      "Consultez les mentions légales d’Afflizen : éditeur du site, hébergement, responsabilité, affiliation et informations légales.",
+    url: "https://afflizen.com/mentions-legales",
+    siteName: "Afflizen",
+    locale: "fr_FR",
+    type: "website",
+  },
+};
+
 export default function MentionsLegalesPage() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
