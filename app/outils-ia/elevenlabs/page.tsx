@@ -139,19 +139,18 @@ export default function OutilsIAPage() {
       <section className="mx-auto max-w-6xl px-6 py-10">
         <div className="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 px-6 py-12 text-white shadow-xl md:px-12">
           <p className="mb-4 inline-flex rounded-full bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-300 ring-1 ring-emerald-400/20">
-            Catégorie Afflizen
+            Outil IA voix
           </p>
 
           <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
-            Outils IA pour gagner du temps, automatiser et créer plus vite
+            ElevenLabs : créer des voix IA réalistes et des agents vocaux
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-            Cette catégorie regroupe les outils d’intelligence artificielle qui
-            peuvent être réellement utiles au quotidien : création de contenu,
-            voix IA, répondeurs intelligents, automatisation, productivité,
-            support client et solutions pour indépendants ou petites
-            entreprises.
+            ElevenLabs est une plateforme spécialisée dans la génération de voix
+            IA, le text-to-speech, le doublage, le clonage vocal et la création
+            d’agents vocaux pour des contenus, services ou expériences plus
+            naturelles.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
