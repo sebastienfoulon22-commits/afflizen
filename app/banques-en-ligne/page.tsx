@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Banques en ligne : comparatif Revolut, N26 et comptes mobiles",
+  title: "Banques en ligne : comparatif Revolut, N26, Qonto et comptes mobiles",
   description:
-    "Comparez les banques en ligne et applications financières suivies par Afflizen : Revolut, N26, cartes, comptes mobiles, frais, avantages et points à vérifier.",
+    "Comparez les banques en ligne, comptes pro et applications financières suivies par Afflizen : Revolut, N26, Qonto, cartes, comptes mobiles, frais, avantages et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/banques-en-ligne",
   },
@@ -32,6 +32,13 @@ const platforms = [
     description:
       "Banque mobile avec compte, carte, application simple et offres adaptées au quotidien.",
     bonus: "Banque mobile",
+  },
+  {
+    name: "Qonto",
+    slug: "/banques-en-ligne/qonto",
+    description:
+      "Compte pro en ligne pour indépendants, PME, sociétés et équipes en France ou en Belgique selon les conditions disponibles.",
+    bonus: "Compte pro",
   },
 ];
 
