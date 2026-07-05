@@ -191,6 +191,11 @@ const routes = [
     priority: 0.8,
     changeFrequency: "monthly",
   },
+  {
+    path: "/banques-en-ligne/hello-bank",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
 
   // Cashback
   {
