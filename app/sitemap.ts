@@ -160,6 +160,11 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
+    path: "/investissement/tradingview",
+    priority: 0.85,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/investissement/etoro",
     priority: 0.85,
     changeFrequency: "monthly",
