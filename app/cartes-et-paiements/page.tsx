@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Cartes et paiements : Wise, Curve Pay, SumUp et solutions à comparer | Afflizen",
+    "Cartes et paiements : Wise, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
   description:
-    "Comparez des solutions de cartes, paiements, comptes en ligne et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
+    "Comparez des solutions de cartes, paiements, comptes mobiles, comptes multidevises et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
   alternates: {
     canonical: "https://afflizen.com/cartes-et-paiements",
   },
   openGraph: {
     title:
-      "Cartes et paiements : Wise, Curve Pay, SumUp et solutions à comparer | Afflizen",
+      "Cartes et paiements : Wise, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
     description:
-      "Comparez des solutions de cartes, paiements, comptes en ligne et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
+      "Comparez des solutions de cartes, paiements, comptes mobiles, comptes multidevises et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
     url: "https://afflizen.com/cartes-et-paiements",
     siteName: "Afflizen",
     locale: "fr_FR",
@@ -27,6 +27,13 @@ const solutions = [
       "Une solution internationale de paiement et de compte multidevise pour envoyer, recevoir, convertir et dépenser de l’argent dans plusieurs devises.",
     href: "/cartes-et-paiements/wise",
     tag: "Compte multidevise",
+  },
+  {
+    name: "Monese",
+    description:
+      "Une application de compte mobile avec carte Mastercard, paiements, transferts et fonctionnalités multi-devises selon les conditions en vigueur.",
+    href: "/cartes-et-paiements/monese",
+    tag: "Compte mobile",
   },
   {
     name: "Curve Pay",
