@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Crypto : comparatif Binance, KuCoin, Bitpanda, Bitget, Meria, Coinbase et plus",
+    "Crypto : comparatif Binance, KuCoin, Bitpanda, Bitget, Meria, Deblock, Coinbase et plus",
   description:
-    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, KuCoin, Bitpanda, Bitget, Bybit, Meria, HTX, AscendEX, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
+    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, KuCoin, Bitpanda, Bitget, Bybit, Meria, Deblock, HTX, AscendEX, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/crypto",
   },
@@ -75,6 +75,13 @@ const platforms = [
     description:
       "Plateforme crypto française, anciennement Just Mining, orientée achat, vente, conservation, staking et investissement crypto long terme.",
     bonus: "Plateforme française",
+  },
+  {
+    name: "Deblock",
+    slug: "/crypto/deblock",
+    description:
+      "Application combinant compte en euros, IBAN, cartes Visa et services crypto, à analyser prudemment selon les frais, conditions et risques.",
+    bonus: "Compte crypto",
   },
   {
     name: "Crypto.com",

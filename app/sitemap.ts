@@ -142,6 +142,11 @@ const routes = [
     priority: 0.8,
     changeFrequency: "monthly",
   },
+  {
+    path: "/crypto/deblock",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
 
   // Investissement
   {
