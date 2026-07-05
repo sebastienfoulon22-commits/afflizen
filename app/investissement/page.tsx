@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Investissement : Trade Republic, Robinhood, Interactive Brokers, eToro et DEGIRO comparés",
+    "Investissement : Trade Republic, Robinhood, Interactive Brokers, Saxo, eToro et DEGIRO comparés",
   description:
-    "Comparez les plateformes d’investissement suivies par Afflizen : Trade Republic, Robinhood, Interactive Brokers, eToro, Finary et DEGIRO. Actions, ETF, crypto, patrimoine, frais, avantages, limites et points à vérifier.",
+    "Comparez les plateformes d’investissement suivies par Afflizen : Trade Republic, Robinhood, Interactive Brokers, Saxo, eToro, Finary et DEGIRO. Actions, ETF, crypto, patrimoine, frais, avantages, limites et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/investissement",
   },
@@ -32,6 +32,13 @@ const platforms = [
     slug: "/investissement/interactive-brokers",
     description:
       "Courtier international complet pour investir sur actions, ETF, options, futures, devises, obligations et fonds avec prudence.",
+    bonus: "Courtier international",
+  },
+  {
+    name: "Saxo",
+    slug: "/investissement/saxo",
+    description:
+      "Courtier en ligne international pour investir et trader sur actions, ETF, obligations, options, futures, forex et autres marchés selon conditions.",
     bonus: "Courtier international",
   },
   {
