@@ -237,6 +237,11 @@ const routes = [
     priority: 0.75,
     changeFrequency: "monthly",
   },
+  {
+    path: "/cartes-et-paiements/sumup",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
 
   // E-commerce
   {

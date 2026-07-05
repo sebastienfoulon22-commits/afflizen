@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cartes et paiements : comptes, cartes et solutions à comparer | Afflizen",
+  title:
+    "Cartes et paiements : Wise, Curve Pay, SumUp et solutions à comparer | Afflizen",
   description:
-    "Comparez des solutions de cartes, paiements et comptes en ligne pour mieux choisir selon vos besoins, vos frais et votre usage quotidien.",
+    "Comparez des solutions de cartes, paiements, comptes en ligne et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
   alternates: {
     canonical: "https://afflizen.com/cartes-et-paiements",
   },
   openGraph: {
     title:
-      "Cartes et paiements : comptes, cartes et solutions à comparer | Afflizen",
+      "Cartes et paiements : Wise, Curve Pay, SumUp et solutions à comparer | Afflizen",
     description:
-      "Comparez des solutions de cartes, paiements et comptes en ligne pour mieux choisir selon vos besoins, vos frais et votre usage quotidien.",
+      "Comparez des solutions de cartes, paiements, comptes en ligne et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
     url: "https://afflizen.com/cartes-et-paiements",
     siteName: "Afflizen",
     locale: "fr_FR",
@@ -34,6 +35,13 @@ const solutions = [
     href: "/cartes-et-paiements/curve-pay",
     tag: "Carte & wallet",
   },
+  {
+    name: "SumUp",
+    description:
+      "Une solution de paiement pour accepter les paiements par carte et sans contact avec terminaux, Tap to Pay et services pro selon disponibilité.",
+    href: "/cartes-et-paiements/sumup",
+    tag: "Paiements professionnels",
+  },
 ];
 
 const themes = [
@@ -42,6 +50,7 @@ const themes = [
   "Cashback sur les dépenses",
   "Paiements à l’étranger",
   "Wallets et cartes intelligentes",
+  "Terminaux de paiement",
   "Frais bancaires réduits",
 ];
 
@@ -60,8 +69,9 @@ export default function CartesEtPaiementsPage() {
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
             Cette catégorie regroupe les applications de paiement, cartes
-            multi-devises, wallets, solutions de cashback et outils permettant
-            de mieux gérer ses dépenses au quotidien ou à l’étranger.
+            multi-devises, wallets, solutions de cashback, terminaux de
+            paiement et outils permettant de mieux gérer ses dépenses ou ses
+            encaissements au quotidien.
           </p>
 
           <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-500">
@@ -136,6 +146,7 @@ export default function CartesEtPaiementsPage() {
             <li>• Les limites gratuites selon le plan choisi.</li>
             <li>• Les frais après dépassement des plafonds.</li>
             <li>• Les conditions du cashback ou des récompenses.</li>
+            <li>• Les frais d’encaissement et le coût du matériel pour les pros.</li>
             <li>• La disponibilité du service dans votre pays.</li>
             <li>• Les règles du parrainage ou des codes promotionnels.</li>
           </ul>
