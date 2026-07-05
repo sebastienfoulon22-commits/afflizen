@@ -41,6 +41,11 @@ const routes = [
     changeFrequency: "weekly",
   },
   {
+    path: "/cartes-et-paiements/wise",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/e-commerce",
     priority: 0.8,
     changeFrequency: "weekly",

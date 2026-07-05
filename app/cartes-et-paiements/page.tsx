@@ -21,6 +21,13 @@ export const metadata: Metadata = {
 
 const solutions = [
   {
+    name: "Wise",
+    description:
+      "Une solution internationale de paiement et de compte multidevise pour envoyer, recevoir, convertir et dépenser de l’argent dans plusieurs devises.",
+    href: "/cartes-et-paiements/wise",
+    tag: "Compte multidevise",
+  },
+  {
     name: "Curve Pay",
     description:
       "Une application de paiement qui permet de regrouper plusieurs cartes bancaires dans un seul wallet, avec des fonctions comme Go Back in Time.",
