@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Banques en ligne : comparatif Revolut, N26, Qonto, Hello bank! et comptes mobiles",
+    "Banques en ligne : comparatif Revolut, N26, Qonto, Hello bank!, Green-Got et comptes mobiles",
   description:
-    "Comparez les banques en ligne, comptes pro et applications financières suivies par Afflizen : Revolut, N26, Qonto, Hello bank!, cartes, comptes mobiles, frais, avantages et points à vérifier.",
+    "Comparez les banques en ligne, comptes pro et applications financières suivies par Afflizen : Revolut, N26, Qonto, Hello bank!, Green-Got, cartes, comptes mobiles, frais, avantages et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/banques-en-ligne",
   },
   openGraph: {
     title:
-      "Banques en ligne : comparatif Revolut, N26, Qonto, Hello bank! et comptes mobiles",
+      "Banques en ligne : comparatif Revolut, N26, Qonto, Hello bank!, Green-Got et comptes mobiles",
     description:
-      "Découvrez les banques en ligne et applications financières suivies par Afflizen : Revolut, N26, Qonto, Hello bank!, avantages, limites, cartes, comptes et conditions.",
+      "Découvrez les banques en ligne et applications financières suivies par Afflizen : Revolut, N26, Qonto, Hello bank!, Green-Got, avantages, limites, cartes, comptes et conditions.",
     url: "https://afflizen.com/banques-en-ligne",
     siteName: "Afflizen",
     locale: "fr_BE",
@@ -48,6 +48,13 @@ const platforms = [
     description:
       "Banque en ligne et mobile présente en France et en Belgique pour gérer un compte, une carte et des services bancaires selon conditions.",
     bonus: "Banque en ligne",
+  },
+  {
+    name: "Green-Got",
+    slug: "/banques-en-ligne/green-got",
+    description:
+      "Compte et carte orientés argent responsable pour les utilisateurs qui veulent une solution bancaire plus engagée, selon conditions.",
+    bonus: "Compte éthique",
   },
 ];
 
