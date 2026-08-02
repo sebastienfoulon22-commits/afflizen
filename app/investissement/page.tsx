@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Investissement : Trade Republic, TradingView, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro et DEGIRO comparés",
+    "Investissement : Trade Republic, TradingView, Monefit, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro et DEGIRO comparés",
   description:
-    "Comparez les plateformes d’investissement suivies par Afflizen : Trade Republic, TradingView, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro, Finary et DEGIRO. Actions, ETF, crypto, métaux précieux, patrimoine, graphiques, frais, avantages, limites et points à vérifier.",
+    "Comparez les plateformes d’investissement suivies par Afflizen : Trade Republic, TradingView, Monefit SmartSaver, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro, Finary et DEGIRO. Actions, ETF, crypto, prêts, métaux précieux, patrimoine, graphiques, frais, avantages, limites et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/investissement",
   },
@@ -33,6 +33,13 @@ const platforms = [
     description:
       "Plateforme de graphiques, alertes, listes de surveillance et analyse des marchés financiers, à utiliser comme outil et non comme conseil financier.",
     bonus: "Graphiques & analyse",
+  },
+  {
+    name: "Monefit SmartSaver",
+    slug: "/investissement/monefit",
+    description:
+      "Plateforme d’investissement alternative liée à un portefeuille de prêts européens, avec rendements attendus, capital à risque et absence de garantie bancaire.",
+    bonus: "Prêts européens",
   },
   {
     name: "VeraCash",
