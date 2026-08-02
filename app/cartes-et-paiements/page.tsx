@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Cartes et paiements : Wise, myPOS, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
+    "Cartes et paiements : Wise, American Express Belgique, myPOS, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
   description:
-    "Comparez des solutions de cartes, paiements, comptes mobiles, comptes multidevises et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
+    "Comparez des solutions de cartes, paiements, comptes mobiles, cartes de fidélité, comptes multidevises et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
   alternates: {
     canonical: "https://afflizen.com/cartes-et-paiements",
   },
   openGraph: {
     title:
-      "Cartes et paiements : Wise, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
+      "Cartes et paiements : Wise, American Express Belgique, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
     description:
       "Comparez des solutions de cartes, paiements, comptes mobiles, comptes multidevises et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
     url: "https://afflizen.com/cartes-et-paiements",
@@ -34,6 +34,13 @@ const solutions = [
       "Une solution professionnelle de terminaux de paiement, encaissement mobile, paiements en ligne et compte de monnaie électronique selon conditions.",
     href: "/cartes-et-paiements/mypos",
     tag: "Paiements professionnels",
+  },
+  {
+    name: "American Express Belgique",
+    description:
+      "Cartes de paiement Blue, Green, Gold et Platinum proposées aux résidents belges éligibles, avec cotisations, assurances, avantages et conditions à vérifier.",
+    href: "/cartes-et-paiements/american-express-belgique",
+    tag: "Belgique uniquement",
   },
   {
     name: "Monese",

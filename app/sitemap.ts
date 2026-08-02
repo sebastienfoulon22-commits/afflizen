@@ -56,6 +56,11 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
+    path: "/cartes-et-paiements/american-express-belgique",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/e-commerce",
     priority: 0.8,
     changeFrequency: "weekly",
