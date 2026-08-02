@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Investissement : Trade Republic, TradingView, VeraCash, Robinhood, Interactive Brokers, Saxo, eToro et DEGIRO comparés",
+    "Investissement : Trade Republic, TradingView, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro et DEGIRO comparés",
   description:
-    "Comparez les plateformes d’investissement suivies par Afflizen : Trade Republic, TradingView, VeraCash, Robinhood, Interactive Brokers, Saxo, eToro, Finary et DEGIRO. Actions, ETF, crypto, métaux précieux, patrimoine, graphiques, frais, avantages, limites et points à vérifier.",
+    "Comparez les plateformes d’investissement suivies par Afflizen : Trade Republic, TradingView, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro, Finary et DEGIRO. Actions, ETF, crypto, métaux précieux, patrimoine, graphiques, frais, avantages, limites et points à vérifier.",
   alternates: {
     canonical: "https://afflizen.com/investissement",
   },
@@ -40,6 +40,13 @@ const platforms = [
     description:
       "Solution française pour détenir de l’or et d’autres métaux précieux via un compte et une carte, avec risques, frais et conditions à vérifier.",
     bonus: "Métaux précieux",
+  },
+  {
+    name: "GOLD AVENUE",
+    slug: "/investissement/gold-avenue",
+    description:
+      "Plateforme suisse en français pour acheter, stocker et vendre de l’or, de l’argent et d’autres métaux précieux physiques.",
+    bonus: "Or & métaux précieux",
   },
   {
     name: "Interactive Brokers",
