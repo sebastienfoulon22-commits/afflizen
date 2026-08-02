@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Cartes et paiements : Wise, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
+    "Cartes et paiements : Wise, myPOS, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
   description:
     "Comparez des solutions de cartes, paiements, comptes mobiles, comptes multidevises et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
   alternates: {
@@ -27,6 +27,13 @@ const solutions = [
       "Une solution internationale de paiement et de compte multidevise pour envoyer, recevoir, convertir et dépenser de l’argent dans plusieurs devises.",
     href: "/cartes-et-paiements/wise",
     tag: "Compte multidevise",
+  },
+  {
+    name: "myPOS",
+    description:
+      "Une solution professionnelle de terminaux de paiement, encaissement mobile, paiements en ligne et compte de monnaie électronique selon conditions.",
+    href: "/cartes-et-paiements/mypos",
+    tag: "Paiements professionnels",
   },
   {
     name: "Monese",
