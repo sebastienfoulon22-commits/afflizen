@@ -170,6 +170,11 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
+    path: "/investissement/bullionvault",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/investissement/veracash",
     priority: 0.8,
     changeFrequency: "monthly",
