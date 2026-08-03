@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Script from "next/script";
 import BackHomeButton from "../components/BackHomeButton";
 import Footer from "../components/Footer";
@@ -139,12 +140,12 @@ export default function RootLayout({
         <header className="border-b border-slate-200 bg-white">
           <div className="mx-auto flex max-w-[1500px] flex-col gap-4 px-6 py-5 xl:flex-row xl:items-center xl:justify-between">
             <div className="flex shrink-0 flex-col gap-2">
-              <a
+              <Link
                 href="/"
                 className="text-2xl font-bold tracking-tight text-slate-950"
               >
                 Afflizen
-              </a>
+              </Link>
 
               <BackHomeButton />
             </div>

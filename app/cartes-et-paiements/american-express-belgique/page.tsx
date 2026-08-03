@@ -337,7 +337,7 @@ export default function AmericanExpressBelgiquePage() {
           <div className="space-y-8">
             <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
               <h2 className="text-3xl font-bold text-slate-950">
-                Présentation d'American Express Belgique
+                Présentation d’American Express Belgique
               </h2>
               <p className="mt-4 text-base leading-8 text-slate-700">
                 American Express Belgique propose des cartes de paiement pour
@@ -348,10 +348,10 @@ export default function AmericanExpressBelgiquePage() {
                 les avantages détaillés susceptibles de changer.
               </p>
               <p className="mt-4 text-base leading-8 text-slate-700">
-                American Express n'est pas présenté ici comme une banque belge
+                American Express n’est pas présenté ici comme une banque belge
                 traditionnelle, un compte courant, une carte gratuite dans tous
-                les cas, un produit d'investissement ou une solution
-                systématiquement plus avantageuse qu'une Visa ou Mastercard.
+                les cas, un produit d’investissement ou une solution
+                systématiquement plus avantageuse qu’une Visa ou Mastercard.
               </p>
             </section>
 
@@ -367,8 +367,8 @@ export default function AmericanExpressBelgiquePage() {
                 distincts.
               </p>
               <p className="mt-4 text-base leading-8 text-amber-950">
-                Une demande de carte peut dépendre de critères d'acceptation, de
-                revenus, de solvabilité et de justificatifs. L'approbation finale
+                Une demande de carte peut dépendre de critères d’acceptation, de
+                revenus, de solvabilité et de justificatifs. L’approbation finale
                 appartient à American Express Belgique.
               </p>
             </section>
@@ -423,9 +423,9 @@ export default function AmericanExpressBelgiquePage() {
                   Carte Blue : positionnement général
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-slate-700">
-                  La carte Blue peut être comprise comme une porte d'entrée vers
-                  l'univers American Express Belgique. Son intérêt dépend du
-                  niveau de cotisation, des services inclus et de l'usage réel de
+                  La carte Blue peut être comprise comme une porte d’entrée vers
+                  l’univers American Express Belgique. Son intérêt dépend du
+                  niveau de cotisation, des services inclus et de l’usage réel de
                   la carte.
                 </p>
               </article>
@@ -436,7 +436,7 @@ export default function AmericanExpressBelgiquePage() {
                 <p className="mt-4 text-sm leading-7 text-slate-700">
                   La carte Green peut viser un usage quotidien avec programme de
                   fidélité et services associés selon les conditions. Les frais,
-                  avantages et assurances doivent être comparés à l'usage prévu.
+                  avantages et assurances doivent être comparés à l’usage prévu.
                 </p>
               </article>
               <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -458,7 +458,7 @@ export default function AmericanExpressBelgiquePage() {
                   La carte Platinum se positionne sur des services premium. Elle
                   doit être évaluée avec prudence, car la cotisation, les
                   avantages et les conditions doivent être cohérents avec
-                  l'utilisation réelle.
+                  l’utilisation réelle.
                 </p>
               </article>
             </section>
@@ -472,7 +472,7 @@ export default function AmericanExpressBelgiquePage() {
                 certaines cartes American Express. Il peut permettre de cumuler
                 des points sur des dépenses éligibles, puis de les utiliser selon
                 les possibilités et conditions en vigueur. Les règles
-                d'accumulation, exclusions, valeurs d'utilisation et campagnes
+                d’accumulation, exclusions, valeurs d’utilisation et campagnes
                 peuvent évoluer.
               </p>
             </section>
@@ -498,8 +498,8 @@ export default function AmericanExpressBelgiquePage() {
               <p className="mt-4 text-base leading-8 text-slate-700">
                 American Express peut être acceptée dans de nombreux commerces,
                 mais son acceptation peut être moins large que Visa ou Mastercard
-                chez certains commerçants. Avant de dépendre uniquement d'une
-                carte American Express, il faut vérifier l'acceptation auprès des
+                chez certains commerçants. Avant de dépendre uniquement d’une
+                carte American Express, il faut vérifier l’acceptation auprès des
                 commerces, hôtels, plateformes ou services utilisés
                 régulièrement.
               </p>
@@ -510,10 +510,10 @@ export default function AmericanExpressBelgiquePage() {
                 Cotisations et critères à vérifier
               </h2>
               <p className="mt-4 text-base leading-8 text-slate-700">
-                Une cotisation peut s'appliquer et son niveau dépend de la carte.
-                Des critères d'acceptation, de revenus, de solvabilité ou de
+                Une cotisation peut s’appliquer et son niveau dépend de la carte.
+                Des critères d’acceptation, de revenus, de solvabilité ou de
                 justificatifs peuvent exister. Les tarifs, conditions générales,
-                documents d'assurance et informations d'éligibilité doivent être
+                documents d’assurance et informations d’éligibilité doivent être
                 consultés directement sur le site officiel belge.
               </p>
             </section>
@@ -565,13 +565,13 @@ export default function AmericanExpressBelgiquePage() {
           <p className="mt-4 text-base leading-8 text-slate-700">
             American Express Belgique propose le programme Amex Friends,
             permettant aux titulaires éligibles de partager un lien personnalisé
-            et de recevoir une récompense lorsqu'une demande de carte est
+            et de recevoir une récompense lorsqu’une demande de carte est
             approuvée, selon les conditions en vigueur. Afflizen ne possède pas
             encore ce lien personnel.
           </p>
           <p className="mt-4 text-base leading-8 text-slate-700">
             Si un lien personnel est ajouté plus tard, les conditions du
-            programme devront être vérifiées à nouveau, ainsi que l'autorisation
+            programme devront être vérifiées à nouveau, ainsi que l’autorisation
             de publication publique sur Afflizen. Le lien devra rester belge et
             ne viser que des personnes légalement et fiscalement domiciliées en
             Belgique.
@@ -588,9 +588,9 @@ export default function AmericanExpressBelgiquePage() {
             American Express Belgique peut être intéressante pour certains
             résidents belges qui recherchent une carte de paiement avec programme
             de fidélité, services de voyage ou assurances selon la carte choisie.
-            L'intérêt réel dépend toutefois de la cotisation, de l'acceptation
+            L’intérêt réel dépend toutefois de la cotisation, de l’acceptation
             chez les commerçants, des avantages effectivement utilisés et des
-            conditions d'éligibilité.
+            conditions d’éligibilité.
           </p>
           <p className="mt-4 text-base leading-8 text-slate-700">
             Cette page ne constitue pas un conseil financier ou assurantiel. Les
@@ -673,7 +673,7 @@ export default function AmericanExpressBelgiquePage() {
           </h2>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-200">
             Offre réservée aux résidents belges éligibles. Vérifiez les cartes,
-            cotisations, assurances, conditions d'acceptation et documents
+            cotisations, assurances, conditions d’acceptation et documents
             officiels avant toute demande.
           </p>
           <div className="mt-6">
