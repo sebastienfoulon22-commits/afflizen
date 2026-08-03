@@ -1,27 +1,16 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "@/components/AffiliateButton";
 
 const FINARY_AFFILIATE_LINK = "https://finary.com/referral/PQCTXT";
 const FINARY_OFFICIAL_LINK = "https://finary.com/fr";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Finary avis 2026 : suivre son patrimoine, budget, investissements et crypto",
-  description:
-    "Notre avis sur Finary en 2026 : suivi de patrimoine, budget, investissements, crypto, frais, avantages, limites et parrainage Finary Premium.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/finary",
-  },
-  openGraph: {
-    title: "Finary avis 2026 : suivre son patrimoine, budget, investissements et crypto",
-    description:
-      "Notre avis sur Finary en 2026 : suivi de patrimoine, budget, investissements, crypto, frais, avantages, limites et parrainage Finary Premium.",
-    url: "https://afflizen.com/investissement/finary",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Finary en 2026 : suivi de patrimoine, budget, investissements, crypto, frais, avantages, limites et parrainage Finary Premium.",
+  path: "/investissement/finary",
+  type: "article",
+});
 
 const faqJsonLd = {
   "@context": "https://schema.org",

@@ -1,25 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const BITPANDA_OFFICIAL_LINK = "https://www.bitpanda.com/fr";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Bitpanda avis : broker crypto européen pour investir simplement",
-  description:
-    "Notre présentation de Bitpanda, broker européen pour investir dans les cryptos, actions, ETF, indices et métaux précieux : points forts, limites, frais et précautions.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/bitpanda",
-  },
-  openGraph: {
-    title: "Bitpanda avis : broker crypto européen pour investir simplement",
-    description:
-      "Notre présentation de Bitpanda, broker européen pour investir dans les cryptos, actions, ETF, indices et métaux précieux : points forts, limites, frais et précautions.",
-    url: "https://afflizen.com/crypto/bitpanda",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de Bitpanda, broker européen pour investir dans les cryptos, actions, ETF, indices et métaux précieux : points forts, limites, frais et précautions.",
+  path: "/crypto/bitpanda",
+  type: "article",
+});
 
 const strengths = [
   "Broker européen connu dans l’univers crypto, avec une page officielle en français.",

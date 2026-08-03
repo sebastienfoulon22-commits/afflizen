@@ -1,26 +1,16 @@
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const COINBASE_AFFILIATE_LINK =
   "https://coinbase.com/join/HRDF5VE?src=referral-link";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Coinbase avis 2026 : frais, sécurité, avantages et inconvénients",
-  description:
-    "Notre avis sur Coinbase : frais, sécurité, crypto disponibles, avantages, limites, lien de parrainage et conseils avant de créer un compte.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/coinbase",
-  },
-  openGraph: {
-    title: "Coinbase avis 2026 : frais, sécurité, avantages et inconvénients",
-    description:
-      "Notre avis sur Coinbase : frais, sécurité, crypto disponibles, avantages, limites, lien de parrainage et conseils avant de créer un compte.",
-    url: "https://afflizen.com/crypto/coinbase",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Coinbase : frais, sécurité, crypto disponibles, avantages, limites, lien de parrainage et conseils avant de créer un compte.",
+  path: "/crypto/coinbase",
+  type: "article",
+});
 
 const benefits = [
   {

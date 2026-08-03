@@ -1,22 +1,10 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
+import { createPageMetadata } from "@/lib/metadata";
+export const metadata = createPageMetadata({
   title: "Hébergement web : comparatif Hostinger, OVHcloud et solutions web",
-  description:
-    "Comparez les solutions d’hébergement web suivies par Afflizen : Hostinger, OVHcloud, domaines, WordPress, prix, avantages et points à vérifier.",
-  alternates: {
-    canonical: "https://afflizen.com/hebergement-web",
-  },
-  openGraph: {
-    title: "Hébergement web : comparatif Hostinger, OVHcloud et solutions web",
-    description:
-      "Découvrez les solutions d’hébergement web suivies par Afflizen pour créer un site, acheter un domaine ou lancer un projet en ligne.",
-    url: "https://afflizen.com/hebergement-web",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "website",
-  },
-};
+  description: "Comparez les solutions d’hébergement web suivies par Afflizen : Hostinger, OVHcloud, domaines, WordPress, prix, avantages et points à vérifier.",
+  path: "/hebergement-web",
+  type: "website",
+});
 
 const platforms = [
   {

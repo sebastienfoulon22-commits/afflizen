@@ -1,23 +1,10 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title:
-    "Investissement : Trade Republic, TradingView, Invvest, BullionVault, Monefit, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro et DEGIRO comparés",
-  description:
-    "Comparez les plateformes d’investissement suivies par Afflizen : Trade Republic, TradingView, Invvest, BullionVault, Monefit SmartSaver, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro, Finary et DEGIRO. Actions, ETF, crypto, prêts, métaux précieux, patrimoine, graphiques, frais, avantages, limites et points à vérifier.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement",
-  },
-  openGraph: {
-    title: "Investissement : plateformes suivies par Afflizen",
-    description:
-      "Découvrez les fiches investissement Afflizen : applications d’investissement, courtiers, suivi de patrimoine, actions, ETF, frais, avantages et limites.",
-    url: "https://afflizen.com/investissement",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "website",
-  },
-};
+import { createPageMetadata } from "@/lib/metadata";
+export const metadata = createPageMetadata({
+  title: "Investissement : Trade Republic, TradingView, Invvest, BullionVault, Monefit, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro et DEGIRO comparés",
+  description: "Comparez les plateformes d’investissement suivies par Afflizen : Trade Republic, TradingView, Invvest, BullionVault, Monefit SmartSaver, VeraCash, GOLD AVENUE, Robinhood, Interactive Brokers, Saxo, eToro, Finary et DEGIRO. Actions, ETF, crypto, prêts, métaux précieux, patrimoine, graphiques, frais, avantages, limites et points à vérifier.",
+  path: "/investissement",
+  type: "website",
+});
 
 const platforms = [
   {

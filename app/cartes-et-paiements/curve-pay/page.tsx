@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
@@ -14,22 +14,12 @@ const secondaryButtonClassName =
 const fullButtonClassName =
   "mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700";
 
-export const metadata: Metadata = {
-  title: "Curve Pay avis : carte, cashback, frais et parrainage | Afflizen",
-  description:
-    "Notre avis sur Curve Pay : fonctionnement, avantages, inconvénients, frais, cashback, Go Back in Time, paiements à l’étranger et lien de parrainage Afflizen.",
-  alternates: {
-    canonical: "https://afflizen.com/cartes-et-paiements/curve-pay",
-  },
-  openGraph: {
-    title: "Curve Pay avis : carte, cashback, frais et parrainage",
-    description:
-      "Avis Afflizen sur Curve Pay : fonctionnement, frais, avantages, limites, Go Back in Time, paiements à l’étranger et parrainage.",
-    url: "https://afflizen.com/cartes-et-paiements/curve-pay",
-    siteName: "Afflizen",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Curve Pay avis : carte, cashback, frais et parrainage",
+  description: "Notre avis sur Curve Pay : fonctionnement, avantages, inconvénients, frais, cashback, Go Back in Time, paiements à l’étranger et lien de parrainage Afflizen.",
+  path: "/cartes-et-paiements/curve-pay",
+  type: "article",
+});
 
 const avantages = [
   "Permet de regrouper plusieurs cartes bancaires dans une seule application",

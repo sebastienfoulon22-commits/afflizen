@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const SUMUP_FRANCE_LINK = "https://www.sumup.com/fr-fr/";
 const SUMUP_BELGIQUE_LINK = "https://www.sumup.com/fr-be/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "SumUp avis : terminaux de paiement, Tap to Pay et solutions pro",
-  description:
-    "Notre présentation de SumUp, solution de paiement pour indépendants, commerçants et petites entreprises : terminaux de paiement, Tap to Pay, compte pro, frais, points forts et limites.",
-  alternates: {
-    canonical: "https://afflizen.com/cartes-et-paiements/sumup",
-  },
-  openGraph: {
-    title: "SumUp avis : terminaux de paiement, Tap to Pay et solutions pro",
-    description:
-      "Notre présentation de SumUp, solution de paiement pour indépendants, commerçants et petites entreprises : terminaux de paiement, Tap to Pay, compte pro, frais, points forts et limites.",
-    url: "https://afflizen.com/cartes-et-paiements/sumup",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de SumUp, solution de paiement pour indépendants, commerçants et petites entreprises : terminaux de paiement, Tap to Pay, compte pro, frais, points forts et limites.",
+  path: "/cartes-et-paiements/sumup",
+  type: "article",
+});
 
 const strengths = [
   "Solution de paiement pensée pour indépendants, commerçants, artisans, prestataires et petites entreprises.",

@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const EBUYCLUB_AFFILIATE_LINK =
   "https://www.ebuyclub.com/inscription?parrain=docfox22";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "eBuyClub : cashback, parrainage et avis",
-  description:
-    "Découvrez eBuyClub, une plateforme de cashback pour économiser sur vos achats en ligne, en magasin et via bons d’achat. Avis, fonctionnement, avantages et lien de parrainage.",
-  alternates: {
-    canonical: "https://afflizen.com/cashback/ebuyclub",
-  },
-  openGraph: {
-    title: "eBuyClub : cashback, parrainage et avis",
-    description:
-      "Notre fiche Afflizen sur eBuyClub : fonctionnement du cashback, avantages, points à vérifier et lien de parrainage.",
-    url: "https://afflizen.com/cashback/ebuyclub",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+  description: "Découvrez eBuyClub, une plateforme de cashback pour économiser sur vos achats en ligne, en magasin et via bons d’achat. Avis, fonctionnement, avantages et lien de parrainage.",
+  path: "/cashback/ebuyclub",
+  type: "article",
+});
 
 const highlights = [
   "Cashback sur de nombreux achats du quotidien",

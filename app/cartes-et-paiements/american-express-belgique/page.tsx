@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
@@ -11,24 +11,12 @@ const primaryButtonClassName =
 const secondaryButtonClassName =
   "inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-4 text-center font-semibold text-slate-900 transition hover:bg-slate-50";
 
-export const metadata: Metadata = {
-  title: "American Express Belgique : comparer les cartes | Afflizen",
-  description:
-    "Comparez les cartes American Express proposées aux résidents belges. Blue, Green, Gold et Platinum : avantages, cotisations, assurances, limites et conditions à vérifier.",
-  alternates: {
-    canonical:
-      "https://afflizen.com/cartes-et-paiements/american-express-belgique",
-  },
-  openGraph: {
-    title: "American Express Belgique : comparer les cartes | Afflizen",
-    description:
-      "Cartes American Express Belgique pour résidents belges éligibles : Blue, Green, Gold, Platinum, services, assurances, cotisations et conditions à vérifier.",
-    url: "https://afflizen.com/cartes-et-paiements/american-express-belgique",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "American Express Belgique : comparer les cartes",
+  description: "Comparez les cartes American Express proposées aux résidents belges. Blue, Green, Gold et Platinum : avantages, cotisations, assurances, limites et conditions à vérifier.",
+  path: "/cartes-et-paiements/american-express-belgique",
+  type: "article",
+});
 
 const cardRows = [
   {

@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
 const INVVEST_OFFICIAL_LINK = "https://invvest.co/fr";
 
-export const metadata: Metadata = {
-  title: "Invvest : suivi de patrimoine et portefeuilles | Afflizen",
-  description:
-    "Découvrez Invvest, un outil en français pour suivre son patrimoine, regrouper ses portefeuilles et analyser ses investissements. Fonctionnalités, avantages, limites et disponibilité en Belgique et en France.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/invvest",
-  },
-  openGraph: {
-    title: "Invvest : suivi de patrimoine et portefeuilles | Afflizen",
-    description:
-      "Découvrez Invvest, un outil en français pour suivre son patrimoine, regrouper ses portefeuilles et analyser ses investissements. Fonctionnalités, avantages, limites et disponibilité en Belgique et en France.",
-    url: "https://afflizen.com/investissement/invvest",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Invvest : suivi de patrimoine et portefeuilles",
+  description: "Découvrez Invvest, un outil en français pour suivre son patrimoine, regrouper ses portefeuilles et analyser ses investissements. Fonctionnalités, avantages, limites et disponibilité en Belgique et en France.",
+  path: "/investissement/invvest",
+  type: "article",
+});
 
 const strengths = [
   "Outil en français pour suivre plusieurs portefeuilles et classes d’actifs au même endroit.",

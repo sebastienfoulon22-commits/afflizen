@@ -3,6 +3,7 @@ import Script from "next/script";
 import BackHomeButton from "../components/BackHomeButton";
 import Footer from "../components/Footer";
 import SiteSearch from "../components/SiteSearch";
+import { absoluteUrl } from "../lib/metadata";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-FYS51DRQTG";
@@ -46,16 +47,27 @@ export const metadata: Metadata = {
     title:
       "Afflizen - Comparatifs crypto, banques en ligne, investissement et outils IA",
     description:
-      "Comparez les meilleures plateformes crypto, banques en ligne, solutions d’investissement, cashback, cartes de paiement, e-commerce, hébergement web, outils IA et bons plans financiers.",
+      "Comparez les meilleures plateformes crypto, banques en ligne, solutions d'investissement, cashback, cartes de paiement, e-commerce, hebergement web, outils IA et bons plans financiers.",
+    url: absoluteUrl("/"),
     siteName: "Afflizen",
     locale: "fr_BE",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Afflizen - comparatifs, bons plans et plateformes utiles",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Afflizen - Comparatifs finance, crypto, cashback et outils IA",
+    title:
+      "Afflizen - Comparatifs crypto, banques en ligne, investissement et outils IA",
     description:
-      "Le média francophone pour comparer les plateformes financières, crypto, banques en ligne, cartes de paiement, e-commerce, outils IA et bons plans.",
+      "Comparez les meilleures plateformes crypto, banques en ligne, solutions d'investissement, cashback, cartes de paiement, e-commerce, hebergement web, outils IA et bons plans financiers.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,

@@ -56,6 +56,21 @@ Règles à respecter :
 - `aliases` doit contenir les variantes fréquentes d'écriture, pas une liste exhaustive artificielle.
 - `type` vaut `"platform"` pour une fiche et `"category"` pour une page catégorie ou `/bons-plans`.
 
+## Ajouter les métadonnées SEO et sociales
+
+Le titre source de la fiche ne doit jamais contenir `| Afflizen`. Le suffixe est ajouté automatiquement par le layout.
+
+Pour chaque nouvelle fiche, vérifier que les métadonnées incluent :
+
+- un titre spécifique à la plateforme ;
+- une description spécifique ;
+- un canonical exact ;
+- un `openGraph.url` identique au canonical ;
+- un Open Graph spécifique à la fiche ;
+- un Twitter spécifique à la fiche ;
+- une locale Open Graph cohérente ;
+- une image sociale définie ou héritée du défaut global.
+
 ## Contrôles après ajout
 
 Après modification, vérifier au minimum :

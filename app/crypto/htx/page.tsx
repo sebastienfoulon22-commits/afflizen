@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "@/components/AffiliateButton";
 
@@ -7,23 +7,12 @@ const HTX_AFFILIATE_LINK =
 
 const HTX_OFFICIAL_LINK = "https://www.htx.com/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "HTX avis 2026 : crypto, trading, frais, risques et parrainage",
-  description:
-    "Notre avis sur HTX en 2026 : plateforme crypto avancée, trading spot, futures, bots, frais, sécurité, risques, restrictions et lien de parrainage.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/htx",
-  },
-  openGraph: {
-    title: "HTX avis 2026 : crypto, trading, frais, risques et parrainage",
-    description:
-      "Notre avis sur HTX en 2026 : plateforme crypto avancée, trading spot, futures, bots, frais, sécurité, risques, restrictions et lien de parrainage.",
-    url: "https://afflizen.com/crypto/htx",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre avis sur HTX en 2026 : plateforme crypto avancée, trading spot, futures, bots, frais, sécurité, risques, restrictions et lien de parrainage.",
+  path: "/crypto/htx",
+  type: "article",
+});
 
 const faqJsonLd = {
   "@context": "https://schema.org",

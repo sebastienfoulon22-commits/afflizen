@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+﻿import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const ELEVENLABS_LINK = "https://elevenlabs.io/";
@@ -6,23 +6,12 @@ const ELEVENLABS_LINK = "https://elevenlabs.io/";
 const pageTitle = "ElevenLabs avis 2026 : voix IA, agents vocaux et tarifs";
 const pageDescription =
   "Découvrez notre avis sur ElevenLabs : génération de voix IA, clonage vocal, doublage, agents téléphoniques, tarifs, avantages et limites.";
-const pageUrl = "https://afflizen.com/outils-ia/elevenlabs";
-
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: pageTitle,
   description: pageDescription,
-  alternates: {
-    canonical: pageUrl,
-  },
-  openGraph: {
-    title: pageTitle,
-    description: pageDescription,
-    url: pageUrl,
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+  path: "/outils-ia/elevenlabs",
+  type: "article",
+});
 
 const quickFacts = [
   {

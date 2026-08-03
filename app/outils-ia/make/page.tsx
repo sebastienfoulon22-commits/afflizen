@@ -1,27 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const MAKE_LINK = "https://www.make.com/";
 
-export const metadata: Metadata = {
-  title:
-    "Make avis 2026 : automatisation IA, workflows no-code et agents intelligents",
-  description:
-    "Notre avis sur Make, une plateforme d’automatisation visuelle pour connecter ses applications, automatiser des tâches, créer des workflows IA et gagner du temps sans coder.",
-  alternates: {
-    canonical: "https://afflizen.com/outils-ia/make",
-  },
-  openGraph: {
-    title:
-      "Make avis 2026 : automatisation IA, workflows no-code et agents intelligents",
-    description:
-      "Notre avis sur Make, une plateforme d’automatisation visuelle pour connecter ses applications, automatiser des tâches, créer des workflows IA et gagner du temps sans coder.",
-    url: "https://afflizen.com/outils-ia/make",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Make avis 2026 : automatisation IA, workflows no-code et agents intelligents",
+  description: "Notre avis sur Make, une plateforme d’automatisation visuelle pour connecter ses applications, automatiser des tâches, créer des workflows IA et gagner du temps sans coder.",
+  path: "/outils-ia/make",
+  type: "article",
+});
 
 const relatedTools = [
   {

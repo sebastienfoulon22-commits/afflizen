@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "@/components/AffiliateButton";
 
 const TRADINGVIEW_AFFILIATE_LINK = "https://fr.tradingview.com/?aff_id=168402";
 
-export const metadata: Metadata = {
-  title: "TradingView : graphiques, analyse et suivi des marchés | Afflizen",
-  description:
-    "Découvrez TradingView, une plateforme de graphiques, alertes et analyse des marchés financiers. Avis Afflizen, points forts, limites, risques et lien d’affiliation.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/tradingview",
-  },
-  openGraph: {
-    title: "TradingView : graphiques, analyse et suivi des marchés | Afflizen",
-    description:
-      "Découvrez TradingView, une plateforme de graphiques, alertes et analyse des marchés financiers. Avis Afflizen, points forts, limites, risques et lien d’affiliation.",
-    url: "https://afflizen.com/investissement/tradingview",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "TradingView : graphiques, analyse et suivi des marchés",
+  description: "Découvrez TradingView, une plateforme de graphiques, alertes et analyse des marchés financiers. Avis Afflizen, points forts, limites, risques et lien d’affiliation.",
+  path: "/investissement/tradingview",
+  type: "article",
+});
 
 const strengths = [
   "Interface graphique claire pour suivre de nombreux marchés financiers.",

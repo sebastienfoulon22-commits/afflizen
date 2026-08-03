@@ -1,27 +1,16 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const BINANCE_AFFILIATE_LINK =
   "https://account.binance.com/register?registerChannel=user_center&ref=W1CW1QNP";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Binance avis 2026 : frais, sécurité, avantages et inconvénients",
-  description:
-    "Notre avis sur Binance en 2026 : avantages, inconvénients, frais, sécurité, profil idéal, FAQ et lien d’inscription.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/binance",
-  },
-  openGraph: {
-    title: "Binance avis 2026 : frais, sécurité, avantages et inconvénients",
-    description:
-      "Notre avis sur Binance en 2026 : avantages, inconvénients, frais, sécurité, profil idéal, FAQ et lien d’inscription.",
-    url: "https://afflizen.com/crypto/binance",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Binance en 2026 : avantages, inconvénients, frais, sécurité, profil idéal, FAQ et lien d’inscription.",
+  path: "/crypto/binance",
+  type: "article",
+});
 
 export default function BinancePage() {
   return (

@@ -1,27 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const GAMMA_LINK = "https://gamma.app/";
 
-export const metadata: Metadata = {
-  title:
-    "Gamma avis 2026 : créer des présentations, documents et pages avec l’IA",
-  description:
-    "Notre avis sur Gamma, un outil IA pour créer rapidement des présentations, documents, pages web et contenus visuels sans partir d’une page blanche.",
-  alternates: {
-    canonical: "https://afflizen.com/outils-ia/gamma",
-  },
-  openGraph: {
-    title:
-      "Gamma avis 2026 : créer des présentations, documents et pages avec l’IA",
-    description:
-      "Notre avis sur Gamma, un outil IA pour créer rapidement des présentations, documents, pages web et contenus visuels sans partir d’une page blanche.",
-    url: "https://afflizen.com/outils-ia/gamma",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Gamma avis 2026 : créer des présentations, documents et pages avec l’IA",
+  description: "Notre avis sur Gamma, un outil IA pour créer rapidement des présentations, documents, pages web et contenus visuels sans partir d’une page blanche.",
+  path: "/outils-ia/gamma",
+  type: "article",
+});
 
 const relatedTools = [
   {

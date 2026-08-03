@@ -1,27 +1,16 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
 const MYPOS_BELGIUM_OFFICIAL_LINK = "https://www.mypos.com/fr-be";
 const MYPOS_FRANCE_OFFICIAL_LINK = "https://www.mypos.com/fr-fr";
 
-export const metadata: Metadata = {
-  title: "myPOS : terminaux de paiement pour professionnels | Afflizen",
-  description:
-    "Découvrez myPOS, une solution de terminaux de paiement et d'encaissement destinée aux indépendants et entreprises en Belgique et en France. Fonctionnement, avantages, limites et frais à vérifier.",
-  alternates: {
-    canonical: "https://afflizen.com/cartes-et-paiements/mypos",
-  },
-  openGraph: {
-    title: "myPOS : terminaux de paiement pour professionnels | Afflizen",
-    description:
-      "Découvrez myPOS, une solution de terminaux de paiement et d'encaissement destinée aux indépendants et entreprises en Belgique et en France. Fonctionnement, avantages, limites et frais à vérifier.",
-    url: "https://afflizen.com/cartes-et-paiements/mypos",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "myPOS : terminaux de paiement pour professionnels",
+  description: "Découvrez myPOS, une solution de terminaux de paiement et d'encaissement destinée aux indépendants et entreprises en Belgique et en France. Fonctionnement, avantages, limites et frais à vérifier.",
+  path: "/cartes-et-paiements/mypos",
+  type: "article",
+});
 
 const professionals = [
   "Indépendants, freelances et professions libérales qui encaissent des clients en présentiel.",

@@ -1,22 +1,10 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Bonus et parrainages : offres à comparer avec prudence | Afflizen",
-  description:
-    "Retrouvez les bonus, offres de parrainage et avantages disponibles sur certaines plateformes référencées par Afflizen, avec une approche claire et prudente.",
-  alternates: {
-    canonical: "https://afflizen.com/bonus",
-  },
-  openGraph: {
-    title: "Bonus et parrainages : offres à comparer avec prudence | Afflizen",
-    description:
-      "Retrouvez les bonus, offres de parrainage et avantages disponibles sur certaines plateformes référencées par Afflizen, avec une approche claire et prudente.",
-    url: "https://afflizen.com/bonus",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "website",
-  },
-};
+import { createPageMetadata } from "@/lib/metadata";
+export const metadata = createPageMetadata({
+  title: "Bonus et parrainages : offres à comparer avec prudence",
+  description: "Retrouvez les bonus, offres de parrainage et avantages disponibles sur certaines plateformes référencées par Afflizen, avec une approche claire et prudente.",
+  path: "/bonus",
+  type: "website",
+});
 
 const bonusSections = [
   {

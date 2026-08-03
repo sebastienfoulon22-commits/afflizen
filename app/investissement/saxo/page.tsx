@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const SAXO_FRANCE_LINK = "https://www.home.saxo/fr-fr";
 const SAXO_BELGIQUE_LINK = "https://www.home.saxo/fr-be";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Saxo avis : courtier en ligne pour investir et trader",
-  description:
-    "Notre présentation de Saxo, courtier en ligne pour investir et trader sur actions, ETF, obligations, options, futures, forex et autres marchés : frais, points forts, limites et précautions.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/saxo",
-  },
-  openGraph: {
-    title: "Saxo avis : courtier en ligne pour investir et trader",
-    description:
-      "Notre présentation de Saxo, courtier en ligne pour investir et trader sur actions, ETF, obligations, options, futures, forex et autres marchés : frais, points forts, limites et précautions.",
-    url: "https://afflizen.com/investissement/saxo",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de Saxo, courtier en ligne pour investir et trader sur actions, ETF, obligations, options, futures, forex et autres marchés : frais, points forts, limites et précautions.",
+  path: "/investissement/saxo",
+  type: "article",
+});
 
 const strengths = [
   "Courtier en ligne international donnant accès à de nombreux marchés selon pays, profil et conditions.",

@@ -1,24 +1,10 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title:
-    "Cartes et paiements : Wise, American Express Belgique, myPOS, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
-  description:
-    "Comparez des solutions de cartes, paiements, comptes mobiles, cartes de fidélité, comptes multidevises et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
-  alternates: {
-    canonical: "https://afflizen.com/cartes-et-paiements",
-  },
-  openGraph: {
-    title:
-      "Cartes et paiements : Wise, American Express Belgique, Monese, Curve Pay, SumUp et solutions à comparer | Afflizen",
-    description:
-      "Comparez des solutions de cartes, paiements, comptes mobiles, comptes multidevises et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
-    url: "https://afflizen.com/cartes-et-paiements",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "website",
-  },
-};
+import { createPageMetadata } from "@/lib/metadata";
+export const metadata = createPageMetadata({
+  title: "Cartes et paiements : Wise, American Express Belgique, myPOS, Monese, Curve Pay, SumUp et solutions à comparer",
+  description: "Comparez des solutions de cartes, paiements, comptes mobiles, cartes de fidélité, comptes multidevises et encaissement professionnel pour mieux choisir selon vos besoins, vos frais et votre usage.",
+  path: "/cartes-et-paiements",
+  type: "website",
+});
 
 const solutions = [
   {

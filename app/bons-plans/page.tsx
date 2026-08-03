@@ -1,23 +1,12 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Bons plans financiers - Offres, parrainages et économies",
-  description:
-    "Découvrez les bons plans financiers, offres de parrainage, cashback, codes utiles et solutions pour économiser avec Afflizen.",
-  alternates: {
-    canonical: "https://afflizen.com/bons-plans",
-  },
-  openGraph: {
-    title: "Bons plans financiers - Offres, parrainages et économies",
-    description:
-      "Découvrez les bons plans financiers, offres de parrainage, cashback, codes utiles et solutions pour économiser avec Afflizen.",
-    url: "https://afflizen.com/bons-plans",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "website",
-  },
-};
+  description: "Découvrez les bons plans financiers, offres de parrainage, cashback, codes utiles et solutions pour économiser avec Afflizen.",
+  path: "/bons-plans",
+  type: "website",
+});
 
 const bonsPlans = [
   {

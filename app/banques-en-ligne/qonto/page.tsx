@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const QONTO_FRANCE_LINK = "https://qonto.com/fr";
 const QONTO_BELGIQUE_LINK = "https://qonto.com/fr-be";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Qonto avis : compte pro en ligne pour indépendants et entreprises",
-  description:
-    "Notre présentation de Qonto, compte pro en ligne pour indépendants, PME et entreprises en France et en Belgique : fonctionnalités, tarifs, points forts, limites et précautions.",
-  alternates: {
-    canonical: "https://afflizen.com/banques-en-ligne/qonto",
-  },
-  openGraph: {
-    title: "Qonto avis : compte pro en ligne pour indépendants et entreprises",
-    description:
-      "Notre présentation de Qonto, compte pro en ligne pour indépendants, PME et entreprises en France et en Belgique : fonctionnalités, tarifs, points forts, limites et précautions.",
-    url: "https://afflizen.com/banques-en-ligne/qonto",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de Qonto, compte pro en ligne pour indépendants, PME et entreprises en France et en Belgique : fonctionnalités, tarifs, points forts, limites et précautions.",
+  path: "/banques-en-ligne/qonto",
+  type: "article",
+});
 
 const strengths = [
   "Solution de compte professionnel en ligne pensée pour les indépendants, sociétés, PME et équipes.",

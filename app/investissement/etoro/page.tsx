@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "@/components/AffiliateButton";
 
@@ -7,23 +7,12 @@ const IGRAAL_AFFILIATE_LINK =
 
 const ETORO_OFFICIAL_LINK = "https://www.etoro.com/fr/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "eToro avis 2026 : copy trading, actions, ETF, crypto et cashback iGraal",
-  description:
-    "Notre avis sur eToro en 2026 : fonctionnement, copy trading, actions, ETF, crypto, offre iGraal testée, cashback potentiel, avantages, limites et points de vigilance.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/etoro",
-  },
-  openGraph: {
-    title: "eToro avis 2026 : copy trading, actions, ETF, crypto et cashback iGraal",
-    description:
-      "Notre avis sur eToro en 2026 : fonctionnement, copy trading, actions, ETF, crypto, offre iGraal testée, cashback potentiel, avantages, limites et points de vigilance.",
-    url: "https://afflizen.com/investissement/etoro",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre avis sur eToro en 2026 : fonctionnement, copy trading, actions, ETF, crypto, offre iGraal testée, cashback potentiel, avantages, limites et points de vigilance.",
+  path: "/investissement/etoro",
+  type: "article",
+});
 
 const faqJsonLd = {
   "@context": "https://schema.org",

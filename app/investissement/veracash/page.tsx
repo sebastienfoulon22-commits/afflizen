@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
@@ -6,23 +6,12 @@ const VERACASH_FRANCE_LINK = "https://www.veracash.com/fr/";
 const VERACASH_BELGIQUE_LINK =
   "https://www.veracash.com/fr/campagnes/acheter-et-vendre-or-en-belgique-avec-veracash";
 
-export const metadata: Metadata = {
-  title: "VeraCash : compte or, métaux précieux et carte | Afflizen",
-  description:
-    "Découvrez VeraCash, une solution pour détenir des métaux précieux avec un compte et une carte. Avis Afflizen, disponibilité France et Belgique, risques, limites et liens officiels provisoires.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/veracash",
-  },
-  openGraph: {
-    title: "VeraCash : compte or, métaux précieux et carte | Afflizen",
-    description:
-      "Découvrez VeraCash, une solution pour détenir des métaux précieux avec un compte et une carte. Avis Afflizen, disponibilité France et Belgique, risques, limites et liens officiels provisoires.",
-    url: "https://afflizen.com/investissement/veracash",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "VeraCash : compte or, métaux précieux et carte",
+  description: "Découvrez VeraCash, une solution pour détenir des métaux précieux avec un compte et une carte. Avis Afflizen, disponibilité France et Belgique, risques, limites et liens officiels provisoires.",
+  path: "/investissement/veracash",
+  type: "article",
+});
 
 const strengths = [
   "Solution française orientée détention de métaux précieux, notamment or et argent.",

@@ -1,25 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const POULPEO_OFFICIAL_LINK = "https://www.poulpeo.com/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Poulpeo avis : cashback, codes promo et réductions en ligne",
-  description:
-    "Notre présentation de Poulpeo, plateforme française de cashback, codes promo et réductions : fonctionnement, points forts, limites, conditions et précautions avant de l’utiliser.",
-  alternates: {
-    canonical: "https://afflizen.com/cashback/poulpeo",
-  },
-  openGraph: {
-    title: "Poulpeo avis : cashback, codes promo et réductions en ligne",
-    description:
-      "Notre présentation de Poulpeo, plateforme française de cashback, codes promo et réductions : fonctionnement, points forts, limites, conditions et précautions avant de l’utiliser.",
-    url: "https://afflizen.com/cashback/poulpeo",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de Poulpeo, plateforme française de cashback, codes promo et réductions : fonctionnement, points forts, limites, conditions et précautions avant de l’utiliser.",
+  path: "/cashback/poulpeo",
+  type: "article",
+});
 
 const strengths = [
   "Plateforme française de cashback et de codes promo.",

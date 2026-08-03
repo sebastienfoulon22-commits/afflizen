@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
@@ -11,22 +11,12 @@ const primaryButtonClassName =
 const darkButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Bitget avis 2026 : frais, sécurité, copy trading et inconvénients",
-  description:
-    "Notre avis sur Bitget en 2026 : avantages, inconvénients, frais, sécurité, copy trading, disponibilité, FAQ et lien d’inscription.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/bitget",
-  },
-  openGraph: {
-    title: "Bitget avis 2026 : frais, sécurité, copy trading et inconvénients",
-    description:
-      "Avis Afflizen sur Bitget : frais, sécurité, copy trading, avantages, limites, disponibilité et risques à connaître.",
-    url: "https://afflizen.com/crypto/bitget",
-    siteName: "Afflizen",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Bitget en 2026 : avantages, inconvénients, frais, sécurité, copy trading, disponibilité, FAQ et lien d’inscription.",
+  path: "/crypto/bitget",
+  type: "article",
+});
 
 export default function BitgetPage() {
   return (

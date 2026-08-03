@@ -1,27 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const N8N_LINK = "https://n8n.io/";
 
-export const metadata: Metadata = {
-  title:
-    "n8n avis 2026 : automatisation IA, workflows avancés et alternative à Make",
-  description:
-    "Notre avis sur n8n, une plateforme d’automatisation de workflows avec IA, intégrations, agents intelligents, webhooks et scénarios avancés pour indépendants, entreprises et profils techniques.",
-  alternates: {
-    canonical: "https://afflizen.com/outils-ia/n8n",
-  },
-  openGraph: {
-    title:
-      "n8n avis 2026 : automatisation IA, workflows avancés et alternative à Make",
-    description:
-      "Notre avis sur n8n, une plateforme d’automatisation de workflows avec IA, intégrations, agents intelligents, webhooks et scénarios avancés pour indépendants, entreprises et profils techniques.",
-    url: "https://afflizen.com/outils-ia/n8n",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "n8n avis 2026 : automatisation IA, workflows avancés et alternative à Make",
+  description: "Notre avis sur n8n, une plateforme d’automatisation de workflows avec IA, intégrations, agents intelligents, webhooks et scénarios avancés pour indépendants, entreprises et profils techniques.",
+  path: "/outils-ia/n8n",
+  type: "article",
+});
 
 const relatedTools = [
   {

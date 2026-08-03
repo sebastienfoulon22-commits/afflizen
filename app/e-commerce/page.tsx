@@ -1,24 +1,12 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "E-commerce : bons plans, achats en ligne et plateformes utiles | Afflizen",
-  description:
-    "Découvrez les plateformes e-commerce référencées par Afflizen pour acheter en ligne, comparer les bons plans et profiter d’avantages disponibles.",
-  alternates: {
-    canonical: "https://afflizen.com/e-commerce",
-  },
-  openGraph: {
-    title:
-      "E-commerce : bons plans, achats en ligne et plateformes utiles | Afflizen",
-    description:
-      "Découvrez les plateformes e-commerce référencées par Afflizen pour acheter en ligne, comparer les bons plans et profiter d’avantages disponibles.",
-    url: "https://afflizen.com/e-commerce",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "website",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "E-commerce : bons plans, achats en ligne et plateformes utiles",
+  description: "Découvrez les plateformes e-commerce référencées par Afflizen pour acheter en ligne, comparer les bons plans et profiter d’avantages disponibles.",
+  path: "/e-commerce",
+  type: "website",
+});
 
 const availablePlatforms = [
   {

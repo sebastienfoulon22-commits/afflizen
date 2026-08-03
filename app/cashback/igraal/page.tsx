@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
@@ -11,22 +11,12 @@ const primaryButtonClassName =
 const darkButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "iGraal avis 2026 : cashback, codes promo, paiement et parrainage",
-  description:
-    "Notre avis sur iGraal en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, extension, FAQ et lien de parrainage.",
-  alternates: {
-    canonical: "https://afflizen.com/cashback/igraal",
-  },
-  openGraph: {
-    title: "iGraal avis 2026 : cashback, codes promo, paiement et parrainage",
-    description:
-      "Avis Afflizen sur iGraal : cashback, codes promo, seuil de paiement, extension navigateur, avantages, limites et parrainage.",
-    url: "https://afflizen.com/cashback/igraal",
-    siteName: "Afflizen",
-    type: "article",
-  },
-};
+  description: "Notre avis sur iGraal en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, extension, FAQ et lien de parrainage.",
+  path: "/cashback/igraal",
+  type: "article",
+});
 
 export default function IGraalPage() {
   return (

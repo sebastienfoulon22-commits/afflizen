@@ -1,26 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const ROBINHOOD_OFFICIAL_LINK = "https://robinhood.com/eu/fr/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Robinhood avis : application d’investissement, actions tokenisées et crypto",
-  description:
-    "Notre présentation de Robinhood en Europe : application d’investissement avec actions tokenisées, crypto, produits dérivés, points forts, limites, frais, disponibilité et précautions.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/robinhood",
-  },
-  openGraph: {
-    title:
-      "Robinhood avis : application d’investissement, actions tokenisées et crypto",
-    description:
-      "Notre présentation de Robinhood en Europe : application d’investissement avec actions tokenisées, crypto, produits dérivés, points forts, limites, frais, disponibilité et précautions.",
-    url: "https://afflizen.com/investissement/robinhood",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de Robinhood en Europe : application d’investissement avec actions tokenisées, crypto, produits dérivés, points forts, limites, frais, disponibilité et précautions.",
+  path: "/investissement/robinhood",
+  type: "article",
+});
 
 const strengths = [
   "Application d’investissement connue à l’international avec une expérience moderne.",

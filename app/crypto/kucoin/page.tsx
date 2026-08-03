@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "@/components/AffiliateButton";
 
 const KUCOIN_REFERRAL_LINK = "https://www.kucoin.com/r/rf/QBSFQ65A";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "KuCoin avis : exchange crypto, trading, futures et staking",
-  description:
-    "Notre présentation de KuCoin, exchange crypto international pour acheter, vendre et trader des cryptomonnaies : spot, futures, staking, points forts, limites, frais et précautions.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/kucoin",
-  },
-  openGraph: {
-    title: "KuCoin avis : exchange crypto, trading, futures et staking",
-    description:
-      "Notre présentation de KuCoin, exchange crypto international pour acheter, vendre et trader des cryptomonnaies : spot, futures, staking, points forts, limites, frais et précautions.",
-    url: "https://afflizen.com/crypto/kucoin",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de KuCoin, exchange crypto international pour acheter, vendre et trader des cryptomonnaies : spot, futures, staking, points forts, limites, frais et précautions.",
+  path: "/crypto/kucoin",
+  type: "article",
+});
 
 const strengths = [
   "Exchange crypto international avec de nombreux actifs numériques selon disponibilité.",

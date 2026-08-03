@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
 const DEBLOCK_OFFICIAL_LINK = "https://deblock.com/fr-FR";
 
-export const metadata: Metadata = {
-  title: "Deblock : compte crypto, carte Visa et IBAN | Afflizen",
-  description:
-    "Découvrez Deblock, une application combinant compte en euros, IBAN, carte Visa et crypto. Avis Afflizen, points forts, limites, risques et lien officiel provisoire.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/deblock",
-  },
-  openGraph: {
-    title: "Deblock : compte crypto, carte Visa et IBAN | Afflizen",
-    description:
-      "Découvrez Deblock, une application combinant compte en euros, IBAN, carte Visa et crypto. Avis Afflizen, points forts, limites, risques et lien officiel provisoire.",
-    url: "https://afflizen.com/crypto/deblock",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Deblock : compte crypto, carte Visa et IBAN",
+  description: "Découvrez Deblock, une application combinant compte en euros, IBAN, carte Visa et crypto. Avis Afflizen, points forts, limites, risques et lien officiel provisoire.",
+  path: "/crypto/deblock",
+  type: "article",
+});
 
 const strengths = [
   "Application moderne combinant compte en euros, IBAN, cartes Visa et services liés aux crypto-actifs.",

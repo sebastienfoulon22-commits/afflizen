@@ -1,23 +1,12 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Outils IA : voix, automatisation, workflows et présentations",
-  description:
-    "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches, générer de la voix, créer des présentations et développer des solutions intelligentes.",
-  alternates: {
-    canonical: "https://afflizen.com/outils-ia",
-  },
-  openGraph: {
-    title: "Outils IA : voix, automatisation, workflows et présentations",
-    description:
-      "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches, générer de la voix, créer des présentations et développer des solutions intelligentes.",
-    url: "https://afflizen.com/outils-ia",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "website",
-  },
-};
+  description: "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches, générer de la voix, créer des présentations et développer des solutions intelligentes.",
+  path: "/outils-ia",
+  type: "website",
+});
 
 const tools = [
   {

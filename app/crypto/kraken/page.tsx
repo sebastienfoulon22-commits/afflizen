@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
@@ -13,22 +13,12 @@ const secondaryButtonClassName =
 const fullButtonClassName =
   "inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700";
 
-export const metadata: Metadata = {
-  title: "Kraken avis : frais, sécurité, avantages et inconvénients | Afflizen",
-  description:
-    "Notre avis sur Kraken : frais, avantages, inconvénients, sécurité, Kraken Pro, crypto disponibles, fiabilité et risques à connaître.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/kraken",
-  },
-  openGraph: {
-    title: "Kraken avis : frais, sécurité, avantages et inconvénients",
-    description:
-      "Avis Afflizen sur Kraken : frais, sécurité, Kraken Pro, avantages, limites et risques à connaître avant inscription.",
-    url: "https://afflizen.com/crypto/kraken",
-    siteName: "Afflizen",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Kraken avis : frais, sécurité, avantages et inconvénients",
+  description: "Notre avis sur Kraken : frais, avantages, inconvénients, sécurité, Kraken Pro, crypto disponibles, fiabilité et risques à connaître.",
+  path: "/crypto/kraken",
+  type: "article",
+});
 
 const avantages = [
   "Plateforme crypto reconnue et présente depuis de nombreuses années",

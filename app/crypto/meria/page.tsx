@@ -1,25 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const MERIA_OFFICIAL_LINK = "https://www.meria.com/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Meria avis : plateforme crypto française, staking et investissement",
-  description:
-    "Notre présentation de Meria, plateforme crypto française anciennement Just Mining : achat, vente, conservation, staking, points forts, limites et précautions avant d’investir.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/meria",
-  },
-  openGraph: {
-    title: "Meria avis : plateforme crypto française, staking et investissement",
-    description:
-      "Notre présentation de Meria, plateforme crypto française anciennement Just Mining : achat, vente, conservation, staking, points forts, limites et précautions avant d’investir.",
-    url: "https://afflizen.com/crypto/meria",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de Meria, plateforme crypto française anciennement Just Mining : achat, vente, conservation, staking, points forts, limites et précautions avant d’investir.",
+  path: "/crypto/meria",
+  type: "article",
+});
 
 const strengths = [
   "Plateforme crypto française, pensée pour les utilisateurs francophones.",

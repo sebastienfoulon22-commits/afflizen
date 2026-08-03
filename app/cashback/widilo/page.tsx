@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
@@ -10,22 +10,12 @@ const primaryButtonClassName =
 const darkButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Widilo avis 2026 : cashback, codes promo, paiement et parrainage",
-  description:
-    "Notre avis sur Widilo en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, application, FAQ et lien de parrainage.",
-  alternates: {
-    canonical: "https://afflizen.com/cashback/widilo",
-  },
-  openGraph: {
-    title: "Widilo avis 2026 : cashback, codes promo, paiement et parrainage",
-    description:
-      "Avis Afflizen sur Widilo : cashback, codes promo, retrait des gains, application, extension, avantages, limites et parrainage.",
-    url: "https://afflizen.com/cashback/widilo",
-    siteName: "Afflizen",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Widilo en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, application, FAQ et lien de parrainage.",
+  path: "/cashback/widilo",
+  type: "article",
+});
 
 export default function WidiloPage() {
   return (

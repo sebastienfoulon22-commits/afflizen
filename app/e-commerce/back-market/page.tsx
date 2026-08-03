@@ -1,28 +1,16 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const BACK_MARKET_URL = "https://www.backmarket.fr/fr-fr";
 const BACK_MARKET_CODE = "ffcb15bb420025aa";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Back Market avis 2026 : code parrainage, reconditionné et bons plans",
-  description:
-    "Notre avis sur Back Market : code parrainage, avantages, limites, garantie, retours, prix et conseils avant d’acheter un produit reconditionné.",
-  alternates: {
-    canonical: "https://afflizen.com/e-commerce/back-market",
-  },
-  openGraph: {
-    title:
-      "Back Market avis 2026 : code parrainage, reconditionné et bons plans",
-    description:
-      "Notre avis sur Back Market : code parrainage, avantages, limites, garantie, retours, prix et conseils avant d’acheter un produit reconditionné.",
-    url: "https://afflizen.com/e-commerce/back-market",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Back Market : code parrainage, avantages, limites, garantie, retours, prix et conseils avant d’acheter un produit reconditionné.",
+  path: "/e-commerce/back-market",
+  type: "article",
+});
 
 const benefits = [
   {

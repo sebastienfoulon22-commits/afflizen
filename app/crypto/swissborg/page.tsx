@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
@@ -14,22 +14,12 @@ const secondaryButtonClassName =
 const fullButtonClassName =
   "mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700";
 
-export const metadata: Metadata = {
-  title: "SwissBorg avis : frais, Smart Engine, avantages et code | Afflizen",
-  description:
-    "Notre avis sur SwissBorg : avantages, inconvénients, frais, Smart Engine, crypto bundles, sécurité, risques et code de parrainage à utiliser.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/swissborg",
-  },
-  openGraph: {
-    title: "SwissBorg avis : frais, Smart Engine, avantages et code",
-    description:
-      "Avis Afflizen sur SwissBorg : frais, Smart Engine, avantages, limites, sécurité, risques et code de parrainage.",
-    url: "https://afflizen.com/crypto/swissborg",
-    siteName: "Afflizen",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "SwissBorg avis : frais, Smart Engine, avantages et code",
+  description: "Notre avis sur SwissBorg : avantages, inconvénients, frais, Smart Engine, crypto bundles, sécurité, risques et code de parrainage à utiliser.",
+  path: "/crypto/swissborg",
+  type: "article",
+});
 
 const avantages = [
   "Application crypto moderne et simple à prendre en main",

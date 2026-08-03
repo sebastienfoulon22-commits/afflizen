@@ -1,25 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const DEGIRO_OFFICIAL_LINK = "https://www.degiro.fr/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "DEGIRO avis 2026 : courtier en ligne, actions, ETF, frais et limites",
-  description:
-    "Notre avis sur DEGIRO en 2026 : courtier en ligne pour actions, ETF et marchés financiers. Avantages, limites, frais à vérifier, fiscalité belge et points de vigilance.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/degiro",
-  },
-  openGraph: {
-    title: "DEGIRO avis 2026 : courtier en ligne, actions, ETF, frais et limites",
-    description:
-      "Notre avis sur DEGIRO en 2026 : courtier en ligne pour actions, ETF et marchés financiers. Avantages, limites, frais à vérifier, fiscalité belge et points de vigilance.",
-    url: "https://afflizen.com/investissement/degiro",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+  description: "Notre avis sur DEGIRO en 2026 : courtier en ligne pour actions, ETF et marchés financiers. Avantages, limites, frais à vérifier, fiscalité belge et points de vigilance.",
+  path: "/investissement/degiro",
+  type: "article",
+});
 
 const faqJsonLd = {
   "@context": "https://schema.org",

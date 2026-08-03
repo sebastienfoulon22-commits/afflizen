@@ -1,22 +1,10 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
+import { createPageMetadata } from "@/lib/metadata";
+export const metadata = createPageMetadata({
   title: "À propos d’Afflizen : comparatifs, bons plans et affiliation",
-  description:
-    "Découvrez Afflizen, un site francophone dédié aux comparatifs de plateformes, bons plans, parrainages, cashback, crypto, banques en ligne, investissement, hébergement web et outils IA.",
-  alternates: {
-    canonical: "https://afflizen.com/a-propos",
-  },
-  openGraph: {
-    title: "À propos d’Afflizen : comparatifs, bons plans et affiliation",
-    description:
-      "Découvrez Afflizen, un site francophone dédié aux comparatifs de plateformes, bons plans, parrainages, cashback, crypto, banques en ligne, investissement, hébergement web et outils IA.",
-    url: "https://afflizen.com/a-propos",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "website",
-  },
-};
+  description: "Découvrez Afflizen, un site francophone dédié aux comparatifs de plateformes, bons plans, parrainages, cashback, crypto, banques en ligne, investissement, hébergement web et outils IA.",
+  path: "/a-propos",
+  type: "website",
+});
 
 export default function AProposPage() {
   return (

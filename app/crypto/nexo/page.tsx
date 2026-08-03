@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
@@ -11,22 +11,12 @@ const primaryButtonClassName =
 const fullButtonClassName =
   "inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700";
 
-export const metadata: Metadata = {
-  title: "Nexo : avis, rendement crypto, carte et crédit crypto | Afflizen",
-  description:
-    "Avis Afflizen sur Nexo : rendement crypto, carte Nexo, crédit crypto, avantages, limites, risques et conditions à vérifier avant inscription.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/nexo",
-  },
-  openGraph: {
-    title: "Nexo : avis, rendement crypto, carte et crédit crypto",
-    description:
-      "Analyse prudente de Nexo : rendement non garanti, plateforme crypto centralisée, risques, frais, carte et crédit crypto.",
-    url: "https://afflizen.com/crypto/nexo",
-    siteName: "Afflizen",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Nexo : avis, rendement crypto, carte et crédit crypto",
+  description: "Avis Afflizen sur Nexo : rendement crypto, carte Nexo, crédit crypto, avantages, limites, risques et conditions à vérifier avant inscription.",
+  path: "/crypto/nexo",
+  type: "article",
+});
 
 const avantages = [
   "Interface simple pour gérer plusieurs services crypto depuis une seule plateforme.",

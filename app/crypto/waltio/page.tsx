@@ -1,25 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const WALTIO_AFFILIATE_LINK = "https://m.waltio.com/HiTQKirPqd";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Waltio : fiscalité crypto, déclaration et avis",
-  description:
-    "Découvrez Waltio, un assistant fiscal crypto pour suivre ses transactions, calculer ses plus-values et préparer sa déclaration. Avis, avantages, limites et lien de parrainage.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/waltio",
-  },
-  openGraph: {
-    title: "Waltio : fiscalité crypto, déclaration et avis",
-    description:
-      "Notre fiche Afflizen sur Waltio : fonctionnement, fiscalité crypto, pays pris en charge, avantages, limites et lien de parrainage.",
-    url: "https://afflizen.com/crypto/waltio",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+  description: "Découvrez Waltio, un assistant fiscal crypto pour suivre ses transactions, calculer ses plus-values et préparer sa déclaration. Avis, avantages, limites et lien de parrainage.",
+  path: "/crypto/waltio",
+  type: "article",
+});
 
 const highlights = [
   "Assistant spécialisé dans la fiscalité crypto",

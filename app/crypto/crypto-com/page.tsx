@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
@@ -10,22 +10,12 @@ const primaryButtonClassName =
 const darkButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Crypto.com avis 2026 : carte, frais, sécurité et inconvénients",
-  description:
-    "Notre avis sur Crypto.com en 2026 : avantages, inconvénients, frais, sécurité, carte Visa, application, FAQ et lien d’inscription.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/crypto-com",
-  },
-  openGraph: {
-    title: "Crypto.com avis 2026 : carte, frais, sécurité et inconvénients",
-    description:
-      "Avis Afflizen sur Crypto.com : carte Visa, frais, sécurité, application mobile, avantages, limites et risques à connaître.",
-    url: "https://afflizen.com/crypto/crypto-com",
-    siteName: "Afflizen",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Crypto.com en 2026 : avantages, inconvénients, frais, sécurité, carte Visa, application, FAQ et lien d’inscription.",
+  path: "/crypto/crypto-com",
+  type: "article",
+});
 
 export default function CryptoComPage() {
   return (

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "@/components/AffiliateButton";
 
@@ -7,23 +7,12 @@ const BYBIT_AFFILIATE_LINK =
 
 const BYBIT_OFFICIAL_LINK = "https://www.bybit.com/fr-FR/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Bybit avis 2026 : crypto, trading, frais, sécurité et parrainage",
-  description:
-    "Notre avis sur Bybit en 2026 : plateforme crypto, trading spot, produits avancés, frais, sécurité, avantages, limites, risques et lien de parrainage.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/bybit",
-  },
-  openGraph: {
-    title: "Bybit avis 2026 : crypto, trading, frais, sécurité et parrainage",
-    description:
-      "Notre avis sur Bybit en 2026 : plateforme crypto, trading spot, produits avancés, frais, sécurité, avantages, limites, risques et lien de parrainage.",
-    url: "https://afflizen.com/crypto/bybit",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Bybit en 2026 : plateforme crypto, trading spot, produits avancés, frais, sécurité, avantages, limites, risques et lien de parrainage.",
+  path: "/crypto/bybit",
+  type: "article",
+});
 
 const faqJsonLd = {
   "@context": "https://schema.org",

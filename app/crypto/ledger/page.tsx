@@ -1,26 +1,16 @@
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
 
 const LEDGER_AFFILIATE_LINK =
   "https://shop.ledger.com/fr/pages/referral-program?referral_code=2AZ5DTSGZ2ZJ5";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Ledger avis 2026 : wallet crypto, sécurité, avantages et limites",
-  description:
-    "Notre avis sur Ledger : wallet physique, sécurité crypto, phrase de récupération, avantages, limites, risques et conseils avant d’acheter un portefeuille Ledger.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/ledger",
-  },
-  openGraph: {
-    title: "Ledger avis 2026 : wallet crypto, sécurité, avantages et limites",
-    description:
-      "Notre avis sur Ledger : wallet physique, sécurité crypto, phrase de récupération, avantages, limites, risques et conseils avant d’acheter un portefeuille Ledger.",
-    url: "https://afflizen.com/crypto/ledger",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Ledger : wallet physique, sécurité crypto, phrase de récupération, avantages, limites, risques et conseils avant d’acheter un portefeuille Ledger.",
+  path: "/crypto/ledger",
+  type: "article",
+});
 
 const benefits = [
   {

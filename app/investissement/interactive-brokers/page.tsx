@@ -1,26 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const INTERACTIVE_BROKERS_OFFICIAL_LINK = "https://www.interactivebrokers.eu/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Interactive Brokers avis : courtier international pour investir en bourse",
-  description:
-    "Notre présentation d’Interactive Brokers, courtier international pour investir sur actions, ETF, options, futures, devises, obligations et fonds : points forts, limites, frais et précautions.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/interactive-brokers",
-  },
-  openGraph: {
-    title:
-      "Interactive Brokers avis : courtier international pour investir en bourse",
-    description:
-      "Notre présentation d’Interactive Brokers, courtier international pour investir sur actions, ETF, options, futures, devises, obligations et fonds : points forts, limites, frais et précautions.",
-    url: "https://afflizen.com/investissement/interactive-brokers",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation d’Interactive Brokers, courtier international pour investir sur actions, ETF, options, futures, devises, obligations et fonds : points forts, limites, frais et précautions.",
+  path: "/investissement/interactive-brokers",
+  type: "article",
+});
 
 const strengths = [
   "Courtier en ligne international donnant accès à de nombreux marchés.",

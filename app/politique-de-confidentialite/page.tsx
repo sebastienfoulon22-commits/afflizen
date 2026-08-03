@@ -1,22 +1,10 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Politique de confidentialité | Afflizen",
-  description:
-    "Politique de confidentialité d’Afflizen : données collectées, cookies, affiliation, durée de conservation, droits des utilisateurs et contact.",
-  alternates: {
-    canonical: "https://afflizen.com/politique-de-confidentialite",
-  },
-  openGraph: {
-    title: "Politique de confidentialité | Afflizen",
-    description:
-      "Politique de confidentialité d’Afflizen : données collectées, cookies, affiliation, durée de conservation, droits des utilisateurs et contact.",
-    url: "https://afflizen.com/politique-de-confidentialite",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "website",
-  },
-};
+import { createPageMetadata } from "@/lib/metadata";
+export const metadata = createPageMetadata({
+  title: "Politique de confidentialité",
+  description: "Politique de confidentialité d’Afflizen : données collectées, cookies, affiliation, durée de conservation, droits des utilisateurs et contact.",
+  path: "/politique-de-confidentialite",
+  type: "website",
+});
 
 export default function PolitiqueConfidentialitePage() {
   return (

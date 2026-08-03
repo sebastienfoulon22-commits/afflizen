@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "@/components/AffiliateButton";
 
@@ -7,25 +7,12 @@ const ASCENDEX_AFFILIATE_LINK =
 
 const ASCENDEX_OFFICIAL_LINK = "https://ascendex.com/";
 
-export const metadata: Metadata = {
-  title:
-    "AscendEX avis 2026 : ancien BitMax, crypto, trading, frais et parrainage",
-  description:
-    "Notre avis sur AscendEX en 2026 : ancien BitMax.io, plateforme crypto avancée, spot, margin, futures, Earn, frais, risques, sécurité et lien de parrainage.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto/ascendex",
-  },
-  openGraph: {
-    title:
-      "AscendEX avis 2026 : ancien BitMax, crypto, trading, frais et parrainage",
-    description:
-      "Notre avis sur AscendEX en 2026 : ancien BitMax.io, plateforme crypto avancée, spot, margin, futures, Earn, frais, risques, sécurité et lien de parrainage.",
-    url: "https://afflizen.com/crypto/ascendex",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "AscendEX avis 2026 : ancien BitMax, crypto, trading, frais et parrainage",
+  description: "Notre avis sur AscendEX en 2026 : ancien BitMax.io, plateforme crypto avancée, spot, margin, futures, Earn, frais, risques, sécurité et lien de parrainage.",
+  path: "/crypto/ascendex",
+  type: "article",
+});
 
 const faqJsonLd = {
   "@context": "https://schema.org",

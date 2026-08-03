@@ -1,22 +1,10 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
+import { createPageMetadata } from "@/lib/metadata";
+export const metadata = createPageMetadata({
   title: "Cashback : comparatif iGraal, Poulpeo, Widilo, eBuyClub et bons plans",
-  description:
-    "Comparez les plateformes de cashback suivies par Afflizen : iGraal, Poulpeo, Widilo, eBuyClub, remboursements, codes promo, avantages et points à vérifier.",
-  alternates: {
-    canonical: "https://afflizen.com/cashback",
-  },
-  openGraph: {
-    title: "Cashback : comparatif iGraal, Widilo, eBuyClub et bons plans",
-    description:
-      "Découvrez les plateformes de cashback suivies par Afflizen pour économiser sur vos achats en ligne.",
-    url: "https://afflizen.com/cashback",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "website",
-  },
-};
+  description: "Comparez les plateformes de cashback suivies par Afflizen : iGraal, Poulpeo, Widilo, eBuyClub, remboursements, codes promo, avantages et points à vérifier.",
+  path: "/cashback",
+  type: "website",
+});
 
 const platforms = [
   {

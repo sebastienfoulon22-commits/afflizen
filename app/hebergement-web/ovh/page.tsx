@@ -1,26 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const OVH_LINK = "https://www.ovhcloud.com/fr/web-hosting/";
 
-export const metadata: Metadata = {
-  title: "OVHcloud avis : hébergement web, nom de domaine et cloud | Afflizen",
-  description:
-    "Notre présentation d’OVHcloud pour l’hébergement web, les noms de domaine, les serveurs et les solutions cloud, avec points forts, limites et précautions.",
-  alternates: {
-    canonical: "https://afflizen.com/hebergement-web/ovh",
-  },
-  openGraph: {
-    title:
-      "OVHcloud avis : hébergement web, nom de domaine et cloud | Afflizen",
-    description:
-      "Notre présentation d’OVHcloud pour l’hébergement web, les noms de domaine, les serveurs et les solutions cloud, avec points forts, limites et précautions.",
-    url: "https://afflizen.com/hebergement-web/ovh",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "website",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "OVHcloud avis : hébergement web, nom de domaine et cloud",
+  description: "Notre présentation d’OVHcloud pour l’hébergement web, les noms de domaine, les serveurs et les solutions cloud, avec points forts, limites et précautions.",
+  path: "/hebergement-web/ovh",
+  type: "article",
+});
 
 export default function OVHPage() {
   const avantages = [

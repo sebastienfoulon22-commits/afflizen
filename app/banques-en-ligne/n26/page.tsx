@@ -1,25 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const N26_LINK = "https://n26.com/en-be";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "N26 avis 2026 : frais, carte, compte gratuit et sécurité",
-  description:
-    "Notre avis sur N26 en 2026 : avantages, inconvénients, frais, carte bancaire, compte gratuit, épargne, sécurité, FAQ et inscription.",
-  alternates: {
-    canonical: "https://afflizen.com/banques-en-ligne/n26",
-  },
-  openGraph: {
-    title: "N26 avis 2026 : frais, carte, compte gratuit et sécurité",
-    description:
-      "Notre avis sur N26 en 2026 : avantages, inconvénients, frais, carte bancaire, compte gratuit, épargne, sécurité, FAQ et inscription.",
-    url: "https://afflizen.com/banques-en-ligne/n26",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "article",
-  },
-};
+  description: "Notre avis sur N26 en 2026 : avantages, inconvénients, frais, carte bancaire, compte gratuit, épargne, sécurité, FAQ et inscription.",
+  path: "/banques-en-ligne/n26",
+  type: "article",
+});
 
 export default function N26Page() {
   return (

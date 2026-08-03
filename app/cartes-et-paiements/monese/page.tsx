@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
 const MONESE_OFFICIAL_LINK = "https://www.monese.com/";
 
-export const metadata: Metadata = {
-  title: "Monese : compte mobile, carte et paiements | Afflizen",
-  description:
-    "Découvrez Monese, une solution mobile pour gérer un compte, une carte Mastercard, des paiements et plusieurs devises. Avis Afflizen, points forts, limites et lien officiel provisoire.",
-  alternates: {
-    canonical: "https://afflizen.com/cartes-et-paiements/monese",
-  },
-  openGraph: {
-    title: "Monese : compte mobile, carte et paiements | Afflizen",
-    description:
-      "Découvrez Monese, une solution mobile pour gérer un compte, une carte Mastercard, des paiements et plusieurs devises. Avis Afflizen, points forts, limites et lien officiel provisoire.",
-    url: "https://afflizen.com/cartes-et-paiements/monese",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Monese : compte mobile, carte et paiements",
+  description: "Découvrez Monese, une solution mobile pour gérer un compte, une carte Mastercard, des paiements et plusieurs devises. Avis Afflizen, points forts, limites et lien officiel provisoire.",
+  path: "/cartes-et-paiements/monese",
+  type: "article",
+});
 
 const strengths = [
   "Application mobile pensée pour gérer un compte, une carte et des paiements depuis un smartphone.",

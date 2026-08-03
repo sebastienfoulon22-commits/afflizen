@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
 const BULLIONVAULT_OFFICIAL_LINK = "https://or.bullionvault.fr/";
 
-export const metadata: Metadata = {
-  title: "BullionVault : acheter et stocker de l'or | Afflizen",
-  description:
-    "Découvrez BullionVault, une plateforme en français pour acheter, vendre et stocker de l'or et d'autres métaux précieux. Fonctionnement, frais à vérifier, risques et disponibilité en Belgique et en France.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/bullionvault",
-  },
-  openGraph: {
-    title: "BullionVault : acheter et stocker de l'or | Afflizen",
-    description:
-      "Découvrez BullionVault, une plateforme en français pour acheter, vendre et stocker de l'or et d'autres métaux précieux. Fonctionnement, frais à vérifier, risques et disponibilité en Belgique et en France.",
-    url: "https://afflizen.com/investissement/bullionvault",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "BullionVault : acheter et stocker de l'or",
+  description: "Découvrez BullionVault, une plateforme en français pour acheter, vendre et stocker de l'or et d'autres métaux précieux. Fonctionnement, frais à vérifier, risques et disponibilité en Belgique et en France.",
+  path: "/investissement/bullionvault",
+  type: "article",
+});
 
 const metals = [
   "Or physique, généralement sous forme de fractions de grandes barres professionnelles.",

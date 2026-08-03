@@ -1,25 +1,14 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const GREEN_GOT_OFFICIAL_LINK = "https://green-got.com/compte-courant";
 
-export const metadata: Metadata = {
-  title: "Green-Got : avis, compte éthique et carte | Afflizen",
-  description:
-    "Découvrez Green-Got, un compte et une carte orientés argent responsable. Avis Afflizen, points forts, limites, tarifs à vérifier et lien officiel provisoire.",
-  alternates: {
-    canonical: "https://afflizen.com/banques-en-ligne/green-got",
-  },
-  openGraph: {
-    title: "Green-Got : avis, compte éthique et carte | Afflizen",
-    description:
-      "Découvrez Green-Got, un compte et une carte orientés argent responsable. Avis Afflizen, points forts, limites, tarifs à vérifier et lien officiel provisoire.",
-    url: "https://afflizen.com/banques-en-ligne/green-got",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Green-Got : avis, compte éthique et carte",
+  description: "Découvrez Green-Got, un compte et une carte orientés argent responsable. Avis Afflizen, points forts, limites, tarifs à vérifier et lien officiel provisoire.",
+  path: "/banques-en-ligne/green-got",
+  type: "article",
+});
 
 const strengths = [
   "Compte et carte pensés pour les utilisateurs qui veulent une approche plus responsable de leur argent.",

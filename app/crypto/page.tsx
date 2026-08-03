@@ -1,23 +1,10 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title:
-    "Crypto : comparatif Binance, KuCoin, Bitpanda, Bitget, Meria, Deblock, Coinbase et plus",
-  description:
-    "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, KuCoin, Bitpanda, Bitget, Bybit, Meria, Deblock, HTX, AscendEX, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
-  alternates: {
-    canonical: "https://afflizen.com/crypto",
-  },
-  openGraph: {
-    title: "Crypto : comparatif des plateformes suivies par Afflizen",
-    description:
-      "Découvrez les fiches crypto Afflizen : plateformes d’échange, applications crypto, wallets physiques, fiscalité crypto, avantages, limites, risques et points à vérifier.",
-    url: "https://afflizen.com/crypto",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "website",
-  },
-};
+import { createPageMetadata } from "@/lib/metadata";
+export const metadata = createPageMetadata({
+  title: "Crypto : comparatif Binance, KuCoin, Bitpanda, Bitget, Meria, Deblock, Coinbase et plus",
+  description: "Comparez les plateformes et outils crypto suivis par Afflizen : Binance, KuCoin, Bitpanda, Bitget, Bybit, Meria, Deblock, HTX, AscendEX, Crypto.com, Coinbase, Ledger, Nexo, Kraken, SwissBorg et Waltio. Avis, avantages, limites et points à vérifier.",
+  path: "/crypto",
+  type: "website",
+});
 
 const platforms = [
   {

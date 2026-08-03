@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
 const MONEFIT_OFFICIAL_LINK = "https://monefit.com/fr-fr/smartsaver/";
 
-export const metadata: Metadata = {
-  title: "Monefit SmartSaver : fonctionnement et risques | Afflizen",
-  description:
-    "Découvrez Monefit SmartSaver, une plateforme d’investissement dans des prêts accessible en France et en Belgique. Fonctionnement, rendements attendus, retraits, risques et absence de garantie bancaire.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/monefit",
-  },
-  openGraph: {
-    title: "Monefit SmartSaver : fonctionnement et risques | Afflizen",
-    description:
-      "Découvrez Monefit SmartSaver, une plateforme d’investissement dans des prêts accessible en France et en Belgique. Fonctionnement, rendements attendus, retraits, risques et absence de garantie bancaire.",
-    url: "https://afflizen.com/investissement/monefit",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "Monefit SmartSaver : fonctionnement et risques",
+  description: "Découvrez Monefit SmartSaver, une plateforme d’investissement dans des prêts accessible en France et en Belgique. Fonctionnement, rendements attendus, retraits, risques et absence de garantie bancaire.",
+  path: "/investissement/monefit",
+  type: "article",
+});
 
 const strengths = [
   "Plateforme d’investissement alternative liée au groupe Creditstar.",

@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const HELLO_BANK_FRANCE_LINK = "https://www.hellobank.fr/";
 const HELLO_BANK_BELGIQUE_LINK = "https://www.hellobank.be/fr";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Hello bank! avis : banque en ligne en France et en Belgique",
-  description:
-    "Notre présentation de Hello bank!, banque en ligne et mobile présente en France et en Belgique : comptes, cartes, services, points forts, limites, frais et précautions.",
-  alternates: {
-    canonical: "https://afflizen.com/banques-en-ligne/hello-bank",
-  },
-  openGraph: {
-    title: "Hello bank! avis : banque en ligne en France et en Belgique",
-    description:
-      "Notre présentation de Hello bank!, banque en ligne et mobile présente en France et en Belgique : comptes, cartes, services, points forts, limites, frais et précautions.",
-    url: "https://afflizen.com/banques-en-ligne/hello-bank",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de Hello bank!, banque en ligne et mobile présente en France et en Belgique : comptes, cartes, services, points forts, limites, frais et précautions.",
+  path: "/banques-en-ligne/hello-bank",
+  type: "article",
+});
 
 const strengths = [
   "Banque en ligne et mobile connue, avec des offres dédiées en France et en Belgique.",

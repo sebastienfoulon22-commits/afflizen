@@ -1,24 +1,14 @@
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const DEALABS_URL = "https://www.dealabs.com";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Dealabs avis 2026 : bons plans, codes promo et achats malins",
-  description:
-    "Notre avis sur Dealabs : fonctionnement, avantages, limites, bons plans, codes promo, achats en ligne et conseils pour éviter les fausses promotions.",
-  alternates: {
-    canonical: "https://afflizen.com/e-commerce/dealabs",
-  },
-  openGraph: {
-    title: "Dealabs avis 2026 : bons plans, codes promo et achats malins",
-    description:
-      "Notre avis sur Dealabs : fonctionnement, avantages, limites, bons plans, codes promo, achats en ligne et conseils pour éviter les fausses promotions.",
-    url: "https://afflizen.com/e-commerce/dealabs",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre avis sur Dealabs : fonctionnement, avantages, limites, bons plans, codes promo, achats en ligne et conseils pour éviter les fausses promotions.",
+  path: "/e-commerce/dealabs",
+  type: "article",
+});
 
 const benefits = [
   {

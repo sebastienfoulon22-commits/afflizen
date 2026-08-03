@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 const WISE_FRANCE_LINK = "https://wise.com/fr/";
 const WISE_BELGIQUE_LINK = "https://wise.com/be/";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Wise avis : compte multidevise, carte et paiements internationaux",
-  description:
-    "Notre présentation de Wise, solution de paiement internationale pour envoyer, recevoir, convertir et dépenser de l’argent en plusieurs devises : points forts, limites, frais et précautions.",
-  alternates: {
-    canonical: "https://afflizen.com/cartes-et-paiements/wise",
-  },
-  openGraph: {
-    title: "Wise avis : compte multidevise, carte et paiements internationaux",
-    description:
-      "Notre présentation de Wise, solution de paiement internationale pour envoyer, recevoir, convertir et dépenser de l’argent en plusieurs devises : points forts, limites, frais et précautions.",
-    url: "https://afflizen.com/cartes-et-paiements/wise",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+  description: "Notre présentation de Wise, solution de paiement internationale pour envoyer, recevoir, convertir et dépenser de l’argent en plusieurs devises : points forts, limites, frais et précautions.",
+  path: "/cartes-et-paiements/wise",
+  type: "article",
+});
 
 const strengths = [
   "Solution internationale de paiement et de transfert d’argent.",

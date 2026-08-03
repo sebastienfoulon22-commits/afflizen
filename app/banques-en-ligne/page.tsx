@@ -1,24 +1,10 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title:
-    "Banques en ligne : comparatif Revolut, N26, Qonto, Hello bank!, Green-Got et comptes mobiles",
-  description:
-    "Comparez les banques en ligne, comptes pro et applications financières suivies par Afflizen : Revolut, N26, Qonto, Hello bank!, Green-Got, cartes, comptes mobiles, frais, avantages et points à vérifier.",
-  alternates: {
-    canonical: "https://afflizen.com/banques-en-ligne",
-  },
-  openGraph: {
-    title:
-      "Banques en ligne : comparatif Revolut, N26, Qonto, Hello bank!, Green-Got et comptes mobiles",
-    description:
-      "Découvrez les banques en ligne et applications financières suivies par Afflizen : Revolut, N26, Qonto, Hello bank!, Green-Got, avantages, limites, cartes, comptes et conditions.",
-    url: "https://afflizen.com/banques-en-ligne",
-    siteName: "Afflizen",
-    locale: "fr_BE",
-    type: "website",
-  },
-};
+import { createPageMetadata } from "@/lib/metadata";
+export const metadata = createPageMetadata({
+  title: "Banques en ligne : comparatif Revolut, N26, Qonto, Hello bank!, Green-Got et comptes mobiles",
+  description: "Comparez les banques en ligne, comptes pro et applications financières suivies par Afflizen : Revolut, N26, Qonto, Hello bank!, Green-Got, cartes, comptes mobiles, frais, avantages et points à vérifier.",
+  path: "/banques-en-ligne",
+  type: "website",
+});
 
 const platforms = [
   {

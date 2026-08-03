@@ -1,26 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
 
 const GOLD_AVENUE_OFFICIAL_LINK = "https://www.goldavenue.com/fr";
 
-export const metadata: Metadata = {
-  title: "GOLD AVENUE : acheter et stocker de l’or | Afflizen",
-  description:
-    "Découvrez GOLD AVENUE, une plateforme en français pour acheter, stocker et vendre de l’or et des métaux précieux. Avis, risques, frais à vérifier et disponibilité pour la France et la Belgique.",
-  alternates: {
-    canonical: "https://afflizen.com/investissement/gold-avenue",
-  },
-  openGraph: {
-    title: "GOLD AVENUE : acheter et stocker de l’or | Afflizen",
-    description:
-      "Découvrez GOLD AVENUE, une plateforme en français pour acheter, stocker et vendre de l’or et des métaux précieux. Avis, risques, frais à vérifier et disponibilité pour la France et la Belgique.",
-    url: "https://afflizen.com/investissement/gold-avenue",
-    siteName: "Afflizen",
-    locale: "fr_FR",
-    type: "article",
-  },
-};
+export const metadata = createPageMetadata({
+  title: "GOLD AVENUE : acheter et stocker de l’or",
+  description: "Découvrez GOLD AVENUE, une plateforme en français pour acheter, stocker et vendre de l’or et des métaux précieux. Avis, risques, frais à vérifier et disponibilité pour la France et la Belgique.",
+  path: "/investissement/gold-avenue",
+  type: "article",
+});
 
 const metals = [
   "Or physique sous forme de pièces, lingots ou lingotins selon disponibilité.",
