@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import BackHomeButton from "../components/BackHomeButton";
+import Footer from "../components/Footer";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-FYS51DRQTG";
@@ -153,6 +154,8 @@ export default function RootLayout({
         </header>
 
         {children}
+
+        <Footer />
       </body>
     </html>
   );
