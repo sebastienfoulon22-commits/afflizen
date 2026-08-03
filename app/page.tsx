@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SiteSearch from "../components/SiteSearch";
 
 export const metadata: Metadata = {
   title: "Afflizen : comparatifs, parrainages et bons plans financiers",
@@ -148,6 +149,10 @@ export default function HomePage() {
             intelligemment, lancer leurs projets web et découvrir des outils IA
             vraiment utiles.
           </p>
+
+          <div className="mt-8 max-w-3xl">
+            <SiteSearch variant="hero" />
+          </div>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a

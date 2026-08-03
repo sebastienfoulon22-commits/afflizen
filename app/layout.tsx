@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import BackHomeButton from "../components/BackHomeButton";
 import Footer from "../components/Footer";
+import SiteSearch from "../components/SiteSearch";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-FYS51DRQTG";
@@ -136,20 +137,24 @@ export default function RootLayout({
               <BackHomeButton />
             </div>
 
-            <nav
-              aria-label="Navigation principale"
-              className="flex flex-nowrap items-center gap-2 overflow-x-auto whitespace-nowrap text-[13px] font-semibold text-slate-700 xl:gap-3"
-            >
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="shrink-0 rounded-full px-2.5 py-2 transition hover:bg-emerald-50 hover:text-emerald-700 xl:px-3"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </nav>
+            <div className="flex min-w-0 flex-col gap-3 xl:flex-row xl:items-center">
+              <nav
+                aria-label="Navigation principale"
+                className="flex min-w-0 flex-nowrap items-center gap-2 overflow-x-auto whitespace-nowrap text-[13px] font-semibold text-slate-700 xl:gap-3"
+              >
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="shrink-0 rounded-full px-2.5 py-2 transition hover:bg-emerald-50 hover:text-emerald-700 xl:px-3"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </nav>
+
+              <SiteSearch />
+            </div>
           </div>
         </header>
 
