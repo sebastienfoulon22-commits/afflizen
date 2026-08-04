@@ -45,43 +45,110 @@ export const editorialRegistry = [
     name: "Crypto.com",
     path: "/crypto/crypto-com",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Crypto.com", url: "https://crypto.com/fr" }],
+    sources: [
+      {
+        label: "Autorisation MiCA de Foris DAX MT Limited — Crypto.com",
+        url: "https://crypto.com/fr-fr/company-news/mica-change-in-license",
+      },
+      {
+        label: "Conditions de l’application et du site — Crypto.com",
+        url: "https://crypto.com/document/mco_services.pdf",
+      },
+    ],
   },
   {
     name: "Coinbase",
     path: "/crypto/coinbase",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Coinbase", url: "https://www.coinbase.com/fr/" }],
+    sources: [
+      {
+        label: "Autorisation MiCA et migration dans l’EEE — Coinbase",
+        url: "https://help.coinbase.com/fr/coinbase/other-topics/other/mica-cblu",
+      },
+      {
+        label: "Licences et entités européennes — Coinbase",
+        url: "https://www.coinbase.com/fr-fr/legal/licenses/europe",
+      },
+    ],
   },
   {
     name: "Ledger",
     path: "/crypto/ledger",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Ledger", url: "https://www.ledger.com/fr" }],
+    sources: [
+      {
+        label: "Conditions d’utilisation de Ledger Wallet — Ledger",
+        url: "https://shop.ledger.com/fr/pages/ledger-live-terms-of-use",
+      },
+      {
+        label: "Mentions légales et entité Ledger SAS — Ledger",
+        url: "https://www.ledger.com/fr/legal-center",
+      },
+    ],
   },
   {
     name: "Nexo",
     path: "/crypto/nexo",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Nexo", url: "https://nexo.com/fr" }],
+    sources: [
+      {
+        label: "Organisation MiCA des services dans l’EEE — Nexo",
+        url: "https://nexo.com/eea/mica-faq",
+      },
+      {
+        label: "Entités, produits et avertissements dans l’EEE — Nexo",
+        url: "https://nexo.com/eea/buy-crypto",
+      },
+    ],
   },
   {
     name: "Kraken",
     path: "/crypto/kraken",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Kraken", url: "https://www.kraken.com/fr" }],
+    sources: [
+      {
+        label: "Licences et autorités de contrôle — Kraken",
+        url: "https://support.kraken.com/articles/where-is-kraken-licensed-or-regulated",
+      },
+      {
+        label: "Conditions de service pour l’EEE — Kraken",
+        url: "https://assets-cms.kraken.com/files/51n36hrp/facade/e7cb2e6758f56b3eaa044d4b0b8097f2d1252a63.pdf",
+      },
+    ],
   },
   {
     name: "SwissBorg",
     path: "/crypto/swissborg",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de SwissBorg", url: "https://swissborg.com/fr" }],
+    sources: [
+      {
+        label: "Agrément CASP de BlockNodes SAS — AMF",
+        url: "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-blanches/psca/blocknodes-sas",
+      },
+      {
+        label: "Structure juridique, juridictions et licences — SwissBorg",
+        url: "https://help.swissborg.com/hc/fr-fr/articles/360015167634-SwissBorg-Structure-juridique-juridiction-et-licences",
+      },
+      {
+        label: "Conditions d’utilisation et risques des rendements — SwissBorg",
+        url: "https://swissborg.com/legal/swissborg-app-terms-of-use",
+      },
+    ],
   },
   {
     name: "Waltio",
     path: "/crypto/waltio",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Waltio", url: "https://www.waltio.com/" }],
+    sources: [
+      {
+        label: "Mentions légales et limites du logiciel — Waltio",
+        url: "https://www.waltio.com/fr/informations-legales/",
+      },
+      {
+        label: "Version belge du logiciel fiscal — Waltio",
+        url: "https://www.waltio.com/be-fr/",
+      },
+    ],
   },
   {
     name: "Bybit",
@@ -147,19 +214,46 @@ export const editorialRegistry = [
     name: "Meria",
     path: "/crypto/meria",
     reviewedAt: "2026-08-04",
-    sources: [],
+    sources: [
+      {
+        label: "Agrément CASP A2026-020 de Meria SAS — AMF",
+        url: "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-blanches/psca/meria-sas",
+      },
+      {
+        label: "Registre européen des prestataires MiCA — ESMA",
+        url: "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
+      },
+    ],
   },
   {
     name: "Deblock",
     path: "/crypto/deblock",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Deblock", url: "https://deblock.com/fr-FR" }],
+    sources: [
+      {
+        label: "Agrément CASP A2025-001 de Deblock SAS — AMF",
+        url: "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-blanches/psca/deblock-sas",
+      },
+      {
+        label: "Conditions générales et agrément ACPR — Deblock",
+        url: "https://cdn1.deblock.com/terms/personal-terms/FR/20260319-v13.1-personal-terms-FR.docx.pdf",
+      },
+    ],
   },
   {
     name: "Bitpanda",
     path: "/crypto/bitpanda",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Bitpanda", url: "https://www.bitpanda.com/fr" }],
+    sources: [
+      {
+        label: "Autorisation CASP de Bitpanda GmbH — FMA",
+        url: "https://www.fma.gv.at/en/granting-of-authorisation-bitpanda-gmbh/",
+      },
+      {
+        label: "Entités et cadres réglementaires — Bitpanda",
+        url: "https://www.bitpanda.com/fr/legal/legal-notice",
+      },
+    ],
   },
   {
     name: "Revolut",

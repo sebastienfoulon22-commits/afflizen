@@ -1,5 +1,6 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const MERIA_OFFICIAL_LINK = "https://www.meria.com/";
 
@@ -20,7 +21,7 @@ const strengths = [
 
 const limits = [
   "Les crypto-actifs restent volatils et exposent à un risque de perte en capital.",
-  "Le référencement réglementaire ne garantit pas la performance, la sécurité absolue ni l’absence de risque.",
+  "L’agrément réglementaire ne garantit pas la performance, la sécurité absolue ni l’absence de risque.",
   "Les frais, services disponibles, actifs proposés et restrictions doivent être vérifiés directement sur Meria.",
   "Le staking ou les services de rendement crypto peuvent comporter des risques spécifiques.",
   "La conservation sur une plateforme centralisée reste différente d’un wallet personnel dont vous contrôlez les clés.",
@@ -73,9 +74,9 @@ const faq = [
       "Oui, Meria est l’évolution de Just Mining. Le positionnement s’est déplacé vers des services crypto comme l’achat, la vente, la conservation, le staking et l’investissement en actifs numériques.",
   },
   {
-    question: "Meria est-elle référencée par l’AMF ?",
+    question: "Meria est-elle agréée par l’AMF ?",
     answer:
-      "Meria SAS est indiquée comme référencée par l’AMF comme PSAN/PSCA, avec le numéro d’enregistrement E2021-016. Cela ne supprime pas les risques liés aux crypto-actifs, ni le risque de perte en capital.",
+      "Oui. Meria SAS est agréée comme prestataire de services sur crypto-actifs par l’AMF sous le numéro A2026-020 depuis le 22 juin 2026. Cet agrément ne supprime ni les risques liés aux crypto-actifs ni le risque de perte en capital.",
   },
   {
     question: "Meria est-elle adaptée aux débutants ?",
@@ -137,6 +138,23 @@ export default function MeriaPage() {
               solution française, tout en gardant une approche prudente face aux
               risques des crypto-actifs.
             </p>
+
+            <CryptoAvailabilityNotice
+              title="Agrément CASP actuel"
+              level="verification"
+            >
+              <p>
+                Meria SAS est agréée comme prestataire de services sur
+                crypto-actifs par l’Autorité des marchés financiers sous le
+                numéro A2026-020 depuis le 22 juin 2026. Les services autorisés
+                sont accessibles en France et en Belgique dans le cadre européen.
+              </p>
+              <p>
+                Le staking et les produits de rendement restent soumis à leurs
+                propres conditions, à la disponibilité des actifs et à des
+                risques de protocole, de contrepartie et de perte en capital.
+              </p>
+            </CryptoAvailabilityNotice>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <a
@@ -311,30 +329,6 @@ export default function MeriaPage() {
                   <p className="text-sm leading-6 text-slate-700">{item}</p>
                 </div>
               ))}
-            </div>
-          </section>
-
-          <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-bold text-slate-950">
-              Meria et la réglementation
-            </h2>
-
-            <p className="mt-4 text-base leading-7 text-slate-600">
-              Meria SAS est référencée par l’AMF comme PSAN/PSCA, avec le numéro
-              d’enregistrement AMF E2021-016. Cette information est un élément à
-              connaître lorsqu’on compare Meria avec d’autres plateformes crypto.
-            </p>
-
-            <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5">
-              <h3 className="text-xl font-bold text-amber-950">
-                Ce que cela ne signifie pas
-              </h3>
-              <p className="mt-3 text-sm leading-6 text-amber-950">
-                Un référencement réglementaire ne supprime pas les risques liés
-                aux crypto-actifs. Les prix peuvent fortement varier, les
-                services peuvent évoluer et l’utilisateur reste exposé à un
-                risque de perte en capital.
-              </p>
             </div>
           </section>
 

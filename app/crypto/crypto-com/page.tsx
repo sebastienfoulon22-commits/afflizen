@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const CRYPTO_COM_REFERRAL_URL = "https://crypto.com/app/ykrgcpqy7f";
 
@@ -44,6 +45,24 @@ export default function CryptoComPage() {
             Cette page résume les avantages, les limites, les frais, la sécurité
             et notre avis Afflizen.
           </p>
+
+          <CryptoAvailabilityNotice
+            title="Services crypto autorisés dans l’Espace économique européen"
+            level="verification"
+          >
+            <p>
+              Foris DAX MT Limited est autorisée comme prestataire de services
+              sur crypto-actifs par la Malta Financial Services Authority
+              (MFSA). Les services crypto principaux sont accessibles en
+              Belgique et en France dans le cadre du passeport européen.
+            </p>
+            <p>
+              La carte, les services de paiement, le staking et les produits de
+              rendement peuvent relever d’entités, de conditions ou de
+              restrictions distinctes. Vérifiez chaque produit avant de
+              l’utiliser.
+            </p>
+          </CryptoAvailabilityNotice>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <AffiliateButton
@@ -108,22 +127,6 @@ export default function CryptoComPage() {
           <p className="mt-3 text-slate-600">
             Convient surtout aux utilisateurs qui veulent gérer leurs cryptos
             depuis une application simple.
-          </p>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 py-8">
-        <div className="rounded-3xl border border-emerald-200 bg-emerald-50 p-8">
-          <h2 className="text-2xl font-bold text-slate-950">
-            Disponibilité en Europe
-          </h2>
-
-          <p className="mt-4 leading-8 text-slate-700">
-            Crypto.com dispose d’autorisations réglementaires en Europe, mais
-            tous les produits ne sont pas forcément disponibles partout. La carte
-            Crypto.com est notamment annoncée comme disponible dans plusieurs
-            pays européens. Avant inscription, vérifiez toujours les conditions
-            officielles dans votre pays.
           </p>
         </div>
       </section>

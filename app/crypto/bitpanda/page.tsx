@@ -1,5 +1,6 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const BITPANDA_OFFICIAL_LINK = "https://www.bitpanda.com/fr";
 
@@ -165,6 +166,24 @@ export default function BitpandaPage() {
               approche prudente face aux frais, aux spreads, à la fiscalité et
               au risque de perte en capital.
             </p>
+
+            <CryptoAvailabilityNotice
+              title="Services crypto agréés en Autriche"
+              level="verification"
+            >
+              <p>
+                Bitpanda GmbH est autorisée comme prestataire de services sur
+                crypto-actifs par la Finanzmarktaufsicht autrichienne (FMA). Les
+                services crypto sont accessibles en Belgique et en France dans
+                le cadre du passeport européen.
+              </p>
+              <p>
+                Les actions, ETF, métaux précieux, la carte, les services de
+                paiement et autres produits non crypto relèvent d’entités, de
+                cadres et de conditions qui peuvent être distincts de
+                l’autorisation CASP.
+              </p>
+            </CryptoAvailabilityNotice>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <a

@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const LEDGER_AFFILIATE_LINK =
   "https://shop.ledger.com/fr/pages/referral-program?referral_code=2AZ5DTSGZ2ZJ5";
@@ -168,6 +169,24 @@ export default function LedgerPage() {
               Coinbase, Binance ou Kraken, mais cela demande de bien comprendre
               la phrase de récupération et les risques de mauvaise manipulation.
             </p>
+
+            <CryptoAvailabilityNotice
+              title="Portefeuille matériel et wallet non dépositaire"
+              level="verification"
+            >
+              <p>
+                Ledger SAS commercialise des portefeuilles matériels et un
+                logiciel de gestion non dépositaire accessibles en Belgique et
+                en France. Cette activité principale ne relève pas d’un agrément
+                CASP : l’utilisateur conserve le contrôle de ses clés privées.
+              </p>
+              <p>
+                Les fonctions d’achat, de vente, d’échange ou de staking
+                accessibles dans Ledger Wallet sont fournies par des partenaires
+                tiers, avec leurs propres agréments, conditions et zones de
+                disponibilité.
+              </p>
+            </CryptoAvailabilityNotice>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <AffiliateButton

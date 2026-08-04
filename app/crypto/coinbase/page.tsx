@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const COINBASE_AFFILIATE_LINK =
   "https://coinbase.com/join/HRDF5VE?src=referral-link";
@@ -166,6 +167,24 @@ export default function CoinbasePage() {
               il faut comparer les frais, le spread, les conditions de
               transaction et les alternatives avant d’acheter des cryptomonnaies.
             </p>
+
+            <CryptoAvailabilityNotice
+              title="Services crypto européens fournis depuis le Luxembourg"
+              level="verification"
+            >
+              <p>
+                Coinbase Luxembourg S.A. est autorisée comme prestataire de
+                services sur crypto-actifs par la Commission de surveillance du
+                secteur financier (CSSF). Ses services crypto sont accessibles
+                dans l’Espace économique européen, notamment en Belgique et en
+                France.
+              </p>
+              <p>
+                Les services de monnaie électronique et certaines fonctions
+                complémentaires peuvent être fournis par d’autres entités du
+                groupe et suivre des conditions distinctes.
+              </p>
+            </CryptoAvailabilityNotice>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <AffiliateButton

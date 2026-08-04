@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const KRAKEN_REFERRAL_URL = "https://invite.kraken.com/JDNW/eos2efdv";
 
@@ -130,6 +131,23 @@ export default function KrakenPage() {
             à Kraken Pro, mais les frais, les risques et les conditions doivent
             être vérifiés avant chaque utilisation.
           </p>
+
+          <CryptoAvailabilityNotice
+            title="Services principaux agréés en Irlande"
+            level="verification"
+          >
+            <p>
+              Payward Europe Solutions Limited est autorisée comme prestataire
+              de services sur crypto-actifs par la Central Bank of Ireland. Les
+              services crypto principaux sont accessibles en Belgique et en
+              France via le passeport européen.
+            </p>
+            <p>
+              Le staking, la marge, les récompenses, le crédit, les dérivés et
+              les services de monnaie électronique peuvent dépendre de règles,
+              d’entités ou de restrictions distinctes.
+            </p>
+          </CryptoAvailabilityNotice>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <AffiliateButton

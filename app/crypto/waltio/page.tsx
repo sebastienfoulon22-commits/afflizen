@@ -1,5 +1,6 @@
 import { createPageMetadata } from "@/lib/metadata";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const WALTIO_AFFILIATE_LINK = "https://m.waltio.com/HiTQKirPqd";
 
@@ -93,6 +94,23 @@ export default function WaltioPage() {
             qui utilisent plusieurs plateformes crypto, wallets ou services liés
             aux actifs numériques.
           </p>
+
+          <CryptoAvailabilityNotice
+            title="Logiciel fiscal, non exchange"
+            level="verification"
+          >
+            <p>
+              Waltio est un logiciel fiscal disponible pour les déclarations en
+              France et en Belgique. Il ne conserve pas les crypto-actifs, ne
+              réalise pas d’ordres et n’est donc pas présenté comme un
+              prestataire de services sur crypto-actifs agréé.
+            </p>
+            <p>
+              Ses calculs dépendent des données importées et ne constituent ni
+              un conseil fiscal personnalisé ni une validation de la déclaration
+              par l’administration.
+            </p>
+          </CryptoAvailabilityNotice>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <AffiliateButton

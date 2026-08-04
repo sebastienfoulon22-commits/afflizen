@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const DEBLOCK_OFFICIAL_LINK = "https://deblock.com/fr-FR";
 
@@ -196,6 +197,26 @@ export default function DeblockPage() {
               entre argent classique, IBAN, carte Visa et services liés aux
               crypto-actifs.
             </p>
+
+            <CryptoAvailabilityNotice
+              title="France confirmée — Belgique à confirmer commercialement"
+              level="warning"
+            >
+              <p>
+                Deblock SAS est agréée comme prestataire de services sur
+                crypto-actifs par l’AMF sous le numéro A2025-001. Son agrément
+                ACPR distinct couvre la monnaie électronique et les paiements.
+                L’application associe notamment wallet non dépositaire, compte
+                en euros, IBAN, carte et achat ou vente de crypto-actifs.
+              </p>
+              <p>
+                La France est confirmée. Le passeport réglementaire couvre la
+                Belgique, mais la disponibilité commerciale belge n’est pas
+                suffisamment confirmée à la date de vérification. Si vous résidez
+                en Belgique, vérifiez votre éligibilité directement auprès de
+                Deblock avant de créer un compte.
+              </p>
+            </CryptoAvailabilityNotice>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <DeblockOfficialButton

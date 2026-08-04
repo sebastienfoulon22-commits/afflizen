@@ -35,8 +35,9 @@ export default function CryptoAvailabilityNotice({
         Informations réglementaires et géographiques vérifiées le 4 août 2026.
       </p>
       <p className="mt-2 text-sm leading-6">
-        Les agréments, services et restrictions peuvent évoluer. Vérifiez les
-        conditions officielles applicables à votre pays.
+        Les agréments, services et restrictions peuvent évoluer. Vérifiez
+        toujours les conditions officielles applicables à votre pays et au
+        produit utilisé.
       </p>
     </aside>
   );

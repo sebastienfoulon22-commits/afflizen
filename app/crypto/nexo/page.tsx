@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const NEXO_REFERRAL_URL =
   "https://nexo.com/ref/hel1o3ivp2?src=ios-link";
@@ -94,6 +95,26 @@ export default function NexoPage() {
                 Elle peut être intéressante pour certains profils, mais elle ne
                 doit pas être considérée comme une solution sans risque.
               </p>
+
+              <CryptoAvailabilityNotice
+                title="Des services fournis par plusieurs entités"
+                level="warning"
+              >
+                <p>
+                  Dans l’EEE, Tangany GmbH, autorisée par la BaFin, fournit
+                  notamment la conservation et certains transferts, tandis que
+                  DLT Securities GmbH, supervisée en Allemagne, intervient sur
+                  certains services de négociation. L’accès depuis la Belgique
+                  et la France est confirmé avec des restrictions selon le
+                  produit.
+                </p>
+                <p>
+                  Les produits Earn et Borrow ne sont pas automatiquement
+                  couverts par ces autorisations et ne bénéficient pas d’une
+                  garantie des dépôts. La carte est émise par DiPocket UAB et
+                  relève de conditions distinctes.
+                </p>
+              </CryptoAvailabilityNotice>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <AffiliateButton

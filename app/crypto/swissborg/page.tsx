@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const SWISSBORG_REFERRAL_URL = "https://swissborg.com/fr/r";
 const SWISSBORG_REFERRAL_CODE = "sebastMHKF8UCJ";
@@ -131,6 +132,25 @@ export default function SwissBorgPage() {
             positionnement plus orienté gestion de portefeuille crypto qu’un
             exchange de trading pur.
           </p>
+
+          <CryptoAvailabilityNotice
+            title="Services européens fournis par BlockNodes SAS"
+            level="verification"
+          >
+            <p>
+              BlockNodes SAS est agréée comme prestataire de services sur
+              crypto-actifs par l’Autorité des marchés financiers sous le numéro
+              A2026-011. Les services autorisés sont accessibles en Belgique et
+              en France.
+            </p>
+            <p>
+              Les produits de rendement peuvent mobiliser des protocoles ou
+              prestataires tiers. Ils ajoutent des risques techniques, de
+              contrepartie et de perte qui ne disparaissent pas avec l’agrément
+              CASP. Les éventuels services de paiement peuvent également relever
+              d’une autre entité.
+            </p>
+          </CryptoAvailabilityNotice>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <AffiliateButton
