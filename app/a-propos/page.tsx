@@ -1,4 +1,5 @@
 import { createPageMetadata } from "@/lib/metadata";
+import Link from "next/link";
 export const metadata = createPageMetadata({
   title: "À propos d’Afflizen : comparatifs, bons plans et affiliation",
   description: "Découvrez Afflizen, un site francophone dédié aux comparatifs de plateformes, bons plans, parrainages, cashback, crypto, banques en ligne, investissement, hébergement web et outils IA.",
@@ -57,6 +58,16 @@ export default function AProposPage() {
               s’inscrit ou achète via certains liens, sans coût supplémentaire
               pour lui. Cette rémunération aide à financer le développement du
               site.
+            </p>
+            <p className="mt-3 leading-7 text-slate-600">
+              Découvrez aussi notre{" "}
+              <Link
+                href="/methodologie"
+                className="rounded-sm font-semibold text-emerald-700 underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2"
+              >
+                méthodologie éditoriale
+              </Link>
+              .
             </p>
           </div>
 

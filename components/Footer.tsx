@@ -6,6 +6,7 @@ const footerSections = [
     title: "Afflizen",
     links: [
       { label: "À propos", href: "/a-propos" },
+      { label: "Méthodologie", href: "/methodologie" },
       { label: "Contact", href: "/contact" },
     ],
   },

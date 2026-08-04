@@ -23,10 +23,18 @@ Le registre de recherche situé dans `lib/siteSearchIndex.ts` n'est pas encore l
 15. Vérifier les liens internes.
 16. Vérifier qu'aucune autre route identique n'existe.
 17. Vérifier la disponibilité Belgique et France pour les services financiers ou crypto.
-18. Lancer le build.
-19. Lancer le lint.
-20. Vérifier la page sur mobile et ordinateur.
-21. Ne committer et déployer qu'après validation.
+18. Créer l'entrée correspondante dans `lib/editorialRegistry.ts`.
+19. Ajouter le chemin interne exact et la date de véritable révision éditoriale.
+20. Ajouter au moins une source officielle propre lorsque celle-ci peut être confirmée.
+21. Ne jamais utiliser un lien affilié ou de parrainage comme source éditoriale.
+22. Vérifier que la source ne contient aucun identifiant de campagne ou paramètre de suivi.
+23. Vérifier que le bloc éditorial apparaît exactement une fois sur la fiche.
+24. Ne mettre à jour la date qu'après une véritable révision du contenu.
+25. Ne jamais prétendre à un test personnel qui n'a pas eu lieu.
+26. Lancer le build.
+27. Lancer le lint.
+28. Vérifier la page sur mobile et ordinateur.
+29. Ne committer et déployer qu'après validation.
 
 ## Ajouter l'entrée au registre de recherche
 
@@ -71,6 +79,39 @@ Pour chaque nouvelle fiche, vérifier que les métadonnées incluent :
 - une locale Open Graph cohérente ;
 - une image sociale définie ou héritée du défaut global.
 
+## Ajouter l'entrée au registre éditorial
+
+Le registre `lib/editorialRegistry.ts` détermine les fiches qui affichent le
+bloc de crédibilité éditoriale. Chaque nouvelle plateforme doit posséder une
+entrée avec son nom, sa route exacte, sa date de révision propre et ses sources
+officielles de référence.
+
+Exemple complet :
+
+```ts
+{
+  name: "Kraken",
+  path: "/crypto/kraken",
+  reviewedAt: "2026-08-04",
+  sources: [
+    {
+      label: "Site officiel de Kraken",
+      url: "https://www.kraken.com/fr",
+    },
+  ],
+}
+```
+
+La source doit utiliser HTTPS, appartenir au domaine officiel et répondre sans
+paramètre affilié, code de parrainage ou identifiant de campagne. Ne jamais
+reprendre directement le bouton d'inscription rémunéré de la fiche. Si aucune
+source propre ne peut être confirmée, laisser `sources` vide et le signaler lors
+de la revue.
+
+La valeur `reviewedAt` correspond à une révision éditoriale réelle. Elle ne
+certifie pas que tous les tarifs, bonus ou statuts réglementaires ont été
+vérifiés à cette date.
+
 ## Contrôles après ajout
 
 Après modification, vérifier au minimum :
@@ -79,6 +120,9 @@ Après modification, vérifier au minimum :
 - la présence de la fiche dans sa page catégorie ;
 - la présence de la fiche dans `lib/siteSearchIndex.ts` ;
 - la présence de la route dans `app/sitemap.ts` ;
+- la présence de l'entrée dans `lib/editorialRegistry.ts` ;
+- l'affichage unique du bloc éditorial et de sa date de révision ;
+- l'absence de paramètres affiliés dans les sources officielles ;
 - le compteur de plateformes affiché sur l'accueil ;
 - l'absence de doublon de route ou de nom ;
 - le résultat de recherche avec le nom exact, les alias et les mots-clés ;

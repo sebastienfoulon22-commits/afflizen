@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
 import BackHomeButton from "../components/BackHomeButton";
+import EditorialTrustBlock from "../components/EditorialTrustBlock";
 import Footer from "../components/Footer";
 import SiteSearch from "../components/SiteSearch";
 import { absoluteUrl } from "../lib/metadata";
@@ -172,6 +173,8 @@ export default function RootLayout({
         </header>
 
         {children}
+
+        <EditorialTrustBlock />
 
         <Footer />
       </body>

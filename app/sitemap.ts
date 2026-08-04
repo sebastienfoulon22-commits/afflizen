@@ -344,6 +344,11 @@ const routes = [
     changeFrequency: "yearly",
   },
   {
+    path: "/methodologie",
+    priority: 0.5,
+    changeFrequency: "yearly",
+  },
+  {
     path: "/contact",
     priority: 0.5,
     changeFrequency: "yearly",
