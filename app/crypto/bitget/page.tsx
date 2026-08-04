@@ -1,19 +1,12 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
-
-const BITGET_REFERRAL_URL =
-  "https://www.bitgetapp.com/fr/referral/register?clacCode=2YMT39ZH&from=%2Ffr%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter";
-
-const primaryButtonClassName =
-  "inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700";
-
-const darkButtonClassName =
-  "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
+import CryptoAvailabilityNotice, {
+  SuspendedRegistrationMessage,
+} from "@/components/CryptoAvailabilityNotice";
 
 export const metadata = createPageMetadata({
   title: "Bitget avis 2026 : frais, sécurité, copy trading et inconvénients",
-  description: "Notre avis sur Bitget en 2026 : avantages, inconvénients, frais, sécurité, copy trading, disponibilité, FAQ et lien d’inscription.",
+  description: "Notre avis sur Bitget en 2026 : services, frais, sécurité et disponibilité réglementaire en Belgique et en France.",
   path: "/crypto/bitget",
   type: "article",
 });
@@ -46,16 +39,25 @@ export default function BitgetPage() {
             elle demande aussi une certaine prudence.
           </p>
 
+          <CryptoAvailabilityNotice
+            title="France : services arrêtés — Belgique : statut à confirmer"
+            level="unavailable"
+          >
+            <p>
+              Bitget indique ne plus accepter de nouvelles inscriptions de
+              résidents français depuis le 16 janvier 2026 et avoir arrêté ses
+              services en France le 31 mars 2026.
+            </p>
+            <p>
+              Pour la Belgique, une demande d’agrément MiCA en Autriche ne vaut
+              pas agrément accordé. Afflizen n’a pas identifié d’autorisation
+              officielle permettant de présenter les services comme disponibles
+              et suspend donc ses liens d’inscription.
+            </p>
+          </CryptoAvailabilityNotice>
+
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={BITGET_REFERRAL_URL}
-              platform="bitget"
-              category="crypto"
-              location="hero"
-              className={primaryButtonClassName}
-            >
-              S’inscrire sur Bitget
-            </AffiliateButton>
+            <SuspendedRegistrationMessage />
 
             <Link
               href="/crypto"
@@ -68,8 +70,8 @@ export default function BitgetPage() {
           <p className="mt-4 max-w-3xl text-sm text-slate-500">
             Les cryptoactifs sont volatils. Vous pouvez perdre tout ou partie de
             votre capital. Vérifiez toujours la disponibilité, les frais, la
-            réglementation et les conditions applicables dans votre pays avant de
-            vous inscrire.
+            réglementation et les conditions applicables dans votre pays avant
+            toute démarche.
           </p>
         </div>
       </section>
@@ -118,11 +120,10 @@ export default function BitgetPage() {
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            La disponibilité de Bitget peut varier selon le pays et la situation
-            réglementaire. En particulier, Bitget a communiqué une suspension de
-            ses services pour les utilisateurs résidant en France. Avant toute
-            inscription, vérifiez que la plateforme accepte bien les résidents de
-            votre pays et que les services souhaités sont accessibles.
+            Bitget indique que les nouvelles inscriptions de résidents français
+            sont fermées depuis le 16 janvier 2026 et que ses services en France
+            ont pris fin le 31 mars 2026. En Belgique, l’agrément MiCA demandé en
+            Autriche n’était pas annoncé comme accordé lors de notre vérification.
           </p>
         </div>
       </section>
@@ -311,24 +312,14 @@ export default function BitgetPage() {
           </p>
 
           <p className="mt-5 leading-8 text-slate-700">
-            Pour un utilisateur belge, luxembourgeois ou suisse francophone,
-            Bitget peut être une option à comparer avec Binance, Kraken, Coinbase
-            ou Crypto.com, à condition que les services soient bien disponibles
-            dans son pays. Pour un résident français, la situation doit être
-            vérifiée avec une grande prudence en raison de la suspension annoncée
-            par Bitget.
+            Pour un résident français, l’inscription et les services ne sont plus
+            disponibles selon Bitget. Pour un résident belge, Afflizen recommande
+            d’attendre la confirmation officielle d’un agrément applicable avant
+            toute démarche.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={BITGET_REFERRAL_URL}
-              platform="bitget"
-              category="crypto"
-              location="avis"
-              className={darkButtonClassName}
-            >
-              Accéder à Bitget
-            </AffiliateButton>
+            <SuspendedRegistrationMessage />
 
             <Link
               href="/crypto"
@@ -358,7 +349,7 @@ export default function BitgetPage() {
             {
               question: "Bitget est-elle disponible en France ?",
               answer:
-                "Bitget a annoncé une suspension de ses services pour les utilisateurs résidant en France. Les résidents français doivent donc vérifier la situation officielle avant toute tentative d’inscription ou d’utilisation.",
+                "Non selon les annonces officielles vérifiées : Bitget n’accepte plus de nouvelles inscriptions de résidents français depuis le 16 janvier 2026 et a arrêté ses services en France le 31 mars 2026.",
             },
             {
               question: "Le copy trading Bitget est-il sans risque ?",
@@ -373,7 +364,7 @@ export default function BitgetPage() {
             {
               question: "Afflizen recommande-t-il Bitget ?",
               answer:
-                "Afflizen considère Bitget comme une plateforme intéressante pour les profils actifs, mais recommande de rester prudent avec le copy trading, l’effet de levier et la disponibilité réglementaire selon le pays.",
+                "Afflizen ne recommande pas actuellement de nouvelle inscription depuis la France ou la Belgique et a suspendu ses liens d’affiliation vers Bitget.",
             },
           ].map((item) => (
             <details
@@ -396,12 +387,9 @@ export default function BitgetPage() {
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Certains liens présents sur Afflizen peuvent être des liens
-            d’affiliation. Cela signifie que nous pouvons recevoir une commission
-            si vous ouvrez un compte via notre lien, sans coût supplémentaire
-            pour vous. Cette rémunération aide à financer le site et n’influence
-            pas notre volonté de présenter les avantages comme les limites de
-            chaque plateforme.
+            Afflizen a suspendu les liens d’affiliation et d’inscription vers
+            Bitget sur cette fiche. Aucun clic depuis cette page ne déclenche de
+            suivi affilié vers la plateforme.
           </p>
         </div>
       </section>

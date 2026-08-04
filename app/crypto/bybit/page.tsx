@@ -1,70 +1,30 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "@/components/AffiliateButton";
+import CryptoAvailabilityNotice, {
+  SuspendedRegistrationMessage,
+} from "@/components/CryptoAvailabilityNotice";
 
-const BYBIT_AFFILIATE_LINK =
-  "https://www.bybit.com/invite?ref=L5LRVJ&medium=referral&utm_campaign=evergreen";
-
-const BYBIT_OFFICIAL_LINK = "https://www.bybit.com/fr-FR/";
+const BYBIT_OFFICIAL_LINK = "https://www.bybit.eu/";
 
 export const metadata = createPageMetadata({
-  title: "Bybit avis 2026 : crypto, trading, frais, sécurité et parrainage",
-  description: "Notre avis sur Bybit en 2026 : plateforme crypto, trading spot, produits avancés, frais, sécurité, avantages, limites, risques et lien de parrainage.",
+  title: "Bybit EU avis 2026 : disponibilité en Belgique et en France",
+  description: "Notre avis sur Bybit EU en 2026 : plateforme européenne MiCA, disponibilité, frais, services, sécurité et précautions.",
   path: "/crypto/bybit",
   type: "article",
 });
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Bybit est-il adapté aux débutants ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Bybit peut être utilisé par des débutants, mais la plateforme est surtout adaptée aux utilisateurs crypto déjà un minimum à l’aise. Certains produits sont avancés et peuvent présenter un risque élevé.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Peut-on utiliser un lien de parrainage Bybit ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Oui, Bybit propose un système de parrainage. Les avantages peuvent varier selon la région, les campagnes, les tâches réalisées, le dépôt éventuel, le volume de trading et les conditions en vigueur au moment de l’inscription.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Quels sont les principaux risques avec Bybit ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Les principaux risques sont la volatilité des crypto-actifs, la perte en capital, les frais, les erreurs de trading, les produits avancés mal compris et les restrictions possibles selon le pays de résidence.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Bybit est-il comparable à Binance ou Bitget ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Bybit est comparable à Binance ou Bitget sur certains usages crypto, notamment le trading et les fonctionnalités avancées. Le choix dépend des frais, de la disponibilité dans le pays, des produits proposés, de l’interface et du niveau d’expérience de l’utilisateur.",
-      },
-    },
-  ],
-};
 
 const strengths = [
   "Plateforme crypto complète avec de nombreux outils de trading.",
   "Interface moderne, plutôt pensée pour les utilisateurs actifs.",
   "Frais à comparer selon les produits, le niveau de compte et le volume.",
-  "Possibilité d’utiliser un lien de parrainage selon les conditions en vigueur.",
+  "Plateforme européenne distincte opérée par Bybit EU GmbH pour l’EEE.",
   "Alternative intéressante à comparer avec Binance, Bitget, Coinbase et Crypto.com.",
 ];
 
 const limits = [
   "Plateforme plus avancée qu’une application crypto très grand public.",
   "Produits risqués si l’utilisateur ne comprend pas le trading crypto.",
-  "Conditions de parrainage variables selon la région et les campagnes.",
+  "Les services disponibles peuvent différer de la plateforme mondiale.",
   "Frais et produits disponibles à vérifier directement dans le compte.",
   "Les règles crypto peuvent évoluer selon le pays de résidence.",
 ];
@@ -83,8 +43,8 @@ const useCases = [
     text: "Bybit est davantage orienté utilisateurs actifs : graphiques, ordres, trading, produits crypto et fonctionnalités avancées selon disponibilité.",
   },
   {
-    title: "Profiter d’un parrainage potentiel",
-    text: "Le lien de parrainage peut donner accès à des récompenses, mais seulement si les conditions Bybit sont respectées au moment de l’inscription.",
+    title: "Identifier la bonne entité",
+    text: "Les résidents de l’EEE doivent consulter Bybit EU et vérifier les services autorisés pour leur pays, sans passer par un lien mondial.",
   },
 ];
 
@@ -94,20 +54,20 @@ const bybitSteps = [
     text: "Avant de créer un compte, il faut vérifier que Bybit est bien disponible pour ton pays de résidence et que les services proposés correspondent à ton profil.",
   },
   {
-    title: "2. Utiliser le lien de parrainage",
-    text: "Le lien Afflizen permet d’arriver sur Bybit avec le parrainage. Les avantages associés peuvent varier selon la région, la période et les conditions de campagne.",
+    title: "2. Consulter le site européen officiel",
+    text: "Pour un résident de l’EEE, vérifie les informations publiées sur bybit.eu et l’identité de Bybit EU GmbH avant toute démarche.",
   },
   {
-    title: "3. Créer le compte et faire la vérification",
-    text: "Comme sur les autres plateformes crypto, Bybit peut demander une vérification d’identité avant d’autoriser certaines fonctionnalités.",
+    title: "3. Vérifier les conditions d’accès",
+    text: "Bybit EU peut demander une vérification d’identité avant d’autoriser certaines fonctionnalités; contrôle d’abord que celles-ci sont disponibles dans ton pays.",
   },
   {
     title: "4. Lire les conditions avant dépôt",
-    text: "Ne dépose pas uniquement pour une récompense. Il faut lire le montant demandé, le délai, les exclusions, les produits éligibles et les conditions de validation.",
+    text: "Avant tout dépôt, lis les frais, les délais, les exclusions, les produits disponibles et les conditions applicables à ton pays.",
   },
   {
-    title: "5. Commencer petit",
-    text: "Sur une plateforme crypto avancée, le plus prudent est de commencer avec de petits montants et d’éviter les produits que tu ne comprends pas.",
+    title: "5. Évaluer les risques",
+    text: "Ne poursuis aucune démarche si les frais, les produits ou les risques ne sont pas suffisamment clairs.",
   },
 ];
 
@@ -137,16 +97,11 @@ const relatedLinks = [
 export default function BybitPage() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-950">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8">
           <div>
             <p className="mb-4 inline-flex rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 ring-1 ring-emerald-100">
-              Crypto · Trading · Plateforme avancée · Parrainage
+              Crypto · Trading · Plateforme européenne MiCA
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
@@ -163,33 +118,42 @@ export default function BybitPage() {
               à l’aise avec la crypto.
             </p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <AffiliateButton
-                href={BYBIT_AFFILIATE_LINK}
-                platform="bybit"
-                category="crypto"
-                location="hero"
-                className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700"
-              >
-                S’inscrire sur Bybit avec le parrainage
-              </AffiliateButton>
+            <CryptoAvailabilityNotice
+              title="Bybit EU est la plateforme dédiée à l’EEE"
+              level="verification"
+            >
+              <p>
+                Bybit indique que Bybit EU GmbH exploite une plateforme distincte
+                pour les résidents de l’Espace économique européen. Afflizen ne
+                propose plus le lien de parrainage de la plateforme mondiale.
+              </p>
+              <p>
+                Le lien mondial précédemment utilisé n’a pas été confirmé comme
+                compatible avec Bybit EU GmbH. Certains produits peuvent aussi
+                relever de conditions ou de cadres distincts.
+              </p>
+              <p>
+                Vérifiez sur bybit.eu les services réellement proposés en
+                Belgique ou en France et l’entité avec laquelle le compte serait
+                ouvert.
+              </p>
+            </CryptoAvailabilityNotice>
 
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href={BYBIT_OFFICIAL_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50"
               >
-                Voir le site officiel Bybit
+                Consulter le site européen officiel de Bybit
               </a>
             </div>
 
             <p className="mt-5 max-w-3xl text-sm leading-6 text-slate-500">
-              Les récompenses de parrainage Bybit peuvent varier selon le pays,
-              la période, les tâches à réaliser, le dépôt éventuel, le volume de
-              trading et les conditions en vigueur. Vérifie toujours les règles
-              affichées par Bybit avant de créer un compte ou de déposer de
-              l’argent.
+              Ce lien mène directement au domaine officiel européen de Bybit. Il
+              n’est pas affilié et ne déclenche aucun suivi d’inscription pour
+              Afflizen.
             </p>
           </div>
 
@@ -223,22 +187,14 @@ export default function BybitPage() {
               </div>
 
               <div>
-                <p className="font-semibold text-slate-950">Parrainage</p>
+                <p className="font-semibold text-slate-950">Lien Afflizen</p>
                 <p>
-                  Avantages variables selon les conditions Bybit en vigueur.
+                  Aucun lien de parrainage Bybit n’est actif sur cette fiche.
                 </p>
               </div>
             </div>
 
-            <AffiliateButton
-              href={BYBIT_AFFILIATE_LINK}
-              platform="bybit"
-              category="crypto"
-              location="sidebar"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-            >
-              Utiliser le lien Bybit
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -300,7 +256,7 @@ export default function BybitPage() {
 
             <p className="mt-4 text-base leading-8 text-slate-700">
               Son intérêt principal est donc la comparaison : frais, interface,
-              produits disponibles, parrainage, sécurité perçue et expérience
+              produits disponibles, entité contractante, sécurité perçue et expérience
               utilisateur. Pour un visiteur Afflizen, la page Bybit doit surtout
               aider à comprendre si la plateforme correspond à son niveau réel.
             </p>
@@ -382,27 +338,19 @@ export default function BybitPage() {
 
           <aside className="h-fit rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 className="text-lg font-bold text-slate-950">
-              Parcours recommandé
+              Parcours de vérification
             </h3>
 
             <ol className="mt-5 space-y-4 text-sm leading-6 text-slate-700">
               <li>1. Vérifier la disponibilité dans ton pays.</li>
-              <li>2. Lire les conditions de parrainage.</li>
-              <li>3. Créer le compte avec le lien Afflizen.</li>
-              <li>4. Faire la vérification demandée.</li>
-              <li>5. Commencer avec de petits montants.</li>
-              <li>6. Éviter les produits que tu ne comprends pas.</li>
+              <li>2. Identifier l’entité contractante.</li>
+              <li>3. Consulter uniquement le site européen officiel.</li>
+              <li>4. Lire les conditions applicables au pays.</li>
+              <li>5. Comparer les services réellement disponibles.</li>
+              <li>6. Écarter les produits que tu ne comprends pas.</li>
             </ol>
 
-            <AffiliateButton
-              href={BYBIT_AFFILIATE_LINK}
-              platform="bybit"
-              category="crypto"
-              location="usages"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-            >
-              Commencer avec Bybit
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -411,55 +359,45 @@ export default function BybitPage() {
         <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">
-              Parrainage
+              Disponibilité européenne
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight">
-              Le parrainage Bybit : intéressant, mais à vérifier au cas par cas
+              Le lien mondial est suspendu au profit d’une information neutre
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-300">
-              Bybit propose un système de parrainage, mais les récompenses ne
-              doivent pas être présentées comme automatiques. Selon la région,
-              la période, les campagnes et les conditions du compte, le filleul
-              peut devoir effectuer certaines actions : inscription, vérification
-              d’identité, dépôt, top-up, transaction ou volume minimum.
+              Afflizen ne propose aucun lien affilié vers Bybit. Pour les
+              résidents de l’EEE, la seule destination externe proposée sur cette
+              fiche est le site officiel de Bybit EU GmbH.
             </p>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-lg font-bold">Lien de parrainage</h3>
+              <h3 className="text-lg font-bold">Lien officiel</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Le lien Afflizen permet d’arriver sur Bybit avec le code de
-                parrainage associé.
+                Le domaine bybit.eu est proposé à titre informatif, sans code ni
+                paramètre de parrainage.
               </p>
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-lg font-bold">Conditions variables</h3>
+              <h3 className="text-lg font-bold">Services variables</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Les récompenses peuvent changer selon les campagnes, les régions
-                et les règles Bybit en vigueur.
+                Les services peuvent différer selon le pays et les règles
+                européennes en vigueur.
               </p>
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-lg font-bold">Pas une raison de trader</h3>
+              <h3 className="text-lg font-bold">Décision personnelle</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Une récompense potentielle ne doit jamais justifier un dépôt ou
-                un trade que tu ne comprends pas.
+                L’accès à un site officiel ne constitue ni une recommandation ni
+                une garantie de disponibilité d’un service.
               </p>
             </div>
           </div>
 
-          <AffiliateButton
-            href={BYBIT_AFFILIATE_LINK}
-            platform="bybit"
-            category="crypto"
-            location="parrainage"
-            className="mt-8 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-400"
-          >
-            Utiliser le parrainage Bybit
-          </AffiliateButton>
+          <SuspendedRegistrationMessage className="mt-8 max-w-xl" />
         </div>
       </section>
 
@@ -470,15 +408,13 @@ export default function BybitPage() {
               Étapes
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950">
-              Comment utiliser Bybit sans brûler les étapes ?
+              Comment évaluer Bybit EU sans brûler les étapes ?
             </h2>
 
             <p className="mt-5 max-w-3xl text-base leading-8 text-slate-700">
-              Le bon réflexe avec Bybit est de ne pas commencer par les
-              fonctionnalités les plus risquées. Une plateforme avancée doit
-              être abordée progressivement : comprendre le compte, les frais, les
-              dépôts, les retraits, les ordres et les risques avant de chercher
-              des rendements ou des bonus.
+              Le bon réflexe consiste à identifier l’entité européenne, vérifier
+              la disponibilité par pays, puis comprendre les frais, les retraits,
+              les produits et les risques avant toute décision.
             </p>
 
             <div className="mt-8 space-y-5">
@@ -504,21 +440,12 @@ export default function BybitPage() {
             </h3>
             <p className="mt-4 text-sm leading-6 text-slate-700">
               Le dépôt d’argent sur une plateforme crypto doit toujours être une
-              décision réfléchie. Ne dépose pas uniquement pour un bonus ou une
-              récompense de parrainage. Vérifie les frais, les conditions de
-              retrait, les risques et la disponibilité des services dans ton
-              pays.
+              décision réfléchie. Vérifie les frais, les conditions de retrait,
+              les risques, l’entité contractante et la disponibilité des services
+              dans ton pays.
             </p>
 
-            <AffiliateButton
-              href={BYBIT_AFFILIATE_LINK}
-              platform="bybit"
-              category="crypto"
-              location="prudence"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-            >
-              Vérifier Bybit
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -545,21 +472,13 @@ export default function BybitPage() {
                   Le bon angle pour Afflizen est de rester clair : Bybit peut
                   être intéressant pour les utilisateurs crypto actifs, mais ce
                   n’est pas une plateforme à recommander sans nuance. Les frais,
-                  le parrainage, la disponibilité des services et les risques
+                  l’entité contractante, la disponibilité des services et les risques
                   doivent toujours être vérifiés avant utilisation.
                 </p>
               </div>
 
               <div className="flex flex-col justify-center gap-4">
-                <AffiliateButton
-                  href={BYBIT_AFFILIATE_LINK}
-                  platform="bybit"
-                  category="crypto"
-                  location="avis"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-                >
-                  Découvrir Bybit
-                </AffiliateButton>
+                <SuspendedRegistrationMessage />
 
                 <Link
                   href="/crypto"

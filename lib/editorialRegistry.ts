@@ -15,13 +15,31 @@ export const editorialRegistry = [
     name: "Binance",
     path: "/crypto/binance",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Binance", url: "https://www.binance.com/fr" }],
+    sources: [
+      {
+        label: "Registre MiCA des prestataires de crypto-actifs — ESMA",
+        url: "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
+      },
+      {
+        label: "Liste des PSAN radiés — AMF",
+        url: "https://www.amf-france.org/fr/espace-professionnels/fintech/mes-relations-avec-lamf/prestataire-de-services-sur-crypto-actifs-psca/liste-des-psan-radies",
+      },
+    ],
   },
   {
     name: "Bitget",
     path: "/crypto/bitget",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Bitget", url: "https://www.bitget.com/fr/" }],
+    sources: [
+      {
+        label: "Arrêt des services Bitget en France — Bitget",
+        url: "https://www.bitget.com/fr/support/articles/12560603848109",
+      },
+      {
+        label: "Point sur la demande d’agrément MiCA — Bitget",
+        url: "https://www.bitget.com/fr/support/articles/12560603885949",
+      },
+    ],
   },
   {
     name: "Crypto.com",
@@ -69,25 +87,61 @@ export const editorialRegistry = [
     name: "Bybit",
     path: "/crypto/bybit",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Bybit", url: "https://www.bybit.com/fr-FR/" }],
+    sources: [
+      {
+        label: "Bybit EU et le règlement MiCA — Bybit EU",
+        url: "https://www.bybit.eu/en-EU/learn/regulation-and-micar/what-european-crypto-users-should-know-about-bybit-eu-and-micar",
+      },
+      {
+        label: "Bybit EU GmbH — liste blanche AMF",
+        url: "https://protectepargne.amf-france.org/acteurs-listes-blanches/psca/bybit-eu-gmbh",
+      },
+    ],
   },
   {
     name: "HTX",
     path: "/crypto/htx",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de HTX", url: "https://www.htx.com/" }],
+    sources: [
+      {
+        label: "Conditions d’utilisation et juridictions exclues — HTX",
+        url: "https://www.htx.com/en-in/support/360000298561",
+      },
+      {
+        label: "Registre MiCA des prestataires de crypto-actifs — ESMA",
+        url: "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
+      },
+    ],
   },
   {
     name: "AscendEX",
     path: "/crypto/ascendex",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel d’AscendEX", url: "https://ascendex.com/" }],
+    sources: [
+      {
+        label: "Avis officiel de cessation des opérations d’AscendEX",
+        url: "https://ascendex.com/",
+      },
+      {
+        label: "Mise en garde concernant AscendEX — AMF",
+        url: "https://www.amf-france.org/sites/institutionnel/files/pdf/74188/en/ascendex_com.pdf",
+      },
+    ],
   },
   {
     name: "KuCoin",
     path: "/crypto/kucoin",
     reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de KuCoin", url: "https://www.kucoin.com/fr" }],
+    sources: [
+      {
+        label: "Interdiction de commencer les opérations — FMA",
+        url: "https://www.fma.gv.at/en/fma-lifts-ban-on-new-business-for-kucoin-eu-exchange-gmbh-however-commencement-of-business-operations-remains-prohibited/",
+      },
+      {
+        label: "Mise à jour des services KuCoin EU — KuCoin",
+        url: "https://www.kucoin.com/en-eu/announcement/en-kucoin-eu-update",
+      },
+    ],
   },
   {
     name: "Meria",

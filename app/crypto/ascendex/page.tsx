@@ -1,78 +1,36 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "@/components/AffiliateButton";
-
-const ASCENDEX_AFFILIATE_LINK =
-  "https://m.a3dex.com/en/register?inviteCode=ELYWZJHW";
-
-const ASCENDEX_OFFICIAL_LINK = "https://ascendex.com/";
+import CryptoAvailabilityNotice, {
+  SuspendedRegistrationMessage,
+} from "@/components/CryptoAvailabilityNotice";
 
 export const metadata = createPageMetadata({
-  title: "AscendEX avis 2026 : ancien BitMax, crypto, trading, frais et parrainage",
-  description: "Notre avis sur AscendEX en 2026 : ancien BitMax.io, plateforme crypto avancée, spot, margin, futures, Earn, frais, risques, sécurité et lien de parrainage.",
+  title: "AscendEX : cessation des opérations et informations",
+  description: "Informations sur la cessation des opérations d’AscendEX depuis le 1er juillet 2026, les retraits limités et les précautions à prendre.",
   path: "/crypto/ascendex",
   type: "article",
 });
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "AscendEX s’appelait comment avant ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "AscendEX s’appelait auparavant BitMax.io. Le changement de nom vers AscendEX a été annoncé en 2021.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "AscendEX est-il adapté aux débutants ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "AscendEX peut être utilisé par un débutant prudent, mais la plateforme vise surtout des utilisateurs crypto déjà à l’aise avec les exchanges, les frais, les ordres, le trading et les produits avancés.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Peut-on utiliser un lien de parrainage AscendEX ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Oui, AscendEX permet d’utiliser un code ou lien d’invitation. Les avantages éventuels dépendent des conditions du programme, du pays, du compte et des règles affichées au moment de l’inscription.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Quels sont les risques avec AscendEX ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Les principaux risques sont la volatilité des crypto-actifs, la perte en capital, les frais, les produits avancés mal compris, les restrictions selon les pays, les changements réglementaires et les erreurs de trading.",
-      },
-    },
-  ],
-};
-
 const strengths = [
   "Plateforme crypto connue sous l’ancien nom BitMax.io.",
-  "Offre crypto complète avec spot, margin, futures et Earn selon disponibilité.",
-  "Possibilité d’utiliser un lien ou code d’invitation.",
+  "Historique d’une offre comprenant spot, margin, futures et Earn avant la cessation.",
+  "Accès limité aux retraits annoncé pour les comptes existants.",
   "Alternative à comparer avec Binance, Bybit, HTX, Bitget et Kraken.",
-  "Peut convenir à un utilisateur crypto déjà habitué aux exchanges.",
+  "Fiche maintenue pour informer les anciens utilisateurs et documenter la cessation.",
 ];
 
 const limits = [
   "Plateforme plus avancée qu’une application crypto très débutant.",
   "Produits à risque si l’utilisateur ne comprend pas le trading crypto.",
   "Frais et conditions à vérifier directement sur AscendEX.",
-  "Services, restrictions et disponibilité variables selon le pays.",
-  "Les avantages de parrainage ne doivent jamais être considérés comme garantis.",
+  "Inscriptions, dépôts, trading, swap, staking, lending et promotions arrêtés.",
+  "AscendEX a annoncé la cessation de ses opérations au 1er juillet 2026.",
 ];
 
 const useCases = [
   {
     title: "Acheter et vendre des cryptos",
-    text: "AscendEX peut servir à acheter, vendre ou échanger des crypto-actifs selon les services disponibles dans ton pays.",
+    text: "Ces services ont cessé. La fiche les conserve uniquement pour expliquer l’activité passée de la plateforme.",
   },
   {
     title: "Comparer les exchanges",
@@ -80,34 +38,34 @@ const useCases = [
   },
   {
     title: "Utiliser des outils avancés",
-    text: "AscendEX met en avant des fonctionnalités comme le spot, le margin, les futures, Earn ou le copy trading selon disponibilité.",
+    text: "Spot, margin, futures, Earn et copy trading sont décrits à titre historique et ne sont plus proposés depuis la cessation.",
   },
   {
-    title: "Tester un lien d’invitation",
-    text: "Le lien de parrainage peut donner accès à des avantages éventuels, mais uniquement si les conditions AscendEX sont respectées.",
+    title: "Retirer des actifs existants",
+    text: "Les anciens utilisateurs doivent suivre les instructions officielles relatives à l’accès limité aux retraits.",
   },
 ];
 
 const ascendexSteps = [
   {
-    title: "1. Vérifier le domaine et l’application",
-    text: "Avant de créer un compte, vérifie que le lien ouvre bien l’environnement AscendEX attendu et que tu n’es pas redirigé vers une page douteuse.",
+    title: "1. Vérifier l’annonce officielle",
+    text: "Consulte l’annonce de cessation publiée par AscendEX et méfie-toi des domaines ou messages non officiels.",
   },
   {
-    title: "2. Utiliser le lien d’invitation",
-    text: "Le lien Afflizen contient ton code d’invitation. Les avantages éventuels peuvent varier selon le pays, la période et les conditions AscendEX.",
+    title: "2. Ne pas créer de nouveau compte",
+    text: "Les nouvelles inscriptions et les programmes de recommandation ont pris fin avec la cessation des opérations.",
   },
   {
-    title: "3. Créer le compte et sécuriser l’accès",
-    text: "Comme pour toute plateforme crypto, il faut utiliser un mot de passe solide, activer la double authentification et rester vigilant avec les emails.",
+    title: "3. Sécuriser l’accès existant",
+    text: "Les anciens utilisateurs doivent protéger leur accès et utiliser uniquement le canal officiel pour retirer leurs actifs.",
   },
   {
-    title: "4. Lire les frais et les restrictions",
-    text: "Les frais peuvent varier selon les produits, les volumes, le niveau du compte et les conditions en vigueur. Vérifie toujours avant de trader.",
+    title: "4. Suivre les modalités de retrait",
+    text: "Vérifie les actifs concernés, les réseaux pris en charge et les éventuels délais dans les instructions officielles.",
   },
   {
-    title: "5. Commencer avec prudence",
-    text: "AscendEX propose des outils avancés. Le plus prudent est de commencer avec de petits montants et d’éviter les produits que tu ne comprends pas.",
+    title: "5. Rester vigilant",
+    text: "La cessation peut susciter des tentatives d’hameçonnage : ne communique jamais tes identifiants ou codes de sécurité.",
   },
 ];
 
@@ -137,58 +95,56 @@ const relatedLinks = [
 export default function AscendexPage() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-950">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8">
           <div>
             <p className="mb-4 inline-flex rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 ring-1 ring-emerald-100">
-              Crypto · Ancien BitMax · Trading · Parrainage
+              Crypto · Ancien BitMax · Cessation des opérations
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
-              AscendEX avis 2026 : l’ancien BitMax à comparer avec prudence
+              AscendEX : cessation des opérations depuis le 1er juillet 2026
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-              AscendEX est une plateforme crypto anciennement connue sous le nom
-              BitMax.io. Elle se positionne comme un exchange plutôt complet,
-              avec des services de trading, du spot, du margin, des futures,
-              Earn et d’autres fonctions crypto selon disponibilité. Pour
-              Afflizen, AscendEX est une plateforme à classer dans la crypto
-              avancée, au même niveau de prudence que HTX, Bybit ou Bitget.
+              AscendEX, anciennement BitMax.io, proposait des services de trading,
+              du spot, du margin, des futures, Earn et d’autres fonctions crypto.
+              Cette fiche est désormais conservée comme information historique
+              et pour orienter les anciens utilisateurs vers les modalités
+              officielles de retrait.
             </p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <AffiliateButton
-                href={ASCENDEX_AFFILIATE_LINK}
-                platform="ascendex"
-                category="crypto"
-                location="hero"
-                className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700"
-              >
-                S’inscrire sur AscendEX avec l’invitation
-              </AffiliateButton>
+            <CryptoAvailabilityNotice
+              title="AscendEX a cessé ses opérations"
+              level="unavailable"
+            >
+              <p>
+                AscendEX a annoncé la cessation de ses opérations à compter du
+                1er juillet 2026. Les nouvelles inscriptions, dépôts, opérations
+                de trading, swaps, produits de staking ou de lending et programmes
+                promotionnels ne sont plus disponibles.
+              </p>
+              <p>
+                Un accès limité aux retraits reste annoncé pour les comptes
+                existants. Afflizen ne propose aucun lien d’inscription ou de
+                parrainage vers AscendEX.
+              </p>
+              <p>
+                L’AMF avait également publié un avertissement concernant
+                AscendEX. Les anciens utilisateurs doivent suivre uniquement les
+                instructions officielles de retrait et éviter les sites ou
+                interlocuteurs non vérifiés.
+              </p>
+            </CryptoAvailabilityNotice>
 
-              <a
-                href={ASCENDEX_OFFICIAL_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50"
-              >
-                Voir le site officiel AscendEX
-              </a>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <SuspendedRegistrationMessage />
             </div>
 
             <p className="mt-5 max-w-3xl text-sm leading-6 text-slate-500">
-              Les avantages liés au lien d’invitation AscendEX peuvent varier
-              selon le pays, la période, les conditions du compte, les produits
-              utilisés et les règles en vigueur. Avant toute inscription ou
-              dépôt, vérifie toujours les informations affichées directement par
-              AscendEX.
+              Les anciens liens d’invitation ont été retirés. Les utilisateurs
+              disposant déjà d’un compte doivent suivre uniquement les
+              instructions officielles relatives aux retraits.
             </p>
           </div>
 
@@ -204,39 +160,31 @@ export default function AscendexPage() {
               </div>
 
               <div>
-                <p className="font-semibold text-slate-950">Profil idéal</p>
+                <p className="font-semibold text-slate-950">Public concerné</p>
                 <p>
-                  Utilisateur crypto déjà habitué aux exchanges et aux outils de
-                  trading.
+                  Anciens utilisateurs devant vérifier leur accès et leurs
+                  possibilités de retrait.
                 </p>
               </div>
 
               <div>
-                <p className="font-semibold text-slate-950">Point fort</p>
+                <p className="font-semibold text-slate-950">Situation</p>
                 <p>
-                  Plateforme complète avec spot, margin, futures et Earn selon
-                  disponibilité.
+                  Opérations cessées depuis le 1er juillet 2026; retraits limités
+                  annoncés pour les comptes existants.
                 </p>
               </div>
 
               <div>
-                <p className="font-semibold text-slate-950">Point faible</p>
+                <p className="font-semibold text-slate-950">Vigilance</p>
                 <p>
-                  Moins adaptée à un débutant complet qu’une plateforme très
-                  simple.
+                  Aucun nouveau dépôt, échange ou produit de rendement n’est
+                  disponible.
                 </p>
               </div>
             </div>
 
-            <AffiliateButton
-              href={ASCENDEX_AFFILIATE_LINK}
-              platform="ascendex"
-              category="crypto"
-              location="sidebar"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-            >
-              Utiliser le lien AscendEX
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -305,11 +253,10 @@ export default function AscendexPage() {
             </p>
 
             <p className="mt-4 text-base leading-8 text-slate-700">
-              La recommandation Afflizen doit donc rester prudente : AscendEX
-              peut être intéressante pour un utilisateur crypto déjà à l’aise,
-              mais ce n’est pas une plateforme à recommander sans nuance. Les
-              frais, restrictions, conditions de parrainage, produits disponibles
-              et risques doivent toujours être vérifiés avant utilisation.
+              Depuis la cessation annoncée au 1er juillet 2026, Afflizen ne
+              recommande aucune nouvelle utilisation d’AscendEX. La priorité des
+              anciens utilisateurs est de consulter les modalités officielles de
+              retrait et de sécuriser leur accès.
             </p>
           </div>
 
@@ -350,14 +297,14 @@ export default function AscendexPage() {
               Usages
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950">
-              À quoi peut servir AscendEX ?
+              Quels usages sont encore possibles sur AscendEX ?
             </h2>
 
             <p className="mt-5 max-w-3xl text-base leading-8 text-slate-700">
-              AscendEX peut servir à acheter, vendre, échanger ou trader des
-              crypto-actifs selon les services disponibles dans ton pays. Son
-              intérêt principal est d’élargir la comparaison Afflizen entre les
-              plateformes crypto avancées.
+              Les opérations d’achat, de vente, d’échange et de trading ont pris
+              fin. AscendEX annonce uniquement un accès limité aux retraits pour
+              les comptes existants; la fiche conserve les autres usages à titre
+              historique.
             </p>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -383,23 +330,15 @@ export default function AscendexPage() {
             </h3>
 
             <ol className="mt-5 space-y-4 text-sm leading-6 text-slate-700">
-              <li>1. Vérifier le lien et le domaine utilisé.</li>
-              <li>2. Lire les conditions de parrainage.</li>
-              <li>3. Créer le compte avec le lien Afflizen.</li>
-              <li>4. Activer la sécurité du compte.</li>
-              <li>5. Vérifier les frais avant toute opération.</li>
-              <li>6. Commencer avec de petits montants.</li>
+              <li>1. Lire l’annonce officielle de cessation.</li>
+              <li>2. Ne pas créer de nouveau compte.</li>
+              <li>3. Sécuriser l’accès à un compte existant.</li>
+              <li>4. Vérifier les modalités de retrait.</li>
+              <li>5. Utiliser uniquement les canaux officiels.</li>
+              <li>6. Se méfier des tentatives d’hameçonnage.</li>
             </ol>
 
-            <AffiliateButton
-              href={ASCENDEX_AFFILIATE_LINK}
-              platform="ascendex"
-              category="crypto"
-              location="usages"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-            >
-              Commencer avec AscendEX
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -408,55 +347,45 @@ export default function AscendexPage() {
         <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">
-              Parrainage
+              Cessation
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight">
-              Le parrainage AscendEX : utile, mais à vérifier avant inscription
+              Les inscriptions et programmes promotionnels ont pris fin
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-300">
-              AscendEX permet d’utiliser un lien ou un code d’invitation au
-              moment de l’inscription. Cela peut donner accès à des avantages
-              éventuels selon les règles en vigueur. Comme toujours avec les
-              plateformes crypto, il ne faut pas créer un compte ou déposer de
-              l’argent uniquement pour une récompense potentielle.
+              AscendEX a annoncé la fin des nouvelles inscriptions, dépôts,
+              échanges, produits de rendement et programmes de recommandation.
+              Afflizen a supprimé son ancien lien d’invitation.
             </p>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-lg font-bold">Lien d’invitation</h3>
+              <h3 className="text-lg font-bold">Lien supprimé</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Le lien Afflizen contient le code d’invitation associé à
-                AscendEX.
+                Aucun lien ou code d’invitation AscendEX n’est actif sur cette
+                fiche.
               </p>
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-lg font-bold">Conditions variables</h3>
+              <h3 className="text-lg font-bold">Retraits limités</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Les avantages peuvent dépendre de la région, du compte, de la
-                période et des règles du programme.
+                Les détenteurs d’un compte existant doivent suivre les modalités
+                officielles de retrait publiées par AscendEX.
               </p>
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-lg font-bold">Pas une raison de trader</h3>
+              <h3 className="text-lg font-bold">Vigilance</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Un bonus potentiel ne doit jamais justifier un dépôt ou un trade
-                que tu ne comprends pas.
+                Une cessation d’activité peut attirer des tentatives
+                d’hameçonnage; utilisez uniquement les canaux officiels.
               </p>
             </div>
           </div>
 
-          <AffiliateButton
-            href={ASCENDEX_AFFILIATE_LINK}
-            platform="ascendex"
-            category="crypto"
-            location="parrainage"
-            className="mt-8 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-400"
-          >
-            Utiliser le parrainage AscendEX
-          </AffiliateButton>
+          <SuspendedRegistrationMessage className="mt-8 max-w-xl" />
         </div>
       </section>
 
@@ -467,14 +396,14 @@ export default function AscendexPage() {
               Étapes
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950">
-              Comment utiliser AscendEX sans brûler les étapes ?
+              Que faire après la cessation d’AscendEX ?
             </h2>
 
             <p className="mt-5 max-w-3xl text-base leading-8 text-slate-700">
-              Comme pour HTX ou Bybit, le plus important est de ne pas commencer
-              par les fonctions les plus risquées. Il faut d’abord comprendre le
-              compte, les dépôts, les retraits, les frais, les produits proposés
-              et les restrictions éventuelles.
+              Il n’est plus question de commencer à utiliser la plateforme. Les
+              étapes ci-dessous concernent uniquement la vérification de
+              l’annonce et la récupération éventuelle d’actifs par un ancien
+              utilisateur.
             </p>
 
             <div className="mt-8 space-y-5">
@@ -496,25 +425,15 @@ export default function AscendexPage() {
 
           <aside className="h-fit rounded-3xl border border-amber-200 bg-amber-50 p-6 shadow-sm">
             <h3 className="text-lg font-bold text-slate-950">
-              À retenir avant dépôt
+              À retenir pour un compte existant
             </h3>
             <p className="mt-4 text-sm leading-6 text-slate-700">
-              AscendEX peut être intéressante pour comparer les plateformes
-              crypto, mais un dépôt doit toujours être réfléchi. Vérifie la
-              disponibilité dans ton pays, les frais, les conditions de retrait,
-              les produits disponibles, les risques et les conditions du
-              parrainage avant d’envoyer de l’argent.
+              N’effectue aucun nouveau dépôt. Consulte l’annonce officielle,
+              vérifie les modalités de retrait et protège tes identifiants contre
+              les tentatives d’hameçonnage.
             </p>
 
-            <AffiliateButton
-              href={ASCENDEX_AFFILIATE_LINK}
-              platform="ascendex"
-              category="crypto"
-              location="prudence"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-            >
-              Vérifier AscendEX
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -538,24 +457,15 @@ export default function AscendexPage() {
                   plus complets entre exchanges.
                 </p>
                 <p className="mt-4 text-base leading-8 text-slate-700">
-                  La recommandation doit rester mesurée : AscendEX peut convenir
-                  à un utilisateur crypto expérimenté, mais elle n’est pas idéale
-                  pour quelqu’un qui débute totalement. Les frais, restrictions,
-                  conditions de parrainage et risques doivent être vérifiés avant
-                  utilisation.
+                  Afflizen ne recommande plus AscendEX pour une nouvelle
+                  utilisation. La fiche reste en ligne pour informer sur la
+                  cessation et orienter les anciens utilisateurs vers les sources
+                  officielles.
                 </p>
               </div>
 
               <div className="flex flex-col justify-center gap-4">
-                <AffiliateButton
-                  href={ASCENDEX_AFFILIATE_LINK}
-                  platform="ascendex"
-                  category="crypto"
-                  location="avis"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-                >
-                  Découvrir AscendEX
-                </AffiliateButton>
+                <SuspendedRegistrationMessage />
 
                 <Link
                   href="/crypto"

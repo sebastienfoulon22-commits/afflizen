@@ -1,13 +1,12 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
-
-const BINANCE_AFFILIATE_LINK =
-  "https://account.binance.com/register?registerChannel=user_center&ref=W1CW1QNP";
+import CryptoAvailabilityNotice, {
+  SuspendedRegistrationMessage,
+} from "@/components/CryptoAvailabilityNotice";
 
 export const metadata = createPageMetadata({
   title: "Binance avis 2026 : frais, sécurité, avantages et inconvénients",
-  description: "Notre avis sur Binance en 2026 : avantages, inconvénients, frais, sécurité, profil idéal, FAQ et lien d’inscription.",
+  description: "Notre avis sur Binance en 2026 : services, frais, sécurité et situation réglementaire en Belgique et en France.",
   path: "/crypto/binance",
   type: "article",
 });
@@ -33,16 +32,31 @@ export default function BinancePage() {
             les frais, la sécurité et notre avis Afflizen.
           </p>
 
+          <CryptoAvailabilityNotice
+            title="Disponibilité de Binance à vérifier avant toute démarche"
+            level="warning"
+          >
+            <p>
+              Afflizen n’a pas identifié Binance dans le registre MiCA des
+              prestataires de services sur crypto-actifs publié par l’ESMA au 31
+              juillet 2026. En France, l’enregistrement PSAN de Binance France
+              SAS est indiqué comme caduc depuis le 2 juillet 2026 par l’AMF.
+            </p>
+            <p>
+              La disponibilité pour les résidents belges ou français ne doit
+              donc pas être déduite de la seule accessibilité du site. Afflizen
+              suspend ses liens d’inscription vers Binance.
+            </p>
+            <p>
+              Cette absence de confirmation ne signifie pas que Binance est
+              frauduleuse ou officiellement interdite. Elle signifie uniquement
+              qu’Afflizen ne dispose pas actuellement d’éléments suffisants pour
+              promouvoir l’inscription.
+            </p>
+          </CryptoAvailabilityNotice>
+
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={BINANCE_AFFILIATE_LINK}
-              platform="binance"
-              category="crypto"
-              location="hero"
-              className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
-            >
-              S’inscrire sur Binance
-            </AffiliateButton>
+            <SuspendedRegistrationMessage />
 
             <Link
               href="/crypto"
@@ -55,7 +69,7 @@ export default function BinancePage() {
           <p className="mt-4 max-w-3xl text-sm text-slate-500">
             Les cryptoactifs sont volatils. Vous pouvez perdre tout ou partie de
             votre capital. Vérifiez toujours la disponibilité, les frais et les
-            conditions applicables dans votre pays avant de vous inscrire.
+            conditions applicables dans votre pays avant toute démarche.
           </p>
         </div>
       </section>
@@ -238,23 +252,14 @@ export default function BinancePage() {
           </p>
 
           <p className="mt-5 leading-8 text-slate-700">
-            Pour un utilisateur belge, français, luxembourgeois ou suisse
-            francophone, Binance peut être intéressante si la plateforme est
-            bien disponible dans son pays au moment de l’inscription. Pour un
-            premier achat crypto simple, une alternative plus minimaliste peut
-            parfois être plus confortable.
+            Pour un utilisateur belge ou français, Afflizen ne recommande pas
+            d’ouvrir un compte tant que l’entité contractante, son agrément MiCA
+            et les services autorisés dans le pays de résidence ne sont pas
+            confirmés par une source officielle à jour.
           </p>
 
           <div className="mt-8">
-            <AffiliateButton
-              href={BINANCE_AFFILIATE_LINK}
-              platform="binance"
-              category="crypto"
-              location="avis"
-              className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
-            >
-              Accéder à Binance
-            </AffiliateButton>
+            <SuspendedRegistrationMessage />
           </div>
         </div>
       </section>
@@ -277,7 +282,7 @@ export default function BinancePage() {
             {
               question: "Binance est-elle disponible en Belgique ?",
               answer:
-                "Binance indique la Belgique comme disponible dans sa liste officielle, mais la situation réglementaire européenne doit être vérifiée avant inscription.",
+                "Afflizen n’a pas identifié Binance dans le registre MiCA de l’ESMA au 31 juillet 2026. L’accessibilité du site ne suffit pas à établir quels services sont autorisés en Belgique : l’entité contractante et son agrément doivent être vérifiés avant toute démarche.",
             },
             {
               question: "Peut-on laisser ses cryptos sur Binance ?",
@@ -287,7 +292,7 @@ export default function BinancePage() {
             {
               question: "Afflizen recommande-t-il Binance ?",
               answer:
-                "Afflizen considère Binance comme une plateforme très complète, mais pas forcément comme le choix le plus simple pour tous les débutants. Elle convient surtout aux utilisateurs qui veulent évoluer dans l’écosystème crypto.",
+                "Afflizen suspend actuellement ses liens d’inscription vers Binance et recommande de vérifier l’entité contractante, son agrément et les services autorisés dans le pays de résidence.",
             },
           ].map((item) => (
             <details
@@ -310,12 +315,9 @@ export default function BinancePage() {
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Certains liens présents sur Afflizen peuvent être des liens
-            d’affiliation. Cela signifie que nous pouvons recevoir une
-            commission si vous ouvrez un compte via notre lien, sans coût
-            supplémentaire pour vous. Cette rémunération aide à financer le site
-            et n’influence pas notre volonté de présenter les avantages comme
-            les limites de chaque plateforme.
+            Afflizen a suspendu les liens d’affiliation et d’inscription vers
+            Binance sur cette fiche. Aucun clic depuis cette page ne déclenche
+            de suivi affilié vers la plateforme.
           </p>
         </div>
       </section>

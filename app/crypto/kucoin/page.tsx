@@ -1,12 +1,12 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "@/components/AffiliateButton";
-
-const KUCOIN_REFERRAL_LINK = "https://www.kucoin.com/r/rf/QBSFQ65A";
+import CryptoAvailabilityNotice, {
+  SuspendedRegistrationMessage,
+} from "@/components/CryptoAvailabilityNotice";
 
 export const metadata = createPageMetadata({
-  title: "KuCoin avis : exchange crypto, trading, futures et staking",
-  description: "Notre présentation de KuCoin, exchange crypto international pour acheter, vendre et trader des cryptomonnaies : spot, futures, staking, points forts, limites, frais et précautions.",
+  title: "KuCoin en Belgique et en France : disponibilité en 2026",
+  description: "Informations sur KuCoin EU en 2026 : licence MiCA, interdiction de commencer les opérations, retraits et précautions.",
   path: "/crypto/kucoin",
   type: "article",
 });
@@ -15,20 +15,20 @@ const strengths = [
   "Exchange crypto international avec de nombreux actifs numériques selon disponibilité.",
   "Plateforme complète pour le spot, le trading, les futures, la marge, Earn, staking, lending et bots selon les profils.",
   "Intéressante pour comparer les altcoins et les outils avancés avec Binance, Bitget, Bybit ou HTX.",
-  "Peut convenir aux utilisateurs qui veulent aller plus loin qu’une application crypto très simple.",
-  "Lien de parrainage Afflizen disponible, avec conditions éventuelles à vérifier directement sur KuCoin.",
+  "Historique utile pour comprendre l’offre de la plateforme avant l’interdiction de démarrer KuCoin EU.",
+  "Fiche maintenue pour documenter la situation réglementaire de KuCoin EU.",
 ];
 
 const limits = [
   "Plateforme potentiellement moins simple qu’une application débutant très grand public.",
   "Les futures, la marge, le lending, les bots et certains produits Earn sont plus risqués que l’achat simple de crypto.",
   "Les frais, restrictions géographiques, obligations KYC et services disponibles doivent être vérifiés sur KuCoin.",
-  "La situation réglementaire et les conditions d’utilisation peuvent varier selon le pays de résidence.",
+  "La FMA interdit encore à KuCoin EU de commencer ses opérations malgré la licence accordée.",
   "Les crypto-actifs sont volatils et exposent à un risque de perte en capital.",
 ];
 
 const beginnerPoints = [
-  "Commencer par comprendre l’achat simple avant d’utiliser les produits avancés.",
+  "Ne pas ouvrir de nouveau compte tant que les opérations de KuCoin EU restent interdites.",
   "Vérifier les frais, les retraits et les conditions KYC avant tout dépôt.",
   "Éviter futures, marge, bots ou lending si leur fonctionnement n’est pas maîtrisé.",
   "Ne jamais investir un montant que l’on ne peut pas se permettre de perdre.",
@@ -60,7 +60,7 @@ const relatedLinks = [
   {
     href: "/crypto/bybit",
     title: "Bybit",
-    text: "Une autre plateforme crypto avancée avec trading et parrainage.",
+    text: "Une plateforme européenne distincte, à consulter sans lien affilié.",
   },
   {
     href: "/crypto/htx",
@@ -88,7 +88,7 @@ const faq = [
   {
     question: "KuCoin est-il adapté aux débutants ?",
     answer:
-      "KuCoin peut être utilisé par un débutant prudent, mais la plateforme est plutôt complète et orientée trading. Pour commencer, il vaut mieux rester sur les fonctions simples et éviter les produits avancés.",
+      "Cette question ne se pose pas actuellement pour une nouvelle utilisation européenne : KuCoin EU n’est pas autorisée à commencer ses opérations et ses services ne sont pas rétablis.",
   },
   {
     question: "Quels sont les risques avec KuCoin ?",
@@ -98,12 +98,12 @@ const faq = [
   {
     question: "Le lien KuCoin sur Afflizen est-il un lien de parrainage ?",
     answer:
-      "Oui. Le lien utilisé sur cette page est un lien de parrainage Afflizen. Les conditions éventuelles du parrainage doivent être vérifiées directement sur KuCoin.",
+      "L’ancien lien était affilié. Il est désormais suspendu et aucun parcours d’inscription KuCoin n’est proposé depuis cette fiche.",
   },
   {
     question: "KuCoin propose-t-il du staking ou des produits Earn ?",
     answer:
-      "KuCoin peut proposer des services comme Earn, staking, lending ou bots selon disponibilité. Ces services comportent des conditions et risques spécifiques à lire directement sur KuCoin.",
+      "KuCoin présente habituellement ces services, mais ils ne sont pas proposés comme accessibles via KuCoin EU tant que le début des opérations reste interdit.",
   },
 ];
 
@@ -156,16 +156,25 @@ export default function KucoinPage() {
               surtout avec les produits complexes.
             </p>
 
+            <CryptoAvailabilityNotice
+              title="Les opérations de KuCoin EU ne sont pas autorisées à commencer"
+              level="unavailable"
+            >
+              <p>
+                La FMA autrichienne indique qu’une licence MiCA a été accordée à
+                KuCoin EU Exchange GmbH le 27 novembre 2025, mais que le début de
+                ses activités reste interdit. Une licence accordée ne signifie
+                donc pas que les services sont ouverts.
+              </p>
+              <p>
+                KuCoin précise que les services européens n’ont pas repris et
+                maintient seulement les retraits pour les comptes concernés.
+                Afflizen suspend tous ses liens d’inscription vers KuCoin.
+              </p>
+            </CryptoAvailabilityNotice>
+
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-              <AffiliateButton
-                href={KUCOIN_REFERRAL_LINK}
-                platform="kucoin"
-                category="crypto"
-                location="hero"
-                className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700"
-              >
-                S’inscrire sur KuCoin
-              </AffiliateButton>
+              <SuspendedRegistrationMessage />
 
               <a
                 href="#avis"
@@ -177,12 +186,12 @@ export default function KucoinPage() {
 
             <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5">
               <p className="font-semibold text-amber-950">
-                Lien de parrainage Afflizen
+                Inscription suspendue
               </p>
               <p className="mt-2 text-sm leading-6 text-amber-950">
-                Les conditions éventuelles du parrainage, les frais et les
-                services disponibles sont à vérifier directement sur KuCoin. Ce
-                lien ne garantit aucun bonus, rendement ou avantage particulier.
+                Aucun lien affilié ou parcours de nouvelle inscription n’est
+                proposé sur cette fiche tant que KuCoin EU n’est pas autorisée à
+                commencer ses opérations.
               </p>
             </div>
           </div>
@@ -206,15 +215,7 @@ export default function KucoinPage() {
               </p>
             </div>
 
-            <AffiliateButton
-              href={KUCOIN_REFERRAL_LINK}
-              platform="kucoin"
-              category="crypto"
-              location="sidebar"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-400"
-            >
-              Découvrir KuCoin
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -245,7 +246,7 @@ export default function KucoinPage() {
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm text-slate-500">Lien</p>
             <p className="mt-2 font-semibold text-slate-950">
-              Parrainage Afflizen
+              Inscription suspendue
             </p>
           </div>
         </div>
@@ -259,19 +260,16 @@ export default function KucoinPage() {
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
-              KuCoin s’adresse surtout aux utilisateurs qui veulent explorer un
-              large univers crypto, comparer de nombreux actifs numériques et
-              accéder à des outils plus complets qu’une application très grand
-              public. La plateforme peut intéresser les profils qui veulent
-              trader, étudier les altcoins ou comparer les services avancés.
+              Avant la suspension des services européens, KuCoin s’adressait
+              surtout aux utilisateurs souhaitant explorer de nombreux actifs et
+              des outils avancés. Cette description est conservée pour présenter
+              l’offre historique, pas pour encourager une nouvelle inscription.
             </p>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
-              Elle est moins adaptée aux personnes qui veulent simplement acheter
-              quelques cryptos sans se poser de questions. Avant d’utiliser
-              KuCoin, il faut vérifier la disponibilité dans son pays, les
-              obligations KYC, les frais, les restrictions et les produits
-              réellement accessibles.
+              KuCoin EU n’est actuellement pas autorisée à commencer ses
+              opérations. Les résidents belges et français ne doivent pas déduire
+              de l’accessibilité d’un domaine que les services sont ouverts.
             </p>
           </section>
 
@@ -319,11 +317,9 @@ export default function KucoinPage() {
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
-              KuCoin peut être utilisé par un débutant prudent, mais ce n’est
-              pas la plateforme la plus simple pour commencer. L’interface et les
-              nombreux produits peuvent pousser à utiliser des outils que l’on ne
-              comprend pas encore. Pour un premier usage, il vaut mieux rester
-              sur les fonctions simples et prendre le temps de lire les frais.
+              Cette question ne se pose pas actuellement pour une nouvelle
+              utilisation européenne : KuCoin EU n’est pas autorisée à commencer
+              ses opérations et ses services ne sont pas rétablis.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -344,10 +340,10 @@ export default function KucoinPage() {
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
-              KuCoin peut proposer plusieurs services crypto au-delà de l’achat
-              simple. Leur disponibilité dépend du pays, du profil, des règles
-              KYC et des conditions de la plateforme. Il faut donc vérifier
-              directement sur KuCoin ce qui est réellement accessible.
+              KuCoin présente habituellement plusieurs services crypto au-delà
+              de l’achat simple. Ils sont listés ici à titre informatif, mais ne
+              doivent pas être considérés comme accessibles via KuCoin EU tant
+              que le début des opérations reste interdit.
             </p>
 
             <div className="mt-6 grid gap-4">
@@ -383,27 +379,23 @@ export default function KucoinPage() {
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-700">
-              KuCoin est une plateforme intéressante pour les utilisateurs qui
-              veulent comparer un exchange crypto complet, orienté trading et
-              altcoins. Son principal intérêt est l’étendue de l’offre, mais
-              c’est aussi ce qui demande le plus de prudence.
+              KuCoin est un exchange historiquement orienté trading et altcoins.
+              Notre avis actuel porte d’abord sur KuCoin EU : la licence accordée
+              ne permet pas encore à l’entité de commencer ses opérations.
             </p>
 
             <p className="mt-4 text-base leading-7 text-slate-700">
-              Notre avis est prudent : KuCoin peut convenir à un utilisateur qui
-              comprend déjà les bases des crypto-actifs, les frais, la sécurité
-              du compte et les risques des produits avancés. Pour un débutant
-              complet, il faut éviter d’aller trop vite vers futures, marge,
-              bots ou lending.
+              Afflizen suspend donc toute recommandation de nouvelle inscription
+              depuis la Belgique ou la France. Les comptes concernés par la
+              suspension doivent se limiter aux modalités officielles de retrait.
             </p>
 
             <div className="mt-6 rounded-2xl border border-emerald-200 bg-white p-5">
               <p className="font-semibold text-slate-950">Verdict Afflizen</p>
               <p className="mt-2 text-sm leading-6 text-slate-700">
-                KuCoin est une plateforme crypto complète à comparer avec
-                Binance, Bitget, Bybit ou HTX. Elle reste à utiliser avec
-                prudence, sans promesse de rendement et sans considérer le
-                parrainage comme une garantie d’avantage.
+                Aucun lien affilié KuCoin n’est actif. Une nouvelle inscription
+                n’est pas recommandée tant que la FMA interdit le commencement
+                des opérations de KuCoin EU.
               </p>
             </div>
           </section>
@@ -432,15 +424,15 @@ export default function KucoinPage() {
         <aside className="space-y-5 lg:sticky lg:top-6 lg:self-start">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-xl font-bold text-slate-950">
-              À vérifier avant d’utiliser KuCoin
+              À vérifier concernant KuCoin EU
             </h2>
 
             <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-700">
-              <li>• La disponibilité des services dans votre pays.</li>
+              <li>• L’autorisation effective de commencer les opérations.</li>
               <li>• Les obligations KYC et restrictions géographiques.</li>
               <li>• Les frais de trading, dépôt, retrait et conversion.</li>
               <li>• Les risques des futures, de la marge, du lending et des bots.</li>
-              <li>• Les conditions éventuelles du parrainage Afflizen.</li>
+              <li>• Les modalités officielles de retrait pour les comptes concernés.</li>
             </ul>
           </div>
 
@@ -471,8 +463,8 @@ export default function KucoinPage() {
             Cette page est une présentation éditoriale et ne constitue pas un
             conseil financier personnalisé. Les crypto-actifs sont volatils et
             comportent un risque de perte en capital. Vérifiez toujours les
-            informations officielles de KuCoin avant toute inscription, opération
-            ou décision d’investissement.
+            informations officielles de KuCoin EU et de la FMA avant toute
+            démarche ou décision d’investissement.
           </p>
         </div>
       </section>

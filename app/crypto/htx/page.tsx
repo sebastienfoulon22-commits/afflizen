@@ -1,64 +1,22 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "@/components/AffiliateButton";
-
-const HTX_AFFILIATE_LINK =
-  "https://www.htx.com.pt/invite/fr-fr/1f?invite_code=axzv7";
-
-const HTX_OFFICIAL_LINK = "https://www.htx.com/";
+import CryptoAvailabilityNotice, {
+  SuspendedRegistrationMessage,
+} from "@/components/CryptoAvailabilityNotice";
 
 export const metadata = createPageMetadata({
-  title: "HTX avis 2026 : crypto, trading, frais, risques et parrainage",
-  description: "Notre avis sur HTX en 2026 : plateforme crypto avancée, trading spot, futures, bots, frais, sécurité, risques, restrictions et lien de parrainage.",
+  title: "HTX en Belgique et en France : disponibilité en 2026",
+  description: "Notre analyse de HTX en 2026 : indisponibilité dans l’Union européenne, services, frais, risques et précautions.",
   path: "/crypto/htx",
   type: "article",
 });
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "HTX est-il adapté aux débutants ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "HTX peut être utilisé par des débutants prudents, mais la plateforme vise plutôt les utilisateurs crypto déjà à l’aise avec les exchanges, les frais, les ordres, les risques de marché et les produits avancés.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "HTX est-il l’ancien Huobi ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Oui, HTX est le nom actuel associé à l’ancien écosystème Huobi. Pour un utilisateur, il faut surtout vérifier le site officiel, les conditions du compte, la disponibilité dans son pays et les frais en vigueur.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Le parrainage HTX est-il automatique ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Non. HTX propose un système d’invitation et de rebates, mais les avantages dépendent des conditions du programme, du pays, du compte, de l’activité de trading et des règles affichées au moment de l’inscription.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Quels sont les risques avec HTX ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Les principaux risques sont la volatilité des crypto-actifs, la perte en capital, les frais, les produits avancés mal compris, les restrictions selon les pays, les changements réglementaires et les erreurs liées au trading actif.",
-      },
-    },
-  ],
-};
-
 const strengths = [
   "Plateforme crypto complète avec de nombreux actifs disponibles.",
   "Fonctions avancées : spot, futures, bots et outils de trading selon disponibilité.",
-  "Programme d’invitation avec rebates potentiels sur les frais.",
+  "Fonctionnalités présentées uniquement à titre informatif et historique pour les résidents de l’UE.",
   "Alternative intéressante à comparer avec Binance, Bybit, Bitget et Kraken.",
-  "Peut convenir à un utilisateur crypto déjà habitué aux exchanges.",
+  "Fiche conservée pour documenter la plateforme et ses restrictions géographiques.",
 ];
 
 const limits = [
@@ -66,13 +24,13 @@ const limits = [
   "Produits risqués si l’utilisateur ne comprend pas le trading crypto.",
   "Frais, limites et conditions à vérifier directement dans le compte HTX.",
   "Restrictions possibles selon le pays de résidence et les règles en vigueur.",
-  "Parrainage variable : les avantages ne doivent jamais être considérés comme garantis.",
+  "Les résidents de l’Union européenne figurent parmi les juridictions exclues par HTX.",
 ];
 
 const useCases = [
   {
     title: "Trader des cryptos",
-    text: "HTX peut servir à acheter, vendre ou échanger des crypto-actifs selon les services disponibles dans ton pays.",
+    text: "HTX propose ailleurs des services d’achat, de vente ou d’échange, mais ils ne sont pas présentés comme accessibles aux résidents de l’Union européenne.",
   },
   {
     title: "Comparer avec d’autres exchanges",
@@ -83,8 +41,8 @@ const useCases = [
     text: "HTX met en avant des fonctionnalités comme le trading spot, les futures, les bots ou d’autres services crypto avancés selon disponibilité.",
   },
   {
-    title: "Tester un parrainage",
-    text: "Le lien d’invitation peut donner accès à des avantages, mais uniquement si les conditions HTX sont respectées.",
+    title: "Vérifier les restrictions",
+    text: "Les fonctions décrites ne doivent pas être considérées comme accessibles aux résidents de l’Union européenne.",
   },
 ];
 
@@ -94,20 +52,20 @@ const htxSteps = [
     text: "Avant de créer un compte, vérifie que tu es bien sur un domaine HTX légitime et que les services sont disponibles pour ton pays de résidence.",
   },
   {
-    title: "2. Utiliser le lien d’invitation",
-    text: "Le lien Afflizen permet d’arriver sur HTX avec le code d’invitation associé. Les avantages peuvent varier selon les règles du programme.",
+    title: "2. Lire les juridictions exclues",
+    text: "Les conditions officielles de HTX excluent les États membres de l’Union européenne lors de notre vérification.",
   },
   {
-    title: "3. Créer le compte et sécuriser l’accès",
-    text: "Comme pour toute plateforme crypto, active les protections de base : mot de passe solide, double authentification et vigilance sur les emails.",
+    title: "3. Ne pas contourner les restrictions",
+    text: "Une restriction liée au pays de résidence ne doit pas être contournée par un autre domaine ou une localisation différente.",
   },
   {
     title: "4. Lire les frais avant d’utiliser la plateforme",
     text: "Les frais peuvent varier selon le type d’opération, le produit utilisé, le niveau du compte et les conditions HTX en vigueur.",
   },
   {
-    title: "5. Commencer avec prudence",
-    text: "HTX propose des outils avancés. Le plus prudent est de commencer petit et d’éviter les produits que tu ne comprends pas parfaitement.",
+    title: "5. Recontrôler avant toute démarche",
+    text: "Les conditions pouvant évoluer, consulte les sources officielles avant d’envisager une démarche future.",
   },
 ];
 
@@ -125,7 +83,7 @@ const relatedLinks = [
   {
     href: "/crypto/bitget",
     title: "Bitget",
-    text: "Une plateforme crypto avec trading, copy trading et parrainage.",
+    text: "Une plateforme crypto dont la disponibilité réglementaire doit être vérifiée.",
   },
   {
     href: "/crypto/kraken",
@@ -137,16 +95,11 @@ const relatedLinks = [
 export default function HtxPage() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-950">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8">
           <div>
             <p className="mb-4 inline-flex rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 ring-1 ring-emerald-100">
-              Crypto · Trading · Exchange avancé · Parrainage
+              Crypto · Trading · Restriction Union européenne
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
@@ -158,37 +111,39 @@ export default function HtxPage() {
               HTX, anciennement associé à l’écosystème Huobi, est une plateforme
               crypto complète qui met en avant de nombreux actifs, des outils de
               trading, du spot, des futures et des fonctionnalités avancées.
-              Pour Afflizen, HTX peut être intéressante à comparer avec Binance,
-              Bybit, Bitget ou Kraken, mais elle doit être présentée avec
-              prudence.
+              Afflizen conserve cette présentation à titre informatif, tout en
+              signalant clairement son indisponibilité pour les résidents de
+              l’Union européenne.
             </p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <AffiliateButton
-                href={HTX_AFFILIATE_LINK}
-                platform="htx"
-                category="crypto"
-                location="hero"
-                className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700"
-              >
-                S’inscrire sur HTX avec l’invitation
-              </AffiliateButton>
+            <CryptoAvailabilityNotice
+              title="HTX indisponible pour les résidents de l’Union européenne"
+              level="unavailable"
+            >
+              <p>
+                Les conditions d’utilisation officielles de HTX incluent les
+                États membres de l’Union européenne parmi les juridictions
+                exclues. Cette restriction concerne donc notamment la Belgique
+                et la France.
+              </p>
+              <p>
+                Afflizen ne propose aucun lien d’inscription ou d’invitation vers
+                HTX sur cette fiche.
+              </p>
+              <p>
+                Cette conclusion concerne la disponibilité européenne constatée
+                à cette date. Elle ne constitue pas une accusation de fraude.
+              </p>
+            </CryptoAvailabilityNotice>
 
-              <a
-                href={HTX_OFFICIAL_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50"
-              >
-                Voir le site officiel HTX
-              </a>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <SuspendedRegistrationMessage />
             </div>
 
             <p className="mt-5 max-w-3xl text-sm leading-6 text-slate-500">
-              Les avantages liés au parrainage HTX peuvent varier selon le pays,
-              le type de compte, les campagnes, les frais générés et les
-              conditions en vigueur. Avant toute inscription ou dépôt, vérifie
-              toujours les règles affichées directement par HTX.
+              Les anciens liens d’invitation ont été retirés. Les sources
+              officielles utilisées pour cette vérification restent accessibles
+              dans le bloc éditorial de la fiche.
             </p>
           </div>
 
@@ -223,23 +178,14 @@ export default function HtxPage() {
               </div>
 
               <div>
-                <p className="font-semibold text-slate-950">Parrainage</p>
+                <p className="font-semibold text-slate-950">Inscription</p>
                 <p>
-                  Rebate ou avantages potentiels selon les conditions du
-                  programme HTX.
+                  Suspendue depuis Afflizen pour les résidents de l’UE.
                 </p>
               </div>
             </div>
 
-            <AffiliateButton
-              href={HTX_AFFILIATE_LINK}
-              platform="htx"
-              category="crypto"
-              location="sidebar"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-            >
-              Utiliser le lien HTX
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -292,11 +238,11 @@ export default function HtxPage() {
             </h2>
 
             <p className="mt-5 text-base leading-8 text-slate-700">
-              HTX mérite une page sur Afflizen parce que c’est une plateforme
-              crypto connue, avec un positionnement plus avancé qu’une
-              application très grand public. Elle peut intéresser un utilisateur
-              qui veut comparer plusieurs exchanges, regarder les frais, tester
-              des outils de trading ou diversifier ses plateformes.
+              HTX reste documentée sur Afflizen pour informer les lecteurs sur
+              ses services et ses restrictions. Pour un résident belge ou
+              français, cette fiche ne constitue pas une recommandation
+              d’utilisation : les conditions officielles excluent l’Union
+              européenne.
             </p>
 
             <p className="mt-4 text-base leading-8 text-slate-700">
@@ -356,11 +302,10 @@ export default function HtxPage() {
             </h2>
 
             <p className="mt-5 max-w-3xl text-base leading-8 text-slate-700">
-              HTX peut servir à acheter, vendre, échanger ou trader des
-              crypto-actifs selon les services disponibles dans ton pays. Son
-              intérêt principal est d’élargir la comparaison entre plateformes
-              crypto avancées, pas de remplacer automatiquement un exchange déjà
-              bien maîtrisé.
+              HTX présente des services d’achat, de vente, d’échange et de
+              trading dans les pays où ils sont autorisés. Pour les résidents de
+              l’Union européenne, cette section décrit seulement les fonctions
+              de la plateforme et ne constitue pas un parcours d’utilisation.
             </p>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -387,22 +332,14 @@ export default function HtxPage() {
 
             <ol className="mt-5 space-y-4 text-sm leading-6 text-slate-700">
               <li>1. Vérifier le domaine et le pays.</li>
-              <li>2. Lire les conditions de parrainage.</li>
-              <li>3. Créer le compte avec le lien Afflizen.</li>
+              <li>2. Lire les juridictions exclues.</li>
+              <li>3. Ne pas créer de compte depuis l’Union européenne.</li>
               <li>4. Activer la sécurité du compte.</li>
               <li>5. Vérifier les frais avant toute opération.</li>
-              <li>6. Commencer avec de petits montants.</li>
+              <li>6. Recontrôler les conditions si la situation évolue.</li>
             </ol>
 
-            <AffiliateButton
-              href={HTX_AFFILIATE_LINK}
-              platform="htx"
-              category="crypto"
-              location="usages"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-            >
-              Commencer avec HTX
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -411,56 +348,46 @@ export default function HtxPage() {
         <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">
-              Parrainage
+              Restriction géographique
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight">
-              Le parrainage HTX : intéressant, mais à vérifier avant inscription
+              Aucun parcours d’inscription depuis l’Union européenne
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-300">
-              HTX met en avant un programme d’invitation avec des rebates
-              potentiels sur les frais. Cela peut être intéressant pour un
-              utilisateur actif, mais il ne faut pas considérer ces avantages
-              comme automatiques. Les conditions peuvent dépendre du compte, de
-              la région, du volume, des produits utilisés et des règles en
-              vigueur.
+              La Belgique et la France appartiennent à l’Union européenne, dont
+              les États membres figurent parmi les juridictions exclues dans les
+              conditions officielles de HTX. Les liens d’invitation Afflizen sont
+              suspendus.
             </p>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-lg font-bold">Lien d’invitation</h3>
+              <h3 className="text-lg font-bold">Lien suspendu</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Le lien Afflizen permet d’arriver sur HTX avec le code
-                d’invitation associé.
+                Aucun domaine d’inscription ou code d’invitation n’est proposé
+                depuis cette fiche.
               </p>
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-lg font-bold">Rebates possibles</h3>
+              <h3 className="text-lg font-bold">Conditions officielles</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                HTX communique sur des rebates de frais, mais les règles doivent
-                être relues directement sur la plateforme.
+                Les restrictions peuvent évoluer et doivent être contrôlées à
+                la source avant toute démarche.
               </p>
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-lg font-bold">Pas une raison de trader</h3>
+              <h3 className="text-lg font-bold">Accès technique</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Un avantage de parrainage ne doit jamais justifier un dépôt, un
-                trade ou un produit que tu ne comprends pas.
+                L’accès technique à un site ne prouve pas qu’un service est
+                autorisé dans le pays de résidence.
               </p>
             </div>
           </div>
 
-          <AffiliateButton
-            href={HTX_AFFILIATE_LINK}
-            platform="htx"
-            category="crypto"
-            location="parrainage"
-            className="mt-8 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-400"
-          >
-            Utiliser le parrainage HTX
-          </AffiliateButton>
+          <SuspendedRegistrationMessage className="mt-8 max-w-xl" />
         </div>
       </section>
 
@@ -471,14 +398,14 @@ export default function HtxPage() {
               Étapes
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950">
-              Comment utiliser HTX sans brûler les étapes ?
+              Comment vérifier la situation de HTX ?
             </h2>
 
             <p className="mt-5 max-w-3xl text-base leading-8 text-slate-700">
-              Comme pour toute plateforme crypto avancée, le plus important est
-              de ne pas commencer par les fonctions les plus risquées. Il faut
-              d’abord comprendre le compte, les dépôts, les retraits, les frais,
-              les produits proposés et les restrictions éventuelles.
+              Commence par vérifier les juridictions exclues, l’entité
+              contractante et les services autorisés. Pour un résident belge ou
+              français, les conditions officielles consultées excluent
+              actuellement l’utilisation de HTX.
             </p>
 
             <div className="mt-8 space-y-5">
@@ -506,19 +433,11 @@ export default function HtxPage() {
               HTX peut être intéressante pour comparer les plateformes crypto,
               mais un dépôt doit toujours être réfléchi. Vérifie la disponibilité
               dans ton pays, les frais, les conditions de retrait, les limites,
-              les risques et les conditions du parrainage avant d’envoyer de
+              les risques et les restrictions géographiques avant d’envoyer de
               l’argent.
             </p>
 
-            <AffiliateButton
-              href={HTX_AFFILIATE_LINK}
-              platform="htx"
-              category="crypto"
-              location="prudence"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-            >
-              Vérifier HTX
-            </AffiliateButton>
+            <SuspendedRegistrationMessage className="mt-6" />
           </aside>
         </div>
       </section>
@@ -546,21 +465,13 @@ export default function HtxPage() {
                   La recommandation doit toutefois rester mesurée : HTX peut
                   convenir à un utilisateur crypto expérimenté, mais elle n’est
                   pas idéale pour quelqu’un qui débute totalement. Les frais,
-                  restrictions, conditions de parrainage et risques doivent être
+                  restrictions géographiques et risques doivent être
                   vérifiés avant utilisation.
                 </p>
               </div>
 
               <div className="flex flex-col justify-center gap-4">
-                <AffiliateButton
-                  href={HTX_AFFILIATE_LINK}
-                  platform="htx"
-                  category="crypto"
-                  location="avis"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-                >
-                  Découvrir HTX
-                </AffiliateButton>
+                <SuspendedRegistrationMessage />
 
                 <Link
                   href="/crypto"
