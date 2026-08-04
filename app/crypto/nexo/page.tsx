@@ -1,6 +1,9 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAffiliateDisclosure, {
+  CryptoAffiliateCtaDisclosure,
+} from "../../../components/CryptoAffiliateDisclosure";
 import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const NEXO_REFERRAL_URL =
@@ -78,6 +81,8 @@ export default function NexoPage() {
             ← Retour à l’accueil
           </Link>
 
+          <CryptoAffiliateDisclosure className="mb-8" />
+
           <div className="grid gap-10 lg:grid-cols-[1.5fr_0.8fr] lg:items-center">
             <div>
               <p className="mb-4 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700">
@@ -116,7 +121,9 @@ export default function NexoPage() {
                 </p>
               </CryptoAvailabilityNotice>
 
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+              <div className="mt-3 flex flex-col gap-4 sm:flex-row">
                 <AffiliateButton
                   href={NEXO_REFERRAL_URL}
                   platform="nexo"
@@ -174,7 +181,9 @@ export default function NexoPage() {
                 </div>
               </div>
 
-              <div className="mt-6">
+              <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+              <div className="mt-3">
                 <AffiliateButton
                   href={NEXO_REFERRAL_URL}
                   platform="nexo"
@@ -387,7 +396,9 @@ export default function NexoPage() {
               contrepartie.
             </p>
 
-            <div className="mt-8">
+            <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+            <div className="mt-3">
               <AffiliateButton
                 href={NEXO_REFERRAL_URL}
                 platform="nexo"
@@ -399,11 +410,6 @@ export default function NexoPage() {
               </AffiliateButton>
             </div>
 
-            <p className="mt-4 text-sm text-slate-500">
-              Cette page contient un lien de parrainage ou d’affiliation. Cela
-              peut permettre à Afflizen de recevoir une rémunération, sans coût
-              supplémentaire pour vous.
-            </p>
           </section>
 
           <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
@@ -461,7 +467,9 @@ export default function NexoPage() {
             liquidation avec le crédit crypto.
           </p>
 
-          <div className="mt-6">
+          <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+          <div className="mt-3">
             <AffiliateButton
               href={NEXO_REFERRAL_URL}
               platform="nexo"

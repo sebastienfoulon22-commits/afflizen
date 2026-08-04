@@ -1,6 +1,9 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAffiliateDisclosure, {
+  CryptoAffiliateCtaDisclosure,
+} from "../../../components/CryptoAffiliateDisclosure";
 import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const COINBASE_AFFILIATE_LINK =
@@ -152,6 +155,8 @@ export default function CoinbasePage() {
               </Link>
             </div>
 
+            <CryptoAffiliateDisclosure className="mb-8" />
+
             <p className="mb-4 inline-flex rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700">
               Crypto · Plateforme d’achat · Débutants
             </p>
@@ -186,7 +191,9 @@ export default function CoinbasePage() {
               </p>
             </CryptoAvailabilityNotice>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+            <div className="mt-3 flex flex-col gap-3 sm:flex-row">
               <AffiliateButton
                 href={COINBASE_AFFILIATE_LINK}
                 platform="coinbase"
@@ -205,12 +212,6 @@ export default function CoinbasePage() {
               </a>
             </div>
 
-            <p className="mt-4 text-sm leading-6 text-slate-500">
-              Ce lien peut être un lien de parrainage. Afflizen peut recevoir un
-              avantage si tu t’inscris via ce lien, sans surcoût pour toi. Les
-              conditions Coinbase peuvent changer : vérifie toujours les
-              informations officielles avant inscription.
-            </p>
           </div>
 
           <aside className="rounded-3xl border border-slate-200 bg-slate-950 p-6 text-white shadow-xl lg:w-80">
@@ -234,12 +235,14 @@ export default function CoinbasePage() {
               </p>
             </div>
 
+            <CryptoAffiliateCtaDisclosure className="mt-6" />
+
             <AffiliateButton
               href={COINBASE_AFFILIATE_LINK}
               platform="coinbase"
               category="crypto"
               location="sidebar"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-400"
+              className="mt-3 inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-400"
             >
               Ouvrir Coinbase
             </AffiliateButton>
@@ -318,7 +321,9 @@ export default function CoinbasePage() {
               </p>
             </div>
 
-            <div className="mt-6">
+            <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+            <div className="mt-3">
               <AffiliateButton
                 href={COINBASE_AFFILIATE_LINK}
                 platform="coinbase"
@@ -507,7 +512,9 @@ export default function CoinbasePage() {
               Advanced, Binance, Kraken ou d’autres plateformes.
             </p>
 
-            <div className="mt-6">
+            <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+            <div className="mt-3">
               <AffiliateButton
                 href={COINBASE_AFFILIATE_LINK}
                 platform="coinbase"
@@ -577,12 +584,14 @@ export default function CoinbasePage() {
               </div>
             </dl>
 
+            <CryptoAffiliateCtaDisclosure className="mt-6" />
+
             <AffiliateButton
               href={COINBASE_AFFILIATE_LINK}
               platform="coinbase"
               category="crypto"
               location="sidebar"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-700"
+              className="mt-3 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-700"
             >
               Ouvrir Coinbase
             </AffiliateButton>

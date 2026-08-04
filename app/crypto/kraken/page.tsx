@@ -1,6 +1,9 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAffiliateDisclosure, {
+  CryptoAffiliateCtaDisclosure,
+} from "../../../components/CryptoAffiliateDisclosure";
 import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const KRAKEN_REFERRAL_URL = "https://invite.kraken.com/JDNW/eos2efdv";
@@ -116,6 +119,8 @@ export default function KrakenPage() {
             ← Retour à l’accueil
           </Link>
 
+          <CryptoAffiliateDisclosure className="mb-8" />
+
           <div className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700 shadow-sm">
             Crypto · Exchange · Kraken Pro
           </div>
@@ -149,7 +154,9 @@ export default function KrakenPage() {
             </p>
           </CryptoAvailabilityNotice>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+          <CryptoAffiliateCtaDisclosure className="mt-6 max-w-3xl" />
+
+          <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <AffiliateButton
               href={KRAKEN_REFERRAL_URL}
               platform="kraken"
@@ -169,11 +176,6 @@ export default function KrakenPage() {
             </Link>
           </div>
 
-          <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-500">
-            Cette page contient un lien de parrainage. Afflizen peut recevoir
-            une commission ou un avantage si vous ouvrez un compte via ce lien,
-            sans coût supplémentaire direct pour vous.
-          </p>
         </div>
       </section>
 
@@ -447,7 +449,9 @@ export default function KrakenPage() {
                 </p>
               </div>
 
-              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+              <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <AffiliateButton
                   href={KRAKEN_REFERRAL_URL}
                   platform="kraken"
@@ -504,7 +508,9 @@ export default function KrakenPage() {
                 version plus avancée via Kraken Pro.
               </p>
 
-              <div className="mt-6">
+              <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+              <div className="mt-3">
                 <AffiliateButton
                   href={KRAKEN_REFERRAL_URL}
                   platform="kraken"
@@ -522,18 +528,6 @@ export default function KrakenPage() {
               >
                 Voir les autres plateformes crypto
               </Link>
-
-              <div className="mt-6 rounded-2xl bg-slate-50 p-4">
-                <p className="text-sm font-semibold text-slate-950">
-                  Transparence Afflizen
-                </p>
-
-                <p className="mt-2 text-xs leading-5 text-slate-600">
-                  Ce bouton contient un lien de parrainage. Afflizen peut
-                  recevoir une commission ou un avantage si vous ouvrez un compte
-                  via ce lien. Notre avis reste indépendant et informatif.
-                </p>
-              </div>
 
               <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-4">
                 <p className="text-sm font-semibold text-amber-900">

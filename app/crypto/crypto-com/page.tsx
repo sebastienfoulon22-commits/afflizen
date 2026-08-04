@@ -1,6 +1,9 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAffiliateDisclosure, {
+  CryptoAffiliateCtaDisclosure,
+} from "../../../components/CryptoAffiliateDisclosure";
 import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const CRYPTO_COM_REFERRAL_URL = "https://crypto.com/app/ykrgcpqy7f";
@@ -29,6 +32,8 @@ export default function CryptoComPage() {
           >
             ← Retour à l’accueil
           </Link>
+
+          <CryptoAffiliateDisclosure className="mb-8" />
 
           <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700">
             Plateforme crypto
@@ -64,7 +69,9 @@ export default function CryptoComPage() {
             </p>
           </CryptoAvailabilityNotice>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <CryptoAffiliateCtaDisclosure className="mt-6 max-w-3xl" />
+
+          <div className="mt-3 flex flex-col gap-4 sm:flex-row">
             <AffiliateButton
               href={CRYPTO_COM_REFERRAL_URL}
               platform="crypto-com"
@@ -361,7 +368,9 @@ export default function CryptoComPage() {
             staking ou DeFi doivent être utilisés avec prudence.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <CryptoAffiliateCtaDisclosure className="mt-6 max-w-3xl" />
+
+          <div className="mt-3 flex flex-col gap-4 sm:flex-row">
             <AffiliateButton
               href={CRYPTO_COM_REFERRAL_URL}
               platform="crypto-com"
@@ -434,16 +443,15 @@ export default function CryptoComPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Mention affiliation
+            Transparence Afflizen
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Certains liens présents sur Afflizen peuvent être des liens
-            d’affiliation. Cela signifie que nous pouvons recevoir une commission
-            si vous ouvrez un compte via notre lien, sans coût supplémentaire
-            pour vous. Cette rémunération aide à financer le site et n’influence
-            pas notre volonté de présenter les avantages comme les limites de
-            chaque plateforme.
+            Les liens d’inscription de cette page sont affiliés. Afflizen peut
+            recevoir une commission si vous effectuez une action éligible, sans
+            coût supplémentaire direct pour vous. Cette rémunération contribue au
+            financement du site sans modifier la présentation des avantages, des
+            limites et des risques.
           </p>
         </div>
       </section>

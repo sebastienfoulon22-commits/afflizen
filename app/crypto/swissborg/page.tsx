@@ -1,6 +1,9 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "../../../components/AffiliateButton";
+import CryptoAffiliateDisclosure, {
+  CryptoAffiliateCtaDisclosure,
+} from "../../../components/CryptoAffiliateDisclosure";
 import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
 const SWISSBORG_REFERRAL_URL = "https://swissborg.com/fr/r";
@@ -13,7 +16,7 @@ const secondaryButtonClassName =
   "inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:bg-slate-50";
 
 const fullButtonClassName =
-  "mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700";
+  "mt-3 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700";
 
 export const metadata = createPageMetadata({
   title: "SwissBorg avis : frais, Smart Engine, avantages et code",
@@ -117,6 +120,8 @@ export default function SwissBorgPage() {
             ← Retour à l’accueil
           </Link>
 
+          <CryptoAffiliateDisclosure className="mb-8" />
+
           <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700 shadow-sm">
             Crypto · Application · Smart Engine
           </div>
@@ -152,7 +157,9 @@ export default function SwissBorgPage() {
             </p>
           </CryptoAvailabilityNotice>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+          <CryptoAffiliateCtaDisclosure className="mt-6 max-w-3xl" />
+
+          <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <AffiliateButton
               href={SWISSBORG_REFERRAL_URL}
               platform="swissborg"
@@ -172,11 +179,6 @@ export default function SwissBorgPage() {
             </Link>
           </div>
 
-          <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-500">
-            Cette page contient un lien et un code de parrainage. Afflizen peut
-            recevoir une commission ou un avantage si vous utilisez ce lien ou ce
-            code, sans coût supplémentaire direct pour vous.
-          </p>
         </div>
       </section>
 
@@ -257,7 +259,9 @@ export default function SwissBorgPage() {
                 </code>
               </div>
 
-              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+              <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <AffiliateButton
                   href={SWISSBORG_REFERRAL_URL}
                   platform="swissborg"
@@ -484,7 +488,9 @@ export default function SwissBorgPage() {
                 </p>
               </div>
 
-              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <CryptoAffiliateCtaDisclosure className="mt-6" />
+
+              <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <AffiliateButton
                   href={SWISSBORG_REFERRAL_URL}
                   platform="swissborg"
@@ -550,6 +556,8 @@ export default function SwissBorgPage() {
                 </code>
               </div>
 
+              <CryptoAffiliateCtaDisclosure className="mt-6" />
+
               <AffiliateButton
                 href={SWISSBORG_REFERRAL_URL}
                 platform="swissborg"
@@ -566,18 +574,6 @@ export default function SwissBorgPage() {
               >
                 Voir les autres plateformes crypto
               </Link>
-
-              <div className="mt-6 rounded-2xl bg-slate-50 p-4">
-                <p className="text-sm font-semibold text-slate-950">
-                  Transparence Afflizen
-                </p>
-
-                <p className="mt-2 text-xs leading-5 text-slate-600">
-                  Ce bouton et ce code peuvent permettre à Afflizen de recevoir
-                  une commission ou un avantage si vous ouvrez un compte via ce
-                  parcours. Notre avis reste informatif.
-                </p>
-              </div>
 
               <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-4">
                 <p className="text-sm font-semibold text-amber-900">
