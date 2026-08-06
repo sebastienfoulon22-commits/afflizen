@@ -17,7 +17,8 @@ export const searchItems = [
     name: "Binance",
     url: "/crypto/binance",
     category: "Crypto",
-    description: "Exchange de cryptomonnaies complet pour acheter, vendre et trader.",
+    description:
+      "Fiche informative : inscription Afflizen suspendue et statut réglementaire actuel à clarifier.",
     keywords: ["crypto", "exchange crypto", "bitcoin", "trading", "altcoins"],
     type: "platform",
   },
@@ -25,7 +26,8 @@ export const searchItems = [
     name: "Bitget",
     url: "/crypto/bitget",
     category: "Crypto",
-    description: "Plateforme crypto orientée trading, copy trading et promotions.",
+    description:
+      "Fiche informative : services arrêtés en France et statut belge à confirmer.",
     keywords: ["crypto", "exchange crypto", "trading", "copy trading"],
     type: "platform",
   },
@@ -92,7 +94,8 @@ export const searchItems = [
     name: "Bybit",
     url: "/crypto/bybit",
     category: "Crypto",
-    description: "Plateforme crypto avancée pour trading et produits de marché.",
+    description:
+      "Plateforme crypto européenne accessible via le site officiel bybit.eu, sans lien affilié Afflizen.",
     keywords: ["crypto", "exchange crypto", "trading", "futures"],
     type: "platform",
   },
@@ -100,7 +103,8 @@ export const searchItems = [
     name: "HTX",
     url: "/crypto/htx",
     category: "Crypto",
-    description: "Exchange crypto avancé, anciennement lié à l'écosystème Huobi.",
+    description:
+      "Fiche informative : inscription suspendue pour les résidents de l’Union européenne.",
     keywords: ["crypto", "exchange crypto", "trading", "huobi"],
     aliases: ["Huobi"],
     type: "platform",
@@ -109,7 +113,8 @@ export const searchItems = [
     name: "AscendEX",
     url: "/crypto/ascendex",
     category: "Crypto",
-    description: "Plateforme crypto avancée anciennement connue sous le nom BitMax.",
+    description:
+      "Fiche historique : opérations cessées le 1er juillet 2026 et retraits limités pour les anciens utilisateurs.",
     keywords: ["crypto", "exchange crypto", "trading", "bitmax"],
     aliases: ["Ascend EX", "BitMax", "BitMax.io"],
     type: "platform",
@@ -118,7 +123,8 @@ export const searchItems = [
     name: "KuCoin",
     url: "/crypto/kucoin",
     category: "Crypto",
-    description: "Exchange crypto international orienté trading, altcoins et produits avancés.",
+    description:
+      "Fiche informative : services européens non ouverts et inscription suspendue.",
     keywords: ["crypto", "exchange crypto", "trading", "altcoins"],
     aliases: ["Ku Coin"],
     type: "platform",

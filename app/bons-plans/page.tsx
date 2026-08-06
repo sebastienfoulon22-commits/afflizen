@@ -57,7 +57,7 @@ const cashbackDeals: Deal[] = [
   },
 ];
 
-const referralDeals: Deal[] = [
+const financialReferralDeals: Deal[] = [
   {
     name: "Revolut",
     category: "Compte et paiements",
@@ -76,24 +76,9 @@ const referralDeals: Deal[] = [
     href: "/investissement/trade-republic",
     badge: "Lien affilié",
   },
-  {
-    name: "Binance",
-    category: "Crypto",
-    description:
-      "Une plateforme crypto proposant de nombreux marchés et services, destinée aux utilisateurs avertis.",
-    use: "Pour vérifier les fonctions disponibles, les frais et les risques avant inscription.",
-    href: "/crypto/binance",
-    badge: "Lien affilié",
-  },
-  {
-    name: "Bitget",
-    category: "Crypto",
-    description:
-      "Une plateforme d'échange crypto avec des fonctionnalités qui demandent une bonne compréhension du risque.",
-    use: "Pour consulter le fonctionnement, le lien actuel et les précautions détaillées.",
-    href: "/crypto/bitget",
-    badge: "Lien affilié",
-  },
+];
+
+const cryptoReferralDeals: Deal[] = [
   {
     name: "Crypto.com",
     category: "Crypto",
@@ -101,7 +86,7 @@ const referralDeals: Deal[] = [
       "Un écosystème crypto associant application, échange et services dont la disponibilité peut varier.",
     use: "Pour vérifier les produits accessibles et les éventuelles conditions liées au lien.",
     href: "/crypto/crypto-com",
-    badge: "Lien affilié",
+    badge: "Lien de parrainage",
   },
   {
     name: "Coinbase",
@@ -129,6 +114,15 @@ const referralDeals: Deal[] = [
     use: "Pour vérifier le code présenté, les conditions applicables et la disponibilité locale.",
     href: "/crypto/swissborg",
     badge: "Code de parrainage",
+  },
+  {
+    name: "Nexo",
+    category: "Crypto",
+    description:
+      "Une plateforme proposant des services crypto, avec des produits Earn, Borrow et carte à distinguer du parrainage.",
+    use: "Pour examiner les conditions du lien, les entités concernées et les risques propres à chaque produit.",
+    href: "/crypto/nexo",
+    badge: "Lien de parrainage",
   },
 ];
 
@@ -365,7 +359,53 @@ export default function BonsPlansPage() {
               compréhension du risque.
             </p>
           </div>
-          <DealGrid deals={referralDeals} />
+          <DealGrid deals={financialReferralDeals} />
+
+          <div className="mt-12 border-t border-slate-200 pt-10">
+            <h3 className="text-2xl font-bold text-slate-950">
+              Fiches crypto avec lien actif
+            </h3>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-700">
+              Chaque carte dirige d’abord vers une fiche Afflizen présentant le
+              statut du lien, les conditions, les restrictions et les risques.
+            </p>
+
+            <aside
+              aria-labelledby="bons-plans-crypto-disclosure-title"
+              className="mt-6 rounded-lg border border-amber-300 bg-amber-50 p-5"
+            >
+              <h4
+                id="bons-plans-crypto-disclosure-title"
+                className="font-bold text-amber-950"
+              >
+                Publicité et liens affiliés
+              </h4>
+              <p className="mt-3 text-lg font-bold leading-7 text-slate-950">
+                Monnaie virtuelle, risques réels. En crypto seul le risque est
+                garanti.
+              </p>
+              <p className="mt-3 max-w-4xl text-sm leading-6 text-slate-800">
+                Afflizen peut recevoir une rémunération lorsqu’une action
+                éligible est réalisée depuis le lien présenté dans une fiche.
+                Aucun bonus, rendement ou avantage n’est garanti.
+              </p>
+            </aside>
+
+            <DealGrid deals={cryptoReferralDeals} />
+
+            <p className="mt-7 max-w-3xl text-sm leading-6 text-slate-600">
+              Certaines anciennes offres crypto, notamment Binance et Bitget,
+              sont actuellement suspendues. Consultez la page Bonus pour
+              connaître leur statut. {" "}
+              <Link
+                href="/bonus"
+                className="font-semibold text-emerald-700 underline decoration-emerald-300 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-600"
+              >
+                Voir les offres disponibles et suspendues
+              </Link>
+            </p>
+          </div>
+
           <div className="mt-6 flex flex-wrap gap-3">
             <CategoryLink href="/banques-en-ligne">Explorer les banques en ligne</CategoryLink>
             <CategoryLink href="/investissement">Explorer l&apos;investissement</CategoryLink>

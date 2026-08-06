@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { createPageMetadata } from "@/lib/metadata";
 import SiteSearch from "../components/SiteSearch";
 
@@ -61,9 +62,11 @@ const categories = [
 
 const featuredPlatforms = [
   {
-    name: "Binance",
+    name: "Crypto.com",
     category: "Crypto",
-    url: "/crypto/binance",
+    url: "/crypto/crypto-com",
+    description:
+      "Plateforme crypto proposant achat, conservation et services complémentaires, avec disponibilité et conditions variables selon le produit.",
   },
   {
     name: "Coinbase",
@@ -205,7 +208,7 @@ export default function HomePage() {
 
         <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {categories.map((category) => (
-            <a
+            <Link
               key={category.name}
               href={category.url}
               className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-md"
@@ -217,7 +220,7 @@ export default function HomePage() {
               <p className="mt-6 text-sm font-semibold text-slate-950">
                 Voir la catégorie →
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
@@ -234,7 +237,7 @@ export default function HomePage() {
 
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {featuredPlatforms.map((platform) => (
-              <a
+              <Link
                 key={platform.name}
                 href={platform.url}
                 className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:-translate-y-1 hover:border-emerald-400"
@@ -243,10 +246,15 @@ export default function HomePage() {
                   {platform.category}
                 </p>
                 <h3 className="mt-3 text-xl font-bold">{platform.name}</h3>
+                {"description" in platform ? (
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    {platform.description}
+                  </p>
+                ) : null}
                 <p className="mt-5 text-sm font-semibold text-white">
                   Voir la fiche →
                 </p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
