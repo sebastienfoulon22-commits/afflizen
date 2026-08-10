@@ -1,8 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
 
-const WIDILO_REFERRAL_URL = "https://www.widilo.fr/i/571J27";
+const WIDILO_OFFICIAL_URL = "https://www.widilo.fr/";
 
 const primaryButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700";
@@ -11,8 +10,8 @@ const darkButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
 
 export const metadata = createPageMetadata({
-  title: "Widilo avis 2026 : cashback, codes promo, paiement et parrainage",
-  description: "Notre avis sur Widilo en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, application, FAQ et lien de parrainage.",
+  title: "Widilo avis 2026 : cashback, codes promo et paiement",
+  description: "Notre avis sur Widilo en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, application, FAQ et lien officiel.",
   path: "/cashback/widilo",
   type: "article",
 });
@@ -46,15 +45,14 @@ export default function WidiloPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={WIDILO_REFERRAL_URL}
-              platform="widilo"
-              category="cashback"
-              location="hero"
+            <a
+              href={WIDILO_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={primaryButtonClassName}
             >
-              S’inscrire sur Widilo
-            </AffiliateButton>
+              Découvrir Widilo
+            </a>
 
             <Link
               href="/cashback"
@@ -65,8 +63,8 @@ export default function WidiloPage() {
           </div>
 
           <p className="mt-4 max-w-3xl text-sm text-slate-500">
-            Les taux de cashback, les codes promo, les bonus de parrainage, les
-            délais de validation et les seuils de paiement peuvent évoluer.
+            Les taux de cashback, les codes promo, les délais de validation et
+            les seuils de paiement peuvent évoluer.
             Vérifiez toujours les conditions Widilo et les conditions du marchand
             avant de finaliser un achat.
           </p>
@@ -150,7 +148,7 @@ export default function WidiloPage() {
                 • Retrait possible par virement bancaire ou PayPal selon
                 conditions.
               </li>
-              <li>• Programme de parrainage disponible.</li>
+              <li>• Des offres destinées au marché belge sont aussi référencées.</li>
               <li>• Bon outil pour optimiser des achats déjà prévus.</li>
             </ul>
           </article>
@@ -377,15 +375,14 @@ export default function WidiloPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={WIDILO_REFERRAL_URL}
-              platform="widilo"
-              category="cashback"
-              location="avis"
+            <a
+              href={WIDILO_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={darkButtonClassName}
             >
-              Accéder à Widilo
-            </AffiliateButton>
+              Découvrir Widilo
+            </a>
 
             <Link
               href="/cashback"
@@ -459,17 +456,14 @@ export default function WidiloPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Mention affiliation
+            Lien officiel non affilié
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Certains liens présents sur Afflizen peuvent être des liens
-            d’affiliation ou de parrainage. Cela signifie que nous pouvons
-            recevoir une commission, un bonus ou un avantage si vous créez un
-            compte ou utilisez un service via notre lien, sans coût
-            supplémentaire pour vous. Cette rémunération aide à financer le site
-            et n’influence pas notre volonté de présenter les avantages comme les
-            limites de chaque plateforme.
+            Le programme personnel de parrainage Widilo fonctionne dans un cadre
+            privé. Afflizen ne publie donc plus de lien personnel de parrainage
+            Widilo. Le bouton proposé sur cette fiche dirige vers le site
+            officiel, sans affiliation.
           </p>
         </div>
       </section>

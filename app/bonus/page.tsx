@@ -59,13 +59,6 @@ const suspendedCryptoOffers = [
 
 const otherOffers = [
   {
-    name: "Trade Republic",
-    category: "Investissement",
-    url: "/investissement/trade-republic",
-    status: "Lien affilié",
-    advantage: "Avantage d’inscription éventuel",
-  },
-  {
     name: "Revolut",
     category: "Banque en ligne",
     url: "/banques-en-ligne/revolut",
@@ -87,25 +80,35 @@ const otherOffers = [
     advantage: "Cashback et parrainage sous conditions",
   },
   {
-    name: "Widilo",
-    category: "Cashback",
-    url: "/cashback/widilo",
-    status: "Lien de parrainage",
-    advantage: "Cashback et parrainage sous conditions",
-  },
-  {
-    name: "Hostinger",
-    category: "Hébergement web",
-    url: "/hebergement-web/hostinger",
-    status: "Lien affilié",
-    advantage: "Prix promotionnel ou réduction variable",
-  },
-  {
     name: "OVHcloud",
     category: "Hébergement web",
     url: "/hebergement-web/ovh",
     status: "Lien officiel",
     advantage: "Offres commerciales variables",
+  },
+];
+
+const platformsWithoutPublicReferral = [
+  {
+    name: "Trade Republic",
+    category: "Investissement",
+    url: "/investissement/trade-republic",
+    description:
+      "Afflizen ne publie aucun lien personnel de parrainage Trade Republic. La fiche propose uniquement les sites officiels belge et français.",
+  },
+  {
+    name: "Widilo",
+    category: "Cashback",
+    url: "/cashback/widilo",
+    description:
+      "Le programme personnel de parrainage Widilo reste destiné à un cadre privé. La fiche utilise le site officiel sans affiliation.",
+  },
+  {
+    name: "Hostinger",
+    category: "Hébergement web",
+    url: "/hebergement-web/hostinger",
+    description:
+      "Afflizen n’utilise plus le programme personnel de parrainage Hostinger. La fiche propose un lien officiel non affilié.",
   },
 ];
 
@@ -297,6 +300,47 @@ export default function BonusPage() {
                   className="mt-5 inline-flex w-fit font-semibold text-emerald-700 underline decoration-emerald-300 underline-offset-4 transition hover:text-emerald-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-600"
                 >
                   Voir la fiche et les conditions
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-14">
+          <p className="text-sm font-semibold text-slate-600">
+            Information commerciale
+          </p>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight">
+            Plateformes actuellement sans parrainage public
+          </h2>
+          <p className="mt-4 max-w-3xl leading-7 text-slate-700">
+            Ces plateformes restent présentées sur Afflizen à titre informatif.
+            Leurs fiches ne publient aucun programme personnel de parrainage et
+            renvoient uniquement vers des destinations officielles.
+          </p>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {platformsWithoutPublicReferral.map((platform) => (
+              <article key={platform.name} className={cardClassName}>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="text-sm font-semibold text-emerald-700">
+                    {platform.category}
+                  </span>
+                  <span className="rounded border border-slate-200 bg-slate-50 px-2 py-1 text-xs font-semibold text-slate-700">
+                    Pas de parrainage public
+                  </span>
+                </div>
+                <h3 className="mt-4 text-xl font-bold">{platform.name}</h3>
+                <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">
+                  {platform.description}
+                </p>
+                <Link
+                  href={platform.url}
+                  className="mt-5 inline-flex w-fit font-semibold text-emerald-700 underline decoration-emerald-300 underline-offset-4 transition hover:text-emerald-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-600"
+                >
+                  Voir la fiche informative
                 </Link>
               </article>
             ))}

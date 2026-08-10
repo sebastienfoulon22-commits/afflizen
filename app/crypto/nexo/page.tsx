@@ -223,6 +223,35 @@ export default function NexoPage() {
             </p>
           </section>
 
+          <section className="rounded-3xl border border-amber-200 bg-amber-50 p-6 shadow-sm md:p-8">
+            <h2 className="text-2xl font-bold text-slate-950">
+              Conditions actuelles du parrainage Nexo
+            </h2>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              Le filleul doit s’inscrire avec le lien de parrainage et vérifier
+              son identité. Il doit ensuite ajouter au moins 5 000 USD d’actifs
+              numériques dans les 30 jours suivant son inscription, puis
+              maintenir ou augmenter la valeur de son portefeuille pendant 30
+              jours supplémentaires.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              La récompense est calculée à partir du solde moyen éligible. Le
+              bonus total correspond à 0,5 % de ce solde et est partagé entre le
+              parrain et le filleul, avec un versement en NEXO Tokens. Le dépôt
+              demandé ne produit pas automatiquement un rendement et ne garantit
+              pas l’obtention d’une récompense.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              Les montants, la disponibilité et les conditions peuvent évoluer.
+              Ce programme de parrainage reste distinct des produits Earn,
+              Fixed-term Savings, Borrow, Credit Line, de la Nexo Card, du
+              cashback de carte et du Loyalty Program.
+            </p>
+          </section>
+
           <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
             <h2 className="text-2xl font-bold text-slate-950">
               Avantages de Nexo

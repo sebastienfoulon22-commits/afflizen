@@ -33,9 +33,9 @@ const cashbackDeals: Deal[] = [
     category: "Cashback",
     description:
       "Un service de cashback et de codes promotionnels à consulter avant un achat en ligne éligible.",
-    use: "Pour étudier le catalogue, les conditions de retrait et l'éventuel avantage de parrainage.",
+    use: "Pour étudier le catalogue et les conditions de retrait depuis le lien officiel présenté dans la fiche.",
     href: "/cashback/widilo",
-    badge: "Lien de parrainage",
+    badge: "Lien officiel",
   },
   {
     name: "eBuyClub",
@@ -72,9 +72,9 @@ const financialReferralDeals: Deal[] = [
     category: "Investissement",
     description:
       "Une plateforme d'investissement à examiner selon les produits accessibles, les frais et votre pays.",
-    use: "Pour comprendre l'offre avant toute ouverture de compte ou décision d'investissement.",
+    use: "Pour comprendre les services avant de consulter les sites officiels belge ou français.",
     href: "/investissement/trade-republic",
-    badge: "Lien affilié",
+    badge: "Liens officiels",
   },
 ];
 
@@ -132,9 +132,9 @@ const ecommerceDeals: Deal[] = [
     category: "Produits reconditionnés",
     description:
       "Une place de marché spécialisée dans les appareils reconditionnés, avec des vendeurs et états variés.",
-    use: "Pour comprendre le service et vérifier les conditions du parrainage avant un achat.",
+    use: "Pour comprendre le service et accéder aux sites officiels belge ou français avant un achat.",
     href: "/e-commerce/back-market",
-    badge: "Parrainage à vérifier",
+    badge: "Liens officiels",
   },
   {
     name: "Dealabs",

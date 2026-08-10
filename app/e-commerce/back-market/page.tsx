@@ -1,13 +1,12 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
 
-const BACK_MARKET_URL = "https://www.backmarket.fr/fr-fr";
-const BACK_MARKET_CODE = "ffcb15bb420025aa";
+const BACK_MARKET_BELGIUM_URL = "https://www.backmarket.be/fr-be";
+const BACK_MARKET_FRANCE_URL = "https://www.backmarket.fr/fr-fr";
 
 export const metadata = createPageMetadata({
-  title: "Back Market avis 2026 : code parrainage, reconditionné et bons plans",
-  description: "Notre avis sur Back Market : code parrainage, avantages, limites, garantie, retours, prix et conseils avant d’acheter un produit reconditionné.",
+  title: "Back Market avis 2026 : reconditionné, prix et conseils",
+  description: "Notre avis sur Back Market : produits reconditionnés, avantages, limites, garantie, retours, prix et liens officiels belge et français.",
   path: "/e-commerce/back-market",
   type: "article",
 });
@@ -24,9 +23,9 @@ const benefits = [
       "L’intérêt principal est de trouver des appareils récents ou plus anciens à prix réduit, selon l’état, le modèle, le vendeur et la disponibilité.",
   },
   {
-    title: "Un code de parrainage simple à utiliser",
+    title: "Deux sites officiels selon le pays",
     description:
-      "Le code permet généralement de bénéficier d’un avantage sur une commande éligible, sous réserve des conditions Back Market.",
+      "Afflizen dirige les visiteurs vers les sites officiels belge et français afin de consulter les produits et conditions adaptés à leur marché.",
   },
   {
     title: "Une alternative plus durable",
@@ -39,15 +38,15 @@ const warnings = [
   "Comparer l’état du produit : parfait état, très bon état, bon état, etc.",
   "Vérifier le vendeur, les avis, la garantie et les conditions de retour.",
   "Comparer le prix avec le neuf et avec d’autres plateformes avant d’acheter.",
-  "Lire les conditions du code promo ou du parrainage avant validation.",
+  "Lire les conditions de vente et les éventuelles promotions avant validation.",
   "Vérifier la batterie, les accessoires inclus et la compatibilité du produit.",
 ];
 
 const steps = [
   {
-    title: "1. Ouvre Back Market",
+    title: "1. Choisis le site correspondant à ton pays",
     description:
-      "Clique sur le bouton Afflizen pour accéder au site officiel Back Market.",
+      "Utilise le lien officiel belge ou français proposé par Afflizen.",
   },
   {
     title: "2. Choisis un produit éligible",
@@ -55,13 +54,14 @@ const steps = [
       "Compare le modèle, l’état, le prix, la garantie, le vendeur et les délais de livraison.",
   },
   {
-    title: "3. Utilise le code",
-    description: `Au moment de la commande, utilise le code ${BACK_MARKET_CODE} si l’espace code promo ou parrainage est disponible.`,
+    title: "3. Vérifie toutes les conditions",
+    description:
+      "Lis les informations sur la garantie, les retours, la batterie, les accessoires et la livraison.",
   },
   {
-    title: "4. Vérifie l’avantage appliqué",
+    title: "4. Contrôle le prix final",
     description:
-      "Avant de payer, vérifie que l’avantage est bien appliqué et que les conditions sont respectées.",
+      "Avant de payer, compare le total avec le neuf et avec d’autres vendeurs.",
   },
 ];
 
@@ -72,13 +72,14 @@ const faq = [
       "Back Market est une grande plateforme spécialisée dans les produits reconditionnés. Cela ne dispense pas de vérifier l’état du produit, le vendeur, la garantie, les avis, les conditions de retour et le prix final avant d’acheter.",
   },
   {
-    question: "Quel est le code parrainage Back Market Afflizen ?",
-    answer: `Le code parrainage Back Market Afflizen est ${BACK_MARKET_CODE}. Il peut permettre de bénéficier d’un avantage de parrainage, sous réserve des conditions en vigueur.`,
+    question: "Afflizen publie-t-il un code de parrainage Back Market ?",
+    answer:
+      "Non. Afflizen ne publie actuellement aucun code personnel de parrainage Back Market. Les liens de la fiche dirigent vers les sites officiels belge et français.",
   },
   {
-    question: "Le code Back Market fonctionne-t-il toujours ?",
+    question: "Quel site Back Market faut-il utiliser ?",
     answer:
-      "Les codes de parrainage, montants minimums, limites d’utilisation et offres promotionnelles peuvent évoluer. Il faut toujours vérifier que l’avantage est bien appliqué avant le paiement.",
+      "Utilisez le site belge si vous résidez en Belgique et le site français si vous résidez en France. Vérifiez ensuite les prix, vendeurs, garanties et conditions applicables localement.",
   },
   {
     question: "Back Market est-il toujours moins cher que le neuf ?",
@@ -121,12 +122,12 @@ export default function BackMarketPage() {
             </div>
 
             <p className="mb-4 inline-flex rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700">
-              E-commerce reconditionné · Code parrainage
+              E-commerce reconditionné
             </p>
 
             <h1 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">
-              Back Market avis 2026 : code parrainage, bons plans et conseils
-              avant d’acheter reconditionné
+              Back Market avis 2026 : bons plans et conseils avant d’acheter
+              reconditionné
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
@@ -138,60 +139,66 @@ export default function BackMarketPage() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <AffiliateButton
-                href={BACK_MARKET_URL}
-                platform="back-market"
-                category="e-commerce"
-                location="hero"
+              <a
+                href={BACK_MARKET_BELGIUM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-bold text-white shadow-sm transition hover:bg-emerald-700"
               >
-                Voir Back Market
-              </AffiliateButton>
+                Voir Back Market Belgique
+              </a>
 
               <a
-                href="#code-back-market"
+                href={BACK_MARKET_FRANCE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-800 shadow-sm transition hover:border-emerald-300 hover:text-emerald-700"
               >
-                Voir le code parrainage
+                Voir Back Market France
               </a>
             </div>
 
             <p className="mt-4 text-sm leading-6 text-slate-500">
-              Certains liens peuvent être des liens de parrainage ou
-              d’affiliation. Afflizen peut recevoir un avantage si tu passes par
-              ces liens, sans surcoût pour toi. Vérifie toujours les conditions
-              officielles avant de commander.
+              Liens officiels non affiliés. Afflizen ne publie actuellement
+              aucun code personnel de parrainage Back Market.
             </p>
           </div>
 
           <aside className="rounded-3xl border border-slate-200 bg-slate-950 p-6 text-white shadow-xl lg:w-80">
             <p className="text-sm font-semibold text-emerald-300">
-              Utilise le code
+              Liens officiels non affiliés
             </p>
 
             <div className="mt-4 rounded-2xl border border-white/10 bg-white/10 p-5">
               <p className="text-sm text-slate-300">
-                Code parrainage Back Market
+                Choisissez votre pays
               </p>
-              <p className="mt-2 break-all text-2xl font-black tracking-wide text-white">
-                {BACK_MARKET_CODE}
+              <p className="mt-2 text-xl font-black text-white">
+                Belgique ou France
               </p>
             </div>
 
             <p className="mt-4 text-sm leading-6 text-slate-300">
-              Utilise le code pour bénéficier de l’offre de parrainage Back
-              Market, sous réserve des conditions en vigueur.
+              Les destinations proposées mènent directement aux sites officiels
+              correspondant à chaque marché.
             </p>
 
-            <AffiliateButton
-              href={BACK_MARKET_URL}
-              platform="back-market"
-              category="e-commerce"
-              location="sidebar"
+            <a
+              href={BACK_MARKET_BELGIUM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-400"
             >
-              Utiliser le code sur Back Market
-            </AffiliateButton>
+              Voir Back Market Belgique
+            </a>
+            <a
+              href={BACK_MARKET_FRANCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+            >
+              Voir Back Market France
+            </a>
           </aside>
         </div>
       </section>
@@ -199,50 +206,51 @@ export default function BackMarketPage() {
       <section className="mx-auto grid max-w-6xl gap-8 px-6 py-12 lg:grid-cols-[1fr_340px]">
         <div className="space-y-8">
           <section
-            id="code-back-market"
+            id="sites-officiels-back-market"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8"
           >
             <p className="text-sm font-bold uppercase tracking-wide text-emerald-700">
-              Code parrainage Back Market
+              Liens officiels non affiliés
             </p>
 
             <h2 className="mt-3 text-3xl font-bold text-slate-950">
-              Utilise le code {BACK_MARKET_CODE}
+              Accéder au site adapté à votre pays
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
-              Utilise le code <strong>{BACK_MARKET_CODE}</strong> pour
-              bénéficier de l’offre de parrainage Back Market, sous réserve des
-              conditions en vigueur au moment de la commande. Les conditions
-              peuvent concerner le montant minimum, le pays, le type de produit,
-              la limite d’utilisation ou la durée de validité.
+              Afflizen ne publie actuellement aucun code personnel de
+              parrainage Back Market. Les liens proposés dirigent directement
+              vers les sites officiels belge et français.
             </p>
 
             <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
               <p className="text-sm font-semibold text-emerald-800">
-                Code à copier
-              </p>
-
-              <p className="mt-2 break-all rounded-xl bg-white px-4 py-3 text-2xl font-black tracking-wide text-slate-950 shadow-sm">
-                {BACK_MARKET_CODE}
+                Avant de commander
               </p>
 
               <p className="mt-3 text-sm leading-6 text-emerald-900">
-                Copie le code, ouvre Back Market, ajoute ton produit au panier
-                puis vérifie que l’avantage est bien appliqué avant de payer.
+                Vérifiez le vendeur, l’état du produit, la garantie, les retours,
+                les accessoires inclus et le prix final sur le site local.
               </p>
             </div>
 
-            <div className="mt-6">
-              <AffiliateButton
-                href={BACK_MARKET_URL}
-                platform="back-market"
-                category="e-commerce"
-                location="code"
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={BACK_MARKET_BELGIUM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-bold text-white shadow-sm transition hover:bg-emerald-700"
               >
-                Utiliser le code sur Back Market
-              </AffiliateButton>
+                Voir Back Market Belgique
+              </a>
+              <a
+                href={BACK_MARKET_FRANCE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-emerald-400 hover:text-emerald-700"
+              >
+                Voir Back Market France
+              </a>
             </div>
           </section>
 
@@ -308,7 +316,7 @@ export default function BackMarketPage() {
 
           <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
             <h2 className="text-3xl font-bold text-slate-950">
-              Comment utiliser le code Back Market ?
+              Comment préparer un achat sur Back Market ?
             </h2>
 
             <div className="mt-6 grid gap-4">
@@ -341,7 +349,7 @@ export default function BackMarketPage() {
                 <ul className="mt-4 space-y-3 text-sm leading-6 text-emerald-950">
                   <li>• Large choix de produits reconditionnés.</li>
                   <li>• Prix parfois très compétitifs selon les modèles.</li>
-                  <li>• Code de parrainage simple à utiliser.</li>
+                  <li>• Sites officiels adaptés à la Belgique et à la France.</li>
                   <li>• Possibilité de comparer plusieurs états de produits.</li>
                   <li>
                     • Alternative intéressante au neuf pour certains achats.
@@ -358,7 +366,7 @@ export default function BackMarketPage() {
                   <li>
                     • L’état réel peut varier selon le vendeur et le produit.
                   </li>
-                  <li>• Les codes promo peuvent avoir des conditions.</li>
+                  <li>• Les promotions éventuelles peuvent avoir des conditions.</li>
                   <li>• Tous les accessoires ne sont pas toujours inclus.</li>
                   <li>• Il faut lire les conditions de garantie et de retour.</li>
                 </ul>
@@ -373,9 +381,9 @@ export default function BackMarketPage() {
 
             <p className="mt-4 text-base leading-7 text-slate-600">
               Back Market est une plateforme pertinente si tu veux acheter un
-              appareil reconditionné tout en essayant de réduire ton budget. Le
-              code <strong>{BACK_MARKET_CODE}</strong> peut être intéressant si
-              tu passes une commande éligible.
+              appareil reconditionné tout en essayant de réduire ton budget.
+              Afflizen renvoie vers les sites officiels sans publier de code
+              personnel de parrainage.
             </p>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
@@ -385,16 +393,23 @@ export default function BackMarketPage() {
               devient réellement intéressant.
             </p>
 
-            <div className="mt-6">
-              <AffiliateButton
-                href={BACK_MARKET_URL}
-                platform="back-market"
-                category="e-commerce"
-                location="avis"
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={BACK_MARKET_BELGIUM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-bold text-white shadow-sm transition hover:bg-emerald-700"
               >
-                Utiliser le code sur Back Market
-              </AffiliateButton>
+                Voir Back Market Belgique
+              </a>
+              <a
+                href={BACK_MARKET_FRANCE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-900 transition hover:border-emerald-400 hover:text-emerald-700"
+              >
+                Voir Back Market France
+              </a>
             </div>
           </section>
 
@@ -440,34 +455,40 @@ export default function BackMarketPage() {
               </div>
 
               <div>
-                <dt className="font-semibold text-slate-500">Code</dt>
-                <dd className="mt-1 break-all rounded-xl bg-slate-100 px-3 py-2 font-black text-slate-950">
-                  {BACK_MARKET_CODE}
+                <dt className="font-semibold text-slate-500">Liens</dt>
+                <dd className="mt-1 text-slate-700">
+                  Sites officiels belge et français, sans affiliation
                 </dd>
               </div>
 
               <div>
                 <dt className="font-semibold text-slate-500">À vérifier</dt>
                 <dd className="mt-1 text-slate-700">
-                  Prix final, état, vendeur, garantie, retour et conditions du
-                  code.
+                  Prix final, état, vendeur, garantie et conditions de retour.
                 </dd>
               </div>
             </dl>
 
-            <AffiliateButton
-              href={BACK_MARKET_URL}
-              platform="back-market"
-              category="e-commerce"
-              location="sidebar"
+            <a
+              href={BACK_MARKET_BELGIUM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-700"
             >
-              Ouvrir Back Market
-            </AffiliateButton>
+              Voir Back Market Belgique
+            </a>
+            <a
+              href={BACK_MARKET_FRANCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-900 transition hover:border-emerald-400 hover:text-emerald-700"
+            >
+              Voir Back Market France
+            </a>
 
             <p className="mt-4 text-xs leading-5 text-slate-500">
-              Offre, réduction et conditions susceptibles de changer. Vérifie
-              toujours le panier avant paiement.
+              Vérifie toujours le produit, le vendeur et le panier avant
+              paiement.
             </p>
           </div>
         </aside>

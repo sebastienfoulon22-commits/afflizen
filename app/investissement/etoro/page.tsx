@@ -9,7 +9,7 @@ const ETORO_OFFICIAL_LINK = "https://www.etoro.com/fr/";
 
 export const metadata = createPageMetadata({
   title: "eToro avis 2026 : copy trading, actions, ETF, crypto et cashback iGraal",
-  description: "Notre avis sur eToro en 2026 : fonctionnement, copy trading, actions, ETF, crypto, offre iGraal testée, cashback potentiel, avantages, limites et points de vigilance.",
+  description: "Notre avis sur eToro en 2026 : fonctionnement, copy trading, actions, ETF, crypto, disponibilité éventuelle via iGraal, avantages, limites et points de vigilance.",
   path: "/investissement/etoro",
   type: "article",
 });
@@ -31,12 +31,12 @@ const faqJsonLd = {
       name: "Peut-on obtenir du cashback sur eToro avec iGraal ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Il peut être possible d’obtenir du cashback sur eToro en passant par iGraal si l’offre est disponible, activée correctement et si toutes les conditions sont respectées. Lors du test Afflizen, l’offre observée était de 50 euros pour 200 euros déposés, avec une période d’environ 3 mois sans retrait. Cette offre peut changer.",
+        text: "Une offre eToro peut parfois être proposée via une plateforme de cashback comme iGraal. Sa présence, son montant, son dépôt minimum, ses délais de suivi et ses conditions de validation peuvent évoluer. Il faut vérifier l’offre réellement affichée dans son compte iGraal avant toute inscription ou dépôt.",
       },
     },
     {
       "@type": "Question",
-      name: "Les 200 euros déposés sur eToro peuvent-ils générer des intérêts ?",
+      name: "Le solde non investi sur eToro peut-il générer des intérêts ?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "eToro affiche actuellement un taux annuel de 2,75 % sur le solde cash disponible en USD pour les résidents européens éligibles entre 1 dollar et 50 000 dollars. Ce taux peut varier et ne doit pas être confondu avec un investissement en actions, ETF ou crypto, qui peut monter ou baisser.",
@@ -58,7 +58,7 @@ const strengths = [
   "Accès à plusieurs univers : actions, ETF, crypto et trading selon les pays.",
   "Fonction CopyTrader pour observer ou copier d’autres investisseurs.",
   "Compte démo utile pour tester sans utiliser immédiatement de capital réel.",
-  "Offre iGraal potentiellement intéressante si elle est disponible et correctement suivie.",
+  "Possibilité de vérifier si une offre eToro est proposée dans son compte iGraal.",
 ];
 
 const limits = [
@@ -66,29 +66,29 @@ const limits = [
   "Le copy trading ne garantit aucun résultat et peut entraîner des pertes.",
   "Les crypto-actifs restent très volatils et peuvent perdre fortement en valeur.",
   "Certains produits peuvent être limités ou indisponibles selon le pays.",
-  "Le cashback dépend des conditions iGraal/eToro et peut prendre plusieurs mois à être validé.",
+  "La présence d’une offre et ses délais de suivi ou de validation doivent être vérifiés dans iGraal.",
 ];
 
 const igraalSteps = [
   {
     title: "1. Créer ou ouvrir son compte iGraal",
-    text: "Le parcours testé par Afflizen commence par iGraal. L’idée est d’activer l’offre eToro depuis iGraal avant de créer le compte, afin que le cashback puisse être suivi.",
+    text: "Connectez-vous à iGraal afin de vérifier les offres réellement disponibles dans votre compte.",
   },
   {
     title: "2. Chercher l’offre eToro dans iGraal",
-    text: "Lors de notre test, l’offre affichée était de 50 € offerts pour une ouverture de compte validée avec 200 € déposés minimum. Cette offre peut évoluer : il faut relire les conditions iGraal au moment de l’inscription.",
+    text: "La présence d’eToro chez iGraal n’est pas garantie. Si une offre apparaît, lisez son montant, son dépôt éventuel, son éligibilité et ses conditions avant de poursuivre.",
   },
   {
-    title: "3. Cliquer vers eToro depuis iGraal",
-    text: "Il faut cliquer sur l’offre eToro depuis iGraal, puis poursuivre l’inscription sans changer d’appareil, sans ouvrir eToro dans un autre onglet et sans bloquer les cookies nécessaires au suivi.",
+    title: "3. Lire les conditions affichées",
+    text: "Vérifiez notamment les actions demandées, les exclusions, les délais de suivi et les règles de validation propres à l’offre visible dans votre compte.",
   },
   {
-    title: "4. Déposer 200 € et respecter la période demandée",
-    text: "Dans le parcours testé, le dépôt minimum était de 200 € et il fallait éviter tout retrait pendant environ 3 mois. C’est une condition importante : retirer trop tôt peut empêcher la validation du cashback.",
+    title: "4. Suivre uniquement le parcours indiqué",
+    text: "Si l’offre vous convient, démarrez depuis iGraal et suivez les instructions affichées sans supposer qu’une ancienne condition reste valable.",
   },
   {
-    title: "5. Suivre le cashback en attente",
-    text: "Le cashback peut apparaître en attente après un certain délai, par exemple après 24 à 72 heures selon les cas, puis être validé plus tard si toutes les conditions sont respectées. La validation finale peut prendre plusieurs mois.",
+    title: "5. Contrôler le suivi et la validation",
+    text: "Consultez votre compte iGraal pour connaître le statut du suivi. Les délais et la validation dépendent exclusivement des conditions alors affichées.",
   },
 ];
 
@@ -138,11 +138,9 @@ export default function EToroPage() {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
               eToro est une plateforme d’investissement connue pour son
               interface accessible, son univers multi-actifs et sa fonction de
-              copy trading. Sur Afflizen, nous l’avons surtout testée via un
-              parcours concret : passer par iGraal, activer l’offre eToro,
-              déposer 200 € minimum, puis conserver le dépôt pendant environ 3
-              mois sans retrait afin de respecter les conditions de validation
-              du cashback.
+              copy trading. Une offre eToro peut parfois être proposée via une
+              plateforme de cashback comme iGraal, mais sa présence et ses
+              conditions doivent être vérifiées au moment de la consultation.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -153,7 +151,7 @@ export default function EToroPage() {
                 location="hero"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700"
               >
-                Passer par iGraal puis chercher eToro
+                Vérifier les offres sur iGraal
               </AffiliateButton>
 
               <a
@@ -167,12 +165,12 @@ export default function EToroPage() {
             </div>
 
             <p className="mt-5 max-w-3xl text-sm leading-6 text-slate-500">
-              Lors de notre test, l’offre affichée était de 50 € offerts pour
-              200 € déposés, avec une période d’environ 3 mois sans retrait.
-              Cette offre peut changer : il faut toujours vérifier les
-              conditions iGraal et eToro au moment exact de l’inscription. Le
-              cashback reste soumis au tracking, au respect des conditions et à
-              la validation finale.
+              Une offre eToro peut parfois être proposée via une plateforme de
+              cashback comme iGraal. Son montant, son dépôt minimum, ses délais
+              de suivi et ses conditions de validation peuvent évoluer. Vérifiez
+              toujours l’offre réellement affichée dans votre compte iGraal
+              avant toute inscription ou dépôt. La présence d’eToro chez iGraal
+              n’est pas garantie.
             </p>
           </div>
 
@@ -201,10 +199,12 @@ export default function EToroPage() {
               </div>
 
               <div>
-                <p className="font-semibold text-slate-950">Offre testée</p>
+                <p className="font-semibold text-slate-950">
+                  Disponibilité de l’offre
+                </p>
                 <p>
-                  50 € de cashback potentiel pour 200 € déposés, sous
-                  conditions et avec environ 3 mois sans retrait.
+                  À vérifier dans le compte iGraal avant toute inscription ou
+                  dépôt.
                 </p>
               </div>
             </div>
@@ -331,11 +331,10 @@ export default function EToroPage() {
               Comment tenter le cashback eToro avec iGraal ?
             </h2>
             <p className="mt-5 max-w-3xl text-base leading-8 text-slate-700">
-              Le parcours doit être propre. Le cashback peut être refusé si
-              l’offre n’est pas activée correctement, si les conditions ne sont
-              pas respectées, si un bloqueur gêne le suivi, si l’inscription a
-              commencé ailleurs ou si le dépôt demandé n’est pas maintenu assez
-              longtemps.
+              La présence d’eToro chez iGraal n’est pas garantie. Si une offre
+              est affichée, son montant, son dépôt éventuel, son parcours de
+              suivi et ses conditions de validation doivent être lus avant
+              toute inscription.
             </p>
 
             <div className="mt-8 space-y-5">
@@ -356,33 +355,27 @@ export default function EToroPage() {
 
             <div className="mt-8 rounded-3xl border border-emerald-200 bg-emerald-50 p-6">
               <h3 className="text-xl font-bold text-slate-950">
-                Retour d’expérience Afflizen
+                Ce qu’Afflizen peut confirmer
               </h3>
 
               <p className="mt-4 text-sm leading-7 text-slate-700">
-                Lors de notre test depuis la Belgique, le parcours iGraal vers
-                eToro affichait une offre de 50 € offerts pour un dépôt minimum
-                de 200 €. Le point important est la période de conservation :
-                les 200 € déposés ne doivent pas être retirés trop vite, car
-                l’offre demandait de les laisser sur le compte pendant environ 3
-                mois.
+                Les anciennes conditions observées par Afflizen ne permettent
+                pas de décrire une offre actuelle. Seules les informations
+                affichées dans le compte iGraal au moment du parcours doivent
+                être utilisées pour décider de poursuivre.
               </p>
 
               <p className="mt-4 text-sm leading-7 text-slate-700">
-                Pendant cette période, l’argent peut rester disponible sur le
-                compte eToro ou être utilisé selon les possibilités de la
-                plateforme. Il faut cependant distinguer deux choses : si le
-                solde reste non investi en USD et que l’option d’intérêt est
-                disponible et activée, eToro affiche actuellement un taux annuel
-                de 2,75 % pour les résidents européens éligibles sur la première
-                tranche de solde. Ce taux peut varier.
+                Une éventuelle offre de cashback reste distincte des services
+                d’investissement et des fonctionnalités proposées par eToro.
+                Elle ne garantit ni gain, ni rendement, ni validation du
+                cashback.
               </p>
 
               <p className="mt-4 text-sm leading-7 text-slate-700">
-                Si les 200 € sont investis dans une action, un ETF, une crypto
-                ou un autre actif, ce n’est plus un simple rendement d’intérêt :
-                la valeur peut monter ou baisser. Le cashback doit donc être vu
-                comme un bonus potentiel, pas comme une garantie de gain.
+                Toute somme investie dans une action, un ETF, une crypto ou un
+                autre actif peut monter ou baisser. Une offre éventuelle ne doit
+                jamais justifier à elle seule un dépôt ou un investissement.
               </p>
             </div>
 
@@ -391,13 +384,9 @@ export default function EToroPage() {
                 Important avant de déposer
               </h3>
               <p className="mt-3 text-sm leading-6 text-slate-700">
-                L’offre peut sembler très intéressante : 50 € offerts pour 200 €
-                déposés représente un bonus élevé si toutes les conditions sont
-                validées. Mais il ne faut pas déposer uniquement pour le
-                cashback. Il faut vérifier l’offre du jour, comprendre la
-                période sans retrait, tenir compte du taux d’intérêt variable
-                éventuel sur le solde non investi en USD, et accepter que tout
-                investissement comporte un risque de perte.
+                Il ne faut pas déposer uniquement pour obtenir un cashback.
+                Vérifiez l’offre visible, les conditions demandées, les risques
+                des produits envisagés et votre capacité à supporter une perte.
               </p>
             </div>
           </div>
@@ -422,7 +411,7 @@ export default function EToroPage() {
               location="cashback"
               className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
             >
-              Passer par iGraal
+              Vérifier les offres sur iGraal
             </AffiliateButton>
           </aside>
         </div>
@@ -502,9 +491,9 @@ export default function EToroPage() {
               Tu veux tenter un parcours cashback
             </h3>
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Si une offre iGraal est active, eToro peut être intéressant à
-              condition de suivre le parcours correctement, de respecter le
-              dépôt minimum et de ne pas retirer trop tôt.
+              Si une offre eToro apparaît dans votre compte iGraal, lisez toutes
+              ses conditions et vérifiez qu’elles correspondent à votre
+              situation avant de commencer le parcours.
             </p>
           </div>
 
@@ -553,11 +542,10 @@ export default function EToroPage() {
                 </p>
                 <p className="mt-4 text-base leading-8 text-slate-700">
                   Pour le parcours Afflizen, le meilleur angle est clair :
-                  vérifier d’abord iGraal, lire l’offre eToro, puis s’inscrire
-                  seulement si les conditions sont compréhensibles et adaptées.
-                  Lors de notre test, l’offre de 50 € pour 200 € déposés avec 3
-                  mois sans retrait était particulièrement intéressante, mais
-                  elle doit être revérifiée avant chaque inscription.
+                  vérifier d’abord iGraal, rechercher une éventuelle offre eToro,
+                  puis s’inscrire seulement si les conditions actuellement
+                  affichées sont compréhensibles et adaptées. Afflizen ne
+                  garantit ni la présence de l’offre ni son avantage.
                 </p>
               </div>
 
@@ -569,7 +557,7 @@ export default function EToroPage() {
                   location="avis"
                   className="inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
                 >
-                  Vérifier eToro via iGraal
+                  Vérifier les offres sur iGraal
                 </AffiliateButton>
 
                 <Link

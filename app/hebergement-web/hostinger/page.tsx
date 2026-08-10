@@ -1,9 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
 
-const HOSTINGER_AFFILIATE_LINK =
-  "https://www.hostinger.com/fr?REFERRALCODE=J7NILOVEBA7H";
+const HOSTINGER_OFFICIAL_URL = "https://www.hostinger.com/fr/";
 
 export const metadata = createPageMetadata({
   title: "Hostinger avis 2026 : prix, WordPress, performances et hébergement web",
@@ -80,15 +78,14 @@ export default function HostingerPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={HOSTINGER_AFFILIATE_LINK}
-              platform="hostinger"
-              category="hebergement-web"
-              location="hero"
+            <a
+              href={HOSTINGER_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
             >
-              Découvrir Hostinger
-            </AffiliateButton>
+              Voir Hostinger
+            </a>
 
             <Link
               href="/hebergement-web"
@@ -295,15 +292,14 @@ export default function HostingerPage() {
           </p>
 
           <div className="mt-8">
-            <AffiliateButton
-              href={HOSTINGER_AFFILIATE_LINK}
-              platform="hostinger"
-              category="hebergement-web"
-              location="avis"
+            <a
+              href={HOSTINGER_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
             >
-              Accéder à Hostinger
-            </AffiliateButton>
+              Voir Hostinger
+            </a>
           </div>
         </div>
       </section>
@@ -329,17 +325,13 @@ export default function HostingerPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Mention affiliation
+            Lien officiel non affilié
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Certains liens présents sur Afflizen peuvent être des liens
-            d’affiliation. Cela signifie que nous pouvons recevoir une
-            commission, un bonus ou un avantage si vous créez un compte ou
-            commandez un service via notre lien, sans coût supplémentaire pour
-            vous. Cette rémunération aide à financer le site et n’influence pas
-            notre volonté de présenter les avantages comme les limites de chaque
-            plateforme.
+            Le lien actuellement proposé par Afflizen est un lien officiel non
+            affilié. Le programme personnel de parrainage Hostinger n’est pas
+            utilisé sur Afflizen.
           </p>
         </div>
       </section>

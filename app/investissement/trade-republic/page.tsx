@@ -1,12 +1,12 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
 
-const TRADE_REPUBLIC_AFFILIATE_LINK = "https://refnocode.trade.re/dj55hz7z";
+const TRADE_REPUBLIC_BELGIUM_URL = "https://traderepublic.com/fr-be";
+const TRADE_REPUBLIC_FRANCE_URL = "https://traderepublic.com/fr-fr";
 
 export const metadata = createPageMetadata({
   title: "Trade Republic avis 2026 : frais, ETF, actions, carte et rendement",
-  description: "Notre avis sur Trade Republic en 2026 : avantages, inconvénients, frais, ETF, actions, carte, intérêt sur espèces, sécurité, FAQ et lien d’inscription.",
+  description: "Notre avis sur Trade Republic en 2026 : avantages, inconvénients, frais, ETF, actions, carte, intérêt sur espèces, sécurité, FAQ et liens officiels.",
   path: "/investissement/trade-republic",
   type: "article",
 });
@@ -32,16 +32,27 @@ export default function TradeRepublicPage() {
             lisibles et une approche orientée investissement régulier.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={TRADE_REPUBLIC_AFFILIATE_LINK}
-              platform="trade-republic"
-              category="investissement"
-              location="hero"
+          <p className="mt-8 text-sm font-semibold text-emerald-700">
+            Liens officiels
+          </p>
+          <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <a
+              href={TRADE_REPUBLIC_BELGIUM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
             >
-              S’inscrire sur Trade Republic
-            </AffiliateButton>
+              Voir Trade Republic Belgique
+            </a>
+
+            <a
+              href={TRADE_REPUBLIC_FRANCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-slate-950 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
+            >
+              Voir Trade Republic France
+            </a>
 
             <Link
               href="/investissement"
@@ -332,16 +343,23 @@ export default function TradeRepublicPage() {
             porte d’entrée vers l’investissement régulier.
           </p>
 
-          <div className="mt-8">
-            <AffiliateButton
-              href={TRADE_REPUBLIC_AFFILIATE_LINK}
-              platform="trade-republic"
-              category="investissement"
-              location="avis"
-              className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href={TRADE_REPUBLIC_BELGIUM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
             >
-              Accéder à Trade Republic
-            </AffiliateButton>
+              Voir Trade Republic Belgique
+            </a>
+            <a
+              href={TRADE_REPUBLIC_FRANCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex justify-center rounded-full border border-slate-300 bg-white px-7 py-4 font-semibold text-slate-900 transition hover:border-emerald-500 hover:text-emerald-700"
+            >
+              Voir Trade Republic France
+            </a>
           </div>
         </div>
       </section>
@@ -407,16 +425,13 @@ export default function TradeRepublicPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Mention affiliation
+            Liens officiels
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Certains liens présents sur Afflizen peuvent être des liens
-            d’affiliation. Cela signifie que nous pouvons recevoir une
-            commission si vous ouvrez un compte via notre lien, sans coût
-            supplémentaire pour vous. Cette rémunération aide à financer le site
-            et n’influence pas notre volonté de présenter les avantages comme
-            les limites de chaque plateforme.
+            Afflizen n’affiche actuellement aucun lien de parrainage Trade
+            Republic. Les boutons ci-dessus dirigent uniquement vers les sites
+            officiels belge et français.
           </p>
         </div>
       </section>
