@@ -1,15 +1,11 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "@/components/AffiliateButton";
-
-const IGRAAL_AFFILIATE_LINK =
-  "https://fr.igraal.com/parrainage?parrain=AG_5cec013713c0f&utm_medium=raf&utm_source=refer_friend";
 
 const ETORO_OFFICIAL_LINK = "https://www.etoro.com/fr/";
 
 export const metadata = createPageMetadata({
-  title: "eToro avis 2026 : copy trading, actions, ETF, crypto et cashback iGraal",
-  description: "Notre avis sur eToro en 2026 : fonctionnement, copy trading, actions, ETF, crypto, disponibilité éventuelle via iGraal, avantages, limites et points de vigilance.",
+  title: "eToro avis 2026 : copy trading, actions, ETF et crypto",
+  description: "Notre avis sur eToro en 2026 : fonctionnement, copy trading, actions, ETF, crypto, avantages, limites et points de vigilance.",
   path: "/investissement/etoro",
   type: "article",
 });
@@ -28,10 +24,10 @@ const faqJsonLd = {
     },
     {
       "@type": "Question",
-      name: "Peut-on obtenir du cashback sur eToro avec iGraal ?",
+      name: "Afflizen propose-t-il une offre cashback eToro ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Une offre eToro peut parfois être proposée via une plateforme de cashback comme iGraal. Sa présence, son montant, son dépôt minimum, ses délais de suivi et ses conditions de validation peuvent évoluer. Il faut vérifier l’offre réellement affichée dans son compte iGraal avant toute inscription ou dépôt.",
+        text: "Des offres eToro peuvent ponctuellement apparaître sur des plateformes de cashback externes. Afflizen ne propose actuellement aucun lien de cashback ou de parrainage eToro.",
       },
     },
     {
@@ -58,7 +54,7 @@ const strengths = [
   "Accès à plusieurs univers : actions, ETF, crypto et trading selon les pays.",
   "Fonction CopyTrader pour observer ou copier d’autres investisseurs.",
   "Compte démo utile pour tester sans utiliser immédiatement de capital réel.",
-  "Possibilité de vérifier si une offre eToro est proposée dans son compte iGraal.",
+  "Site officiel accessible directement depuis la fiche Afflizen.",
 ];
 
 const limits = [
@@ -66,30 +62,7 @@ const limits = [
   "Le copy trading ne garantit aucun résultat et peut entraîner des pertes.",
   "Les crypto-actifs restent très volatils et peuvent perdre fortement en valeur.",
   "Certains produits peuvent être limités ou indisponibles selon le pays.",
-  "La présence d’une offre et ses délais de suivi ou de validation doivent être vérifiés dans iGraal.",
-];
-
-const igraalSteps = [
-  {
-    title: "1. Créer ou ouvrir son compte iGraal",
-    text: "Connectez-vous à iGraal afin de vérifier les offres réellement disponibles dans votre compte.",
-  },
-  {
-    title: "2. Chercher l’offre eToro dans iGraal",
-    text: "La présence d’eToro chez iGraal n’est pas garantie. Si une offre apparaît, lisez son montant, son dépôt éventuel, son éligibilité et ses conditions avant de poursuivre.",
-  },
-  {
-    title: "3. Lire les conditions affichées",
-    text: "Vérifiez notamment les actions demandées, les exclusions, les délais de suivi et les règles de validation propres à l’offre visible dans votre compte.",
-  },
-  {
-    title: "4. Suivre uniquement le parcours indiqué",
-    text: "Si l’offre vous convient, démarrez depuis iGraal et suivez les instructions affichées sans supposer qu’une ancienne condition reste valable.",
-  },
-  {
-    title: "5. Contrôler le suivi et la validation",
-    text: "Consultez votre compte iGraal pour connaître le statut du suivi. Les délais et la validation dépendent exclusivement des conditions alors affichées.",
-  },
+  "Les offres externes éventuelles peuvent changer sans préavis.",
 ];
 
 const relatedLinks = [
@@ -138,22 +111,12 @@ export default function EToroPage() {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
               eToro est une plateforme d’investissement connue pour son
               interface accessible, son univers multi-actifs et sa fonction de
-              copy trading. Une offre eToro peut parfois être proposée via une
-              plateforme de cashback comme iGraal, mais sa présence et ses
-              conditions doivent être vérifiées au moment de la consultation.
+              copy trading. Des offres eToro peuvent ponctuellement apparaître
+              sur des plateformes de cashback externes. Afflizen ne propose
+              actuellement aucun lien de cashback ou de parrainage eToro.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <AffiliateButton
-                href={IGRAAL_AFFILIATE_LINK}
-                platform="etoro"
-                category="investissement"
-                location="hero"
-                className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700"
-              >
-                Vérifier les offres sur iGraal
-              </AffiliateButton>
-
               <a
                 href={ETORO_OFFICIAL_LINK}
                 target="_blank"
@@ -165,12 +128,9 @@ export default function EToroPage() {
             </div>
 
             <p className="mt-5 max-w-3xl text-sm leading-6 text-slate-500">
-              Une offre eToro peut parfois être proposée via une plateforme de
-              cashback comme iGraal. Son montant, son dépôt minimum, ses délais
-              de suivi et ses conditions de validation peuvent évoluer. Vérifiez
-              toujours l’offre réellement affichée dans votre compte iGraal
-              avant toute inscription ou dépôt. La présence d’eToro chez iGraal
-              n’est pas garantie.
+              Le bouton proposé dirige uniquement vers le site officiel eToro.
+              Il ne s’agit pas d’un lien affilié et Afflizen ne reçoit aucune
+              commission via ce lien.
             </p>
           </div>
 
@@ -203,21 +163,16 @@ export default function EToroPage() {
                   Disponibilité de l’offre
                 </p>
                 <p>
-                  À vérifier dans le compte iGraal avant toute inscription ou
-                  dépôt.
+                  Aucun lien de cashback ou de parrainage eToro n’est
+                  actuellement publié par Afflizen.
                 </p>
               </div>
             </div>
 
-            <AffiliateButton
-              href={IGRAAL_AFFILIATE_LINK}
-              platform="etoro"
-              category="investissement"
-              location="sidebar"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-            >
-              Vérifier l’offre eToro sur iGraal
-            </AffiliateButton>
+            <p className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 text-sm leading-6 text-slate-600">
+              Les éventuelles offres proposées par des services externes doivent
+              être vérifiées directement auprès d’eux, sans promesse Afflizen.
+            </p>
           </aside>
         </div>
       </section>
@@ -247,13 +202,13 @@ export default function EToroPage() {
           </div>
 
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <p className="text-sm font-semibold text-emerald-700">Cashback</p>
+            <p className="text-sm font-semibold text-emerald-700">Offres externes</p>
             <h2 className="mt-2 text-xl font-bold text-slate-950">
-              Passage par iGraal
+              Disponibilité variable
             </h2>
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Le bon réflexe est de vérifier iGraal avant de créer un compte
-              eToro, car l’offre peut être conditionnée.
+              Afflizen ne publie actuellement aucun lien de cashback ou de
+              parrainage eToro.
             </p>
           </div>
         </div>
@@ -283,11 +238,10 @@ export default function EToroPage() {
               résultat, et une bonne performance passée peut se retourner.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-700">
-              Pour Afflizen, eToro devient surtout intéressant si l’inscription
-              peut être combinée avec une offre iGraal. Dans ce cas, l’objectif
-              n’est pas seulement de s’inscrire vite, mais de suivre proprement
-              le parcours : iGraal d’abord, eToro ensuite, puis respect strict
-              des conditions.
+              Des offres eToro peuvent ponctuellement apparaître sur des
+              plateformes externes, avec leurs propres conditions. Afflizen ne
+              propose actuellement aucun lien de cashback ou de parrainage eToro
+              et n’en garantit ni la présence ni la validation.
             </p>
           </div>
 
@@ -322,98 +276,25 @@ export default function EToroPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-              Cashback iGraal
-            </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950">
-              Comment tenter le cashback eToro avec iGraal ?
-            </h2>
-            <p className="mt-5 max-w-3xl text-base leading-8 text-slate-700">
-              La présence d’eToro chez iGraal n’est pas garantie. Si une offre
-              est affichée, son montant, son dépôt éventuel, son parcours de
-              suivi et ses conditions de validation doivent être lus avant
-              toute inscription.
-            </p>
-
-            <div className="mt-8 space-y-5">
-              {igraalSteps.map((step) => (
-                <div
-                  key={step.title}
-                  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-                >
-                  <h3 className="text-lg font-bold text-slate-950">
-                    {step.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-slate-600">
-                    {step.text}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-emerald-200 bg-emerald-50 p-6">
-              <h3 className="text-xl font-bold text-slate-950">
-                Ce qu’Afflizen peut confirmer
-              </h3>
-
-              <p className="mt-4 text-sm leading-7 text-slate-700">
-                Les anciennes conditions observées par Afflizen ne permettent
-                pas de décrire une offre actuelle. Seules les informations
-                affichées dans le compte iGraal au moment du parcours doivent
-                être utilisées pour décider de poursuivre.
-              </p>
-
-              <p className="mt-4 text-sm leading-7 text-slate-700">
-                Une éventuelle offre de cashback reste distincte des services
-                d’investissement et des fonctionnalités proposées par eToro.
-                Elle ne garantit ni gain, ni rendement, ni validation du
-                cashback.
-              </p>
-
-              <p className="mt-4 text-sm leading-7 text-slate-700">
-                Toute somme investie dans une action, un ETF, une crypto ou un
-                autre actif peut monter ou baisser. Une offre éventuelle ne doit
-                jamais justifier à elle seule un dépôt ou un investissement.
-              </p>
-            </div>
-
-            <div className="mt-8 rounded-3xl border border-amber-200 bg-amber-50 p-6">
-              <h3 className="text-lg font-bold text-slate-950">
-                Important avant de déposer
-              </h3>
-              <p className="mt-3 text-sm leading-6 text-slate-700">
-                Il ne faut pas déposer uniquement pour obtenir un cashback.
-                Vérifiez l’offre visible, les conditions demandées, les risques
-                des produits envisagés et votre capacité à supporter une perte.
-              </p>
-            </div>
-          </div>
-
-          <aside className="h-fit rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-bold text-slate-950">
-              Parcours recommandé
-            </h3>
-            <ol className="mt-5 space-y-4 text-sm leading-6 text-slate-700">
-              <li>1. Lire l’offre iGraal du jour.</li>
-              <li>2. Cliquer vers eToro depuis iGraal.</li>
-              <li>3. Créer le compte sans changer de parcours.</li>
-              <li>4. Déposer le montant demandé.</li>
-              <li>5. Ne pas retirer avant la période indiquée.</li>
-              <li>6. Attendre le suivi puis la validation.</li>
-            </ol>
-
-            <AffiliateButton
-              href={IGRAAL_AFFILIATE_LINK}
-              platform="etoro"
-              category="investissement"
-              location="cashback"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-            >
-              Vérifier les offres sur iGraal
-            </AffiliateButton>
-          </aside>
+        <div className="max-w-4xl rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
+            Offres externes
+          </p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950">
+            Cashback eToro : aucune offre publiée par Afflizen
+          </h2>
+          <p className="mt-5 text-base leading-8 text-slate-700">
+            Des offres eToro peuvent ponctuellement apparaître sur des
+            plateformes de cashback externes. Leur présence, leurs montants et
+            leurs conditions peuvent évoluer. Afflizen ne propose actuellement
+            aucun lien de cashback ou de parrainage eToro.
+          </p>
+          <p className="mt-4 text-base leading-8 text-slate-700">
+            Une éventuelle offre externe reste distincte des services
+            d’investissement proposés par eToro. Elle ne garantit ni gain, ni
+            rendement, ni validation d’un cashback et ne doit jamais justifier à
+            elle seule un dépôt ou un investissement.
+          </p>
         </div>
       </section>
 
@@ -488,12 +369,12 @@ export default function EToroPage() {
 
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 className="text-xl font-bold text-slate-950">
-              Tu veux tenter un parcours cashback
+              Tu vérifies les offres externes avec prudence
             </h3>
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Si une offre eToro apparaît dans votre compte iGraal, lisez toutes
-              ses conditions et vérifiez qu’elles correspondent à votre
-              situation avant de commencer le parcours.
+              Afflizen ne publie actuellement aucun lien de cashback ou de
+              parrainage eToro. Toute offre vue ailleurs doit être vérifiée
+              directement auprès du service concerné.
             </p>
           </div>
 
@@ -514,8 +395,8 @@ export default function EToroPage() {
             </h3>
             <p className="mt-3 text-sm leading-6 text-slate-600">
               eToro reste une plateforme d’investissement. Elle ne garantit ni
-              gain, ni rendement, ni succès avec le copy trading. Le cashback et
-              les intérêts éventuels doivent rester des bonus potentiels.
+              gain, ni rendement, ni succès avec le copy trading. Les intérêts et
+              offres externes éventuels ne changent pas ces risques.
             </p>
           </div>
         </div>
@@ -541,25 +422,13 @@ export default function EToroPage() {
                   compris et ne pas copier aveuglément d’autres investisseurs.
                 </p>
                 <p className="mt-4 text-base leading-8 text-slate-700">
-                  Pour le parcours Afflizen, le meilleur angle est clair :
-                  vérifier d’abord iGraal, rechercher une éventuelle offre eToro,
-                  puis s’inscrire seulement si les conditions actuellement
-                  affichées sont compréhensibles et adaptées. Afflizen ne
-                  garantit ni la présence de l’offre ni son avantage.
+                  Afflizen ne propose actuellement aucun lien de cashback ou de
+                  parrainage eToro. Le seul lien externe publié sur cette fiche
+                  renvoie vers le site officiel eToro, sans affiliation.
                 </p>
               </div>
 
               <div className="flex flex-col justify-center gap-4">
-                <AffiliateButton
-                  href={IGRAAL_AFFILIATE_LINK}
-                  platform="etoro"
-                  category="investissement"
-                  location="avis"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-                >
-                  Vérifier les offres sur iGraal
-                </AffiliateButton>
-
                 <Link
                   href="/investissement"
                   className="inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-100"

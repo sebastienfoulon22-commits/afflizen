@@ -1,9 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
 
-const CURVE_REFERRAL_URL = "https://www.curve.com/join/#N9XXP2LE";
-const CURVE_REFERRAL_CODE = "N9XXP2LE";
+const CURVE_OFFICIAL_URL = "https://www.curve.com/";
 
 const primaryButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-emerald-700";
@@ -15,8 +13,8 @@ const fullButtonClassName =
   "mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700";
 
 export const metadata = createPageMetadata({
-  title: "Curve Pay avis : carte, cashback, frais et parrainage",
-  description: "Notre avis sur Curve Pay : fonctionnement, avantages, inconvénients, frais, cashback, Go Back in Time, paiements à l’étranger et lien de parrainage Afflizen.",
+  title: "Curve Pay avis : carte, cashback, frais et fonctionnement",
+  description: "Notre avis sur Curve Pay : fonctionnement, avantages, inconvénients, frais, cashback, Go Back in Time et paiements à l’étranger.",
   path: "/cartes-et-paiements/curve-pay",
   type: "article",
 });
@@ -53,8 +51,8 @@ const pointsCles = [
     value: "Go Back in Time",
   },
   {
-    label: "Parrainage",
-    value: CURVE_REFERRAL_CODE,
+    label: "Lien externe",
+    value: "Site officiel",
   },
 ];
 
@@ -80,14 +78,14 @@ const faq = [
       "Curve propose un plan d’entrée et des plans payants avec davantage de limites ou d’avantages. Des frais peuvent toutefois s’appliquer selon l’usage, la devise, le type de transaction, le type de carte ou le plan utilisé.",
   },
   {
-    question: "Comment utiliser le parrainage Curve Afflizen ?",
+    question: "Afflizen propose-t-il actuellement un parrainage Curve ?",
     answer:
-      "Utilisez le lien de parrainage Afflizen ou le code N9XXP2LE lors de l’inscription si Curve le demande. Les avantages éventuels dépendent des conditions Curve en vigueur au moment de l’inscription.",
+      "Non. Afflizen ne publie actuellement aucun lien personnel de parrainage Curve. Le bouton de cette fiche renvoie uniquement vers le site officiel.",
   },
   {
-    question: "Afflizen touche-t-il une commission avec Curve ?",
+    question: "Le lien officiel Curve est-il affilié ?",
     answer:
-      "Oui. Cette page contient un lien de parrainage Curve. Si vous ouvrez un compte via ce lien, Afflizen peut recevoir une commission ou un avantage, sans coût supplémentaire direct pour vous.",
+      "Non. Le lien Curve publié sur cette fiche est un lien officiel non affilié. Afflizen ne reçoit aucune commission si vous l’utilisez.",
   },
 ];
 
@@ -135,7 +133,7 @@ export default function CurvePayPage() {
           </div>
 
           <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 md:text-6xl">
-            Curve Pay : avis, avantages, frais et parrainage
+            Curve Pay : avis, avantages, frais et fonctionnement
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
@@ -147,18 +145,13 @@ export default function CurvePayPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <AffiliateButton
-              href={CURVE_REFERRAL_URL}
-              platform="curve-pay"
-              category="cartes-et-paiements"
-              location="hero"
+            <a
+              href={CURVE_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={primaryButtonClassName}
             >
               Découvrir Curve Pay
-            </AffiliateButton>
-
-            <a href="#code" className={secondaryButtonClassName}>
-              Voir le code de parrainage
             </a>
 
             <Link href="/cartes-et-paiements" className={secondaryButtonClassName}>
@@ -167,9 +160,8 @@ export default function CurvePayPage() {
           </div>
 
           <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-500">
-            Cette page contient un lien de parrainage. Afflizen peut recevoir
-            une commission ou un avantage si vous ouvrez un compte via ce lien,
-            sans coût supplémentaire direct pour vous.
+            Afflizen utilise temporairement un lien officiel Curve sans
+            parrainage, dans l’attente d’une vérification du programme.
           </p>
         </div>
       </section>
@@ -193,40 +185,27 @@ export default function CurvePayPage() {
       <section className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid gap-8 lg:grid-cols-3">
           <article className="lg:col-span-2">
-            <div
-              id="code"
-              className="rounded-3xl border border-emerald-200 bg-emerald-50 p-8 shadow-sm"
-            >
+            <div className="rounded-3xl border border-emerald-200 bg-emerald-50 p-8 shadow-sm">
               <h2 className="text-3xl font-bold tracking-tight text-emerald-950">
-                Code de parrainage Curve Afflizen
+                Lien officiel non affilié
               </h2>
 
               <p className="mt-5 leading-8 text-emerald-950">
-                Pour utiliser le parrainage Curve Afflizen, ouvrez le lien
-                ci-dessous. Si Curve demande un code pendant l’inscription,
-                utilisez le code suivant.
+                Afflizen utilise temporairement un lien officiel Curve sans
+                parrainage, dans l’attente d’une vérification du programme. Le
+                bouton ci-dessous ne donne lieu à aucune commission pour
+                Afflizen.
               </p>
 
-              <div className="mt-6 rounded-2xl border border-emerald-300 bg-white p-5">
-                <p className="text-sm font-semibold text-slate-600">
-                  Code à copier
-                </p>
-
-                <code className="mt-3 block rounded-xl border border-slate-200 bg-slate-950 px-5 py-4 text-center text-xl font-bold tracking-wide text-white">
-                  {CURVE_REFERRAL_CODE}
-                </code>
-              </div>
-
               <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <AffiliateButton
-                  href={CURVE_REFERRAL_URL}
-                  platform="curve-pay"
-                  category="cartes-et-paiements"
-                  location="code"
+                <a
+                  href={CURVE_OFFICIAL_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={primaryButtonClassName}
                 >
-                  Ouvrir Curve Pay
-                </AffiliateButton>
+                  Voir Curve Pay
+                </a>
 
                 <Link
                   href="/cartes-et-paiements"
@@ -236,11 +215,6 @@ export default function CurvePayPage() {
                 </Link>
               </div>
 
-              <p className="mt-4 text-sm leading-6 text-emerald-900">
-                Les avantages de parrainage éventuels dépendent des conditions
-                Curve en vigueur : pays, éligibilité, inscription, utilisation
-                du compte, plan choisi ou campagne active.
-              </p>
             </div>
 
             <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
@@ -270,10 +244,10 @@ export default function CurvePayPage() {
                   Rappel important
                 </p>
                 <p className="mt-2 text-sm leading-6 text-amber-900">
-                  Les frais, limites, plans, avantages, cashback, retraits,
-                  conversions de devises et conditions de parrainage peuvent
-                  évoluer. Vérifiez toujours les informations officielles Curve
-                  avant d’ouvrir un compte ou de choisir un abonnement.
+                  Les frais, limites, plans, avantages, cashback, retraits et
+                  conversions de devises peuvent évoluer. Vérifiez toujours les
+                  informations officielles Curve avant d’ouvrir un compte ou de
+                  choisir un abonnement.
                 </p>
               </div>
             </div>
@@ -394,15 +368,14 @@ export default function CurvePayPage() {
               </div>
 
               <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <AffiliateButton
-                  href={CURVE_REFERRAL_URL}
-                  platform="curve-pay"
-                  category="cartes-et-paiements"
-                  location="avis"
+                <a
+                  href={CURVE_OFFICIAL_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={primaryButtonClassName}
                 >
                   Découvrir Curve Pay
-                </AffiliateButton>
+                </a>
 
                 <Link
                   href="/cartes-et-paiements"
@@ -453,25 +426,14 @@ export default function CurvePayPage() {
                 Go Back in Time.
               </p>
 
-              <div className="mt-5 rounded-2xl border border-emerald-200 bg-emerald-50 p-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
-                  Code de parrainage
-                </p>
-
-                <code className="mt-2 block rounded-xl bg-white px-4 py-3 text-center text-lg font-bold text-slate-950">
-                  {CURVE_REFERRAL_CODE}
-                </code>
-              </div>
-
-              <AffiliateButton
-                href={CURVE_REFERRAL_URL}
-                platform="curve-pay"
-                category="cartes-et-paiements"
-                location="sidebar"
+              <a
+                href={CURVE_OFFICIAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={fullButtonClassName}
               >
-                S’inscrire sur Curve
-              </AffiliateButton>
+                Voir Curve Pay
+              </a>
 
               <Link
                 href="/cartes-et-paiements"
@@ -482,13 +444,12 @@ export default function CurvePayPage() {
 
               <div className="mt-6 rounded-2xl bg-slate-50 p-4">
                 <p className="text-sm font-semibold text-slate-950">
-                  Transparence Afflizen
+                  Lien officiel non affilié
                 </p>
 
                 <p className="mt-2 text-xs leading-5 text-slate-600">
-                  Ce bouton contient un lien de parrainage. Afflizen peut
-                  recevoir une commission ou un avantage si vous ouvrez un compte
-                  via ce lien. Notre avis reste informatif.
+                  Afflizen ne publie actuellement aucun lien personnel de
+                  parrainage Curve et ne reçoit aucune commission via ce bouton.
                 </p>
               </div>
             </div>

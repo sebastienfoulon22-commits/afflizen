@@ -1,13 +1,9 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
-import CryptoAffiliateDisclosure, {
-  CryptoAffiliateCtaDisclosure,
-} from "../../../components/CryptoAffiliateDisclosure";
 import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
+import CryptoRiskNotice from "../../../components/CryptoRiskNotice";
 
-const SWISSBORG_REFERRAL_URL = "https://swissborg.com/fr/r";
-const SWISSBORG_REFERRAL_CODE = "sebastMHKF8UCJ";
+const SWISSBORG_OFFICIAL_URL = "https://swissborg.com/fr/";
 
 const primaryButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-emerald-700";
@@ -19,8 +15,8 @@ const fullButtonClassName =
   "mt-3 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700";
 
 export const metadata = createPageMetadata({
-  title: "SwissBorg avis : frais, Smart Engine, avantages et code",
-  description: "Notre avis sur SwissBorg : avantages, inconvénients, frais, Smart Engine, crypto bundles, sécurité, risques et code de parrainage à utiliser.",
+  title: "SwissBorg avis : frais, Smart Engine et sécurité",
+  description: "Notre avis sur SwissBorg : avantages, inconvénients, frais, Smart Engine, crypto bundles, sécurité et risques à connaître.",
   path: "/crypto/swissborg",
   type: "article",
 });
@@ -40,7 +36,7 @@ const inconvenients = [
   "Les fonctionnalités avancées demandent de bien comprendre les risques",
   "Les rendements ou avantages éventuels ne sont jamais garantis",
   "Les cryptomonnaies restent volatiles et peuvent entraîner une perte en capital",
-  "Le code de parrainage doit être copié et utilisé correctement lors de l’inscription",
+  "Les services et frais disponibles peuvent varier selon le pays et le niveau Premium",
 ];
 
 const pointsCles = [
@@ -57,8 +53,8 @@ const pointsCles = [
     value: "Débutant à intermédiaire",
   },
   {
-    label: "Parrainage",
-    value: "Code à copier",
+    label: "Lien externe",
+    value: "Site officiel",
   },
 ];
 
@@ -79,14 +75,14 @@ const faq = [
       "Non. Des frais peuvent s’appliquer selon les opérations : échange, retrait fiat, retrait crypto, services spécifiques ou niveau Premium. Les frais peuvent évoluer, il faut donc toujours vérifier la grille tarifaire officielle avant d’utiliser la plateforme.",
   },
   {
-    question: "Comment utiliser le code de parrainage SwissBorg Afflizen ?",
+    question: "Afflizen propose-t-il un code de parrainage SwissBorg ?",
     answer:
-      "Il faut ouvrir le lien SwissBorg, créer son compte, puis copier le code de parrainage Afflizen sebastMHKF8UCJ au moment demandé pendant l’inscription ou dans le parcours prévu par SwissBorg.",
+      "Non. Afflizen ne publie actuellement aucun code personnel de parrainage SwissBorg. Les boutons de cette fiche renvoient uniquement vers le site officiel.",
   },
   {
-    question: "Afflizen touche-t-il une commission avec SwissBorg ?",
+    question: "Le lien SwissBorg publié par Afflizen est-il affilié ?",
     answer:
-      "Oui. Cette page contient un lien et un code de parrainage SwissBorg. Si vous utilisez ce lien ou ce code, Afflizen peut recevoir une commission ou un avantage, sans coût supplémentaire direct pour vous.",
+      "Non. Le lien externe de cette fiche est un lien officiel non affilié. Afflizen ne reçoit aucune commission si vous l’utilisez.",
   },
 ];
 
@@ -120,14 +116,14 @@ export default function SwissBorgPage() {
             ← Retour à l’accueil
           </Link>
 
-          <CryptoAffiliateDisclosure className="mb-8" />
+          <CryptoRiskNotice className="mb-8" />
 
           <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700 shadow-sm">
             Crypto · Application · Smart Engine
           </div>
 
           <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 md:text-6xl">
-            SwissBorg : avis, frais, avantages et code de parrainage
+            SwissBorg : avis, frais, avantages et sécurité
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
@@ -157,21 +153,19 @@ export default function SwissBorgPage() {
             </p>
           </CryptoAvailabilityNotice>
 
-          <CryptoAffiliateCtaDisclosure className="mt-6 max-w-3xl" />
+          <p className="mt-6 max-w-3xl text-sm font-semibold text-slate-700">
+            Lien officiel non affilié. Afflizen ne reçoit aucune commission via
+            ce bouton.
+          </p>
 
           <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <AffiliateButton
-              href={SWISSBORG_REFERRAL_URL}
-              platform="swissborg"
-              category="crypto"
-              location="hero"
+            <a
+              href={SWISSBORG_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={primaryButtonClassName}
             >
               Découvrir SwissBorg
-            </AffiliateButton>
-
-            <a href="#code" className={secondaryButtonClassName}>
-              Voir le code de parrainage
             </a>
 
             <Link href="/crypto" className={secondaryButtonClassName}>
@@ -229,59 +223,38 @@ export default function SwissBorgPage() {
                 <p className="mt-2 text-sm leading-6 text-amber-900">
                   Les cryptomonnaies sont volatiles. Vous pouvez perdre une
                   partie ou la totalité du capital investi. Les frais,
-                  fonctionnalités, récompenses, niveaux Premium et conditions de
-                  parrainage peuvent changer à tout moment.
+                  fonctionnalités et niveaux Premium peuvent changer à tout
+                  moment.
                 </p>
               </div>
             </div>
 
-            <div
-              id="code"
-              className="mt-8 rounded-3xl border border-emerald-200 bg-emerald-50 p-8 shadow-sm"
-            >
+            <div className="mt-8 rounded-3xl border border-emerald-200 bg-emerald-50 p-8 shadow-sm">
               <h2 className="text-3xl font-bold tracking-tight text-emerald-950">
-                Code de parrainage SwissBorg Afflizen
+                Lien officiel non affilié
               </h2>
 
               <p className="mt-5 leading-8 text-emerald-950">
-                Pour utiliser le parrainage SwissBorg Afflizen, ouvrez le lien
-                ci-dessous puis copiez le code de parrainage au moment demandé
-                pendant l’inscription.
+                Afflizen ne publie actuellement aucun code personnel de
+                parrainage SwissBorg. Le bouton ci-dessous dirige uniquement vers
+                le site officiel et ne donne lieu à aucune commission pour
+                Afflizen.
               </p>
 
-              <div className="mt-6 rounded-2xl border border-emerald-300 bg-white p-5">
-                <p className="text-sm font-semibold text-slate-600">
-                  Code à copier
-                </p>
-
-                <code className="mt-3 block rounded-xl border border-slate-200 bg-slate-950 px-5 py-4 text-center text-xl font-bold tracking-wide text-white">
-                  {SWISSBORG_REFERRAL_CODE}
-                </code>
-              </div>
-
-              <CryptoAffiliateCtaDisclosure className="mt-6" />
-
-              <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <AffiliateButton
-                  href={SWISSBORG_REFERRAL_URL}
-                  platform="swissborg"
-                  category="crypto"
-                  location="code"
+              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+                <a
+                  href={SWISSBORG_OFFICIAL_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={primaryButtonClassName}
                 >
-                  Ouvrir SwissBorg
-                </AffiliateButton>
+                  Voir SwissBorg
+                </a>
 
                 <Link href="/crypto" className={secondaryButtonClassName}>
                   Voir les autres plateformes crypto
                 </Link>
               </div>
-
-              <p className="mt-4 text-sm leading-6 text-emerald-900">
-                Le bonus ou l’avantage éventuel dépend des conditions SwissBorg
-                en vigueur. Vérifiez toujours les règles officielles du
-                parrainage avant de finaliser l’inscription.
-              </p>
             </div>
 
             <div className="mt-8 grid gap-8 md:grid-cols-2">
@@ -354,7 +327,7 @@ export default function SwissBorgPage() {
                   <li>• Les frais de dépôt selon le moyen de paiement.</li>
                   <li>• Les frais de retrait fiat ou crypto.</li>
                   <li>• Les frais éventuels liés aux Crypto Bundles.</li>
-                  <li>• Les conditions du code de parrainage.</li>
+                  <li>• Les services disponibles dans votre pays.</li>
                 </ul>
               </div>
             </div>
@@ -488,18 +461,19 @@ export default function SwissBorgPage() {
                 </p>
               </div>
 
-              <CryptoAffiliateCtaDisclosure className="mt-6" />
+              <p className="mt-6 text-sm font-semibold text-slate-300">
+                Lien officiel non affilié.
+              </p>
 
               <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <AffiliateButton
-                  href={SWISSBORG_REFERRAL_URL}
-                  platform="swissborg"
-                  category="crypto"
-                  location="avis"
+                <a
+                  href={SWISSBORG_OFFICIAL_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={primaryButtonClassName}
                 >
                   Découvrir SwissBorg
-                </AffiliateButton>
+                </a>
 
                 <Link href="/crypto" className={secondaryButtonClassName}>
                   Voir les autres plateformes crypto
@@ -542,31 +516,23 @@ export default function SwissBorgPage() {
               </h2>
 
               <p className="mt-4 text-sm leading-6 text-slate-700">
-                Ouvrez SwissBorg puis copiez le code de parrainage Afflizen lors
-                de l’inscription si le champ est proposé.
+                Afflizen ne publie actuellement aucun code personnel de
+                parrainage SwissBorg. Ce lien dirige uniquement vers le site
+                officiel.
               </p>
 
-              <div className="mt-5 rounded-2xl border border-emerald-200 bg-emerald-50 p-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
-                  Code de parrainage
-                </p>
+              <p className="mt-5 text-sm font-semibold text-slate-700">
+                Lien officiel non affilié.
+              </p>
 
-                <code className="mt-2 block rounded-xl bg-white px-4 py-3 text-center text-lg font-bold text-slate-950">
-                  {SWISSBORG_REFERRAL_CODE}
-                </code>
-              </div>
-
-              <CryptoAffiliateCtaDisclosure className="mt-6" />
-
-              <AffiliateButton
-                href={SWISSBORG_REFERRAL_URL}
-                platform="swissborg"
-                category="crypto"
-                location="sidebar"
+              <a
+                href={SWISSBORG_OFFICIAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={fullButtonClassName}
               >
                 Aller sur SwissBorg
-              </AffiliateButton>
+              </a>
 
               <Link
                 href="/crypto"

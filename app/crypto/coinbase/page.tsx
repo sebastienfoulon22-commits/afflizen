@@ -1,17 +1,13 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
-import CryptoAffiliateDisclosure, {
-  CryptoAffiliateCtaDisclosure,
-} from "../../../components/CryptoAffiliateDisclosure";
 import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
+import CryptoRiskNotice from "../../../components/CryptoRiskNotice";
 
-const COINBASE_AFFILIATE_LINK =
-  "https://coinbase.com/join/HRDF5VE?src=referral-link";
+const COINBASE_OFFICIAL_URL = "https://www.coinbase.com/";
 
 export const metadata = createPageMetadata({
   title: "Coinbase avis 2026 : frais, sécurité, avantages et inconvénients",
-  description: "Notre avis sur Coinbase : frais, sécurité, crypto disponibles, avantages, limites, lien de parrainage et conseils avant de créer un compte.",
+  description: "Notre avis sur Coinbase : frais, sécurité, crypto disponibles, avantages, limites et conseils avant de créer un compte.",
   path: "/crypto/coinbase",
   type: "article",
 });
@@ -52,7 +48,7 @@ const steps = [
   {
     title: "1. Créer un compte Coinbase",
     description:
-      "Clique sur le lien Afflizen, renseigne tes informations et suis les étapes de création de compte.",
+      "Accède au site officiel Coinbase, renseigne tes informations et suis les étapes de création de compte.",
   },
   {
     title: "2. Vérifier ton identité",
@@ -118,7 +114,7 @@ const faq = [
   {
     question: "Afflizen dispose-t-il d’un lien de parrainage Coinbase ?",
     answer:
-      "Oui. Afflizen utilise un lien de parrainage Coinbase. Les avantages éventuels dépendent des conditions Coinbase en vigueur au moment de l’inscription.",
+      "Non. Afflizen ne publie actuellement aucun lien personnel de parrainage Coinbase. Les boutons de cette fiche renvoient uniquement vers le site officiel, sans affiliation.",
   },
 ];
 
@@ -155,7 +151,7 @@ export default function CoinbasePage() {
               </Link>
             </div>
 
-            <CryptoAffiliateDisclosure className="mb-8" />
+            <CryptoRiskNotice className="mb-8" />
 
             <p className="mb-4 inline-flex rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700">
               Crypto · Plateforme d’achat · Débutants
@@ -191,18 +187,20 @@ export default function CoinbasePage() {
               </p>
             </CryptoAvailabilityNotice>
 
-            <CryptoAffiliateCtaDisclosure className="mt-6" />
+            <p className="mt-6 text-sm font-semibold text-slate-700">
+              Lien officiel non affilié. Afflizen ne reçoit aucune commission via
+              ce bouton.
+            </p>
 
             <div className="mt-3 flex flex-col gap-3 sm:flex-row">
-              <AffiliateButton
-                href={COINBASE_AFFILIATE_LINK}
-                platform="coinbase"
-                category="crypto"
-                location="hero"
+              <a
+                href={COINBASE_OFFICIAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-bold text-white shadow-sm transition hover:bg-emerald-700"
               >
-                Créer un compte Coinbase
-              </AffiliateButton>
+                Voir Coinbase
+              </a>
 
               <a
                 href="#avis-coinbase"
@@ -235,17 +233,18 @@ export default function CoinbasePage() {
               </p>
             </div>
 
-            <CryptoAffiliateCtaDisclosure className="mt-6" />
+            <p className="mt-6 text-sm font-semibold text-slate-300">
+              Lien officiel non affilié.
+            </p>
 
-            <AffiliateButton
-              href={COINBASE_AFFILIATE_LINK}
-              platform="coinbase"
-              category="crypto"
-              location="sidebar"
+            <a
+              href={COINBASE_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-3 inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-400"
             >
-              Ouvrir Coinbase
-            </AffiliateButton>
+              Voir Coinbase
+            </a>
           </aside>
         </div>
       </section>
@@ -321,18 +320,19 @@ export default function CoinbasePage() {
               </p>
             </div>
 
-            <CryptoAffiliateCtaDisclosure className="mt-6" />
+            <p className="mt-6 text-sm font-semibold text-slate-700">
+              Lien officiel non affilié.
+            </p>
 
             <div className="mt-3">
-              <AffiliateButton
-                href={COINBASE_AFFILIATE_LINK}
-                platform="coinbase"
-                category="crypto"
-                location="frais"
+              <a
+                href={COINBASE_OFFICIAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-bold text-white shadow-sm transition hover:bg-emerald-700"
               >
-                Comparer les frais sur Coinbase
-              </AffiliateButton>
+                Consulter les frais sur Coinbase
+              </a>
             </div>
           </section>
 
@@ -512,18 +512,19 @@ export default function CoinbasePage() {
               Advanced, Binance, Kraken ou d’autres plateformes.
             </p>
 
-            <CryptoAffiliateCtaDisclosure className="mt-6" />
+            <p className="mt-6 text-sm font-semibold text-slate-700">
+              Lien officiel non affilié.
+            </p>
 
             <div className="mt-3">
-              <AffiliateButton
-                href={COINBASE_AFFILIATE_LINK}
-                platform="coinbase"
-                category="crypto"
-                location="avis"
+              <a
+                href={COINBASE_OFFICIAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-base font-bold text-white shadow-sm transition hover:bg-emerald-700"
               >
-                Créer un compte Coinbase
-              </AffiliateButton>
+                Voir Coinbase
+              </a>
             </div>
           </section>
 
@@ -584,17 +585,18 @@ export default function CoinbasePage() {
               </div>
             </dl>
 
-            <CryptoAffiliateCtaDisclosure className="mt-6" />
+            <p className="mt-6 text-sm font-semibold text-slate-700">
+              Lien officiel non affilié.
+            </p>
 
-            <AffiliateButton
-              href={COINBASE_AFFILIATE_LINK}
-              platform="coinbase"
-              category="crypto"
-              location="sidebar"
+            <a
+              href={COINBASE_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-3 inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-700"
             >
-              Ouvrir Coinbase
-            </AffiliateButton>
+              Voir Coinbase
+            </a>
 
             <p className="mt-4 text-xs leading-5 text-slate-500">
               Les cryptomonnaies sont risquées et volatiles. Vérifie toujours

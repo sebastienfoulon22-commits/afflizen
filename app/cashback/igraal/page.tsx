@@ -1,9 +1,7 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
 
-const IGRAAL_REFERRAL_URL =
-  "https://fr.igraal.com/parrainage?parrain=AG_5cec013713c0f&utm_medium=raf&utm_source=refer_friend";
+const IGRAAL_OFFICIAL_URL = "https://fr.igraal.com/";
 
 const primaryButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700";
@@ -12,8 +10,8 @@ const darkButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700";
 
 export const metadata = createPageMetadata({
-  title: "iGraal avis 2026 : cashback, codes promo, paiement et parrainage",
-  description: "Notre avis sur iGraal en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, extension, FAQ et lien de parrainage.",
+  title: "iGraal avis 2026 : cashback, codes promo et paiement",
+  description: "Notre avis sur iGraal en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, extension et FAQ.",
   path: "/cashback/igraal",
   type: "article",
 });
@@ -47,15 +45,14 @@ export default function IGraalPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={IGRAAL_REFERRAL_URL}
-              platform="igraal"
-              category="cashback"
-              location="hero"
+            <a
+              href={IGRAAL_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={primaryButtonClassName}
             >
-              S’inscrire sur iGraal
-            </AffiliateButton>
+              Découvrir iGraal
+            </a>
 
             <Link
               href="/cashback"
@@ -66,8 +63,13 @@ export default function IGraalPage() {
           </div>
 
           <p className="mt-4 max-w-3xl text-sm text-slate-500">
-            Les taux de cashback, les bonus de parrainage, les codes promo, les
-            délais de validation et les seuils de paiement peuvent évoluer.
+            Afflizen ne publie actuellement aucun lien personnel de parrainage
+            iGraal. Le bouton proposé dirige uniquement vers le site officiel.
+          </p>
+
+          <p className="mt-3 max-w-3xl text-sm text-slate-500">
+            Les taux de cashback, les offres, les codes promo, les délais de
+            validation et les seuils de paiement peuvent évoluer.
             Vérifiez toujours les conditions officielles avant de finaliser un
             achat.
           </p>
@@ -154,9 +156,7 @@ export default function IGraalPage() {
                 • Possibilité de retirer ses gains selon les conditions en
                 vigueur.
               </li>
-              <li>
-                • Parrainage intéressant si vous partagez iGraal autour de vous.
-              </li>
+              <li>• Offres ponctuelles proposées selon les campagnes.</li>
               <li>• Bon complément pour optimiser des achats déjà prévus.</li>
             </ul>
           </article>
@@ -175,9 +175,7 @@ export default function IGraalPage() {
                 respectées.
               </li>
               <li>• Il ne faut pas acheter uniquement pour obtenir du cashback.</li>
-              <li>
-                • Les bonus de parrainage peuvent évoluer selon les campagnes.
-              </li>
+              <li>• Les offres peuvent évoluer selon les campagnes.</li>
             </ul>
           </article>
         </div>
@@ -355,15 +353,14 @@ export default function IGraalPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={IGRAAL_REFERRAL_URL}
-              platform="igraal"
-              category="cashback"
-              location="avis"
+            <a
+              href={IGRAAL_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={darkButtonClassName}
             >
               Accéder à iGraal
-            </AffiliateButton>
+            </a>
 
             <Link
               href="/cashback"
@@ -432,17 +429,13 @@ export default function IGraalPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Mention affiliation
+            Lien officiel non affilié
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Certains liens présents sur Afflizen peuvent être des liens
-            d’affiliation ou de parrainage. Cela signifie que nous pouvons
-            recevoir une commission, un bonus ou un avantage si vous créez un
-            compte ou utilisez un service via notre lien, sans coût
-            supplémentaire pour vous. Cette rémunération aide à financer le site
-            et n’influence pas notre volonté de présenter les avantages comme les
-            limites de chaque plateforme.
+            Afflizen ne publie actuellement aucun lien personnel de parrainage
+            iGraal. Les liens externes de cette fiche renvoient uniquement vers le
+            site officiel et ne donnent lieu à aucune commission pour Afflizen.
           </p>
         </div>
       </section>

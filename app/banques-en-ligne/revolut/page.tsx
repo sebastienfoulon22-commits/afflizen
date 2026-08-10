@@ -1,9 +1,8 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
 
-const REVOLUT_AFFILIATE_LINK =
-  "https://revolut.com/referral/?referral-code=sebast23u!JUN1-26-AR-H1&geo-redirect";
+const REVOLUT_BELGIUM_URL = "https://www.revolut.com/fr-BE/";
+const REVOLUT_FRANCE_URL = "https://www.revolut.com/fr-FR/";
 
 export const metadata = createPageMetadata({
   title: "Revolut avis 2026 : frais, carte, compte, change et sécurité",
@@ -33,16 +32,24 @@ export default function RevolutPage() {
             limites, les frais, la sécurité et notre avis Afflizen.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={REVOLUT_AFFILIATE_LINK}
-              platform="revolut"
-              category="banques-en-ligne"
-              location="hero"
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <a
+              href={REVOLUT_BELGIUM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
             >
-              S’inscrire sur Revolut
-            </AffiliateButton>
+              Voir Revolut Belgique
+            </a>
+
+            <a
+              href={REVOLUT_FRANCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-slate-950 px-7 py-4 text-center font-semibold text-white transition hover:bg-emerald-700"
+            >
+              Voir Revolut France
+            </a>
 
             <Link
               href="/banques-en-ligne"
@@ -53,6 +60,12 @@ export default function RevolutPage() {
           </div>
 
           <p className="mt-4 max-w-3xl text-sm text-slate-500">
+            Afflizen ne publie actuellement aucun lien personnel de parrainage
+            Revolut. Les boutons proposés dirigent uniquement vers les sites
+            officiels belge et français.
+          </p>
+
+          <p className="mt-3 max-w-3xl text-sm text-slate-500">
             Les frais, les plafonds, les taux et les avantages peuvent évoluer.
             Vérifiez toujours les conditions officielles Revolut dans votre pays
             avant d’ouvrir un compte ou de choisir une formule payante.
@@ -330,16 +343,23 @@ export default function RevolutPage() {
             banque en ligne classique ou votre banque actuelle.
           </p>
 
-          <div className="mt-8">
-            <AffiliateButton
-              href={REVOLUT_AFFILIATE_LINK}
-              platform="revolut"
-              category="banques-en-ligne"
-              location="avis"
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href={REVOLUT_BELGIUM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
             >
-              Accéder à Revolut
-            </AffiliateButton>
+              Voir Revolut Belgique
+            </a>
+            <a
+              href={REVOLUT_FRANCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex rounded-full border border-slate-300 px-7 py-4 font-semibold text-slate-800 transition hover:border-emerald-500 hover:text-emerald-700"
+            >
+              Voir Revolut France
+            </a>
           </div>
         </div>
       </section>
@@ -401,16 +421,14 @@ export default function RevolutPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Mention affiliation
+            Liens officiels non affiliés
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Certains liens présents sur Afflizen peuvent être des liens
-            d’affiliation. Cela signifie que nous pouvons recevoir une
-            commission si vous ouvrez un compte via notre lien, sans coût
-            supplémentaire pour vous. Cette rémunération aide à financer le site
-            et n’influence pas notre volonté de présenter les avantages comme
-            les limites de chaque plateforme.
+            Afflizen ne publie actuellement aucun lien personnel de parrainage
+            Revolut. Les liens externes de cette fiche renvoient uniquement vers
+            les sites officiels belge et français et ne donnent lieu à aucune
+            commission pour Afflizen.
           </p>
         </div>
       </section>

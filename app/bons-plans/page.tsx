@@ -24,9 +24,9 @@ const cashbackDeals: Deal[] = [
     category: "Cashback",
     description:
       "Une plateforme généraliste pour récupérer une partie de certains achats réalisés chez ses marchands partenaires.",
-    use: "Pour comparer les marchands, les modalités de validation et le fonctionnement du parrainage.",
+    use: "Pour comparer les marchands, les modalités de validation et accéder au site officiel non affilié.",
     href: "/cashback/igraal",
-    badge: "Lien de parrainage",
+    badge: "Lien officiel",
   },
   {
     name: "Widilo",
@@ -63,9 +63,9 @@ const financialReferralDeals: Deal[] = [
     category: "Compte et paiements",
     description:
       "Une application financière internationale pour les paiements, les conversions et la gestion courante.",
-    use: "Pour consulter les services, les limites et le lien actuellement présenté par Afflizen.",
+    use: "Pour consulter les services, les limites et les sites officiels belge et français.",
     href: "/banques-en-ligne/revolut",
-    badge: "Lien affilié",
+    badge: "Liens officiels",
   },
   {
     name: "Trade Republic",
@@ -84,18 +84,18 @@ const cryptoReferralDeals: Deal[] = [
     category: "Crypto",
     description:
       "Un écosystème crypto associant application, échange et services dont la disponibilité peut varier.",
-    use: "Pour vérifier les produits accessibles et les éventuelles conditions liées au lien.",
+    use: "Pour vérifier les produits accessibles et consulter le site officiel non affilié.",
     href: "/crypto/crypto-com",
-    badge: "Lien de parrainage",
+    badge: "Lien officiel",
   },
   {
     name: "Coinbase",
     category: "Crypto",
     description:
       "Une plateforme d'achat et de vente de cryptoactifs avec une interface orientée grand public.",
-    use: "Pour examiner les frais, les risques et les conditions du parrainage présenté.",
+    use: "Pour examiner les frais, les risques et consulter le site officiel non affilié.",
     href: "/crypto/coinbase",
-    badge: "Lien de parrainage",
+    badge: "Lien officiel",
   },
   {
     name: "Kraken",
@@ -111,9 +111,9 @@ const cryptoReferralDeals: Deal[] = [
     category: "Crypto",
     description:
       "Une application crypto centrée sur l'achat, la vente et la gestion d'actifs numériques.",
-    use: "Pour vérifier le code présenté, les conditions applicables et la disponibilité locale.",
+    use: "Pour vérifier les services, les conditions applicables et consulter le site officiel non affilié.",
     href: "/crypto/swissborg",
-    badge: "Code de parrainage",
+    badge: "Lien officiel",
   },
   {
     name: "Nexo",
@@ -153,9 +153,9 @@ const paymentDeals: Deal[] = [
     category: "Regroupement de cartes",
     description:
       "Un service qui permet de réunir plusieurs cartes de paiement dans une même application.",
-    use: "Pour étudier les usages en voyage, les limites et les conditions du parrainage.",
+    use: "Pour étudier les usages en voyage, les limites et consulter le site officiel non affilié.",
     href: "/cartes-et-paiements/curve-pay",
-    badge: "Lien de parrainage",
+    badge: "Lien officiel",
   },
   {
     name: "Wise",
@@ -363,11 +363,12 @@ export default function BonsPlansPage() {
 
           <div className="mt-12 border-t border-slate-200 pt-10">
             <h3 className="text-2xl font-bold text-slate-950">
-              Fiches crypto avec lien actif
+              Fiches crypto et statut des liens
             </h3>
             <p className="mt-3 max-w-3xl leading-7 text-slate-700">
               Chaque carte dirige d’abord vers une fiche Afflizen présentant le
-              statut du lien, les conditions, les restrictions et les risques.
+              statut du lien, qu’il soit affilié ou officiel, ainsi que les
+              conditions, les restrictions et les risques.
             </p>
 
             <aside

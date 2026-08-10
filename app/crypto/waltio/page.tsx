@@ -1,12 +1,11 @@
 import { createPageMetadata } from "@/lib/metadata";
-import AffiliateButton from "../../../components/AffiliateButton";
 import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
 
-const WALTIO_AFFILIATE_LINK = "https://m.waltio.com/HiTQKirPqd";
+const WALTIO_OFFICIAL_URL = "https://www.waltio.com/";
 
 export const metadata = createPageMetadata({
   title: "Waltio : fiscalité crypto, déclaration et avis",
-  description: "Découvrez Waltio, un assistant fiscal crypto pour suivre ses transactions, calculer ses plus-values et préparer sa déclaration. Avis, avantages, limites et lien de parrainage.",
+  description: "Découvrez Waltio, un assistant fiscal crypto pour suivre ses transactions, calculer ses plus-values et préparer sa déclaration. Avis, avantages et limites.",
   path: "/crypto/waltio",
   type: "article",
 });
@@ -113,15 +112,14 @@ export default function WaltioPage() {
           </CryptoAvailabilityNotice>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={WALTIO_AFFILIATE_LINK}
-              platform="waltio"
-              category="crypto"
-              location="hero"
+            <a
+              href={WALTIO_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-emerald-600 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-700"
             >
               Découvrir Waltio
-            </AffiliateButton>
+            </a>
 
             <a
               href="/crypto"
@@ -132,12 +130,11 @@ export default function WaltioPage() {
           </div>
 
           <p className="mt-5 max-w-3xl text-xs leading-6 text-slate-500">
-            Certains liens présents sur cette page peuvent être des liens de
-            parrainage ou d’affiliation. Afflizen peut recevoir une commission
-            ou un avantage si vous utilisez ces liens. Waltio ne remplace pas un
-            conseiller fiscal. Vérifiez toujours les informations auprès des
-            sources officielles ou d’un professionnel qualifié avant toute
-            déclaration.
+            Le lien actuellement proposé par Afflizen est un lien officiel non
+            affilié, dans l’attente de la vérification du type de programme
+            associé au compte propriétaire. Waltio ne remplace pas un conseiller
+            fiscal. Vérifiez toujours les informations auprès des sources
+            officielles ou d’un professionnel qualifié avant toute déclaration.
           </p>
         </div>
       </section>
@@ -278,15 +275,14 @@ export default function WaltioPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={WALTIO_AFFILIATE_LINK}
-              platform="waltio"
-              category="crypto"
-              location="avis"
+            <a
+              href={WALTIO_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-emerald-600 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-700"
             >
-              Essayer Waltio
-            </AffiliateButton>
+              Voir Waltio
+            </a>
 
             <a
               href="/crypto"

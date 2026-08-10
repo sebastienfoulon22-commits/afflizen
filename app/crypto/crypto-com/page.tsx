@@ -1,12 +1,9 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import AffiliateButton from "../../../components/AffiliateButton";
-import CryptoAffiliateDisclosure, {
-  CryptoAffiliateCtaDisclosure,
-} from "../../../components/CryptoAffiliateDisclosure";
 import CryptoAvailabilityNotice from "../../../components/CryptoAvailabilityNotice";
+import CryptoRiskNotice from "../../../components/CryptoRiskNotice";
 
-const CRYPTO_COM_REFERRAL_URL = "https://crypto.com/app/ykrgcpqy7f";
+const CRYPTO_COM_OFFICIAL_URL = "https://crypto.com/";
 
 const primaryButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700";
@@ -33,7 +30,7 @@ export default function CryptoComPage() {
             ← Retour à l’accueil
           </Link>
 
-          <CryptoAffiliateDisclosure className="mb-8" />
+          <CryptoRiskNotice className="mb-8" />
 
           <div className="mb-6 inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-700">
             Plateforme crypto
@@ -69,18 +66,20 @@ export default function CryptoComPage() {
             </p>
           </CryptoAvailabilityNotice>
 
-          <CryptoAffiliateCtaDisclosure className="mt-6 max-w-3xl" />
+          <p className="mt-6 max-w-3xl text-sm font-semibold text-slate-700">
+            Lien officiel non affilié. Afflizen ne reçoit aucune commission via
+            ce bouton.
+          </p>
 
           <div className="mt-3 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={CRYPTO_COM_REFERRAL_URL}
-              platform="crypto-com"
-              category="crypto"
-              location="hero"
+            <a
+              href={CRYPTO_COM_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={primaryButtonClassName}
             >
-              S’inscrire sur Crypto.com
-            </AffiliateButton>
+              Voir Crypto.com
+            </a>
 
             <Link
               href="/crypto"
@@ -368,18 +367,19 @@ export default function CryptoComPage() {
             staking ou DeFi doivent être utilisés avec prudence.
           </p>
 
-          <CryptoAffiliateCtaDisclosure className="mt-6 max-w-3xl" />
+          <p className="mt-6 max-w-3xl text-sm font-semibold text-slate-700">
+            Lien officiel non affilié.
+          </p>
 
           <div className="mt-3 flex flex-col gap-4 sm:flex-row">
-            <AffiliateButton
-              href={CRYPTO_COM_REFERRAL_URL}
-              platform="crypto-com"
-              category="crypto"
-              location="avis"
+            <a
+              href={CRYPTO_COM_OFFICIAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={darkButtonClassName}
             >
-              Accéder à Crypto.com
-            </AffiliateButton>
+              Voir Crypto.com
+            </a>
 
             <Link
               href="/crypto"
@@ -443,15 +443,13 @@ export default function CryptoComPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Transparence Afflizen
+            Lien officiel non affilié
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Les liens d’inscription de cette page sont affiliés. Afflizen peut
-            recevoir une commission si vous effectuez une action éligible, sans
-            coût supplémentaire direct pour vous. Cette rémunération contribue au
-            financement du site sans modifier la présentation des avantages, des
-            limites et des risques.
+            Afflizen ne publie actuellement aucun lien personnel de parrainage
+            Crypto.com. Les boutons externes renvoient uniquement vers le site
+            officiel et ne donnent lieu à aucune commission pour Afflizen.
           </p>
         </div>
       </section>

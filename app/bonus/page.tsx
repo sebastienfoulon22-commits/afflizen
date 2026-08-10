@@ -11,22 +11,6 @@ export const metadata = createPageMetadata({
 
 const activeCryptoOffers = [
   {
-    name: "Crypto.com",
-    url: "/crypto/crypto-com",
-    status: "Lien de parrainage",
-    advantage: "Avantage potentiel selon les conditions de la plateforme",
-    description:
-      "Crypto.com propose un programme de parrainage dont les conditions et avantages peuvent évoluer. La fiche distingue les services crypto, la carte et les paiements.",
-  },
-  {
-    name: "Coinbase",
-    url: "/crypto/coinbase",
-    status: "Lien de parrainage",
-    advantage: "Offre variable selon le pays et l’éligibilité",
-    description:
-      "Coinbase peut proposer un avantage de parrainage sous conditions. Vérifiez l’offre actuellement affichée et les critères applicables avant de vous inscrire.",
-  },
-  {
     name: "Nexo",
     url: "/crypto/nexo",
     status: "Lien de parrainage",
@@ -42,14 +26,6 @@ const activeCryptoOffers = [
     description:
       "Le lien d’invitation applique les conditions affichées par Kraken. Le montant, la disponibilité et l’éligibilité peuvent évoluer ou disparaître.",
   },
-  {
-    name: "SwissBorg",
-    url: "/crypto/swissborg",
-    status: "Lien de parrainage",
-    advantage: "Avantage potentiel lié au code et au pays",
-    description:
-      "Le code SwissBorg peut donner accès à un avantage potentiel selon les conditions en vigueur, la période et le pays de résidence.",
-  },
 ];
 
 const suspendedCryptoOffers = [
@@ -59,13 +35,6 @@ const suspendedCryptoOffers = [
 
 const otherOffers = [
   {
-    name: "Revolut",
-    category: "Banque en ligne",
-    url: "/banques-en-ligne/revolut",
-    status: "Lien affilié",
-    advantage: "Parrainage ou offre variable",
-  },
-  {
     name: "N26",
     category: "Banque en ligne",
     url: "/banques-en-ligne/n26",
@@ -73,9 +42,9 @@ const otherOffers = [
     advantage: "Offres commerciales variables",
   },
   {
-    name: "iGraal",
+    name: "eBuyClub",
     category: "Cashback",
-    url: "/cashback/igraal",
+    url: "/cashback/ebuyclub",
     status: "Lien de parrainage",
     advantage: "Cashback et parrainage sous conditions",
   },
@@ -89,6 +58,48 @@ const otherOffers = [
 ];
 
 const platformsWithoutPublicReferral = [
+  {
+    name: "Revolut",
+    category: "Banque en ligne",
+    url: "/banques-en-ligne/revolut",
+    description:
+      "Afflizen ne publie actuellement aucun lien personnel de parrainage Revolut. La fiche propose les sites officiels belge et français.",
+  },
+  {
+    name: "Crypto.com",
+    category: "Crypto",
+    url: "/crypto/crypto-com",
+    description:
+      "Afflizen ne publie actuellement aucun lien personnel de parrainage Crypto.com. La fiche utilise uniquement le site officiel sans affiliation.",
+  },
+  {
+    name: "Coinbase",
+    category: "Crypto",
+    url: "/crypto/coinbase",
+    description:
+      "Afflizen ne publie actuellement aucun lien personnel de parrainage Coinbase. La fiche utilise uniquement le site officiel sans affiliation.",
+  },
+  {
+    name: "SwissBorg",
+    category: "Crypto",
+    url: "/crypto/swissborg",
+    description:
+      "Afflizen ne publie actuellement aucun code personnel de parrainage SwissBorg. La fiche utilise uniquement le site officiel sans affiliation.",
+  },
+  {
+    name: "iGraal",
+    category: "Cashback",
+    url: "/cashback/igraal",
+    description:
+      "Afflizen ne publie actuellement aucun lien personnel de parrainage iGraal. La fiche utilise uniquement le site officiel sans affiliation.",
+  },
+  {
+    name: "Curve",
+    category: "Cartes et paiements",
+    url: "/cartes-et-paiements/curve-pay",
+    description:
+      "Afflizen ne publie actuellement aucun lien personnel de parrainage Curve. La fiche utilise uniquement le site officiel sans affiliation.",
+  },
   {
     name: "Trade Republic",
     category: "Investissement",
@@ -313,7 +324,7 @@ export default function BonusPage() {
             Information commerciale
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight">
-            Plateformes actuellement sans parrainage public
+            Plateformes sans parrainage public Afflizen
           </h2>
           <p className="mt-4 max-w-3xl leading-7 text-slate-700">
             Ces plateformes restent présentées sur Afflizen à titre informatif.
