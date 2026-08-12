@@ -123,6 +123,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <meta
+          {...{
+            name: "impact-site-verification",
+            value: "f5c1fc4f-7121-4a8d-911d-138c3a60b419",
+          }}
+        />
+      </head>
       <body>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
