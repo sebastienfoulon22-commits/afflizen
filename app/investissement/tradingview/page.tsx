@@ -2,11 +2,11 @@ import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import AffiliateButton from "@/components/AffiliateButton";
 
-const TRADINGVIEW_AFFILIATE_LINK = "https://fr.tradingview.com/?aff_id=168402";
+const TRADINGVIEW_AFFILIATE_LINK = "https://fr.tradingview.com/?aff_id=169727";
 
 export const metadata = createPageMetadata({
   title: "TradingView : graphiques, analyse et suivi des marchés",
-  description: "Découvrez TradingView, une plateforme de graphiques, alertes et analyse des marchés financiers. Avis Afflizen, points forts, limites, risques et lien d’affiliation.",
+  description: "Découvrez TradingView, une plateforme de graphiques, alertes et analyse des marchés financiers. Avis Afflizen, points forts, limites, risques et lien affilié professionnel officiel.",
   path: "/investissement/tradingview",
   type: "article",
 });
@@ -46,6 +46,15 @@ const checks = [
   "Différences entre la version gratuite et les abonnements payants.",
   "Délai éventuel des données, limites d’alertes, nombre de graphiques et fonctionnalités avancées.",
   "Conditions officielles, prix, renouvellement, annulation, fiscalité éventuelle et risques de trading.",
+];
+
+const partnerFacts = [
+  "TradingView présente un programme partenaire officiel pour les affiliés.",
+  "La promotion est autorisée sur des sites, blogs, réseaux sociaux et plateformes tierces, hors pratiques interdites comme le spam ou les annonces payantes sur la marque.",
+  "TradingView annonce actuellement un coupon de 15 $ pour un nouvel abonnement éligible via un lien partenaire, sous réserve des conditions officielles.",
+  "Les commissions concernent les nouveaux abonnés et les achats de plans payants effectués via la version web ; les achats dans les applications desktop ou mobiles ne sont pas inclus dans le programme affilié à ce jour.",
+  "Les commissions partenaires affichées publiquement sont actuellement de 10 $ mensuel / 60 $ annuel pour Essential, 25 $ / 100 $ pour Plus, 50 $ / 120 $ pour Premium et 200 $ / 400 $ pour Ultimate.",
+  "La fenêtre d’attribution annoncée est de 90 jours, avec règles spécifiques en cas d’essai, remboursement ou chargeback.",
 ];
 
 const relatedLinks = [
@@ -115,7 +124,7 @@ const faq = [
   {
     question: "Le lien TradingView sur Afflizen est-il affilié ?",
     answer:
-      "Oui. Le lien TradingView présent sur Afflizen est un lien d’affiliation/parrainage. Cela peut permettre à Afflizen de recevoir une commission ou une récompense si vous utilisez TradingView, sans modifier notre approche éditoriale.",
+      "Oui. Le lien TradingView présent sur Afflizen est un lien affilié professionnel officiel. Afflizen peut percevoir une commission si vous souscrivez un abonnement éligible via ce lien, sans modifier notre approche éditoriale ni garantir une réduction ou un avantage permanent.",
   },
 ];
 
@@ -206,13 +215,15 @@ export default function TradingViewPage() {
 
             <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5">
               <p className="font-semibold text-amber-950">
-                Lien affilié Afflizen, sans bonus promis
+                Lien affilié professionnel TradingView
               </p>
               <p className="mt-2 text-sm leading-6 text-amber-950">
-                Le bouton TradingView utilise un lien d’affiliation/parrainage.
-                Afflizen peut recevoir une commission ou une récompense si vous
-                utilisez TradingView, sans promettre de réduction, code promo,
-                gain financier ou avantage garanti.
+                Le bouton TradingView utilise le programme partenaire officiel.
+                Afflizen peut percevoir une commission si vous souscrivez un
+                abonnement éligible via ce lien. TradingView annonce actuellement
+                un coupon de 15 $ pour un nouvel abonnement éligible, mais les
+                conditions, exclusions et disponibilités doivent être vérifiées
+                sur le site officiel.
               </p>
             </div>
           </div>
@@ -275,7 +286,7 @@ export default function TradingViewPage() {
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm text-slate-500">Affiliation</p>
             <p className="mt-2 font-semibold text-slate-950">
-              Lien sponsorisé
+              Programme partenaire
             </p>
           </div>
         </div>
@@ -390,7 +401,7 @@ export default function TradingViewPage() {
 
           <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
             <h2 className="text-3xl font-bold text-slate-950">
-              Version gratuite et abonnements : rester prudent
+              Version gratuite, abonnements et coupon partenaire
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
@@ -410,6 +421,23 @@ export default function TradingViewPage() {
                   <p className="text-sm leading-6 text-slate-700">{item}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
+              <h3 className="text-xl font-bold text-emerald-950">
+                Programme partenaire TradingView confirmé
+              </h3>
+              <ul className="mt-4 space-y-3">
+                {partnerFacts.map((item) => (
+                  <li
+                    key={item}
+                    className="flex gap-3 text-sm leading-6 text-emerald-950"
+                  >
+                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </section>
 
@@ -571,9 +599,10 @@ export default function TradingViewPage() {
               Lien affilié
             </h2>
             <p className="mt-3 text-sm leading-6 text-amber-950">
-              Les CTA TradingView de cette page utilisent un lien
-              d’affiliation/parrainage Afflizen. Aucun bonus, code promo ou gain
-              financier n’est promis.
+              Les CTA TradingView de cette page utilisent le lien affilié
+              professionnel Afflizen. TradingView annonce actuellement un coupon
+              de 15 $ pour un nouvel abonnement éligible, sous réserve des
+              conditions officielles ; aucun gain financier n’est promis.
             </p>
           </div>
         </aside>

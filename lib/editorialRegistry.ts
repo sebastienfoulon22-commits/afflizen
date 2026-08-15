@@ -317,8 +317,18 @@ export const editorialRegistry = [
   {
     name: "TradingView",
     path: "/investissement/tradingview",
-    reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de TradingView", url: "https://fr.tradingview.com/" }],
+    reviewedAt: "2026-08-15",
+    sources: [
+      { label: "Site officiel de TradingView", url: "https://fr.tradingview.com/" },
+      {
+        label: "Programme partenaire TradingView",
+        url: "https://www.tradingview.com/partner-program/",
+      },
+      {
+        label: "Règles du programme partenaire TradingView",
+        url: "https://www.tradingview.com/partner-rules/",
+      },
+    ],
   },
   {
     name: "VeraCash",

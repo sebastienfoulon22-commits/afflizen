@@ -214,10 +214,10 @@ const toolDeals: Deal[] = [
     name: "TradingView",
     category: "Analyse des marchés",
     description:
-      "Une plateforme de graphiques et de suivi des marchés, sans garantie de performance financière.",
-    use: "Pour découvrir les outils d'analyse, les limites et les risques liés à leur utilisation.",
+      "Une plateforme de graphiques et de suivi des marchés dont le programme partenaire annonce un coupon de 15 $ sur un nouvel abonnement éligible, selon conditions.",
+    use: "Pour vérifier le coupon, les abonnements concernés, les limites web/app et les risques liés à leur utilisation.",
     href: "/investissement/tradingview",
-    badge: "Lien affilié",
+    badge: "Coupon 15 $ selon conditions",
   },
 ];
 
