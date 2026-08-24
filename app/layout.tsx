@@ -130,6 +130,12 @@ export default function RootLayout({
             value: "f5c1fc4f-7121-4a8d-911d-138c3a60b419",
           }}
         />
+        <meta
+          {...{
+            name: "impact-site-verification",
+            value: "1f03e3ca-a343-4941-9b96-b87e8d22ae8f",
+          }}
+        />
       </head>
       <body>
         <Script
