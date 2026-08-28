@@ -1,8 +1,10 @@
 import { createPageMetadata } from "@/lib/metadata";
 import type { ReactNode } from "react";
 import Link from "next/link";
+import AffiliateButton from "@/components/AffiliateButton";
 
-const BULLIONVAULT_OFFICIAL_LINK = "https://or.bullionvault.fr/";
+const BULLIONVAULT_AFFILIATE_LINK =
+  "https://www.bullionvaultaffiliate.com/afflizen/fr";
 
 export const metadata = createPageMetadata({
   title: "BullionVault : acheter et stocker de l'or",
@@ -122,9 +124,9 @@ const faq = [
       "Oui. Le prix des métaux précieux peut baisser, les devises peuvent évoluer défavorablement et les frais peuvent réduire le résultat final. Il existe donc un risque de perte en capital.",
   },
   {
-    question: "Afflizen utilise-t-il déjà un lien de recommandation BullionVault ?",
+    question: "Le lien BullionVault sur Afflizen est-il affilié ?",
     answer:
-      "Non. Afflizen utilise actuellement un lien officiel non affilié vers BullionVault. Ce lien pourra être remplacé ultérieurement par un lien personnel conforme au programme de recommandation.",
+      "Oui. Afflizen utilise désormais un lien d’affiliation BullionVault. Afflizen peut recevoir une commission si une action éligible est réalisée via ce lien, sans surcoût annoncé pour l’utilisateur et sans modifier notre approche éditoriale.",
   },
 ];
 
@@ -141,7 +143,7 @@ const faqJsonLd = {
   })),
 };
 
-function BullionVaultOfficialButton({
+function BullionVaultAffiliateButton({
   location,
   className,
   children,
@@ -151,18 +153,15 @@ function BullionVaultOfficialButton({
   children: ReactNode;
 }) {
   return (
-    <a
-      href={BULLIONVAULT_OFFICIAL_LINK}
-      target="_blank"
-      rel="noopener noreferrer"
-      data-platform="BullionVault"
-      data-category="investissement"
-      data-location={location}
-      data-link-url={BULLIONVAULT_OFFICIAL_LINK}
+    <AffiliateButton
+      href={BULLIONVAULT_AFFILIATE_LINK}
+      platform="BullionVault"
+      category="investissement"
+      location={location}
       className={className}
     >
       {children}
-    </a>
+    </AffiliateButton>
   );
 }
 
@@ -201,12 +200,12 @@ export default function BullionVaultPage() {
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-              <BullionVaultOfficialButton
+              <BullionVaultAffiliateButton
                 location="hero"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700"
               >
                 Découvrir BullionVault
-              </BullionVaultOfficialButton>
+              </BullionVaultAffiliateButton>
 
               <a
                 href="#avis"
@@ -218,12 +217,12 @@ export default function BullionVaultPage() {
 
             <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5">
               <p className="font-semibold text-amber-950">
-                Lien officiel provisoire, sans affiliation Afflizen
+                Lien affilié BullionVault
               </p>
               <p className="mt-2 text-sm leading-6 text-amber-950">
-                Afflizen utilise actuellement un lien officiel non affilié vers
-                BullionVault. Un lien personnel de recommandation pourra être
-                ajouté ultérieurement après ouverture et validation du compte.
+                Afflizen utilise désormais un lien d’affiliation BullionVault.
+                Afflizen peut recevoir une commission si une action éligible est
+                réalisée via ce lien, sans surcoût annoncé pour l’utilisateur.
               </p>
             </div>
           </div>
@@ -250,12 +249,12 @@ export default function BullionVaultPage() {
               </p>
             </div>
 
-            <BullionVaultOfficialButton
+            <BullionVaultAffiliateButton
               location="sidebar"
               className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-400"
             >
-              Site officiel BullionVault
-            </BullionVaultOfficialButton>
+              Découvrir BullionVault
+            </BullionVaultAffiliateButton>
           </aside>
         </div>
       </section>
@@ -286,7 +285,7 @@ export default function BullionVaultPage() {
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm text-slate-500">Afflizen</p>
             <p className="mt-2 font-semibold text-slate-950">
-              Lien officiel
+              Lien affilié
             </p>
           </div>
         </div>
@@ -487,22 +486,21 @@ export default function BullionVaultPage() {
 
           <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
             <h2 className="text-3xl font-bold text-slate-950">
-              Programme de recommandation BullionVault
+              Programme d’affiliation BullionVault
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
-              BullionVault dispose d’un programme de recommandation soumis à
-              conditions, pouvant permettre de recommander la plateforme à des
-              proches ou aux visiteurs d’un site. Afflizen n’utilise pas encore
-              son propre lien et renvoie temporairement vers le site officiel
-              français.
+              BullionVault dispose d’un programme d’affiliation soumis à conditions,
+              pouvant permettre de recommander la plateforme aux visiteurs d’un site
+              web. Afflizen utilise maintenant son lien d’affiliation BullionVault
+              officiel pour les CTA de cette fiche.
             </p>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
               Cette mention ne constitue pas une promesse de revenu, de
               commission, de durée de rémunération ou d’avantage garanti pour le
-              visiteur. Le lien pourra être remplacé plus tard uniquement par un
-              lien personnel conforme au programme.
+              visiteur. Afflizen peut recevoir une commission si une action éligible
+              est réalisée via le lien, sans surcoût annoncé pour l’utilisateur.
             </p>
           </section>
 
@@ -530,12 +528,12 @@ export default function BullionVaultPage() {
             </p>
 
             <div className="mt-8">
-              <BullionVaultOfficialButton
+              <BullionVaultAffiliateButton
                 location="avis"
                 className="inline-flex rounded-full bg-slate-950 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
               >
                 Découvrir BullionVault
-              </BullionVaultOfficialButton>
+              </BullionVaultAffiliateButton>
             </div>
           </section>
 
@@ -561,12 +559,12 @@ export default function BullionVaultPage() {
             </div>
 
             <div className="mt-8">
-              <BullionVaultOfficialButton
+              <BullionVaultAffiliateButton
                 location="faq"
                 className="inline-flex rounded-full bg-emerald-600 px-7 py-4 font-semibold text-white transition hover:bg-emerald-700"
               >
                 Découvrir BullionVault
-              </BullionVaultOfficialButton>
+              </BullionVaultAffiliateButton>
             </div>
           </section>
         </div>
