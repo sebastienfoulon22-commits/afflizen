@@ -408,6 +408,35 @@ export const editorialRegistry = [
     ],
   },
   {
+    name: "7harvests",
+    path: "/investissement/7harvests",
+    reviewedAt: "2026-08-29",
+    sources: [
+      { label: "Site officiel de 7harvests", url: "https://7harvests.ch/" },
+      {
+        label: "Fonctionnement officiel de 7harvests",
+        url: "https://7harvests.ch/how-it-works/",
+      },
+      {
+        label: "Conditions générales de 7harvests",
+        url: "https://7harvests.ch/general-terms-conditions/",
+      },
+      { label: "FAQ officielle de 7harvests", url: "https://7harvests.ch/faq/" },
+      {
+        label: "Présentation officielle des prêts P2P et de leurs risques",
+        url: "https://7harvests.ch/what-p2p-lending-is-and-the-parts-nobody-puts-in-the-brochure/",
+      },
+      {
+        label: "Présentation officielle du bonus de bienvenue",
+        url: "https://7harvests.ch/your-first-investment-comes-with-e21-from-us/",
+      },
+      {
+        label: "Cadre des organisations d’autorégulation suisses",
+        url: "https://www.finma.ch/en/authorisation/self-regulatory-organisations-sros/",
+      },
+    ],
+  },
+  {
     name: "InRento",
     path: "/investissement/inrento",
     reviewedAt: "2026-08-29",

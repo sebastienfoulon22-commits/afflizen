@@ -50,6 +50,13 @@ const platforms = [
     bonus: "Bonus actuel de 1,5 % sous conditions",
   },
   {
+    name: "7harvests",
+    slug: "/investissement/7harvests",
+    description:
+      "Investissez dans différents types de prêts P2P via une plateforme suisse accessible notamment en Belgique et en France.",
+    bonus: "Jusqu’à 21 € de bonus sous conditions",
+  },
+  {
     name: "InRento",
     slug: "/investissement/inrento",
     description:

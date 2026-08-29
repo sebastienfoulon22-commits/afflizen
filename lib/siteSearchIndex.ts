@@ -319,6 +319,23 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "7harvests",
+    url: "/investissement/7harvests",
+    category: "Investissement",
+    description:
+      "Plateforme suisse de crowdlending proposant différents types de prêts P2P.",
+    keywords: [
+      "investissement P2P",
+      "prêts P2P",
+      "crowdlending",
+      "plateforme suisse",
+      "Belgique",
+      "France",
+    ],
+    aliases: ["7 Harvests", "Seven Harvests"],
+    type: "platform",
+  },
+  {
     name: "InRento",
     url: "/investissement/inrento",
     category: "Investissement",
