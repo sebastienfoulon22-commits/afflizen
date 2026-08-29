@@ -361,6 +361,26 @@ export const editorialRegistry = [
     sources: [{ label: "Site officiel de Monefit", url: "https://monefit.com/fr-fr/smartsaver/" }],
   },
   {
+    name: "Lendermarket",
+    path: "/investissement/lendermarket",
+    reviewedAt: "2026-08-29",
+    sources: [
+      { label: "Site officiel de Lendermarket", url: "https://lendermarket.com/fr" },
+      {
+        label: "Centre d’aide officiel de Lendermarket",
+        url: "https://lendermarket.com/fr/centre-daide",
+      },
+      {
+        label: "Programme partenaire officiel de Lendermarket",
+        url: "https://lendermarket.com/affiliate-programme",
+      },
+      {
+        label: "Avertissement officiel sur les risques",
+        url: "https://assets.lendermarket.com/docs/Lendermarket-Limited-Risk-Disclosure-Statement-Apr-2026.pdf",
+      },
+    ],
+  },
+  {
     name: "InRento",
     path: "/investissement/inrento",
     reviewedAt: "2026-08-29",

@@ -286,6 +286,23 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "Lendermarket",
+    url: "/investissement/lendermarket",
+    category: "Investissement",
+    description:
+      "Marketplace d'investissement dans des prêts P2P avec gestion manuelle ou automatisée.",
+    keywords: [
+      "investissement P2P",
+      "prêts P2P",
+      "Auto Invest",
+      "prêts européens",
+      "Belgique",
+      "France",
+    ],
+    aliases: ["Lender Market"],
+    type: "platform",
+  },
+  {
     name: "InRento",
     url: "/investissement/inrento",
     category: "Investissement",

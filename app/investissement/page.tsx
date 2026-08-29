@@ -36,6 +36,13 @@ const platforms = [
     bonus: "Prêts européens",
   },
   {
+    name: "Lendermarket",
+    slug: "/investissement/lendermarket",
+    description:
+      "Investissez dans des prêts P2P européens avec gestion manuelle ou automatisée.",
+    bonus: "Bonus actuel de 1,5 % sous conditions",
+  },
+  {
     name: "InRento",
     slug: "/investissement/inrento",
     description:

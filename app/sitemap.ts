@@ -185,6 +185,11 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
+    path: "/investissement/lendermarket",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/investissement/inrento",
     priority: 0.8,
     changeFrequency: "monthly",
