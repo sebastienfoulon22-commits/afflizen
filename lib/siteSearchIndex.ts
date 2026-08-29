@@ -242,6 +242,22 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "Simply Wall St",
+    url: "/investissement/simply-wall-st",
+    category: "Investissement",
+    description:
+      "Outil d’analyse fondamentale d’actions, de screener et de suivi de portefeuille.",
+    keywords: [
+      "analyse actions",
+      "analyse fondamentale",
+      "portefeuille actions",
+      "screener actions",
+      "Snowflake",
+    ],
+    aliases: ["Simply Wall Street", "SWS"],
+    type: "platform",
+  },
+  {
     name: "VeraCash",
     url: "/investissement/veracash",
     category: "Investissement",

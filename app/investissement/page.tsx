@@ -22,6 +22,13 @@ const platforms = [
     bonus: "Graphiques & analyse",
   },
   {
+    name: "Simply Wall St",
+    slug: "/investissement/simply-wall-st",
+    description:
+      "Analysez des actions et suivez votre portefeuille avec des visualisations simples et des données fondamentales.",
+    bonus: "Essai Premium 14 jours via l’offre partenaire",
+  },
+  {
     name: "Invvest",
     slug: "/investissement/invvest",
     description:

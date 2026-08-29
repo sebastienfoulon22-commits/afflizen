@@ -331,6 +331,33 @@ export const editorialRegistry = [
     ],
   },
   {
+    name: "Simply Wall St",
+    path: "/investissement/simply-wall-st",
+    reviewedAt: "2026-08-29",
+    sources: [
+      {
+        label: "Recherche d’actions Simply Wall St",
+        url: "https://simplywall.st/features/stock-research",
+      },
+      {
+        label: "Portfolio Demo officiel",
+        url: "https://simplywall.st/portfolio/demo",
+      },
+      {
+        label: "Plans et fonctionnalités Simply Wall St",
+        url: "https://simplywall.st/plans",
+      },
+      {
+        label: "Sources des données et modèle d’analyse",
+        url: "https://simplywall.st/analysis-and-financial-data-sources",
+      },
+      {
+        label: "Conditions générales Simply Wall St",
+        url: "https://simplywall.st/terms-and-conditions",
+      },
+    ],
+  },
+  {
     name: "VeraCash",
     path: "/investissement/veracash",
     reviewedAt: "2026-08-04",
