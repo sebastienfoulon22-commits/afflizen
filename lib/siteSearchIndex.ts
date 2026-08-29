@@ -286,6 +286,21 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "InRento",
+    url: "/investissement/inrento",
+    category: "Investissement",
+    description: "Plateforme européenne de financement participatif immobilier dès 500 €.",
+    keywords: [
+      "investissement immobilier",
+      "crowdfunding immobilier",
+      "financement participatif",
+      "Belgique",
+      "France",
+    ],
+    aliases: ["In Rento"],
+    type: "platform",
+  },
+  {
     name: "BullionVault",
     url: "/investissement/bullionvault",
     category: "Investissement",

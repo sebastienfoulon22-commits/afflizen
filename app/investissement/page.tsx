@@ -36,6 +36,13 @@ const platforms = [
     bonus: "Prêts européens",
   },
   {
+    name: "InRento",
+    slug: "/investissement/inrento",
+    description:
+      "Investissez dès 500 € dans des projets immobiliers européens via une plateforme de financement participatif.",
+    bonus: "Jusqu’à 50 € sous conditions jusqu’à fin septembre 2026",
+  },
+  {
     name: "BullionVault",
     slug: "/investissement/bullionvault",
     description:

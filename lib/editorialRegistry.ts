@@ -361,6 +361,20 @@ export const editorialRegistry = [
     sources: [{ label: "Site officiel de Monefit", url: "https://monefit.com/fr-fr/smartsaver/" }],
   },
   {
+    name: "InRento",
+    path: "/investissement/inrento",
+    reviewedAt: "2026-08-29",
+    sources: [
+      { label: "Site officiel d’InRento", url: "https://inrento.com/" },
+      { label: "FAQ officielle d’InRento", url: "https://inrento.com/faq/" },
+      { label: "Tarifs officiels d’InRento", url: "https://inrento.com/page/price-list/" },
+      {
+        label: "Registre de la Banque de Lituanie — UAB Inrento",
+        url: "https://www.lb.lt/en/sfi-financial-market-participants/uab-inrento",
+      },
+    ],
+  },
+  {
     name: "BullionVault",
     path: "/investissement/bullionvault",
     reviewedAt: "2026-08-04",
