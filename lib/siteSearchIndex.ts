@@ -336,6 +336,24 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "Loanch",
+    url: "/investissement/loanch",
+    category: "Investissement",
+    description:
+      "Plateforme d’investissement dans des créances liées à des prêts à la consommation.",
+    keywords: [
+      "investissement P2P",
+      "prêts P2P",
+      "prêts à la consommation",
+      "Auto Invest",
+      "bonus Loanch",
+      "Belgique",
+      "France",
+    ],
+    aliases: ["Loanch P2P"],
+    type: "platform",
+  },
+  {
     name: "InRento",
     url: "/investissement/inrento",
     category: "Investissement",

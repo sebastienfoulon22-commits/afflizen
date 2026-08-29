@@ -437,6 +437,36 @@ export const editorialRegistry = [
     ],
   },
   {
+    name: "Loanch",
+    path: "/investissement/loanch",
+    reviewedAt: "2026-08-30",
+    // Early Bird Returns (septembre 2026) : communication partenaire, sans source publique officielle lors de la revue.
+    sources: [
+      { label: "Site officiel de Loanch en français", url: "https://loanch.com/fr" },
+      {
+        label: "Présentation officielle du bonus de premier investissement",
+        url: "https://loanch.com/blog/the-first-investment-bonus-is-here-with-instant-e20-credit",
+      },
+      {
+        label: "Conditions générales de Loanch — mai 2026",
+        url: "https://loanch.com/docs/terms-and-conditions-loanch-may-2026.pdf",
+      },
+      {
+        label: "Fiche d’information précontractuelle de Loanch",
+        url: "https://loanch.com/docs/pre-contractual-information-sheet.pdf",
+      },
+      {
+        label: "Déclaration officielle sur les risques",
+        url: "https://loanch.com/docs/risk-statement.pdf",
+      },
+      { label: "FAQ officielle de Loanch", url: "https://loanch.com/faq" },
+      {
+        label: "Présentation officielle des originators",
+        url: "https://loanch.com/originators",
+      },
+    ],
+  },
+  {
     name: "InRento",
     path: "/investissement/inrento",
     reviewedAt: "2026-08-29",

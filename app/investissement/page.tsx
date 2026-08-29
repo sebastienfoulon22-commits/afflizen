@@ -57,6 +57,13 @@ const platforms = [
     bonus: "Jusqu’à 21 € de bonus sous conditions",
   },
   {
+    name: "Loanch",
+    slug: "/investissement/loanch",
+    description:
+      "Investissez dans des créances liées à des prêts à la consommation, avec sélection manuelle ou Auto Invest.",
+    bonus: "20 € de bonus sous conditions",
+  },
+  {
     name: "InRento",
     slug: "/investissement/inrento",
     description:
