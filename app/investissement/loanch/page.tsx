@@ -394,8 +394,9 @@ export default function LoanchPage() {
             <p className="mt-4 leading-7 text-sky-950">
               Une communication partenaire reçue par Afflizen annonce une campagne
               du 1er au 30 septembre 2026 pour les nouveaux investisseurs comme
-              pour les investisseurs existants, sur de nouveaux dépôts investis dans des prêts
-              Tambadana éligibles.
+              pour les investisseurs existants. Le montant minimum éligible est de
+              500 € nouvellement déposés et investis dans des prêts Tambadana
+              éligibles. Le cashback est plafonné à 800 € par investisseur.
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-3">
               {[
