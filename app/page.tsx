@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { createPageMetadata } from "@/lib/metadata";
+import { PLATFORM_SEARCH_COUNT } from "@/lib/siteSearchIndex";
 import SiteSearch from "../components/SiteSearch";
 
 export const metadata = createPageMetadata({
@@ -164,7 +165,7 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-2xl font-bold">52</p>
+              <p className="text-2xl font-bold">{PLATFORM_SEARCH_COUNT}</p>
               <p className="mt-1 text-sm text-slate-600">
                 plateformes déjà structurées
               </p>
