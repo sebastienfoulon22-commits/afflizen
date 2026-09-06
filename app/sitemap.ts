@@ -205,6 +205,11 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
+    path: "/investissement/mintos",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/investissement/inrento",
     priority: 0.8,
     changeFrequency: "monthly",

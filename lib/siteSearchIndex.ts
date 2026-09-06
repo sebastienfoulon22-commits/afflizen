@@ -354,6 +354,27 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "Mintos",
+    url: "/investissement/mintos",
+    category: "Investissement",
+    description:
+      "Plateforme européenne pour investir dans des prêts, obligations, ETF et immobilier.",
+    keywords: [
+      "investissement P2P",
+      "prêts",
+      "obligations",
+      "ETF",
+      "immobilier",
+      "plateforme européenne",
+      "Belgique",
+      "France",
+      "Luxembourg",
+      "Suisse",
+    ],
+    aliases: ["Mintos Marketplace"],
+    type: "platform",
+  },
+  {
     name: "InRento",
     url: "/investissement/inrento",
     category: "Investissement",

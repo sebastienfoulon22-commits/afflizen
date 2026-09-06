@@ -64,6 +64,13 @@ const platforms = [
     bonus: "20 € de bonus sous conditions",
   },
   {
+    name: "Mintos",
+    slug: "/investissement/mintos",
+    description:
+      "Diversifiez entre prêts, obligations, ETF et immobilier selon votre pays et votre profil, avec capital à risque.",
+    bonus: "Plateforme européenne réglementée",
+  },
+  {
     name: "InRento",
     slug: "/investissement/inrento",
     description:

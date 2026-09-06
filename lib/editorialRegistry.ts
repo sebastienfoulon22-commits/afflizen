@@ -467,6 +467,42 @@ export const editorialRegistry = [
     ],
   },
   {
+    name: "Mintos",
+    path: "/investissement/mintos",
+    reviewedAt: "2026-09-06",
+    sources: [
+      { label: "Site officiel de Mintos", url: "https://www.mintos.com/en/" },
+      {
+        label: "Présentation officielle de Mintos",
+        url: "https://www.mintos.com/en/about-us/about-us/",
+      },
+      {
+        label: "Grille tarifaire officielle de Mintos",
+        url: "https://www.mintos.com/en/how-it-works/fees/",
+      },
+      {
+        label: "Minimums d’investissement officiels",
+        url: "https://help.mintos.com/hc/en-us/articles/115002859905-What-is-the-minimum-amount-that-can-be-invested",
+      },
+      {
+        label: "Régime d’indemnisation des investisseurs",
+        url: "https://help.mintos.com/hc/en-us/articles/115002852609-Are-investments-through-Mintos-protected-by-any-financial-compensation-scheme",
+      },
+      {
+        label: "Conditions générales d’éligibilité",
+        url: "https://help.mintos.com/hc/en-us/articles/4422147715729-Who-can-register-and-invest",
+      },
+      {
+        label: "Pays éligibles à Smart Cash",
+        url: "https://help.mintos.com/hc/en-us/articles/24419922979473-Who-can-invest-in-Smart-Cash",
+      },
+      {
+        label: "Registre de Latvijas Banka pour AS Mintos Marketplace",
+        url: "https://www.bank.lv/en/financial-market-participant-register/market-participants/mintos-marketplace-as",
+      },
+    ],
+  },
+  {
     name: "InRento",
     path: "/investissement/inrento",
     reviewedAt: "2026-08-29",
