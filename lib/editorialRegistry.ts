@@ -503,6 +503,36 @@ export const editorialRegistry = [
     ],
   },
   {
+    name: "Digilo",
+    path: "/investissement/digilo",
+    reviewedAt: "2026-09-06",
+    // Cashback de 3 % : communication partenaire, sans conditions publiques complètes lors de la revue.
+    sources: [
+      { label: "Site officiel de Digilo", url: "https://digilo.co/en" },
+      {
+        label: "Présentation officielle de Digilo",
+        url: "https://digilo.co/en/about-us",
+      },
+      { label: "FAQ officielle de Digilo", url: "https://digilo.co/en/faq" },
+      {
+        label: "Conditions générales de Digilo",
+        url: "https://digilo.co/en/terms-and-conditions",
+      },
+      {
+        label: "Avertissements officiels sur les risques",
+        url: "https://digilo.co/en/risk-warnings",
+      },
+      {
+        label: "Projets d’investissement Digilo",
+        url: "https://digilo.co/en/loans",
+      },
+      {
+        label: "Registre de Latvijas Banka pour CSP Growth Solutions SIA",
+        url: "https://www.bank.lv/en/financial-market-participant-register/market-participants/csp-growth-solutions-sia",
+      },
+    ],
+  },
+  {
     name: "InRento",
     path: "/investissement/inrento",
     reviewedAt: "2026-08-29",

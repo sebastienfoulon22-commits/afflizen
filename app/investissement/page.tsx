@@ -71,6 +71,13 @@ const platforms = [
     bonus: "Plateforme européenne réglementée",
   },
   {
+    name: "Digilo",
+    slug: "/investissement/digilo",
+    description:
+      "Financez dès 150 € des projets professionnels adossés à des sûretés immobilières, avec capital et rendement non garantis.",
+    bonus: "3 % de cashback sous conditions",
+  },
+  {
     name: "InRento",
     slug: "/investissement/inrento",
     description:

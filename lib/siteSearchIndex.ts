@@ -375,6 +375,27 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "Digilo",
+    url: "/investissement/digilo",
+    category: "Investissement",
+    description:
+      "Plateforme européenne de crowdfunding pour des prêts adossés à l’immobilier.",
+    keywords: [
+      "crowdfunding immobilier",
+      "crowdlending",
+      "prêts professionnels",
+      "sûreté immobilière",
+      "LTV",
+      "Auto Invest",
+      "cashback Digilo",
+      "Belgique",
+      "France",
+      "Luxembourg",
+    ],
+    aliases: ["Digilo crowdfunding"],
+    type: "platform",
+  },
+  {
     name: "InRento",
     url: "/investissement/inrento",
     category: "Investissement",
