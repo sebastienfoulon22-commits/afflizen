@@ -319,6 +319,25 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "Lonvest",
+    url: "/investissement/lonvest",
+    category: "Investissement",
+    description:
+      "Plateforme d’investissement dans des prêts P2P via une allocation automatisée.",
+    keywords: [
+      "investissement P2P",
+      "prêts P2P",
+      "Auto Invest",
+      "buyback",
+      "Belgique",
+      "France",
+      "Luxembourg",
+      "Suisse",
+    ],
+    aliases: ["Lonvest P2P"],
+    type: "platform",
+  },
+  {
     name: "7harvests",
     url: "/investissement/7harvests",
     category: "Investissement",
