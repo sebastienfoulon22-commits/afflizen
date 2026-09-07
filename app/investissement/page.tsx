@@ -50,6 +50,13 @@ const platforms = [
     bonus: "Bonus actuel de 1,5 % sous conditions",
   },
   {
+    name: "Lonvest",
+    slug: "/investissement/lonvest",
+    description:
+      "Investissez dans des créances via Auto Invest, avec capital à risque, mécanismes contractuels de buyback et absence de licence financière formelle.",
+    bonus: "Prêts P2P automatisés",
+  },
+  {
     name: "7harvests",
     slug: "/investissement/7harvests",
     description:

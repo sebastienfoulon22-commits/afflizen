@@ -408,6 +408,35 @@ export const editorialRegistry = [
     ],
   },
   {
+    name: "Lonvest",
+    path: "/investissement/lonvest",
+    reviewedAt: "2026-09-07",
+    sources: [
+      { label: "Site officiel de Lonvest", url: "https://lonvest.com/" },
+      {
+        label: "Fonctionnement officiel de Lonvest",
+        url: "https://lonvest.com/how-it-works/",
+      },
+      { label: "FAQ officielle de Lonvest", url: "https://lonvest.com/faq/" },
+      {
+        label: "Conditions générales de Lonvest",
+        url: "https://lonvest.com/terms-conditions/",
+      },
+      {
+        label: "Présentation des mécanismes de sécurité",
+        url: "https://lonvest.com/security/",
+      },
+      {
+        label: "Politique de lutte contre le blanchiment",
+        url: "https://lonvest.com/aml-policy/",
+      },
+      {
+        label: "Programme d’affiliation officiel de Lonvest",
+        url: "https://lonvest.com/affiliate-program/",
+      },
+    ],
+  },
+  {
     name: "7harvests",
     path: "/investissement/7harvests",
     reviewedAt: "2026-08-29",
