@@ -357,6 +357,11 @@ const routes = [
 
   // Outils IA
   {
+    path: "/outils-ia/opusclip",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/outils-ia/elevenlabs",
     priority: 0.8,
     changeFrequency: "monthly",
