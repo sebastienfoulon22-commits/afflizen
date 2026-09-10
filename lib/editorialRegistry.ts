@@ -678,6 +678,17 @@ export const editorialRegistry = [
     sources: [{ label: "Site officiel de Dealabs", url: "https://www.dealabs.com" }],
   },
   {
+    name: "Synthesia",
+    path: "/outils-ia/synthesia",
+    reviewedAt: "2026-09-10",
+    sources: [
+      { label: "Présentation de Synthesia", url: "https://www.synthesia.io/" },
+      { label: "Tarifs de Synthesia", url: "https://www.synthesia.io/pricing" },
+      { label: "Conditions client de Synthesia", url: "https://www.synthesia.io/legal/customer-terms-of-service" },
+      { label: "Règles d’usage de Synthesia", url: "https://www.synthesia.io/legal/acceptable-use-policy" },
+    ],
+  },
+  {
     name: "ElevenLabs",
     path: "/outils-ia/elevenlabs",
     reviewedAt: "2026-08-04",

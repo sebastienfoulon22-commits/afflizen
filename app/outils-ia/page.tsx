@@ -10,6 +10,12 @@ export const metadata = createPageMetadata({
 
 const tools = [
   {
+    name: "Synthesia",
+    href: "/outils-ia/synthesia",
+    description: "Création de vidéos avec avatars IA pour des explications, formations et supports professionnels, avec des droits de diffusion à vérifier.",
+    badge: "Avatars vidéo IA",
+  },
+  {
     name: "ElevenLabs",
     href: "/outils-ia/elevenlabs",
     description:
@@ -40,6 +46,12 @@ const tools = [
 ];
 
 const useCases = [
+  {
+    title: "Présenter un script avec un avatar IA",
+    description: "Synthesia permet de préparer une vidéo explicative avec un présentateur virtuel. Le script, le rendu et les droits d’utilisation doivent être validés.",
+    href: "/outils-ia/synthesia",
+    cta: "Voir Synthesia",
+  },
   {
     title: "Créer une voix IA ou un répondeur intelligent",
     description:

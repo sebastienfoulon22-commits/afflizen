@@ -577,6 +577,14 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "Synthesia",
+    url: "/outils-ia/synthesia",
+    category: "Outils IA",
+    description: "Vidéos avec avatars IA : usages, tarifs, crédits et droits de diffusion.",
+    keywords: ["outils IA", "avatar IA", "vidéo IA", "script", "formation vidéo", "doublage"],
+    type: "platform",
+  },
+  {
     name: "ElevenLabs",
     url: "/outils-ia/elevenlabs",
     category: "Outils IA",
