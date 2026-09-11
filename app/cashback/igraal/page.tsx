@@ -1,7 +1,8 @@
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
+import AffiliateButton from "@/components/AffiliateButton";
 
-const IGRAAL_OFFICIAL_URL = "https://fr.igraal.com/";
+const IGRAAL_REFERRAL_URL = "https://fr.igraal.com/parrainage?parrain=AG_5cec013713c0f&utm_medium=raf&utm_source=refer_friend";
 
 const primaryButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700";
@@ -45,14 +46,15 @@ export default function IGraalPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={IGRAAL_OFFICIAL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <AffiliateButton
+              href={IGRAAL_REFERRAL_URL}
+              platform="igraal"
+              category="cashback"
+              location="hero"
               className={primaryButtonClassName}
             >
               Découvrir iGraal
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/cashback"
@@ -63,8 +65,7 @@ export default function IGraalPage() {
           </div>
 
           <p className="mt-4 max-w-3xl text-sm text-slate-500">
-            Afflizen ne publie actuellement aucun lien personnel de parrainage
-            iGraal. Le bouton proposé dirige uniquement vers le site officiel.
+            Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.
           </p>
 
           <p className="mt-3 max-w-3xl text-sm text-slate-500">
@@ -75,6 +76,8 @@ export default function IGraalPage() {
           </p>
         </div>
       </section>
+
+
 
       <section className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -94,7 +97,9 @@ export default function IGraalPage() {
           <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
             Seuil indicatif
           </p>
-          <p className="mt-3 text-3xl font-bold text-slate-950">20 €</p>
+          <p className="mt-3 text-3xl font-bold text-slate-950">
+            20 €
+          </p>
           <p className="mt-3 text-slate-600">
             Seuil souvent indiqué pour demander un retrait par virement ou
             PayPal, selon conditions.
@@ -226,7 +231,9 @@ export default function IGraalPage() {
           </p>
 
           <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p className="font-semibold text-emerald-300">Règle Afflizen</p>
+            <p className="font-semibold text-emerald-300">
+            Règle Afflizen
+          </p>
             <p className="mt-2 text-slate-200">
               Pour maximiser vos chances de validation, ouvrez iGraal juste
               avant l’achat, activez le cashback, ne changez pas de navigateur
@@ -334,6 +341,82 @@ export default function IGraalPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Créer son compte avec le lien personnel</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Ouvrez le bouton de parrainage avant de vous inscrire, puis vérifiez les informations
+            affichées par iGraal et suivez la création du compte. Contrôlez la prise en compte du
+            parrainage avant de valider votre inscription ; ne partez pas du principe qu’il pourra
+            être ajouté ensuite.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Les conditions iGraal mentionnent la possibilité de partager un lien personnel sur sa
+            page ou son blog. Le lien personnel est proposé ici dans ce cadre. Il ne transforme
+            pas Afflizen en partenaire professionnel d’iGraal.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Au 11 septembre 2026, nous ne confirmons aucun montant précis de bonus filleul pour ce
+            lien. Les offres génériques d’inscription ne prouvent pas le montant attaché à un
+            parrainage donné. Retenez uniquement l’avantage affiché dans votre parcours, selon les
+            conditions en vigueur.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Avant de compter sur un bonus, vérifiez si un premier achat ou du cashback validé est
+            requis, le montant minimum éventuel, le délai pour agir et la date de crédit. Ces
+            conditions ainsi que l’avantage du parrain peuvent évoluer : aucun montant ni délai non
+            confirmé n’est promis sur cette fiche.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Suivre son achat et éviter les pertes de cashback</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Choisissez d’abord le produit et comparez le prix total. Consultez ensuite la fiche du
+            marchand sur iGraal : taux, catégories exclues, compatibilité du code promo et règles
+            applicables à votre commande. Activez le cashback avant de terminer l’achat.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Conservez la confirmation de commande et une trace de l’offre consultée. Vérifiez
+            ensuite le suivi dans votre compte : un cashback en attente n’est pas encore de l’argent
+            retirable. En cas d’absence ou de refus, consultez l’aide iGraal et les modalités de
+            réclamation du marchand concerné.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Un achat annulé ou retourné, un code non compatible ou un suivi interrompu peut empêcher
+            la validation. Le passage par un autre lien promotionnel après l’activation est à
+            éviter. L’application et l’extension facilitent l’activation, mais ne dispensent pas de
+            lire les exclusions.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">France, Belgique et conditions de paiement</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Cette fiche utilise le site français d’iGraal. Elle ne garantit pas qu’un résident belge
+            bénéficie du même catalogue, des mêmes moyens de paiement ou du même parrainage.
+            Vérifiez que votre pays de résidence et votre commande sont acceptés avant l’inscription
+            et l’achat.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le seuil de 20 € mentionné plus bas reste indicatif et doit être contrôlé dans le
+            compte, tout comme les moyens de paiement et le délai de versement. Ces modalités n’ont
+            pas toutes pu être confirmées lors de la revue du 11 septembre 2026 ; les indications de
+            votre compte doivent être vérifiées avant de demander un versement.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Une fois la cagnotte validée et le seuil atteint, utilisez la rubrique de paiement du
+            compte et les coordonnées demandées par iGraal. Distinguez le délai de validation du
+            cashback de celui du versement : ni le solde en attente ni un bonus annoncé ne
+            constituent un retrait immédiat.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
         <div className="rounded-3xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-8 shadow-sm">
           <h2 className="text-3xl font-bold text-slate-950">Avis Afflizen</h2>
 
@@ -353,14 +436,15 @@ export default function IGraalPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={IGRAAL_OFFICIAL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <AffiliateButton
+              href={IGRAAL_REFERRAL_URL}
+              platform="igraal"
+              category="cashback"
+              location="avis"
               className={darkButtonClassName}
             >
               Accéder à iGraal
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/cashback"
@@ -420,7 +504,9 @@ export default function IGraalPage() {
               <summary className="cursor-pointer font-semibold text-slate-950">
                 {item.question}
               </summary>
-              <p className="mt-4 leading-7 text-slate-700">{item.answer}</p>
+              <p className="mt-4 leading-7 text-slate-700">
+            {item.answer}
+          </p>
             </details>
           ))}
         </div>
@@ -429,13 +515,11 @@ export default function IGraalPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Lien officiel non affilié
+            Un parrainage personnel, présenté en toute transparence
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Afflizen ne publie actuellement aucun lien personnel de parrainage
-            iGraal. Les liens externes de cette fiche renvoient uniquement vers le
-            site officiel et ne donnent lieu à aucune commission pour Afflizen.
+            Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous. Il ne s’agit pas d’un partenariat professionnel annoncé avec iGraal.
           </p>
         </div>
       </section>

@@ -24,18 +24,18 @@ const cashbackDeals: Deal[] = [
     category: "Cashback",
     description:
       "Une plateforme généraliste pour récupérer une partie de certains achats réalisés chez ses marchands partenaires.",
-    use: "Pour comparer les marchands, les modalités de validation et accéder au site officiel non affilié.",
+    use: "Pour comparer les marchands et consulter les conditions du lien personnel de parrainage.",
     href: "/cashback/igraal",
-    badge: "Lien officiel",
+    badge: "Parrainage personnel",
   },
   {
     name: "Widilo",
     category: "Cashback",
     description:
       "Un service de cashback et de codes promotionnels à consulter avant un achat en ligne éligible.",
-    use: "Pour étudier le catalogue et les conditions de retrait depuis le lien officiel présenté dans la fiche.",
+    use: "Pour étudier le catalogue et les conditions de retrait et consulter le lien personnel de parrainage présenté dans la fiche.",
     href: "/cashback/widilo",
-    badge: "Lien officiel",
+    badge: "Parrainage personnel",
   },
   {
     name: "eBuyClub",
@@ -44,7 +44,7 @@ const cashbackDeals: Deal[] = [
       "Une solution de cashback couvrant des achats en ligne et, selon les enseignes, des usages complémentaires.",
     use: "Pour vérifier les formes de cashback disponibles et les conditions du lien présenté.",
     href: "/cashback/ebuyclub",
-    badge: "Lien affilié",
+    badge: "Parrainage personnel",
   },
   {
     name: "Poulpeo",
@@ -53,7 +53,7 @@ const cashbackDeals: Deal[] = [
       "Une autre plateforme généraliste à mettre en regard des taux, enseignes et seuils proposés ailleurs.",
     use: "Pour comparer son fonctionnement à celui des autres services sans présumer d'une offre active.",
     href: "/cashback/poulpeo",
-    badge: "Lien officiel",
+    badge: "Parrainage personnel",
   },
 ];
 

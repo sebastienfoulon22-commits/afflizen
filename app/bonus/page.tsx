@@ -35,6 +35,28 @@ const suspendedCryptoOffers = [
 
 const otherOffers = [
   {
+    name: "Widilo",
+    category: "Cashback",
+    url: "/cashback/widilo",
+    status: "Parrainage personnel",
+    advantage: "Avantages soumis aux conditions du programme ; publication publique non confirmée",
+  },
+  {
+    name: "Poulpeo",
+    category: "Cashback",
+    url: "/cashback/poulpeo",
+    status: "Parrainage personnel",
+    advantage: "Avantages soumis aux conditions du programme ; publication publique non confirmée",
+  },
+
+  {
+    name: "iGraal",
+    category: "Cashback",
+    url: "/cashback/igraal",
+    status: "Parrainage personnel",
+    advantage: "Avantage éventuel selon le parcours, sans montant garanti",
+  },
+  {
     name: "N26",
     category: "Banque en ligne",
     url: "/banques-en-ligne/n26",
@@ -46,7 +68,7 @@ const otherOffers = [
     category: "Cashback",
     url: "/cashback/ebuyclub",
     status: "Lien de parrainage",
-    advantage: "Cashback et parrainage sous conditions",
+    advantage: "3 € de bienvenue selon les conditions en vigueur ; retrait dès 10 € validés",
   },
   {
     name: "OVHcloud",
@@ -87,13 +109,6 @@ const platformsWithoutPublicReferral = [
       "Afflizen ne publie actuellement aucun code personnel de parrainage SwissBorg. La fiche utilise uniquement le site officiel sans affiliation.",
   },
   {
-    name: "iGraal",
-    category: "Cashback",
-    url: "/cashback/igraal",
-    description:
-      "Afflizen ne publie actuellement aucun lien personnel de parrainage iGraal. La fiche utilise uniquement le site officiel sans affiliation.",
-  },
-  {
     name: "Curve",
     category: "Cartes et paiements",
     url: "/cartes-et-paiements/curve-pay",
@@ -106,13 +121,6 @@ const platformsWithoutPublicReferral = [
     url: "/investissement/trade-republic",
     description:
       "Afflizen ne publie aucun lien personnel de parrainage Trade Republic. La fiche propose uniquement les sites officiels belge et français.",
-  },
-  {
-    name: "Widilo",
-    category: "Cashback",
-    url: "/cashback/widilo",
-    description:
-      "Le programme personnel de parrainage Widilo reste destiné à un cadre privé. La fiche utilise le site officiel sans affiliation.",
   },
   {
     name: "Hostinger",

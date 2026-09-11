@@ -96,13 +96,12 @@ export default function EbuyclubPage() {
           </div>
 
           <p className="mt-5 max-w-3xl text-xs leading-6 text-slate-500">
-            Certains liens présents sur cette page peuvent être des liens de
-            parrainage ou d’affiliation. Les conditions, montants et avantages
-            peuvent évoluer. Vérifiez toujours les informations directement sur
-            le site officiel avant de vous inscrire.
+            Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.
           </p>
         </div>
       </section>
+
+
 
       <section className="mx-auto max-w-6xl px-6 py-14">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -188,6 +187,132 @@ export default function EbuyclubPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Inscription : 3 € de bienvenue et parrain docfox22</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le lien de cette fiche conserve le parrain docfox22 dans le formulaire officiel.
+            Vérifiez sa présence avant de créer votre compte. Les CGU eBuyClub consultées le 11
+            septembre 2026 prévoient un bonus d’inscription standard de 3 €, crédité et validé dès
+            l’inscription, selon les conditions en vigueur.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Ce crédit de bienvenue n’est pas un retrait immédiat : le paiement de la cagnotte
+            nécessite au moins 10 € validés. Les offres spéciales d’autres partenaires ne sont pas
+            reprises ici, car elles ne prouvent pas un avantage supplémentaire pour ce lien
+            personnel.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            L’inscription est réservée aux personnes majeures, avec un seul compte par personne. Le
+            programme limite le parrainage à un filleul majeur par foyer. Renseignez des
+            informations exactes : eBuyClub peut vérifier le respect des conditions.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            La récompense du parrain dépend d’achats éligibles du filleul. Elle est distincte des 3
+            € de bienvenue du nouvel inscrit : les seuils d’achat du programme ne doivent pas être
+            confondus avec une condition de ce crédit initial. Aucun bonus supplémentaire non
+            confirmé n’est promis au lecteur.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Activation, suivi et validation : les bons réflexes</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Connectez-vous, ouvrez la fiche du marchand et lisez les exclusions avant de cliquer
+            pour activer le cashback. Terminez l’achat dans la page marchande ouverte. Les bloqueurs
+            empêchant les cookies de suivi et un passage par un autre comparateur peuvent
+            compromettre l’attribution.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Sur mobile, distinguez le site du marchand de son application : le suivi d’une commande
+            basculée dans l’application marchande n’est pas garanti. L’application eBuyClub et
+            l’extension navigateur aident à trouver les offres ; elles ne rendent pas tous les
+            achats éligibles.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le marchand doit confirmer une commande payée et non annulée. Le suivi puis la
+            validation sont deux étapes différentes. Un retour, une exclusion produit ou un code
+            promotionnel non cumulable peuvent entraîner un refus. N’utilisez un code que si sa
+            compatibilité avec le cashback est indiquée.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Conservez la facture, la date d’activation et les références de commande. Si le cashback
+            manque, consultez l’aide depuis votre compte rapidement : les réclamations sont
+            encadrées par des délais et nécessitent des justificatifs.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Retirer sa cagnotte et choisir son moyen de paiement</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le retrait est possible dès 10 € de gains validés. eBuyClub présente le virement
+            bancaire, PayPal, les chèques cadeaux Amazon.fr et les eBuyCards, selon les options
+            proposées dans le compte. Vérifiez les conditions du support choisi avant de convertir
+            votre cagnotte.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            La demande doit être vérifiée par eBuyClub. Les CGU annoncent un paiement sous 15 jours,
+            hors acheminement éventuel ; ce délai commence avec la demande de paiement et ne
+            remplace pas l’attente de validation des achats.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Renseignez des coordonnées exactes dans la rubrique de paiement. Consultez aussi les
+            règles d’inactivité : les CGU prévoient des conséquences sur la cagnotte et le compte
+            après une période prolongée sans achat. Ne laissez pas des gains oubliés sans relire ces
+            conditions.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Bons d’achat, achats en magasin et disponibilité</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Un bon d’achat s’achète avant son utilisation auprès de l’enseigne. Vérifiez sa date de
+            validité, ses restrictions, les lieux d’acceptation et son éventuel cumul avec une
+            promotion. Un bon n’est pas équivalent à du cash librement remboursable.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Les offres en magasin peuvent avoir une procédure différente du cashback en ligne :
+            activation, justificatif ou achat de bon selon l’offre. Suivez le parcours affiché
+            plutôt que d’appliquer automatiquement la méthode d’un achat sur le web.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            La présence de marchands belges ne garantit pas que tous les services, bonus ou
+            paiements soient accessibles à chaque résident belge. Pour la France comme pour la
+            Belgique, vérifiez votre résidence, la livraison et les conditions de l’enseigne. Nous
+            ne promettons pas une éligibilité universelle.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Questions fréquentes sur eBuyClub</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Puis-je retirer uniquement les 3 € de bienvenue ? Non : il faut atteindre le seuil de 10
+            € de gains validés. Un montant en attente ne suffit pas.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le code docfox22 procure-t-il un bonus supplémentaire garanti ? La présence du parrain
+            est confirmée, mais aucun supplément chiffré au bonus standard n’est promis ici.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Puis-je cumuler un code promo avec le cashback ? Seulement lorsque l’offre l’autorise.
+            Un code trouvé ailleurs peut rendre la commande inéligible.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Pourquoi le cashback tarde-t-il ? Le marchand doit contrôler la commande et les
+            éventuels retours. Un délai de suivi, un délai de validation et un délai de paiement
+            sont trois choses distinctes.
+          </p>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-6 pb-16">
         <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
           <p className="text-sm font-semibold text-emerald-600">
@@ -237,9 +362,7 @@ export default function EbuyclubPage() {
       <section className="border-t border-slate-200 bg-slate-50 py-10">
         <div className="mx-auto max-w-6xl px-6">
           <p className="text-xs leading-6 text-slate-500">
-            Cette page est une fiche d’information indépendante. Afflizen peut
-            recevoir une commission ou un avantage si vous vous inscrivez via
-            certains liens. Les offres, taux de cashback, conditions de
+            Cette page est une fiche d’information indépendante. Le lien personnel peut procurer à Afflizen un avantage de parrainage sous conditions ; il ne s’agit pas d’une affiliation professionnelle annoncée. Les offres, taux de cashback, conditions de
             parrainage et modalités de paiement peuvent changer à tout moment.
             Consultez toujours les conditions officielles d’eBuyClub avant toute
             inscription ou utilisation.

@@ -1,7 +1,8 @@
+import AffiliateButton from "@/components/AffiliateButton";
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
-const POULPEO_OFFICIAL_LINK = "https://www.poulpeo.com/";
+const POULPEO_REFERRAL_URL = "https://www.poulpeo.com/p/8NV8ab";
 
 export const metadata = createPageMetadata({
   title: "Poulpeo avis : cashback, codes promo et réductions en ligne",
@@ -91,7 +92,7 @@ const faq = [
   {
     question: "Le lien Poulpeo sur Afflizen est-il affilié ?",
     answer:
-      "Non. Le lien utilisé sur cette page est un lien officiel français vers Poulpeo. Il n’est pas présenté comme un lien affilié, partenaire ou sponsorisé.",
+      "Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous. Il ne constitue pas une affiliation professionnelle officielle.",
   },
 ];
 
@@ -142,14 +143,15 @@ export default function PoulpeoPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={POULPEO_OFFICIAL_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+            <AffiliateButton
+              href={POULPEO_REFERRAL_URL}
+              platform="poulpeo"
+              category="cashback"
+              location="hero"
               className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700"
             >
-              Accéder au site officiel de Poulpeo
-            </a>
+              Découvrir Poulpeo avec le lien de parrainage
+            </AffiliateButton>
 
             <Link
               href="/cashback"
@@ -161,16 +163,16 @@ export default function PoulpeoPage() {
 
           <div className="mt-6 max-w-3xl rounded-2xl border border-amber-200 bg-amber-50 p-5">
             <p className="font-semibold text-amber-950">
-              Lien officiel français, sans affiliation pour le moment
+              Lien personnel de parrainage
             </p>
             <p className="mt-2 text-sm leading-6 text-amber-950">
-              Le lien utilisé sur cette page renvoie vers le site officiel de
-              Poulpeo. Il n’est pas présenté comme un lien affilié, partenaire,
-              sponsorisé, parrainage, bonus ou offre de bienvenue.
+              Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.
             </p>
           </div>
         </div>
       </section>
+
+
 
       <section className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -200,13 +202,13 @@ export default function PoulpeoPage() {
 
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-            Affiliation
+            Type de lien
           </p>
           <p className="mt-3 text-3xl font-bold text-slate-950">
-            Aucune
+            Parrainage personnel
           </p>
           <p className="mt-3 text-slate-600">
-            Lien officiel français, sans parrainage Afflizen pour le moment.
+            Lien personnel, sans partenariat professionnel annoncé.
           </p>
         </div>
       </section>
@@ -309,6 +311,74 @@ export default function PoulpeoPage() {
             Il faut toutefois rester attentif : un taux élevé ne suffit pas si
             les exclusions sont nombreuses, si le code promo annule le cashback
             ou si le délai de validation est long.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Bienvenue et limites du parrainage personnel</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Les CGU en vigueur indiquent 3 € de bienvenue pour un nouveau membre et 5 € s’il est
+            parrainé. Elles définissent cependant le parrain comme une personne invitant un proche,
+            famille ou ami. Le lien proposé est personnel ; son autorisation de publication publique n’est pas confirmée. Les 5 € restent soumis aux conditions du programme et ne sont pas garantis via ce bouton.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Pour un parrainage privé conforme, vérifiez le code et le pseudo du parrain au moment de
+            l’inscription : le rattachement ne se fait pas après coup. L’auto-parrainage et
+            plusieurs filleuls dans le même foyer sont interdits.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le programme peut procurer un avantage au parrain. Les campagnes temporaires ont leurs
+            propres dates et critères : une opération publiée en novembre 2025 n’est pas une offre
+            actuelle. Vérification éditoriale du 11 septembre 2026 ; les conditions en vigueur
+            prévalent.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Retrait : seuil et délai à connaître</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le seuil est de 10 € validés. Les gains deviennent disponibles au paiement le premier
+            jour du mois suivant leur validation. Le versement se fait gratuitement en euros sur un
+            compte bancaire SEPA à votre nom, sous un délai maximal annoncé de 30 jours ouvrés, avec
+            contrôles éventuels.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Un bonus de bienvenue seul ne suffit donc pas à demander un retrait. Consultez votre
+            cagnotte pour distinguer les sommes suivies, validées et disponibles, puis vérifiez les
+            coordonnées bancaires avant la demande.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Suivi, application et codes promotionnels</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Créez votre compte puis consultez l’offre du marchand avant d’activer le cashback.
+            Gardez la confirmation de commande et surveillez son apparition dans la cagnotte. Le
+            guide Poulpeo indique qu’une validation peut demander environ un mois, parfois deux ;
+            pour un voyage, l’attente peut se prolonger jusqu’après le séjour.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            L’application et l’extension facilitent la recherche et l’activation des offres. Elles
+            ne remplacent pas le contrôle du taux, des exclusions et de la compatibilité d’un code
+            promo. Un retour, une annulation ou un achat non attribué peut conduire à un refus.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Comparez le prix total après réduction et cashback potentiel, sans supposer le cumul
+            automatique de toutes les promotions. Si une opération manque, consultez l’aide et
+            conservez les justificatifs pour une réclamation. Le cashback n’est pas garanti avant
+            validation.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Cette fiche porte sur le site français. L’existence d’un paiement SEPA ne constitue pas
+            une confirmation d’éligibilité pour tous les pays : un lecteur belge doit vérifier les
+            conditions du compte et du marchand, sans présumer que les mêmes offres lui sont
+            ouvertes.
           </p>
         </div>
       </section>
