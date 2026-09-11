@@ -596,26 +596,45 @@ export const editorialRegistry = [
   {
     name: "iGraal",
     path: "/cashback/igraal",
-    reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel d’iGraal", url: "https://fr.igraal.com/" }],
+    reviewedAt: "2026-09-11",
+    sources: [
+      { label: "Site officiel d’iGraal", url: "https://fr.igraal.com/" },
+      { label: "Conditions iGraal — partage du lien personnel (accès partiel lors de la revue)", url: "https://fr.igraal.com/conditions" },
+      { label: "Aide iGraal — modalités à vérifier dans le compte", url: "https://fr.igraal.com/faq" },
+    ],
   },
   {
     name: "Widilo",
     path: "/cashback/widilo",
-    reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Widilo", url: "https://www.widilo.fr/" }],
+    reviewedAt: "2026-09-11",
+    sources: [
+      { label: "Site officiel de Widilo", url: "https://www.widilo.fr/" },
+      { label: "Parrainage Widilo : cadre privé", url: "https://www.widilo.fr/faq/le-parrainage/comment-fonctionne-le-parrainage" },
+      { label: "Bonus de bienvenue Widilo", url: "https://www.widilo.fr/faq/les-bonus-widilo/comment-obtenir-le-bonus-de-bienvenue" },
+      { label: "Retirer sa cagnotte Widilo", url: "https://www.widilo.fr/faq/le-paiement-de-mes-gains/tout-savoir-sur-le-paiement-de-votre-cagnotte" },
+      { label: "Délais de paiement Widilo", url: "https://www.widilo.fr/faq/le-paiement-de-mes-gains/quel-est-le-delai-de-paiement-de-mes-gains" },
+      { label: "Widilo Belgique", url: "https://www.widilo.fr/categories/widilo-belgique" },
+    ],
   },
   {
     name: "eBuyClub",
     path: "/cashback/ebuyclub",
-    reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel d’eBuyClub", url: "https://www.ebuyclub.com/" }],
+    reviewedAt: "2026-09-11",
+    sources: [
+      { label: "Site officiel d’eBuyClub", url: "https://www.ebuyclub.com/" },
+      { label: "Programme de parrainage eBuyClub", url: "https://www.ebuyclub.com/parrainage" },
+      { label: "Conditions générales eBuyClub", url: "https://www.ebuyclub.com/conditions-generales" },
+    ],
   },
   {
     name: "Poulpeo",
     path: "/cashback/poulpeo",
-    reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel de Poulpeo", url: "https://www.poulpeo.com/" }],
+    reviewedAt: "2026-09-11",
+    sources: [
+      { label: "Site officiel de Poulpeo", url: "https://www.poulpeo.com/" },
+      { label: "Conditions générales Poulpeo", url: "https://www.poulpeo.com/conditions-utilisation.html" },
+      { label: "Guide du parrainage Poulpeo — distinguer les campagnes datées", url: "https://www.poulpeo.com/mag-le-parrainage-poulpeo-comment-ca-marche.html" },
+    ],
   },
   {
     name: "Curve Pay",

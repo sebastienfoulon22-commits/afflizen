@@ -35,6 +35,13 @@ const suspendedCryptoOffers = [
 
 const otherOffers = [
   {
+    name: "iGraal",
+    category: "Cashback",
+    url: "/cashback/igraal",
+    status: "Parrainage personnel",
+    advantage: "Avantage éventuel selon le parcours, sans montant garanti",
+  },
+  {
     name: "N26",
     category: "Banque en ligne",
     url: "/banques-en-ligne/n26",
@@ -46,7 +53,7 @@ const otherOffers = [
     category: "Cashback",
     url: "/cashback/ebuyclub",
     status: "Lien de parrainage",
-    advantage: "Cashback et parrainage sous conditions",
+    advantage: "3 € de bienvenue selon les conditions en vigueur ; retrait dès 10 € validés",
   },
   {
     name: "OVHcloud",
@@ -85,13 +92,6 @@ const platformsWithoutPublicReferral = [
     url: "/crypto/swissborg",
     description:
       "Afflizen ne publie actuellement aucun code personnel de parrainage SwissBorg. La fiche utilise uniquement le site officiel sans affiliation.",
-  },
-  {
-    name: "iGraal",
-    category: "Cashback",
-    url: "/cashback/igraal",
-    description:
-      "Afflizen ne publie actuellement aucun lien personnel de parrainage iGraal. La fiche utilise uniquement le site officiel sans affiliation.",
   },
   {
     name: "Curve",

@@ -172,6 +172,8 @@ export default function PoulpeoPage() {
         </div>
       </section>
 
+
+
       <section className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
@@ -309,6 +311,75 @@ export default function PoulpeoPage() {
             Il faut toutefois rester attentif : un taux élevé ne suffit pas si
             les exclusions sont nombreuses, si le code promo annule le cashback
             ou si le délai de validation est long.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Bienvenue et limites du parrainage personnel</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Les CGU en vigueur indiquent 3 € de bienvenue pour un nouveau membre et 5 € s’il est
+            parrainé. Elles définissent cependant le parrain comme une personne invitant un proche,
+            famille ou ami. Afflizen conserve donc un lien officiel sur cette page publique et ne
+            promet pas les 5 € via son bouton.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Pour un parrainage privé conforme, vérifiez le code et le pseudo du parrain au moment de
+            l’inscription : le rattachement ne se fait pas après coup. L’auto-parrainage et
+            plusieurs filleuls dans le même foyer sont interdits.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le programme peut procurer un avantage au parrain. Les campagnes temporaires ont leurs
+            propres dates et critères : une opération publiée en novembre 2025 n’est pas une offre
+            actuelle. Vérification éditoriale du 11 septembre 2026 ; les conditions en vigueur
+            prévalent.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Retrait : seuil et délai à connaître</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le seuil est de 10 € validés. Les gains deviennent disponibles au paiement le premier
+            jour du mois suivant leur validation. Le versement se fait gratuitement en euros sur un
+            compte bancaire SEPA à votre nom, sous un délai maximal annoncé de 30 jours ouvrés, avec
+            contrôles éventuels.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Un bonus de bienvenue seul ne suffit donc pas à demander un retrait. Consultez votre
+            cagnotte pour distinguer les sommes suivies, validées et disponibles, puis vérifiez les
+            coordonnées bancaires avant la demande.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Suivi, application et codes promotionnels</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Créez votre compte puis consultez l’offre du marchand avant d’activer le cashback.
+            Gardez la confirmation de commande et surveillez son apparition dans la cagnotte. Le
+            guide Poulpeo indique qu’une validation peut demander environ un mois, parfois deux ;
+            pour un voyage, l’attente peut se prolonger jusqu’après le séjour.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            L’application et l’extension facilitent la recherche et l’activation des offres. Elles
+            ne remplacent pas le contrôle du taux, des exclusions et de la compatibilité d’un code
+            promo. Un retour, une annulation ou un achat non attribué peut conduire à un refus.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Comparez le prix total après réduction et cashback potentiel, sans supposer le cumul
+            automatique de toutes les promotions. Si une opération manque, consultez l’aide et
+            conservez les justificatifs pour une réclamation. Le cashback n’est pas garanti avant
+            validation.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Cette fiche porte sur le site français. L’existence d’un paiement SEPA ne constitue pas
+            une confirmation d’éligibilité pour tous les pays : un lecteur belge doit vérifier les
+            conditions du compte et du marchand, sans présumer que les mêmes offres lui sont
+            ouvertes.
           </p>
         </div>
       </section>

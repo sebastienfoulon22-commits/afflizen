@@ -71,6 +71,8 @@ export default function WidiloPage() {
         </div>
       </section>
 
+
+
       <section className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
@@ -88,7 +90,9 @@ export default function WidiloPage() {
           <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
             Seuil de retrait
           </p>
-          <p className="mt-3 text-3xl font-bold text-slate-950">20 €</p>
+          <p className="mt-3 text-3xl font-bold text-slate-950">
+            20 €
+          </p>
           <p className="mt-3 text-slate-600">
             À partir de 20 € de gains validés, selon les conditions Widilo.
           </p>
@@ -217,7 +221,9 @@ export default function WidiloPage() {
           </p>
 
           <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p className="font-semibold text-emerald-300">Règle Afflizen</p>
+            <p className="font-semibold text-emerald-300">
+            Règle Afflizen
+          </p>
             <p className="mt-2 text-slate-200">
               Pour maximiser vos chances de validation, ouvrez Widilo juste
               avant l’achat, activez le cashback, évitez les codes promo non
@@ -357,6 +363,77 @@ export default function WidiloPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Bienvenue et parrainage : deux avantages à distinguer</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Créez votre compte puis confirmez votre adresse e-mail pour remplir la condition
+            indiquée dans la FAQ du bonus de bienvenue. Au 11 septembre 2026, cette FAQ mentionne 3
+            € alors que l’accueil affiche 5 € : nous ne garantissons donc pas un montant identique
+            dans tous les parcours. Vérifiez l’offre affichée à votre inscription, selon les
+            conditions en vigueur.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Le parrainage est réservé aux connaissances, amis ou proches dans un cadre privé,
+            d’après la FAQ officielle. Afflizen ne diffuse donc pas le lien personnel de Sébastien
+            sur cette page publique. Le bouton reste un accès au site officiel, sans promesse de
+            bonus de parrainage Afflizen.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Dans un parrainage privé conforme, le filleul doit utiliser le lien de son parrain dès
+            l’inscription. La première validation de cashback du filleul déclenche l’avantage du
+            parrain selon le programme. L’auto-parrainage est interdit ; aucun montant de récompense
+            non confirmé n’est annoncé ici.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Du cashback en attente au paiement reçu</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Après l’activation de l’offre et l’achat, contrôlez la présence de l’opération dans
+            votre compte. Attendez ensuite la validation du marchand : une commande retournée,
+            annulée ou exclue ne donne pas droit à un cashback définitif. Le délai dépend de
+            l’enseigne et de la nature de l’achat.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Pour retirer au moins 20 € validés, ouvrez Mes gains puis Retirer ma cagnotte, complétez
+            les coordonnées demandées et confirmez la demande par e-mail. Le premier versement doit
+            se faire sur un compte bancaire ; PayPal devient accessible ensuite.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Widilo annonce jusqu’à 15 jours de traitement. Après validation de la demande, un
+            virement peut encore demander jusqu’à cinq jours ouvrés. PayPal est présenté comme
+            instantané après traitement : cela ne signifie pas que la demande initiale est payée
+            immédiatement.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-3xl font-bold text-slate-950">Acheter depuis la Belgique et éviter un refus</h2>
+          <p className="mt-5 leading-8 text-slate-700">
+            Widilo dispose d’une rubrique officielle Widilo Belgique. Vérifiez néanmoins chaque
+            marchand : disponibilité du produit, pays de livraison et conditions du cashback peuvent
+            varier. Une présence dans ce catalogue ne garantit pas que toutes les offres françaises
+            s’appliquent en Belgique.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            Lisez la fiche de l’offre avant d’activer le cashback et conservez la commande. Pour un
+            code promo, utilisez seulement une combinaison présentée comme compatible. Un autre lien
+            promotionnel, un suivi interrompu ou une commande exclue peut empêcher la validation.
+          </p>
+          <p className="mt-5 leading-8 text-slate-700">
+            L’application et l’extension sont des aides à l’activation, pas une garantie de
+            remboursement. Si l’achat ne remonte pas ou est refusé, préparez vos références et
+            consultez l’assistance Widilo depuis votre compte ; ne passez pas une nouvelle commande
+            uniquement pour tenter de récupérer le bonus.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
         <div className="rounded-3xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-8 shadow-sm">
           <h2 className="text-3xl font-bold text-slate-950">Avis Afflizen</h2>
 
@@ -447,7 +524,9 @@ export default function WidiloPage() {
               <summary className="cursor-pointer font-semibold text-slate-950">
                 {item.question}
               </summary>
-              <p className="mt-4 leading-7 text-slate-700">{item.answer}</p>
+              <p className="mt-4 leading-7 text-slate-700">
+            {item.answer}
+          </p>
             </details>
           ))}
         </div>
