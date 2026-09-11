@@ -33,9 +33,9 @@ const cashbackDeals: Deal[] = [
     category: "Cashback",
     description:
       "Un service de cashback et de codes promotionnels à consulter avant un achat en ligne éligible.",
-    use: "Pour étudier le catalogue et les conditions de retrait depuis le lien officiel présenté dans la fiche.",
+    use: "Pour étudier le catalogue et les conditions de retrait et consulter le lien personnel de parrainage présenté dans la fiche.",
     href: "/cashback/widilo",
-    badge: "Lien officiel",
+    badge: "Parrainage personnel",
   },
   {
     name: "eBuyClub",
@@ -53,7 +53,7 @@ const cashbackDeals: Deal[] = [
       "Une autre plateforme généraliste à mettre en regard des taux, enseignes et seuils proposés ailleurs.",
     use: "Pour comparer son fonctionnement à celui des autres services sans présumer d'une offre active.",
     href: "/cashback/poulpeo",
-    badge: "Lien officiel",
+    badge: "Parrainage personnel",
   },
 ];
 

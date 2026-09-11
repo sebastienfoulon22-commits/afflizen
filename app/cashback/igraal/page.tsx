@@ -65,7 +65,7 @@ export default function IGraalPage() {
           </div>
 
           <p className="mt-4 max-w-3xl text-sm text-slate-500">
-            Ce lien est un lien personnel de parrainage. Sébastien/Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.
+            Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.
           </p>
 
           <p className="mt-3 max-w-3xl text-sm text-slate-500">
@@ -351,7 +351,7 @@ export default function IGraalPage() {
           </p>
           <p className="mt-5 leading-8 text-slate-700">
             Les conditions iGraal mentionnent la possibilité de partager un lien personnel sur sa
-            page ou son blog. Le lien de Sébastien est proposé ici dans ce cadre. Il ne transforme
+            page ou son blog. Le lien personnel est proposé ici dans ce cadre. Il ne transforme
             pas Afflizen en partenaire professionnel d’iGraal.
           </p>
           <p className="mt-5 leading-8 text-slate-700">
@@ -519,7 +519,7 @@ export default function IGraalPage() {
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Ce lien est un lien personnel de parrainage. Sébastien/Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous. Il ne s’agit pas d’un partenariat professionnel annoncé avec iGraal.
+            Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous. Il ne s’agit pas d’un partenariat professionnel annoncé avec iGraal.
           </p>
         </div>
       </section>

@@ -1,7 +1,8 @@
+import AffiliateButton from "@/components/AffiliateButton";
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
-const WIDILO_OFFICIAL_URL = "https://www.widilo.fr/";
+const WIDILO_REFERRAL_URL = "https://www.widilo.fr/i/571J27";
 
 const primaryButtonClassName =
   "inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700";
@@ -11,7 +12,7 @@ const darkButtonClassName =
 
 export const metadata = createPageMetadata({
   title: "Widilo avis 2026 : cashback, codes promo et paiement",
-  description: "Notre avis sur Widilo en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, application, FAQ et lien officiel.",
+  description: "Notre avis sur Widilo en 2026 : avantages, inconvénients, cashback, codes promo, seuil de paiement, application, FAQ et lien personnel de parrainage.",
   path: "/cashback/widilo",
   type: "article",
 });
@@ -45,14 +46,15 @@ export default function WidiloPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={WIDILO_OFFICIAL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <AffiliateButton
+              href={WIDILO_REFERRAL_URL}
+              platform="widilo"
+              category="cashback"
+              location="hero"
               className={primaryButtonClassName}
             >
               Découvrir Widilo
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/cashback"
@@ -61,6 +63,8 @@ export default function WidiloPage() {
               Voir les autres plateformes cashback
             </Link>
           </div>
+
+          <p className="mt-4 max-w-3xl text-sm text-slate-500">Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.</p>
 
           <p className="mt-4 max-w-3xl text-sm text-slate-500">
             Les taux de cashback, les codes promo, les délais de validation et
@@ -373,10 +377,7 @@ export default function WidiloPage() {
             conditions en vigueur.
           </p>
           <p className="mt-5 leading-8 text-slate-700">
-            Le parrainage est réservé aux connaissances, amis ou proches dans un cadre privé,
-            d’après la FAQ officielle. Afflizen ne diffuse donc pas le lien personnel de Sébastien
-            sur cette page publique. Le bouton reste un accès au site officiel, sans promesse de
-            bonus de parrainage Afflizen.
+            La FAQ officielle réserve le programme aux connaissances, amis ou proches dans un cadre privé. Le lien présenté ici est un parrainage personnel ; son autorisation de publication publique n’est pas confirmée. Aucun bonus spécifique n’est garanti via ce lien.
           </p>
           <p className="mt-5 leading-8 text-slate-700">
             Dans un parrainage privé conforme, le filleul doit utiliser le lien de son parrain dès
@@ -452,14 +453,15 @@ export default function WidiloPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={WIDILO_OFFICIAL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <AffiliateButton
+              href={WIDILO_REFERRAL_URL}
+              platform="widilo"
+              category="cashback"
+              location="avis"
               className={darkButtonClassName}
             >
               Découvrir Widilo
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/cashback"
@@ -535,14 +537,11 @@ export default function WidiloPage() {
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-bold text-slate-950">
-            Lien officiel non affilié
+            Lien personnel de parrainage
           </h2>
 
           <p className="mt-4 leading-8 text-slate-700">
-            Le programme personnel de parrainage Widilo fonctionne dans un cadre
-            privé. Afflizen ne publie donc plus de lien personnel de parrainage
-            Widilo. Le bouton proposé sur cette fiche dirige vers le site
-            officiel, sans affiliation.
+            Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.
           </p>
         </div>
       </section>

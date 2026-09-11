@@ -12,28 +12,28 @@ const platforms = [
     slug: "/cashback/igraal",
     description:
       "Plateforme de cashback permettant de récupérer une partie de ses achats en ligne.",
-    bonus: "Cashback",
+    bonus: "Cashback + parrainage personnel",
   },
   {
     name: "Poulpeo",
     slug: "/cashback/poulpeo",
     description:
       "Plateforme française de cashback, codes promo et réductions pour récupérer une partie de certains achats en ligne selon conditions.",
-    bonus: "Cashback + codes promo",
+    bonus: "Cashback + parrainage personnel",
   },
   {
     name: "Widilo",
     slug: "/cashback/widilo",
     description:
       "Plateforme combinant cashback, codes promo et offres partenaires pour les achats en ligne.",
-    bonus: "Cashback + codes promo",
+    bonus: "Cashback + parrainage personnel",
   },
   {
     name: "eBuyClub",
     slug: "/cashback/ebuyclub",
     description:
       "Plateforme de cashback permettant d’économiser sur des achats en ligne, certains achats en magasin et des bons d’achat selon les offres disponibles.",
-    bonus: "Cashback + parrainage",
+    bonus: "Cashback + parrainage personnel",
   },
 ];
 

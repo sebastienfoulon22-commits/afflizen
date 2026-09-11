@@ -35,6 +35,21 @@ const suspendedCryptoOffers = [
 
 const otherOffers = [
   {
+    name: "Widilo",
+    category: "Cashback",
+    url: "/cashback/widilo",
+    status: "Parrainage personnel",
+    advantage: "Avantages soumis aux conditions du programme ; publication publique non confirmée",
+  },
+  {
+    name: "Poulpeo",
+    category: "Cashback",
+    url: "/cashback/poulpeo",
+    status: "Parrainage personnel",
+    advantage: "Avantages soumis aux conditions du programme ; publication publique non confirmée",
+  },
+
+  {
     name: "iGraal",
     category: "Cashback",
     url: "/cashback/igraal",
@@ -106,13 +121,6 @@ const platformsWithoutPublicReferral = [
     url: "/investissement/trade-republic",
     description:
       "Afflizen ne publie aucun lien personnel de parrainage Trade Republic. La fiche propose uniquement les sites officiels belge et français.",
-  },
-  {
-    name: "Widilo",
-    category: "Cashback",
-    url: "/cashback/widilo",
-    description:
-      "Le programme personnel de parrainage Widilo reste destiné à un cadre privé. La fiche utilise le site officiel sans affiliation.",
   },
   {
     name: "Hostinger",

@@ -96,7 +96,7 @@ export default function EbuyclubPage() {
           </div>
 
           <p className="mt-5 max-w-3xl text-xs leading-6 text-slate-500">
-            Ce lien est un lien personnel de parrainage. Sébastien/Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.
+            Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.
           </p>
         </div>
       </section>
@@ -362,7 +362,7 @@ export default function EbuyclubPage() {
       <section className="border-t border-slate-200 bg-slate-50 py-10">
         <div className="mx-auto max-w-6xl px-6">
           <p className="text-xs leading-6 text-slate-500">
-            Cette page est une fiche d’information indépendante. Le lien personnel de Sébastien peut lui procurer un avantage de parrainage sous conditions ; il ne s’agit pas d’une affiliation professionnelle annoncée. Les offres, taux de cashback, conditions de
+            Cette page est une fiche d’information indépendante. Le lien personnel peut procurer à Afflizen un avantage de parrainage sous conditions ; il ne s’agit pas d’une affiliation professionnelle annoncée. Les offres, taux de cashback, conditions de
             parrainage et modalités de paiement peuvent changer à tout moment.
             Consultez toujours les conditions officielles d’eBuyClub avant toute
             inscription ou utilisation.

@@ -1,7 +1,8 @@
+import AffiliateButton from "@/components/AffiliateButton";
 import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
-const POULPEO_OFFICIAL_LINK = "https://www.poulpeo.com/";
+const POULPEO_REFERRAL_URL = "https://www.poulpeo.com/p/8NV8ab";
 
 export const metadata = createPageMetadata({
   title: "Poulpeo avis : cashback, codes promo et réductions en ligne",
@@ -91,7 +92,7 @@ const faq = [
   {
     question: "Le lien Poulpeo sur Afflizen est-il affilié ?",
     answer:
-      "Non. Le lien utilisé sur cette page est un lien officiel français vers Poulpeo. Il n’est pas présenté comme un lien affilié, partenaire ou sponsorisé.",
+      "Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous. Il ne constitue pas une affiliation professionnelle officielle.",
   },
 ];
 
@@ -142,14 +143,15 @@ export default function PoulpeoPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={POULPEO_OFFICIAL_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+            <AffiliateButton
+              href={POULPEO_REFERRAL_URL}
+              platform="poulpeo"
+              category="cashback"
+              location="hero"
               className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-4 text-center font-semibold text-white shadow-sm transition hover:bg-emerald-700"
             >
-              Accéder au site officiel de Poulpeo
-            </a>
+              Découvrir Poulpeo avec le lien de parrainage
+            </AffiliateButton>
 
             <Link
               href="/cashback"
@@ -161,12 +163,10 @@ export default function PoulpeoPage() {
 
           <div className="mt-6 max-w-3xl rounded-2xl border border-amber-200 bg-amber-50 p-5">
             <p className="font-semibold text-amber-950">
-              Lien officiel français, sans affiliation pour le moment
+              Lien personnel de parrainage
             </p>
             <p className="mt-2 text-sm leading-6 text-amber-950">
-              Le lien utilisé sur cette page renvoie vers le site officiel de
-              Poulpeo. Il n’est pas présenté comme un lien affilié, partenaire,
-              sponsorisé, parrainage, bonus ou offre de bienvenue.
+              Ce lien est un lien personnel de parrainage. Afflizen peut recevoir un bonus ou un avantage si vous vous inscrivez et remplissez les conditions du programme, sans coût supplémentaire pour vous.
             </p>
           </div>
         </div>
@@ -202,13 +202,13 @@ export default function PoulpeoPage() {
 
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-            Affiliation
+            Type de lien
           </p>
           <p className="mt-3 text-3xl font-bold text-slate-950">
-            Aucune
+            Parrainage personnel
           </p>
           <p className="mt-3 text-slate-600">
-            Lien officiel français, sans parrainage Afflizen pour le moment.
+            Lien personnel, sans partenariat professionnel annoncé.
           </p>
         </div>
       </section>
@@ -321,8 +321,7 @@ export default function PoulpeoPage() {
           <p className="mt-5 leading-8 text-slate-700">
             Les CGU en vigueur indiquent 3 € de bienvenue pour un nouveau membre et 5 € s’il est
             parrainé. Elles définissent cependant le parrain comme une personne invitant un proche,
-            famille ou ami. Afflizen conserve donc un lien officiel sur cette page publique et ne
-            promet pas les 5 € via son bouton.
+            famille ou ami. Le lien proposé est personnel ; son autorisation de publication publique n’est pas confirmée. Les 5 € restent soumis aux conditions du programme et ne sont pas garantis via ce bouton.
           </p>
           <p className="mt-5 leading-8 text-slate-700">
             Pour un parrainage privé conforme, vérifiez le code et le pseudo du parrain au moment de
