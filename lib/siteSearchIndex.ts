@@ -577,6 +577,15 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "OpusClip",
+    url: "/outils-ia/opusclip",
+    category: "Outils IA",
+    description: "Découpage de vidéos longues en extraits, sous-titres et recadrage IA.",
+    keywords: ["vidéo IA", "montage", "shorts", "reels", "sous-titres", "podcast"],
+    aliases: ["Opus Clip"],
+    type: "platform",
+  },
+  {
     name: "ElevenLabs",
     url: "/outils-ia/elevenlabs",
     category: "Outils IA",

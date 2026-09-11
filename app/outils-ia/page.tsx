@@ -2,13 +2,20 @@ import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 export const metadata = createPageMetadata({
-  title: "Outils IA : voix, automatisation, workflows et présentations",
+  title: "Outils IA : vidéo, voix, automatisation et présentations",
   description: "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches, générer de la voix, créer des présentations et développer des solutions intelligentes.",
   path: "/outils-ia",
   type: "website",
 });
 
 const tools = [
+  {
+    name: "OpusClip",
+    href: "/outils-ia/opusclip",
+    description:
+      "Un outil pour préparer des extraits de vidéos longues avec découpage IA, sous-titres et recadrage, à relire avant publication.",
+    badge: "Vidéo IA",
+  },
   {
     name: "ElevenLabs",
     href: "/outils-ia/elevenlabs",
@@ -40,6 +47,13 @@ const tools = [
 ];
 
 const useCases = [
+  {
+    title: "Préparer des extraits de vidéos longues",
+    description:
+      "OpusClip aide à décliner vos vidéos en formats courts. Le montage et les sous-titres restent à vérifier avant diffusion.",
+    href: "/outils-ia/opusclip",
+    cta: "Voir OpusClip",
+  },
   {
     title: "Créer une voix IA ou un répondeur intelligent",
     description:
