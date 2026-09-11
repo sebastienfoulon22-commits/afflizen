@@ -680,8 +680,12 @@ export const editorialRegistry = [
   {
     name: "ElevenLabs",
     path: "/outils-ia/elevenlabs",
-    reviewedAt: "2026-08-04",
-    sources: [{ label: "Site officiel d’ElevenLabs", url: "https://elevenlabs.io/" }],
+    reviewedAt: "2026-09-11",
+    sources: [
+      { label: "Site officiel d’ElevenLabs", url: "https://elevenlabs.io/" },
+      { label: "Tarifs officiels ElevenCreative", url: "https://elevenlabs.io/pricing" },
+      { label: "Programme d’affiliation officiel", url: "https://elevenlabs.io/affiliates" },
+    ],
   },
   {
     name: "Make",
