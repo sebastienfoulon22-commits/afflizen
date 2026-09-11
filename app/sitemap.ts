@@ -362,6 +362,11 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
+    path: "/outils-ia/synthesia",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/outils-ia/elevenlabs",
     priority: 0.8,
     changeFrequency: "monthly",

@@ -2,7 +2,7 @@ import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 export const metadata = createPageMetadata({
-  title: "Outils IA : vidéo, voix, automatisation et présentations",
+  title: "Outils IA : voix, automatisation, workflows et présentations",
   description: "Découvrez les meilleurs outils IA pour gagner du temps, créer du contenu, automatiser des tâches, générer de la voix, créer des présentations et développer des solutions intelligentes.",
   path: "/outils-ia",
   type: "website",
@@ -15,6 +15,12 @@ const tools = [
     description:
       "Un outil pour préparer des extraits de vidéos longues avec découpage IA, sous-titres et recadrage, à relire avant publication.",
     badge: "Vidéo IA",
+  },
+  {
+    name: "Synthesia",
+    href: "/outils-ia/synthesia",
+    description: "Création de vidéos avec avatars IA pour des explications, formations et supports professionnels, avec des droits de diffusion à vérifier.",
+    badge: "Avatars vidéo IA",
   },
   {
     name: "ElevenLabs",
@@ -53,6 +59,12 @@ const useCases = [
       "OpusClip aide à décliner vos vidéos en formats courts. Le montage et les sous-titres restent à vérifier avant diffusion.",
     href: "/outils-ia/opusclip",
     cta: "Voir OpusClip",
+  },
+  {
+    title: "Présenter un script avec un avatar IA",
+    description: "Synthesia permet de préparer une vidéo explicative avec un présentateur virtuel. Le script, le rendu et les droits d’utilisation doivent être validés.",
+    href: "/outils-ia/synthesia",
+    cta: "Voir Synthesia",
   },
   {
     title: "Créer une voix IA ou un répondeur intelligent",
