@@ -678,6 +678,16 @@ export const editorialRegistry = [
     sources: [{ label: "Site officiel de Dealabs", url: "https://www.dealabs.com" }],
   },
   {
+    name: "OpusClip",
+    path: "/outils-ia/opusclip",
+    reviewedAt: "2026-09-10",
+    sources: [
+      { label: "Fonctionnalités officielles d’OpusClip", url: "https://www.opus.pro/" },
+      { label: "Tarifs et limites des formules OpusClip", url: "https://www.opus.pro/pricing" },
+      { label: "Conditions d’utilisation d’OpusClip", url: "https://www.opus.pro/terms-of-service" },
+    ],
+  },
+  {
     name: "Synthesia",
     path: "/outils-ia/synthesia",
     reviewedAt: "2026-09-10",

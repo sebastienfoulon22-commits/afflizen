@@ -10,6 +10,13 @@ export const metadata = createPageMetadata({
 
 const tools = [
   {
+    name: "OpusClip",
+    href: "/outils-ia/opusclip",
+    description:
+      "Un outil pour préparer des extraits de vidéos longues avec découpage IA, sous-titres et recadrage, à relire avant publication.",
+    badge: "Vidéo IA",
+  },
+  {
     name: "Synthesia",
     href: "/outils-ia/synthesia",
     description: "Création de vidéos avec avatars IA pour des explications, formations et supports professionnels, avec des droits de diffusion à vérifier.",
@@ -46,6 +53,13 @@ const tools = [
 ];
 
 const useCases = [
+  {
+    title: "Préparer des extraits de vidéos longues",
+    description:
+      "OpusClip aide à décliner vos vidéos en formats courts. Le montage et les sous-titres restent à vérifier avant diffusion.",
+    href: "/outils-ia/opusclip",
+    cta: "Voir OpusClip",
+  },
   {
     title: "Présenter un script avec un avatar IA",
     description: "Synthesia permet de préparer une vidéo explicative avec un présentateur virtuel. Le script, le rendu et les droits d’utilisation doivent être validés.",
