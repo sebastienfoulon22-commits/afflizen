@@ -35,6 +35,13 @@ const suspendedCryptoOffers = [
 
 const otherOffers = [
   {
+    name: "GameSwap",
+    category: "Échanges de jeux · Belgique",
+    url: "/bons-plans/gameswap",
+    status: "Code personnel de parrainage",
+    advantage: "Code personnel GSBA2A62 : 25 WP pour le parrain et 25 WP pour le filleul après vérification du GSM, selon les conditions en vigueur et le plafond de 2 000 WP. Aucun partenariat commercial officiel. WP non convertibles en euros ; frais d’échange distincts.",
+  },
+  {
     name: "Widilo",
     category: "Cashback",
     url: "/cashback/widilo",

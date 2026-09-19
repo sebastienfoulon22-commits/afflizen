@@ -126,6 +126,17 @@ const cryptoReferralDeals: Deal[] = [
   },
 ];
 
+const gamingDeals: Deal[] = [
+  {
+    name: "GameSwap",
+    category: "Échanges de jeux vidéo en Belgique",
+    description: "Échanger des jeux physiques entre particuliers, avec frais de service et transport bpost. Aucun achat ou revente de jeux.",
+    use: "Pour comprendre les PJ/WP, les frais et le code personnel donnant 25 WP à chacun après vérification du GSM, selon les conditions en vigueur.",
+    href: "/bons-plans/gameswap",
+    badge: "Code personnel de parrainage",
+  },
+];
+
 const ecommerceDeals: Deal[] = [
   {
     name: "Back Market",
@@ -326,6 +337,28 @@ export default function BonsPlansPage() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section aria-labelledby="gaming-title" className="pt-16">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold text-emerald-700">Faire circuler ses jeux</p>
+            <h2 id="gaming-title" className="mt-2 text-3xl font-bold">
+              Jeux vidéo et économie circulaire
+            </h2>
+            <p className="mt-4 leading-7 text-slate-700">
+              GameSwap permet d’échanger des jeux vidéo physiques entre
+              particuliers en Belgique. Chaque membre propose ses jeux ;
+              les Points Jeu et les Wallet Points aident à équilibrer l’échange.
+              Ce service ne consiste ni à acheter ni à revendre des jeux.
+            </p>
+            <p className="mt-3 leading-7 text-slate-700">
+              Consultez les frais par membre, le transport bpost et les règles
+              de réception avant de confirmer un swap. Le code personnel de
+              parrainage peut donner 25 WP à chacun sous conditions, sans
+              partenariat commercial officiel ni conversion des WP en euros.
+            </p>
+          </div>
+          <DealGrid deals={gamingDeals} />
         </section>
 
         <section aria-labelledby="cashback-title" className="pt-16">

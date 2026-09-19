@@ -343,6 +343,13 @@ const routes = [
     changeFrequency: "monthly",
   },
 
+  // Bons plans
+  {
+    path: "/bons-plans/gameswap",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+
   // E-commerce
   {
     path: "/e-commerce/back-market",
