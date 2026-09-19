@@ -37,9 +37,9 @@ const otherOffers = [
   {
     name: "GameSwap",
     category: "Échanges de jeux · Belgique",
-    url: "/e-commerce/gameswap",
+    url: "/bons-plans/gameswap",
     status: "Code personnel de parrainage",
-    advantage: "25 WP pour chaque partie après vérification du GSM du filleul, selon les conditions en vigueur et le plafond de 2 000 WP. Points non convertibles en euros ; frais d’échange distincts.",
+    advantage: "Code personnel GSBA2A62 : 25 WP pour le parrain et 25 WP pour le filleul après vérification du GSM, selon les conditions en vigueur et le plafond de 2 000 WP. Aucun partenariat commercial officiel. WP non convertibles en euros ; frais d’échange distincts.",
   },
   {
     name: "Widilo",

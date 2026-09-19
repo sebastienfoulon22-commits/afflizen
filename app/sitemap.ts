@@ -343,12 +343,14 @@ const routes = [
     changeFrequency: "monthly",
   },
 
-  // E-commerce
+  // Bons plans
   {
-    path: "/e-commerce/gameswap",
+    path: "/bons-plans/gameswap",
     priority: 0.8,
     changeFrequency: "monthly",
   },
+
+  // E-commerce
   {
     path: "/e-commerce/back-market",
     priority: 0.8,

@@ -12,7 +12,7 @@ const sourceLink = "font-semibold text-emerald-700 underline underline-offset-4 
 export const metadata = createPageMetadata({
   title: "GameSwap : avis, échange de jeux en Belgique et parrainage",
   description: "Découvrez GameSwap : échanges de jeux vidéo physiques en Belgique, Points Jeu, Wallet Points, frais, livraison bpost et code personnel de parrainage.",
-  path: "/e-commerce/gameswap",
+  path: "/bons-plans/gameswap",
   type: "article",
 });
 
@@ -73,12 +73,12 @@ export default function GameSwapPage() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-10 lg:grid-cols-[1fr_340px] lg:py-14">
           <div className="min-w-0">
-            <Link href="/e-commerce" className={sourceLink}>Voir la catégorie e-commerce</Link>
+            <Link href="/bons-plans" className={sourceLink}>Voir les bons plans</Link>
             <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-emerald-700">Jeux physiques · Échanges entre particuliers · Belgique</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">GameSwap : échanger ses jeux vidéo physiques en Belgique</h1>
             <p className="mt-6 text-lg leading-8 text-slate-600">GameSwap permet de proposer ses jeux et de recevoir ceux d’un autre joueur. Il s’agit d’un service d’échange, pas d’une plateforme de revente classique. Les Points Jeu évaluent les titres, les Wallet Points équilibrent les échanges et les frais couvrent le transport et le service.</p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <AffiliateButton href={SIGNUP_URL} platform="gameswap" category="e-commerce" location="hero" className={button}>S’inscrire sur GameSwap</AffiliateButton>
+              <AffiliateButton href={SIGNUP_URL} platform="gameswap" category="bons-plans" location="hero" className={button}>S’inscrire sur GameSwap</AffiliateButton>
               <a href="#fonctionnement" className="inline-flex min-h-11 items-center rounded-full border border-slate-300 px-6 py-3 font-semibold focus-visible:ring-2 focus-visible:ring-emerald-600">Comprendre les échanges</a>
             </div>
             <p className="mt-4 text-sm leading-6 text-slate-600">Code personnel à saisir : <code className="select-all font-bold text-slate-950">{REFERRAL_CODE}</code>. Il n’est pas appliqué automatiquement par le lien. Les 25 WP sont soumis aux conditions du programme ; ce ne sont pas des euros.</p>
@@ -178,7 +178,7 @@ export default function GameSwapPage() {
             <h3 className="mt-6 text-xl font-bold">Les limites à intégrer</h3>
             <ul className="mt-4 list-disc space-y-3 pl-5 leading-7 text-slate-600">{limits.map(text => <li key={text}>{text}</li>)}</ul>
             <p className={paragraph}>Avant de vous lancer, regardez les jeux susceptibles de vous intéresser, calculez vos frais et assurez-vous de pouvoir préparer, filmer et suivre l’envoi. Les 25 WP constituent un complément éventuel ; ils ne doivent pas être la seule raison de s’inscrire. Cet avis repose sur l’analyse des pages publiques, pas sur un échange réalisé par Afflizen.</p>
-            <div className="mt-6"><AffiliateButton href={SIGNUP_URL} platform="gameswap" category="e-commerce" location="avis" className={button}>Ouvrir le formulaire GameSwap</AffiliateButton></div>
+            <div className="mt-6"><AffiliateButton href={SIGNUP_URL} platform="gameswap" category="bons-plans" location="avis" className={button}>Ouvrir le formulaire GameSwap</AffiliateButton></div>
             <p className="mt-3 text-sm leading-6 text-slate-600">Code personnel {REFERRAL_CODE} à saisir manuellement, selon les conditions en vigueur.</p>
           </section>
           <section id="faq" className={card}>

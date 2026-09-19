@@ -686,7 +686,7 @@ export const editorialRegistry = [
   },
   {
     name: "GameSwap",
-    path: "/e-commerce/gameswap",
+    path: "/bons-plans/gameswap",
     reviewedAt: "2026-09-19",
     sources: [
       { label: "Présentation officielle de GameSwap", url: "https://www.gameswap.be/" },

@@ -3,19 +3,12 @@ import Link from "next/link";
 
 export const metadata = createPageMetadata({
   title: "E-commerce : bons plans, achats en ligne et plateformes utiles",
-  description: "Comparez les plateformes e-commerce d’Afflizen : achats en ligne, reconditionné, échanges de jeux physiques, bons plans et conditions des parrainages.",
+  description: "Découvrez les plateformes e-commerce référencées par Afflizen pour acheter en ligne, comparer les bons plans et profiter d’avantages disponibles.",
   path: "/e-commerce",
   type: "website",
 });
 
 const availablePlatforms = [
-  {
-    name: "GameSwap",
-    href: "/e-commerce/gameswap",
-    category: "Échanges de jeux physiques",
-    description: "Échanger ses jeux vidéo entre particuliers en Belgique, avec Points Jeu, Wallet Points et expédition bpost. Ce n’est pas un service de revente.",
-    points: ["Frais par membre et par échange", "25 WP de parrainage sous conditions", "Code personnel, sans partenariat officiel"],
-  },
   {
     name: "Back Market",
     href: "/e-commerce/back-market",
@@ -43,10 +36,6 @@ const availablePlatforms = [
 ];
 
 const categoryBlocks = [
-  {
-    title: "Échanges entre particuliers",
-    description: "Des services pour échanger des biens physiques, avec des frais, un transport et des règles de réception à examiner avant de confirmer.",
-  },
   {
     title: "Reconditionné",
     description:
@@ -88,7 +77,7 @@ export default function EcommercePage() {
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             La catégorie e-commerce d’Afflizen regroupe les plateformes utiles
-            pour acheter en ligne ou échanger des biens : jeux physiques, reconditionné,
+            pour acheter en ligne de manière plus intelligente : reconditionné,
             codes parrainage, bons plans, avantages clients et conseils avant
             commande.
           </p>
@@ -234,9 +223,6 @@ export default function EcommercePage() {
                   Back Market →
                 </Link>
 
-                <Link href="/e-commerce/gameswap" className="font-bold text-emerald-700 hover:text-emerald-800">
-                  GameSwap →
-                </Link>
                 <Link
                   href="/e-commerce/dealabs"
                   className="font-bold text-emerald-700 hover:text-emerald-800"
