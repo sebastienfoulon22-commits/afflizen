@@ -560,6 +560,15 @@ export const searchItems = [
     type: "platform",
   },
   {
+    name: "GameSwap",
+    url: "/e-commerce/gameswap",
+    category: "E-commerce",
+    description: "Échanges de jeux vidéo physiques en Belgique : PJ, WP, frais, transport et code personnel de parrainage.",
+    keywords: ["jeux vidéo", "échange", "Belgique", "parrainage", "Points Jeu", "Wallet Points", "WP", "PJ"],
+    aliases: ["Game Swap", "GameSwap.be"],
+    type: "platform",
+  },
+  {
     name: "Back Market",
     url: "/e-commerce/back-market",
     category: "E-commerce",

@@ -128,6 +128,14 @@ const cryptoReferralDeals: Deal[] = [
 
 const ecommerceDeals: Deal[] = [
   {
+    name: "GameSwap",
+    category: "Échanges de jeux vidéo en Belgique",
+    description: "Échanger des jeux physiques entre particuliers, avec frais de service et transport bpost. Aucun achat ou revente de jeux.",
+    use: "Pour comprendre les PJ/WP, les frais et le code personnel donnant 25 WP à chacun après vérification du GSM, selon les conditions en vigueur.",
+    href: "/e-commerce/gameswap",
+    badge: "Code personnel de parrainage",
+  },
+  {
     name: "Back Market",
     category: "Produits reconditionnés",
     description:
@@ -422,7 +430,7 @@ export default function BonsPlansPage() {
             </h2>
             <p className="mt-4 leading-7 text-slate-700">
               Back Market aide à chercher du matériel reconditionné, tandis que
-              Dealabs centralise des bons plans publiés par une communauté.
+              Dealabs centralise des bons plans publiés par une communauté. GameSwap propose des échanges de jeux physiques en Belgique, avec des frais propres à chaque membre.
               Aucune réduction n&apos;est garantie : contrôlez toujours le vendeur,
               le prix final et les conditions de retour.
             </p>

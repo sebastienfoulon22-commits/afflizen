@@ -345,6 +345,11 @@ const routes = [
 
   // E-commerce
   {
+    path: "/e-commerce/gameswap",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/e-commerce/back-market",
     priority: 0.8,
     changeFrequency: "monthly",

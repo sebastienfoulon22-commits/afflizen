@@ -39,7 +39,7 @@ const categories = [
     name: "E-commerce",
     url: "/e-commerce",
     description:
-      "Reconditionné, codes parrainage, achats en ligne, bons plans e-commerce et conseils avant commande.",
+      "Reconditionné, échanges de jeux physiques, codes parrainage, achats en ligne et bons plans.",
   },
   {
     name: "Hébergement web",

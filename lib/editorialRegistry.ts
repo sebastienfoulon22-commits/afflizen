@@ -685,6 +685,19 @@ export const editorialRegistry = [
     sources: [{ label: "Hébergement web officiel d’OVHcloud", url: "https://www.ovhcloud.com/fr/web-hosting/" }],
   },
   {
+    name: "GameSwap",
+    path: "/e-commerce/gameswap",
+    reviewedAt: "2026-09-19",
+    sources: [
+      { label: "Présentation officielle de GameSwap", url: "https://www.gameswap.be/" },
+      { label: "FAQ : échanges, points, frais et transport", url: "https://www.gameswap.be/faq" },
+      { label: "CGU : accès, Points Jeu et parrainage (article 6 bis)", url: "https://www.gameswap.be/cgu" },
+      { label: "CGV : barème, livraison, réception et litiges", url: "https://www.gameswap.be/cgv" },
+      { label: "Formulaire officiel et champ de parrainage", url: "https://www.gameswap.be/formulaire" },
+      { label: "Politique de confidentialité de GameSwap", url: "https://www.gameswap.be/politique-confidentialite" },
+    ],
+  },
+  {
     name: "Back Market",
     path: "/e-commerce/back-market",
     reviewedAt: "2026-08-04",
