@@ -1,7 +1,8 @@
-﻿import { createPageMetadata } from "@/lib/metadata";
+﻿import AffiliateButton from "@/components/AffiliateButton";
+import { createPageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
-const ELEVENLABS_LINK = "https://elevenlabs.io/";
+const ELEVENLABS_LINK = "https://try.elevenlabs.io/zuqz7qrz3orp";
 
 const pageTitle = "ElevenLabs avis 2026 : voix IA, agents vocaux et tarifs";
 const pageDescription =
@@ -28,7 +29,7 @@ const quickFacts = [
   },
   {
     label: "Offre d’essai",
-    value: "Des formules peuvent inclure un accès limité ou gratuit selon les conditions officielles",
+    value: "Formule Free limitée ; licence commerciale annoncée à partir de Starter",
   },
   {
     label: "Point fort",
@@ -140,7 +141,7 @@ const faq = [
   {
     question: "Peut-on utiliser ElevenLabs gratuitement ?",
     answer:
-      "ElevenLabs propose généralement plusieurs formules, pouvant inclure une offre gratuite limitée. Les crédits, fonctions et limites doivent être vérifiés sur le site officiel.",
+      "Oui, une formule Free limitée existe. La grille officielle annonce une licence commerciale à partir de Starter. Vérifiez les droits applicables à votre contenu et les limites avant de publier.",
   },
   {
     question: "Peut-on cloner sa propre voix ?",
@@ -241,14 +242,15 @@ export default function ElevenLabsPage() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
+            <AffiliateButton
               href={ELEVENLABS_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+              platform="ElevenLabs"
+              category="outils-ia"
+              location="hero"
               className="rounded-full bg-emerald-400 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-emerald-300"
             >
               Découvrir ElevenLabs
-            </a>
+            </AffiliateButton>
 
             <a
               href="#tarifs"
@@ -259,8 +261,8 @@ export default function ElevenLabsPage() {
           </div>
 
           <p className="mt-5 text-xs leading-6 text-slate-300">
-            Lien officiel non affilié. Afflizen ne perçoit actuellement aucune
-            commission sur cette inscription. Les conditions, crédits, plans et
+            Lien affilié professionnel : Afflizen peut percevoir une commission
+            si vous souscrivez via ce lien. Aucun bonus spécifique n’est promis. Les conditions, crédits, plans et
             fonctionnalités peuvent évoluer.
           </p>
         </div>
@@ -505,20 +507,29 @@ export default function ElevenLabsPage() {
           </h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-slate-700">
-            ElevenLabs propose généralement plusieurs formules, pouvant inclure
-            une offre gratuite limitée et des abonnements payants adaptés au
-            volume d’utilisation. Les tarifs, crédits, limites et
-            fonctionnalités pouvant évoluer, il est recommandé de consulter la
-            grille officielle avant de souscrire.
+            Lors de la vérification du 11 septembre 2026, la grille ElevenCreative
+            affiche Free à 0 USD et Starter à 6 USD par mois hors taxes.
+            La licence commerciale est annoncée à partir de Starter. Les crédits
+            sont partagés entre les produits : utiliser une fonction réduit le
+            solde disponible pour les autres. Consultez les tarifs en vigueur
+            avant de souscrire ; les offres Agents et API ont leurs propres grilles.
           </p>
 
           <p className="mt-5 max-w-4xl leading-8 text-slate-700">
-            Avant de choisir un plan, vérifiez notamment le nombre de crédits, le
+            Cette analyse repose sur la documentation officielle, sans test comparatif
+            de performances réalisé pour cette fiche. Avant de choisir un plan, vérifiez notamment le nombre de crédits, le
             volume audio autorisé, les options de clonage vocal, l’accès API, les
             usages commerciaux, les agents vocaux et les conditions de
             conservation ou d’utilisation des données.
           </p>
         </section>
+
+        <p className="mt-6 text-sm leading-7 text-slate-600">
+          Pour la Belgique, la France, le Luxembourg et la Suisse, vérifiez
+          directement les conditions d’accès et de souscription applicables à
+          votre résidence. Une langue prise en charge ne garantit pas
+          l’éligibilité de tous les pays ni de tous les usages.
+        </p>
 
         <section className="mt-14 rounded-3xl border border-amber-200 bg-amber-50 p-6 md:p-8">
           <p className="text-sm font-semibold uppercase tracking-wide text-amber-700">
@@ -568,14 +579,15 @@ export default function ElevenLabsPage() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
+            <AffiliateButton
               href={ELEVENLABS_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+              platform="ElevenLabs"
+              category="outils-ia"
+              location="verdict"
               className="rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-emerald-50"
             >
               Découvrir ElevenLabs
-            </a>
+            </AffiliateButton>
 
             <Link
               href="/outils-ia"
@@ -593,8 +605,8 @@ export default function ElevenLabsPage() {
           </div>
 
           <p className="mt-5 text-xs leading-6 text-emerald-50/80">
-            Lien officiel non affilié. Afflizen ne perçoit actuellement aucune
-            commission sur cette inscription. Vérifiez les prix, crédits,
+            Lien affilié professionnel : Afflizen peut percevoir une commission
+            si vous souscrivez via ce lien. Aucun bonus spécifique n’est promis. Vérifiez les prix, crédits,
             fonctionnalités et conditions sur le site officiel avant de créer un
             compte.
           </p>
